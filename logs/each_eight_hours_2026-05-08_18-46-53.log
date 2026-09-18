@@ -1,0 +1,1039 @@
+2026-05-08 18:46:53 | INFO | each_eight_hours.py:39 | LOG FILE PATH: \\vmware-host\Shared Folders\SHARED FILES VM\MS\logs\each_eight_hours_2026-05-08_18-46-53.log
+2026-05-08 18:46:53 | INFO | each_eight_hours.py:40 | Logger initialized
+2026-05-08 18:46:53 | INFO | each_eight_hours.py:67 | Script initialized
+2026-05-08 18:46:55 | INFO | each_eight_hours.py:117 | Execution started
+2026-05-08 18:46:56 | INFO | each_eight_hours.py:120 | Mouse moved to initial position
+2026-05-08 18:46:56 | INFO | each_eight_hours.py:127 | snap.exe terminated if it was running
+2026-05-08 18:46:56 | INFO | my_functions.py:60 | ⏳ Esperando WebSocket de OBS...
+2026-05-08 18:47:01 | INFO | baseclient.py:33 | Connecting with parameters: host='localhost' port=4455 password='' subs=0 timeout=None
+2026-05-08 18:47:01 | INFO | reqs.py:23 | Successfully identified ReqClient with the server using RPC version:1
+2026-05-08 18:47:01 | INFO | my_functions.py:66 | ✅ Conectado al OBS WebSocket
+2026-05-08 18:47:01 | ERROR | reqs.py:59 | OBSSDKRequestError: Request GetRecordStatus returned code 207. With message: OBS is not ready to perform the request.
+Traceback (most recent call last):
+  File "C:\Users\Farm\AppData\Local\Programs\Python\Python311\Lib\site-packages\obsws_python\reqs.py", line 53, in send
+    raise OBSSDKRequestError(
+obsws_python.error.OBSSDKRequestError: Request GetRecordStatus returned code 207. With message: OBS is not ready to perform the request.
+2026-05-08 18:47:03 | INFO | my_functions.py:91 | 🎬 Grabación iniciada
+2026-05-08 18:47:03 | INFO | each_eight_hours.py:130 | OBS started and recording
+2026-05-08 18:47:03 | INFO | my_functions.py:1662 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-05-08 18:47:03 | INFO | my_functions.py:1669 | 🔍 Esperando ventana que contenga alguna de: ['py', 'eight_hours'] (máx 20s)
+2026-05-08 18:47:03 | INFO | my_functions.py:1681 | ✅ Ventana encontrada: 'each_eight_hours - Acceso directo'
+2026-05-08 18:47:03 | INFO | my_functions.py:1696 | ✅ Ventana seleccionada: 'each_eight_hours - Acceso directo'
+2026-05-08 18:47:05 | INFO | my_functions.py:1719 | 🔁 Reajuste #1...
+2026-05-08 18:47:05 | INFO | my_functions.py:1726 | ✔ Verificación completa. Se hicieron 1 reajustes.
+2026-05-08 18:47:05 | INFO | each_eight_hours.py:136 | Console window resized
+2026-05-08 18:47:35 | INFO | my_functions.py:2509 | Starting Steam window scan
+2026-05-08 18:47:35 | INFO | my_functions.py:2512 | Found window: 
+2026-05-08 18:47:35 | INFO | my_functions.py:2512 | Found window: each_eight_hours - Acceso directo
+2026-05-08 18:47:35 | INFO | my_functions.py:2512 | Found window: Inicio
+2026-05-08 18:47:35 | INFO | my_functions.py:2512 | Found window: Administrador de tareas
+2026-05-08 18:47:35 | INFO | my_functions.py:2512 | Found window: 
+2026-05-08 18:47:35 | INFO | my_functions.py:2512 | Found window: 
+2026-05-08 18:47:35 | INFO | my_functions.py:2512 | Found window: 
+2026-05-08 18:47:35 | INFO | my_functions.py:2512 | Found window: 
+2026-05-08 18:47:35 | INFO | my_functions.py:2512 | Found window: MS
+2026-05-08 18:47:35 | INFO | my_functions.py:2512 | Found window: Program Manager
+2026-05-08 18:47:35 | INFO | each_eight_hours.py:141 | Steam popup windows closed
+2026-05-08 18:47:35 | INFO | each_eight_hours.py:144 | Processing account: percy
+2026-05-08 18:47:35 | INFO | each_eight_hours.py:147 | Game relaunched for account
+2026-05-08 18:47:35 | INFO | my_functions.py:1662 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-05-08 18:47:35 | INFO | my_functions.py:1669 | 🔍 Esperando ventana que contenga alguna de: ['SNAP'] (máx 20s)
+2026-05-08 18:47:40 | INFO | my_functions.py:1681 | ✅ Ventana encontrada: 'SNAP'
+2026-05-08 18:47:40 | INFO | my_functions.py:1696 | ✅ Ventana seleccionada: 'SNAP'
+2026-05-08 18:47:42 | INFO | my_functions.py:1728 | ✔ Verificación completa. No hubo cambios después del primer ajuste.
+2026-05-08 18:47:42 | INFO | each_eight_hours.py:154 | Game window resized
+2026-05-08 18:47:42 | INFO | my_functions.py:1201 | [DEBUG] Resizing SNAP window...
+2026-05-08 18:47:42 | INFO | my_functions.py:1662 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-05-08 18:47:42 | INFO | my_functions.py:1669 | 🔍 Esperando ventana que contenga alguna de: ['SNAP'] (máx 20s)
+2026-05-08 18:47:42 | INFO | my_functions.py:1681 | ✅ Ventana encontrada: 'SNAP'
+2026-05-08 18:47:42 | INFO | my_functions.py:1696 | ✅ Ventana seleccionada: 'SNAP'
+2026-05-08 18:47:45 | INFO | my_functions.py:1728 | ✔ Verificación completa. No hubo cambios después del primer ajuste.
+2026-05-08 18:47:45 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> submit.PNG timeout=90s delay_click=0.2s confidence=0.8
+2026-05-08 18:47:45 | INFO | my_functions.py:172 | Searching submit.PNG (timeout=90s)
+2026-05-08 18:47:52 | INFO | my_functions.py:198 | 
+✅ Found: submit.PNG pos=(386, 777) time=6.78s confidence=0.8
+2026-05-08 18:47:52 | INFO | my_functions.py:138 | Haciendo click en la posición (386, 777)
+2026-05-08 18:47:53 | INFO | my_functions.py:251 | 🖱️ Click OK: submit.PNG at (386, 777) delay=0.2s
+2026-05-08 18:47:53 | INFO | my_functions.py:1662 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-05-08 18:47:53 | INFO | my_functions.py:1669 | 🔍 Esperando ventana que contenga alguna de: ['SNAP'] (máx 20s)
+2026-05-08 18:47:53 | INFO | my_functions.py:1681 | ✅ Ventana encontrada: 'SNAP'
+2026-05-08 18:47:53 | INFO | my_functions.py:1696 | ✅ Ventana seleccionada: 'SNAP'
+2026-05-08 18:47:55 | INFO | my_functions.py:1719 | 🔁 Reajuste #1...
+2026-05-08 18:47:56 | INFO | my_functions.py:1726 | ✔ Verificación completa. Se hicieron 1 reajustes.
+2026-05-08 18:47:56 | INFO | my_functions.py:172 | Searching please_sign.png (timeout=0s)
+2026-05-08 18:47:56 | INFO | my_functions.py:198 | 
+✅ Found: please_sign.png pos=(383, 438) time=0.24s confidence=0.8
+2026-05-08 18:47:56 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> ok_btn.png timeout=20s delay_click=1s confidence=0.8
+2026-05-08 18:47:56 | INFO | my_functions.py:172 | Searching ok_btn.png (timeout=20s)
+2026-05-08 18:47:56 | INFO | my_functions.py:198 | 
+✅ Found: ok_btn.png pos=(382, 634) time=0.24s confidence=0.8
+2026-05-08 18:47:57 | INFO | my_functions.py:138 | Haciendo click en la posición (382, 634)
+2026-05-08 18:47:57 | INFO | my_functions.py:251 | 🖱️ Click OK: ok_btn.png at (382, 634) delay=1s
+2026-05-08 18:47:57 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> submit.PNG timeout=90s delay_click=0.2s confidence=0.8
+2026-05-08 18:47:57 | INFO | my_functions.py:172 | Searching submit.PNG (timeout=90s)
+2026-05-08 18:47:58 | INFO | my_functions.py:198 | 
+✅ Found: submit.PNG pos=(385, 782) time=1.03s confidence=0.8
+2026-05-08 18:47:59 | INFO | my_functions.py:138 | Haciendo click en la posición (385, 782)
+2026-05-08 18:47:59 | INFO | my_functions.py:251 | 🖱️ Click OK: submit.PNG at (385, 782) delay=0.2s
+2026-05-08 18:47:59 | INFO | my_functions.py:172 | Searching sign_in_with_google2.PNG (timeout=90s)
+2026-05-08 18:48:00 | INFO | my_functions.py:198 | 
+✅ Found: sign_in_with_google2.PNG pos=(406, 957) time=1.11s confidence=0.8
+2026-05-08 18:48:00 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> sign_in_with_google2.PNG timeout=20s delay_click=1s confidence=0.8
+2026-05-08 18:48:00 | INFO | my_functions.py:172 | Searching sign_in_with_google2.PNG (timeout=20s)
+2026-05-08 18:48:00 | INFO | my_functions.py:198 | 
+✅ Found: sign_in_with_google2.PNG pos=(406, 957) time=0.34s confidence=0.8
+2026-05-08 18:48:01 | INFO | my_functions.py:138 | Haciendo click en la posición (406, 957)
+2026-05-08 18:48:02 | INFO | my_functions.py:251 | 🖱️ Click OK: sign_in_with_google2.PNG at (406, 957) delay=1s
+2026-05-08 18:48:02 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> percy.png timeout=30s delay_click=3s confidence=0.8
+2026-05-08 18:48:02 | INFO | my_functions.py:172 | Searching percy.png (timeout=30s)
+2026-05-08 18:48:32 | INFO | my_functions.py:209 | 
+⛔ Not found: percy.png after 30.22s region=None confidence=0.8
+2026-05-08 18:48:32 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: percy.png
+2026-05-08 18:48:33 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> percy.png timeout=0s delay_click=3s confidence=0.8
+2026-05-08 18:48:33 | INFO | my_functions.py:172 | Searching percy.png (timeout=0s)
+2026-05-08 18:48:33 | INFO | my_functions.py:198 | 
+✅ Found: percy.png pos=(1132, 647) time=0.32s confidence=0.8
+2026-05-08 18:48:36 | INFO | my_functions.py:138 | Haciendo click en la posición (1132, 647)
+2026-05-08 18:48:36 | INFO | my_functions.py:251 | 🖱️ Click OK: percy.png at (1132, 647) delay=3s
+2026-05-08 18:48:38 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> python_icon.PNG timeout=5s delay_click=1s confidence=0.8
+2026-05-08 18:48:38 | INFO | my_functions.py:172 | Searching python_icon.PNG (timeout=5s)
+2026-05-08 18:48:39 | INFO | my_functions.py:198 | 
+✅ Found: python_icon.PNG pos=(709, 1054) time=0.4s confidence=0.8
+2026-05-08 18:48:40 | INFO | my_functions.py:138 | Haciendo click en la posición (709, 1054)
+2026-05-08 18:48:40 | INFO | my_functions.py:251 | 🖱️ Click OK: python_icon.PNG at (709, 1054) delay=1s
+2026-05-08 18:48:40 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> snap_icon_task_bar.PNG timeout=20s delay_click=1s confidence=0.8
+2026-05-08 18:48:40 | INFO | my_functions.py:172 | Searching snap_icon_task_bar.PNG (timeout=20s)
+2026-05-08 18:48:40 | INFO | my_functions.py:198 | 
+✅ Found: snap_icon_task_bar.PNG pos=(524, 1052) time=0.43s confidence=0.8
+2026-05-08 18:48:41 | INFO | my_functions.py:138 | Haciendo click en la posición (524, 1052)
+2026-05-08 18:48:42 | INFO | my_functions.py:251 | 🖱️ Click OK: snap_icon_task_bar.PNG at (524, 1052) delay=1s
+2026-05-08 18:48:42 | INFO | my_functions.py:172 | Searching play.PNG (timeout=30s)
+2026-05-08 18:48:53 | INFO | my_functions.py:198 | 
+✅ Found: play.PNG pos=(384, 824) time=11.63s confidence=0.8
+2026-05-08 18:48:53 | INFO | my_functions.py:1259 | [DEBUG] Login completado correctamente.
+2026-05-08 18:48:53 | INFO | each_eight_hours.py:158 | Login executed
+2026-05-08 18:48:53 | INFO | my_functions.py:172 | Searching shop_unselected.PNG (timeout=0s)
+2026-05-08 18:48:54 | INFO | my_functions.py:198 | 
+✅ Found: shop_unselected.PNG pos=(88, 961) time=0.31s confidence=0.8
+2026-05-08 18:49:02 | INFO | my_functions.py:172 | Searching shop_unselected.PNG (timeout=0s)
+2026-05-08 18:49:02 | INFO | my_functions.py:209 | 
+⛔ Not found: shop_unselected.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:49:03 | INFO | my_functions.py:172 | Searching shop_unselected.PNG (timeout=0s)
+2026-05-08 18:49:03 | INFO | my_functions.py:209 | 
+⛔ Not found: shop_unselected.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:49:03 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> super_premium.PNG timeout=0s delay_click=1s confidence=0.8
+2026-05-08 18:49:03 | INFO | my_functions.py:172 | Searching super_premium.PNG (timeout=0s)
+2026-05-08 18:49:03 | INFO | my_functions.py:198 | 
+✅ Found: super_premium.PNG pos=(480, 777) time=0.24s confidence=0.8
+2026-05-08 18:49:04 | INFO | my_functions.py:138 | Haciendo click en la posición (480, 777)
+2026-05-08 18:49:05 | INFO | my_functions.py:251 | 🖱️ Click OK: super_premium.PNG at (480, 777) delay=1s
+2026-05-08 18:49:05 | INFO | my_functions.py:146 | Presionando ESC (1/1)
+2026-05-08 18:49:13 | INFO | my_functions.py:172 | Searching shop_unselected.PNG (timeout=0s)
+2026-05-08 18:49:14 | INFO | my_functions.py:198 | 
+✅ Found: shop_unselected.PNG pos=(88, 961) time=0.38s confidence=0.8
+2026-05-08 18:49:14 | INFO | my_functions.py:714 | Ya esta listo
+2026-05-08 18:49:14 | INFO | each_eight_hours.py:161 | Initial images processed
+2026-05-08 18:49:14 | INFO | each_eight_hours.py:164 | Chrome terminated
+2026-05-08 18:49:14 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> missions_unnotified2.png timeout=20s delay_click=1s confidence=0.8
+2026-05-08 18:49:14 | INFO | my_functions.py:172 | Searching missions_unnotified2.png (timeout=20s)
+2026-05-08 18:49:14 | INFO | my_functions.py:198 | 
+✅ Found: missions_unnotified2.png pos=(516, 127) time=0.26s confidence=0.8
+2026-05-08 18:49:15 | INFO | my_functions.py:138 | Haciendo click en la posición (516, 127)
+2026-05-08 18:49:16 | INFO | my_functions.py:251 | 🖱️ Click OK: missions_unnotified2.png at (516, 127) delay=1s
+2026-05-08 18:49:16 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> calendar_missions_daily.png timeout=3s delay_click=1s confidence=0.8
+2026-05-08 18:49:16 | INFO | my_functions.py:172 | Searching calendar_missions_daily.png (timeout=3s)
+2026-05-08 18:49:17 | INFO | my_functions.py:198 | 
+✅ Found: calendar_missions_daily.png pos=(189, 131) time=1.4s confidence=0.8
+2026-05-08 18:49:18 | INFO | my_functions.py:138 | Haciendo click en la posición (189, 131)
+2026-05-08 18:49:18 | INFO | my_functions.py:251 | 🖱️ Click OK: calendar_missions_daily.png at (189, 131) delay=1s
+2026-05-08 18:49:18 | INFO | each_eight_hours.py:178 | Mission screens opened
+2026-05-08 18:49:18 | INFO | my_functions.py:295 | JSON file located at C:\Users\Farm\AppData\LocalLow\Second Dinner\SNAP\Standalone\States\nvprod\MissionState.json
+2026-05-08 18:49:22 | INFO | my_functions.py:431 | AVAILABLE: 5
+2026-05-08 18:49:22 | INFO | my_functions.py:440 | [INFO] Waiting for Notepad++ process...
+2026-05-08 18:49:37 | WARNING | my_functions.py:477 | [WARNING] Notepad++ process was never detected
+2026-05-08 18:49:37 | INFO | my_functions.py:1587 | [INFO] Iniciando click_missions_blue2
+2026-05-08 18:49:37 | INFO | my_functions.py:138 | Haciendo click en la posición (150, 132)
+2026-05-08 18:49:38 | INFO | my_functions.py:1590 | [ACTION] Click hecho en icono de calendario que me dirige a las misiones ordinarias
+2026-05-08 18:49:38 | INFO | my_functions.py:172 | Searching bonus_challenge.png (timeout=0s)
+2026-05-08 18:49:39 | INFO | my_functions.py:209 | 
+⛔ Not found: bonus_challenge.png after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:49:41 | INFO | my_functions.py:172 | Searching flechita_mission.PNG (timeout=0s)
+2026-05-08 18:49:41 | INFO | my_functions.py:209 | 
+⛔ Not found: flechita_mission.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:49:41 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> weekly3.PNG timeout=0s delay_click=0.1s confidence=0.8
+2026-05-08 18:49:41 | INFO | my_functions.py:172 | Searching weekly3.PNG (timeout=0s)
+2026-05-08 18:49:41 | INFO | my_functions.py:209 | 
+⛔ Not found: weekly3.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:49:41 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: weekly3.PNG
+2026-05-08 18:49:41 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> weekly3.PNG timeout=0s delay_click=0.1s confidence=0.8
+2026-05-08 18:49:41 | INFO | my_functions.py:172 | Searching weekly3.PNG (timeout=0s)
+2026-05-08 18:49:41 | INFO | my_functions.py:209 | 
+⛔ Not found: weekly3.PNG after 0.01s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:49:41 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: weekly3.PNG
+2026-05-08 18:49:41 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> weekly3.PNG timeout=0s delay_click=0.1s confidence=0.8
+2026-05-08 18:49:41 | INFO | my_functions.py:172 | Searching weekly3.PNG (timeout=0s)
+2026-05-08 18:49:41 | INFO | my_functions.py:209 | 
+⛔ Not found: weekly3.PNG after 0.01s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:49:41 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: weekly3.PNG
+2026-05-08 18:49:41 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> weekly3.PNG timeout=0s delay_click=0.1s confidence=0.8
+2026-05-08 18:49:41 | INFO | my_functions.py:172 | Searching weekly3.PNG (timeout=0s)
+2026-05-08 18:49:41 | INFO | my_functions.py:209 | 
+⛔ Not found: weekly3.PNG after 0.01s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:49:41 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: weekly3.PNG
+2026-05-08 18:49:41 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> weekly3.PNG timeout=0s delay_click=0.1s confidence=0.8
+2026-05-08 18:49:41 | INFO | my_functions.py:172 | Searching weekly3.PNG (timeout=0s)
+2026-05-08 18:49:42 | INFO | my_functions.py:209 | 
+⛔ Not found: weekly3.PNG after 0.01s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:49:42 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: weekly3.PNG
+2026-05-08 18:49:42 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> weekly3.PNG timeout=0s delay_click=0.1s confidence=0.8
+2026-05-08 18:49:42 | INFO | my_functions.py:172 | Searching weekly3.PNG (timeout=0s)
+2026-05-08 18:49:42 | INFO | my_functions.py:209 | 
+⛔ Not found: weekly3.PNG after 0.01s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:49:42 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: weekly3.PNG
+2026-05-08 18:49:42 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> weekly3.PNG timeout=0s delay_click=0.1s confidence=0.8
+2026-05-08 18:49:42 | INFO | my_functions.py:172 | Searching weekly3.PNG (timeout=0s)
+2026-05-08 18:49:42 | INFO | my_functions.py:209 | 
+⛔ Not found: weekly3.PNG after 0.01s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:49:42 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: weekly3.PNG
+2026-05-08 18:49:42 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> weekly3.PNG timeout=0s delay_click=0.1s confidence=0.8
+2026-05-08 18:49:42 | INFO | my_functions.py:172 | Searching weekly3.PNG (timeout=0s)
+2026-05-08 18:49:42 | INFO | my_functions.py:209 | 
+⛔ Not found: weekly3.PNG after 0.01s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:49:42 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: weekly3.PNG
+2026-05-08 18:49:42 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> weekly3.PNG timeout=0s delay_click=0.1s confidence=0.8
+2026-05-08 18:49:42 | INFO | my_functions.py:172 | Searching weekly3.PNG (timeout=0s)
+2026-05-08 18:49:43 | INFO | my_functions.py:209 | 
+⛔ Not found: weekly3.PNG after 0.19s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:49:43 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: weekly3.PNG
+2026-05-08 18:49:43 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> weekly3.PNG timeout=0s delay_click=0.1s confidence=0.8
+2026-05-08 18:49:43 | INFO | my_functions.py:172 | Searching weekly3.PNG (timeout=0s)
+2026-05-08 18:49:43 | INFO | my_functions.py:209 | 
+⛔ Not found: weekly3.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:49:43 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: weekly3.PNG
+2026-05-08 18:49:43 | INFO | my_functions.py:295 | JSON file located at C:\Users\Farm\AppData\LocalLow\Second Dinner\SNAP\Standalone\States\nvprod\MissionState.json
+2026-05-08 18:49:46 | INFO | my_functions.py:431 | AVAILABLE: 5
+2026-05-08 18:49:46 | INFO | my_functions.py:440 | [INFO] Waiting for Notepad++ process...
+2026-05-08 18:49:46 | INFO | my_functions.py:454 | [INFO] Notepad++ detected PID=4688
+2026-05-08 18:49:46 | INFO | my_functions.py:461 | [SUCCESS] Notepad++ closed successfully
+2026-05-08 18:49:47 | INFO | my_functions.py:146 | Presionando ESC (1/1)
+2026-05-08 18:49:48 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> white_x.png timeout=2s delay_click=1s confidence=0.8
+2026-05-08 18:49:48 | INFO | my_functions.py:172 | Searching white_x.png (timeout=2s)
+2026-05-08 18:49:50 | INFO | my_functions.py:209 | 
+⛔ Not found: white_x.png after 2.12s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:49:50 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: white_x.png
+2026-05-08 18:49:50 | INFO | my_functions.py:172 | Searching play.PNG (timeout=0s)
+2026-05-08 18:49:50 | INFO | my_functions.py:198 | 
+✅ Found: play.PNG pos=(384, 824) time=0.21s confidence=0.8
+2026-05-08 18:49:50 | INFO | my_functions.py:1557 | [INFO] Click realizado donde se equipa el deck a jugar
+2026-05-08 18:49:54 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> deck_666666.png timeout=3s delay_click=1s confidence=0.8
+2026-05-08 18:49:54 | INFO | my_functions.py:172 | Searching deck_666666.png (timeout=3s)
+2026-05-08 18:49:54 | INFO | my_functions.py:198 | 
+✅ Found: deck_666666.png pos=(235, 547) time=0.23s confidence=0.8
+2026-05-08 18:49:55 | INFO | my_functions.py:138 | Haciendo click en la posición (235, 547)
+2026-05-08 18:49:56 | INFO | my_functions.py:251 | 🖱️ Click OK: deck_666666.png at (235, 547) delay=1s
+2026-05-08 18:49:56 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> equip.png timeout=3s delay_click=1s confidence=0.95
+2026-05-08 18:49:56 | INFO | my_functions.py:172 | Searching equip.png (timeout=3s)
+2026-05-08 18:49:59 | INFO | my_functions.py:209 | 
+⛔ Not found: equip.png after 3.05s region=(0, 0, 765, 1038) confidence=0.95
+2026-05-08 18:49:59 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: equip.png
+2026-05-08 18:49:59 | INFO | my_functions.py:146 | Presionando ESC (1/1)
+2026-05-08 18:50:00 | INFO | each_eight_hours.py:217 | Deck selected: 6turns
+2026-05-08 18:50:00 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> maybe_later.PNG timeout=2s delay_click=1s confidence=0.8
+2026-05-08 18:50:00 | INFO | my_functions.py:172 | Searching maybe_later.PNG (timeout=2s)
+2026-05-08 18:50:02 | INFO | my_functions.py:209 | 
+⛔ Not found: maybe_later.PNG after 2.13s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:50:02 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: maybe_later.PNG
+2026-05-08 18:50:02 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> maybe_later2.PNG timeout=2s delay_click=1s confidence=0.8
+2026-05-08 18:50:02 | INFO | my_functions.py:172 | Searching maybe_later2.PNG (timeout=2s)
+2026-05-08 18:50:04 | INFO | my_functions.py:209 | 
+⛔ Not found: maybe_later2.PNG after 2.09s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:50:04 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: maybe_later2.PNG
+2026-05-08 18:50:04 | INFO | each_eight_hours.py:287 | Starting game loop 1
+2026-05-08 18:50:04 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> play.PNG timeout=20s delay_click=3s confidence=0.8
+2026-05-08 18:50:04 | INFO | my_functions.py:172 | Searching play.PNG (timeout=20s)
+2026-05-08 18:50:04 | INFO | my_functions.py:198 | 
+✅ Found: play.PNG pos=(384, 824) time=0.2s confidence=0.8
+2026-05-08 18:50:07 | INFO | my_functions.py:138 | Haciendo click en la posición (384, 824)
+2026-05-08 18:50:08 | INFO | my_functions.py:251 | 🖱️ Click OK: play.PNG at (384, 824) delay=3s
+2026-05-08 18:50:08 | INFO | each_eight_hours.py:293 | Play button clicked
+2026-05-08 18:51:02 | INFO | my_functions.py:198 | 
+✅ Found: end_turn.PNG pos=(682, 945) time=0.17s confidence=0.8
+2026-05-08 18:51:02 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> snap.PNG timeout=0s delay_click=1s confidence=0.8
+2026-05-08 18:51:02 | INFO | my_functions.py:198 | 
+✅ Found: snap.PNG pos=(386, 123) time=0.21s confidence=0.8
+2026-05-08 18:51:03 | INFO | my_functions.py:138 | Haciendo click en la posición (386, 123)
+2026-05-08 18:51:04 | INFO | my_functions.py:251 | 🖱️ Click OK: snap.PNG at (386, 123) delay=1s
+2026-05-08 18:51:09 | INFO | my_functions.py:138 | Haciendo click en la posición (682, 945)
+2026-05-08 18:51:10 | INFO | each_eight_hours.py:314 | End turn executed
+2026-05-08 18:51:26 | INFO | my_functions.py:198 | 
+✅ Found: end_turn.PNG pos=(681, 945) time=0.22s confidence=0.8
+2026-05-08 18:51:26 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> snap.PNG timeout=0s delay_click=1s confidence=0.8
+2026-05-08 18:51:26 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: snap.PNG
+2026-05-08 18:51:31 | INFO | my_functions.py:138 | Haciendo click en la posición (681, 945)
+2026-05-08 18:51:32 | INFO | each_eight_hours.py:314 | End turn executed
+2026-05-08 18:51:42 | INFO | my_functions.py:198 | 
+✅ Found: end_turn.PNG pos=(681, 945) time=0.17s confidence=0.8
+2026-05-08 18:51:42 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> snap.PNG timeout=0s delay_click=1s confidence=0.8
+2026-05-08 18:51:42 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: snap.PNG
+2026-05-08 18:51:47 | INFO | my_functions.py:138 | Haciendo click en la posición (681, 945)
+2026-05-08 18:51:49 | INFO | each_eight_hours.py:314 | End turn executed
+2026-05-08 18:52:06 | INFO | my_functions.py:198 | 
+✅ Found: end_turn.PNG pos=(681, 945) time=0.19s confidence=0.8
+2026-05-08 18:52:06 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> snap.PNG timeout=0s delay_click=1s confidence=0.8
+2026-05-08 18:52:06 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: snap.PNG
+2026-05-08 18:52:11 | INFO | my_functions.py:138 | Haciendo click en la posición (681, 945)
+2026-05-08 18:52:12 | INFO | each_eight_hours.py:314 | End turn executed
+2026-05-08 18:52:30 | INFO | my_functions.py:198 | 
+✅ Found: end_turn.PNG pos=(681, 945) time=0.18s confidence=0.8
+2026-05-08 18:52:30 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> snap.PNG timeout=0s delay_click=1s confidence=0.8
+2026-05-08 18:52:30 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: snap.PNG
+2026-05-08 18:52:35 | INFO | my_functions.py:138 | Haciendo click en la posición (681, 945)
+2026-05-08 18:52:37 | INFO | each_eight_hours.py:314 | End turn executed
+2026-05-08 18:52:53 | INFO | my_functions.py:198 | 
+✅ Found: end_turn.PNG pos=(681, 945) time=0.2s confidence=0.8
+2026-05-08 18:52:53 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> snap.PNG timeout=0s delay_click=1s confidence=0.8
+2026-05-08 18:52:53 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: snap.PNG
+2026-05-08 18:52:58 | INFO | my_functions.py:138 | Haciendo click en la posición (681, 945)
+2026-05-08 18:52:59 | INFO | each_eight_hours.py:314 | End turn executed
+2026-05-08 18:53:23 | INFO | my_functions.py:198 | 
+✅ Found: collect_rewards.PNG pos=(680, 959) time=0.22s confidence=0.8
+2026-05-08 18:53:23 | INFO | each_eight_hours.py:353 | Rewards detected, exiting match
+2026-05-08 18:53:23 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> collect_rewards.PNG timeout=20s delay_click=1s confidence=0.8
+2026-05-08 18:53:23 | INFO | my_functions.py:172 | Searching collect_rewards.PNG (timeout=20s)
+2026-05-08 18:53:23 | INFO | my_functions.py:198 | 
+✅ Found: collect_rewards.PNG pos=(679, 957) time=0.23s confidence=0.8
+2026-05-08 18:53:24 | INFO | my_functions.py:138 | Haciendo click en la posición (679, 957)
+2026-05-08 18:53:24 | INFO | my_functions.py:251 | 🖱️ Click OK: collect_rewards.PNG at (679, 957) delay=1s
+2026-05-08 18:53:24 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> next.PNG timeout=20s delay_click=1s confidence=0.8
+2026-05-08 18:53:24 | INFO | my_functions.py:172 | Searching next.PNG (timeout=20s)
+2026-05-08 18:53:27 | INFO | my_functions.py:198 | 
+✅ Found: next.PNG pos=(677, 973) time=3.27s confidence=0.8
+2026-05-08 18:53:28 | INFO | my_functions.py:138 | Haciendo click en la posición (677, 973)
+2026-05-08 18:53:28 | INFO | my_functions.py:251 | 🖱️ Click OK: next.PNG at (677, 973) delay=1s
+2026-05-08 18:53:32 | INFO | my_functions.py:431 | AVAILABLE: 5
+2026-05-08 18:53:33 | INFO | my_functions.py:440 | [INFO] Waiting for Notepad++ process...
+2026-05-08 18:53:48 | WARNING | my_functions.py:477 | [WARNING] Notepad++ process was never detected
+2026-05-08 18:53:48 | INFO | each_eight_hours.py:422 | Submissions after match: 5
+2026-05-08 18:53:48 | INFO | my_functions.py:375 | Misiones completadas: 0
+2026-05-08 18:53:48 | INFO | each_eight_hours.py:287 | Starting game loop 2
+2026-05-08 18:53:48 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> play.PNG timeout=20s delay_click=3s confidence=0.8
+2026-05-08 18:53:48 | INFO | my_functions.py:172 | Searching play.PNG (timeout=20s)
+2026-05-08 18:53:48 | INFO | my_functions.py:198 | 
+✅ Found: play.PNG pos=(384, 824) time=0.24s confidence=0.8
+2026-05-08 18:53:51 | INFO | my_functions.py:138 | Haciendo click en la posición (384, 824)
+2026-05-08 18:53:51 | INFO | my_functions.py:251 | 🖱️ Click OK: play.PNG at (384, 824) delay=3s
+2026-05-08 18:53:51 | INFO | each_eight_hours.py:293 | Play button clicked
+2026-05-08 18:54:15 | INFO | my_functions.py:198 | 
+✅ Found: end_turn.PNG pos=(681, 945) time=0.23s confidence=0.8
+2026-05-08 18:54:15 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> snap.PNG timeout=0s delay_click=1s confidence=0.8
+2026-05-08 18:54:15 | INFO | my_functions.py:198 | 
+✅ Found: snap.PNG pos=(386, 122) time=0.23s confidence=0.8
+2026-05-08 18:54:16 | INFO | my_functions.py:138 | Haciendo click en la posición (386, 122)
+2026-05-08 18:54:16 | INFO | my_functions.py:251 | 🖱️ Click OK: snap.PNG at (386, 122) delay=1s
+2026-05-08 18:54:21 | INFO | my_functions.py:138 | Haciendo click en la posición (681, 945)
+2026-05-08 18:54:22 | INFO | each_eight_hours.py:314 | End turn executed
+2026-05-08 18:54:42 | INFO | my_functions.py:198 | 
+✅ Found: end_turn.PNG pos=(681, 945) time=0.22s confidence=0.8
+2026-05-08 18:54:42 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> snap.PNG timeout=0s delay_click=1s confidence=0.8
+2026-05-08 18:54:42 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: snap.PNG
+2026-05-08 18:54:47 | INFO | my_functions.py:138 | Haciendo click en la posición (681, 945)
+2026-05-08 18:54:48 | INFO | each_eight_hours.py:314 | End turn executed
+2026-05-08 18:55:05 | INFO | my_functions.py:198 | 
+✅ Found: end_turn.PNG pos=(682, 945) time=0.21s confidence=0.8
+2026-05-08 18:55:05 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> snap.PNG timeout=0s delay_click=1s confidence=0.8
+2026-05-08 18:55:05 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: snap.PNG
+2026-05-08 18:55:10 | INFO | my_functions.py:138 | Haciendo click en la posición (682, 945)
+2026-05-08 18:55:11 | INFO | each_eight_hours.py:314 | End turn executed
+2026-05-08 18:55:26 | INFO | my_functions.py:198 | 
+✅ Found: end_turn.PNG pos=(681, 945) time=0.25s confidence=0.8
+2026-05-08 18:55:26 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> snap.PNG timeout=0s delay_click=1s confidence=0.8
+2026-05-08 18:55:26 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: snap.PNG
+2026-05-08 18:55:32 | INFO | my_functions.py:138 | Haciendo click en la posición (681, 945)
+2026-05-08 18:55:33 | INFO | each_eight_hours.py:314 | End turn executed
+2026-05-08 18:55:59 | INFO | my_functions.py:198 | 
+✅ Found: end_turn.PNG pos=(681, 945) time=0.21s confidence=0.8
+2026-05-08 18:55:59 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> snap.PNG timeout=0s delay_click=1s confidence=0.8
+2026-05-08 18:55:59 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: snap.PNG
+2026-05-08 18:56:04 | INFO | my_functions.py:138 | Haciendo click en la posición (681, 945)
+2026-05-08 18:56:05 | INFO | each_eight_hours.py:314 | End turn executed
+2026-05-08 18:56:22 | INFO | my_functions.py:198 | 
+✅ Found: end_turn.PNG pos=(681, 945) time=0.22s confidence=0.8
+2026-05-08 18:56:22 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> snap.PNG timeout=0s delay_click=1s confidence=0.8
+2026-05-08 18:56:22 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: snap.PNG
+2026-05-08 18:56:27 | INFO | my_functions.py:138 | Haciendo click en la posición (681, 945)
+2026-05-08 18:56:28 | INFO | each_eight_hours.py:314 | End turn executed
+2026-05-08 18:56:48 | INFO | my_functions.py:198 | 
+✅ Found: never_seen_before.png pos=(395, 141) time=0.21s confidence=0.8
+2026-05-08 18:56:48 | WARNING | each_eight_hours.py:327 | Unknown popup handled
+2026-05-08 18:57:03 | INFO | my_functions.py:198 | 
+✅ Found: collect_rewards.PNG pos=(679, 958) time=0.26s confidence=0.8
+2026-05-08 18:57:03 | INFO | each_eight_hours.py:353 | Rewards detected, exiting match
+2026-05-08 18:57:03 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> collect_rewards.PNG timeout=20s delay_click=1s confidence=0.8
+2026-05-08 18:57:03 | INFO | my_functions.py:172 | Searching collect_rewards.PNG (timeout=20s)
+2026-05-08 18:57:04 | INFO | my_functions.py:198 | 
+✅ Found: collect_rewards.PNG pos=(679, 957) time=0.28s confidence=0.8
+2026-05-08 18:57:05 | INFO | my_functions.py:138 | Haciendo click en la posición (679, 957)
+2026-05-08 18:57:05 | INFO | my_functions.py:251 | 🖱️ Click OK: collect_rewards.PNG at (679, 957) delay=1s
+2026-05-08 18:57:05 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> next.PNG timeout=20s delay_click=1s confidence=0.8
+2026-05-08 18:57:05 | INFO | my_functions.py:172 | Searching next.PNG (timeout=20s)
+2026-05-08 18:57:08 | INFO | my_functions.py:198 | 
+✅ Found: next.PNG pos=(677, 973) time=3.53s confidence=0.8
+2026-05-08 18:57:09 | INFO | my_functions.py:138 | Haciendo click en la posición (677, 973)
+2026-05-08 18:57:10 | INFO | my_functions.py:251 | 🖱️ Click OK: next.PNG at (677, 973) delay=1s
+2026-05-08 18:57:14 | INFO | my_functions.py:431 | AVAILABLE: 5
+2026-05-08 18:57:14 | INFO | my_functions.py:440 | [INFO] Waiting for Notepad++ process...
+2026-05-08 18:57:14 | INFO | my_functions.py:454 | [INFO] Notepad++ detected PID=1596
+2026-05-08 18:57:14 | INFO | my_functions.py:461 | [SUCCESS] Notepad++ closed successfully
+2026-05-08 18:57:15 | INFO | each_eight_hours.py:422 | Submissions after match: 5
+2026-05-08 18:57:15 | INFO | my_functions.py:375 | Misiones completadas: 1
+2026-05-08 18:57:15 | INFO | each_eight_hours.py:431 | Submission condition met, breaking loop
+2026-05-08 18:57:15 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> missionsNotify2.png timeout=20s delay_click=3s confidence=0.8
+2026-05-08 18:57:15 | INFO | my_functions.py:172 | Searching missionsNotify2.png (timeout=20s)
+2026-05-08 18:57:15 | INFO | my_functions.py:198 | 
+✅ Found: missionsNotify2.png pos=(538, 124) time=0.26s confidence=0.8
+2026-05-08 18:57:18 | INFO | my_functions.py:138 | Haciendo click en la posición (538, 124)
+2026-05-08 18:57:18 | INFO | my_functions.py:251 | 🖱️ Click OK: missionsNotify2.png at (538, 124) delay=3s
+2026-05-08 18:57:18 | INFO | my_functions.py:1587 | [INFO] Iniciando click_missions_blue2
+2026-05-08 18:57:18 | INFO | my_functions.py:138 | Haciendo click en la posición (150, 132)
+2026-05-08 18:57:20 | INFO | my_functions.py:1590 | [ACTION] Click hecho en icono de calendario que me dirige a las misiones ordinarias
+2026-05-08 18:57:20 | INFO | my_functions.py:172 | Searching bonus_challenge.png (timeout=0s)
+2026-05-08 18:57:20 | INFO | my_functions.py:209 | 
+⛔ Not found: bonus_challenge.png after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:57:22 | INFO | my_functions.py:138 | Haciendo click en la posición (362, 493)
+2026-05-08 18:57:23 | INFO | my_functions.py:1603 | [ACTION] Click 1/1 en misión azul
+2026-05-08 18:57:23 | INFO | my_functions.py:172 | Searching flechita_mission.PNG (timeout=0s)
+2026-05-08 18:57:24 | INFO | my_functions.py:209 | 
+⛔ Not found: flechita_mission.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:57:24 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> weekly3.PNG timeout=0s delay_click=0.1s confidence=0.8
+2026-05-08 18:57:24 | INFO | my_functions.py:172 | Searching weekly3.PNG (timeout=0s)
+2026-05-08 18:57:24 | INFO | my_functions.py:209 | 
+⛔ Not found: weekly3.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:57:24 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: weekly3.PNG
+2026-05-08 18:57:24 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> weekly3.PNG timeout=0s delay_click=0.1s confidence=0.8
+2026-05-08 18:57:24 | INFO | my_functions.py:172 | Searching weekly3.PNG (timeout=0s)
+2026-05-08 18:57:24 | INFO | my_functions.py:209 | 
+⛔ Not found: weekly3.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:57:24 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: weekly3.PNG
+2026-05-08 18:57:24 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> weekly3.PNG timeout=0s delay_click=0.1s confidence=0.8
+2026-05-08 18:57:24 | INFO | my_functions.py:172 | Searching weekly3.PNG (timeout=0s)
+2026-05-08 18:57:24 | INFO | my_functions.py:209 | 
+⛔ Not found: weekly3.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:57:24 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: weekly3.PNG
+2026-05-08 18:57:24 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> weekly3.PNG timeout=0s delay_click=0.1s confidence=0.8
+2026-05-08 18:57:24 | INFO | my_functions.py:172 | Searching weekly3.PNG (timeout=0s)
+2026-05-08 18:57:24 | INFO | my_functions.py:209 | 
+⛔ Not found: weekly3.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:57:24 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: weekly3.PNG
+2026-05-08 18:57:24 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> weekly3.PNG timeout=0s delay_click=0.1s confidence=0.8
+2026-05-08 18:57:24 | INFO | my_functions.py:172 | Searching weekly3.PNG (timeout=0s)
+2026-05-08 18:57:25 | INFO | my_functions.py:209 | 
+⛔ Not found: weekly3.PNG after 0.01s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:57:25 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: weekly3.PNG
+2026-05-08 18:57:25 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> weekly3.PNG timeout=0s delay_click=0.1s confidence=0.8
+2026-05-08 18:57:25 | INFO | my_functions.py:172 | Searching weekly3.PNG (timeout=0s)
+2026-05-08 18:57:25 | INFO | my_functions.py:209 | 
+⛔ Not found: weekly3.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:57:25 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: weekly3.PNG
+2026-05-08 18:57:25 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> weekly3.PNG timeout=0s delay_click=0.1s confidence=0.8
+2026-05-08 18:57:25 | INFO | my_functions.py:172 | Searching weekly3.PNG (timeout=0s)
+2026-05-08 18:57:25 | INFO | my_functions.py:209 | 
+⛔ Not found: weekly3.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:57:25 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: weekly3.PNG
+2026-05-08 18:57:25 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> weekly3.PNG timeout=0s delay_click=0.1s confidence=0.8
+2026-05-08 18:57:25 | INFO | my_functions.py:172 | Searching weekly3.PNG (timeout=0s)
+2026-05-08 18:57:25 | INFO | my_functions.py:209 | 
+⛔ Not found: weekly3.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:57:25 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: weekly3.PNG
+2026-05-08 18:57:25 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> weekly3.PNG timeout=0s delay_click=0.1s confidence=0.8
+2026-05-08 18:57:25 | INFO | my_functions.py:172 | Searching weekly3.PNG (timeout=0s)
+2026-05-08 18:57:25 | INFO | my_functions.py:209 | 
+⛔ Not found: weekly3.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:57:25 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: weekly3.PNG
+2026-05-08 18:57:25 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> weekly3.PNG timeout=0s delay_click=0.1s confidence=0.8
+2026-05-08 18:57:25 | INFO | my_functions.py:172 | Searching weekly3.PNG (timeout=0s)
+2026-05-08 18:57:26 | INFO | my_functions.py:209 | 
+⛔ Not found: weekly3.PNG after 0.01s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:57:26 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: weekly3.PNG
+2026-05-08 18:57:26 | INFO | my_functions.py:138 | Haciendo click en la posición (557, 64)
+2026-05-08 18:57:27 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> cards_shop.PNG timeout=20s delay_click=1s confidence=0.8
+2026-05-08 18:57:27 | INFO | my_functions.py:172 | Searching cards_shop.PNG (timeout=20s)
+2026-05-08 18:57:28 | INFO | my_functions.py:198 | 
+✅ Found: cards_shop.PNG pos=(568, 121) time=0.69s confidence=0.8
+2026-05-08 18:57:29 | INFO | my_functions.py:138 | Haciendo click en la posición (568, 121)
+2026-05-08 18:57:29 | INFO | my_functions.py:251 | 🖱️ Click OK: cards_shop.PNG at (568, 121) delay=1s
+2026-05-08 18:57:29 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> token_icon.PNG timeout=20s delay_click=1s confidence=0.8
+2026-05-08 18:57:29 | INFO | my_functions.py:172 | Searching token_icon.PNG (timeout=20s)
+2026-05-08 18:57:31 | INFO | my_functions.py:198 | 
+✅ Found: token_icon.PNG pos=(531, 171) time=2.3s confidence=0.8
+2026-05-08 18:57:32 | INFO | my_functions.py:138 | Haciendo click en la posición (531, 171)
+2026-05-08 18:57:32 | INFO | my_functions.py:251 | 🖱️ Click OK: token_icon.PNG at (531, 171) delay=1s
+2026-05-08 18:57:34 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> claim!_token_3.PNG timeout=4s delay_click=1s confidence=0.8
+2026-05-08 18:57:34 | INFO | my_functions.py:172 | Searching claim!_token_3.PNG (timeout=4s)
+2026-05-08 18:57:35 | INFO | my_functions.py:198 | 
+✅ Found: claim!_token_3.PNG pos=(231, 573) time=0.3s confidence=0.8
+2026-05-08 18:57:36 | INFO | my_functions.py:138 | Haciendo click en la posición (231, 573)
+2026-05-08 18:57:36 | INFO | my_functions.py:251 | 🖱️ Click OK: claim!_token_3.PNG at (231, 573) delay=1s
+2026-05-08 18:57:36 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> offers.PNG timeout=0.1s delay_click=1s confidence=0.8
+2026-05-08 18:57:36 | INFO | my_functions.py:172 | Searching offers.PNG (timeout=0.1s)
+2026-05-08 18:57:36 | INFO | my_functions.py:198 | 
+✅ Found: offers.PNG pos=(197, 121) time=0.3s confidence=0.8
+2026-05-08 18:57:37 | INFO | my_functions.py:138 | Haciendo click en la posición (197, 121)
+2026-05-08 18:57:37 | INFO | my_functions.py:251 | 🖱️ Click OK: offers.PNG at (197, 121) delay=1s
+2026-05-08 18:57:37 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> credits_selected.png timeout=0.1s delay_click=1s confidence=0.8
+2026-05-08 18:57:37 | INFO | my_functions.py:172 | Searching credits_selected.png (timeout=0.1s)
+2026-05-08 18:57:38 | INFO | my_functions.py:209 | 
+⛔ Not found: credits_selected.png after 0.27s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:57:38 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: credits_selected.png
+2026-05-08 18:57:38 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> credits.PNG timeout=0.1s delay_click=1s confidence=0.95
+2026-05-08 18:57:38 | INFO | my_functions.py:172 | Searching credits.PNG (timeout=0.1s)
+2026-05-08 18:57:38 | INFO | my_functions.py:198 | 
+✅ Found: credits.PNG pos=(442, 172) time=0.26s confidence=0.95
+2026-05-08 18:57:39 | INFO | my_functions.py:138 | Haciendo click en la posición (442, 172)
+2026-05-08 18:57:39 | INFO | my_functions.py:251 | 🖱️ Click OK: credits.PNG at (442, 172) delay=1s
+2026-05-08 18:57:41 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> claim_25_credits.png timeout=2s delay_click=1s confidence=0.8
+2026-05-08 18:57:41 | INFO | my_functions.py:172 | Searching claim_25_credits.png (timeout=2s)
+2026-05-08 18:57:41 | INFO | my_functions.py:198 | 
+✅ Found: claim_25_credits.png pos=(236, 328) time=0.3s confidence=0.8
+2026-05-08 18:57:42 | INFO | my_functions.py:138 | Haciendo click en la posición (236, 328)
+2026-05-08 18:57:42 | INFO | my_functions.py:251 | 🖱️ Click OK: claim_25_credits.png at (236, 328) delay=1s
+2026-05-08 18:57:42 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> cards_shop.PNG timeout=20s delay_click=1s confidence=0.8
+2026-05-08 18:57:42 | INFO | my_functions.py:172 | Searching cards_shop.PNG (timeout=20s)
+2026-05-08 18:57:43 | INFO | my_functions.py:198 | 
+✅ Found: cards_shop.PNG pos=(568, 121) time=0.22s confidence=0.8
+2026-05-08 18:57:44 | INFO | my_functions.py:138 | Haciendo click en la posición (568, 121)
+2026-05-08 18:57:44 | INFO | my_functions.py:251 | 🖱️ Click OK: cards_shop.PNG at (568, 121) delay=1s
+2026-05-08 18:57:44 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> offers.PNG timeout=20s delay_click=1s confidence=0.8
+2026-05-08 18:57:44 | INFO | my_functions.py:172 | Searching offers.PNG (timeout=20s)
+2026-05-08 18:57:44 | INFO | my_functions.py:198 | 
+✅ Found: offers.PNG pos=(197, 122) time=0.19s confidence=0.8
+2026-05-08 18:57:45 | INFO | my_functions.py:138 | Haciendo click en la posición (197, 122)
+2026-05-08 18:57:45 | INFO | my_functions.py:251 | 🖱️ Click OK: offers.PNG at (197, 122) delay=1s
+2026-05-08 18:57:45 | INFO | my_functions.py:1485 | [INFO] Iniciando mejora de cartas
+2026-05-08 18:57:45 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> upgrade_cards_icon.PNG timeout=20s delay_click=1s confidence=0.8
+2026-05-08 18:57:45 | INFO | my_functions.py:172 | Searching upgrade_cards_icon.PNG (timeout=20s)
+2026-05-08 18:57:46 | INFO | my_functions.py:198 | 
+✅ Found: upgrade_cards_icon.PNG pos=(322, 170) time=0.52s confidence=0.8
+2026-05-08 18:57:47 | INFO | my_functions.py:138 | Haciendo click en la posición (322, 170)
+2026-05-08 18:57:47 | INFO | my_functions.py:251 | 🖱️ Click OK: upgrade_cards_icon.PNG at (322, 170) delay=1s
+2026-05-08 18:57:47 | INFO | my_functions.py:1489 | [INFO] Abriendo icono de upgrade_cards
+2026-05-08 18:57:48 | INFO | my_functions.py:1495 | [STEP] Mejorando carta 1
+2026-05-08 18:57:48 | INFO | my_functions.py:1499 | [ACTION] Click en carta 1
+2026-05-08 18:57:49 | INFO | my_functions.py:1504 | [ACTION] Click en botón upgrade
+2026-05-08 18:57:56 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> you_need_more_credits!.png timeout=3s delay_click=1s confidence=0.8
+2026-05-08 18:57:56 | INFO | my_functions.py:172 | Searching you_need_more_credits!.png (timeout=3s)
+2026-05-08 18:58:00 | INFO | my_functions.py:209 | 
+⛔ Not found: you_need_more_credits!.png after 3.09s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:58:00 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: you_need_more_credits!.png
+2026-05-08 18:58:05 | INFO | my_functions.py:1519 | [ACTION] Click para continuar a stage de nivel de coleccion
+2026-05-08 18:58:10 | INFO | my_functions.py:146 | Presionando ESC (1/1)
+2026-05-08 18:58:10 | INFO | my_functions.py:1524 | [ACTION] Saliendo de stage nivel de coleccion con ESC
+2026-05-08 18:58:11 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> upgrade_cards_icon_selected.PNG timeout=0s delay_click=1s confidence=0.8
+2026-05-08 18:58:11 | INFO | my_functions.py:172 | Searching upgrade_cards_icon_selected.PNG (timeout=0s)
+2026-05-08 18:58:12 | INFO | my_functions.py:198 | 
+✅ Found: upgrade_cards_icon_selected.PNG pos=(320, 173) time=0.23s confidence=0.8
+2026-05-08 18:58:13 | INFO | my_functions.py:138 | Haciendo click en la posición (320, 173)
+2026-05-08 18:58:13 | INFO | my_functions.py:251 | 🖱️ Click OK: upgrade_cards_icon_selected.PNG at (320, 173) delay=1s
+2026-05-08 18:58:13 | INFO | my_functions.py:1544 | [INFO] Reabriendo icono de upgrade_cards
+2026-05-08 18:58:14 | INFO | my_functions.py:1495 | [STEP] Mejorando carta 2
+2026-05-08 18:58:14 | INFO | my_functions.py:1499 | [ACTION] Click en carta 2
+2026-05-08 18:58:15 | INFO | my_functions.py:1504 | [ACTION] Click en botón upgrade
+2026-05-08 18:58:22 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> you_need_more_credits!.png timeout=3s delay_click=1s confidence=0.8
+2026-05-08 18:58:22 | INFO | my_functions.py:172 | Searching you_need_more_credits!.png (timeout=3s)
+2026-05-08 18:58:22 | INFO | my_functions.py:198 | 
+✅ Found: you_need_more_credits!.png pos=(381, 345) time=0.21s confidence=0.8
+2026-05-08 18:58:23 | INFO | my_functions.py:138 | Haciendo click en la posición (381, 345)
+2026-05-08 18:58:24 | INFO | my_functions.py:251 | 🖱️ Click OK: you_need_more_credits!.png at (381, 345) delay=1s
+2026-05-08 18:58:24 | INFO | my_functions.py:146 | Presionando ESC (1/2)
+2026-05-08 18:58:24 | INFO | my_functions.py:146 | Presionando ESC (2/2)
+2026-05-08 18:58:27 | INFO | my_functions.py:1547 | [INFO] Mejora de cartas completada ✅
+2026-05-08 18:58:27 | INFO | my_functions.py:146 | Presionando ESC (1/1)
+2026-05-08 18:58:27 | INFO | each_eight_hours.py:438 | Finished all games
+2026-05-08 18:58:27 | INFO | my_functions.py:1437 | [DEBUG] Starting logout process...
+2026-05-08 18:58:27 | INFO | my_functions.py:1439 | [DEBUG] Clicking nut icon...
+2026-05-08 18:58:27 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> nut.png timeout=20s delay_click=1s confidence=0.8
+2026-05-08 18:58:27 | INFO | my_functions.py:172 | Searching nut.png (timeout=20s)
+2026-05-08 18:58:28 | INFO | my_functions.py:198 | 
+✅ Found: nut.png pos=(184, 78) time=0.25s confidence=0.8
+2026-05-08 18:58:29 | INFO | my_functions.py:138 | Haciendo click en la posición (184, 78)
+2026-05-08 18:58:29 | INFO | my_functions.py:251 | 🖱️ Click OK: nut.png at (184, 78) delay=1s
+2026-05-08 18:58:29 | INFO | my_functions.py:1442 | [DEBUG] Waiting for graphics quality image...
+2026-05-08 18:58:29 | INFO | my_functions.py:172 | Searching graphics_quality.png (timeout=3s)
+2026-05-08 18:58:30 | INFO | my_functions.py:198 | 
+✅ Found: graphics_quality.png pos=(305, 642) time=0.67s confidence=0.8
+2026-05-08 18:58:30 | INFO | my_functions.py:1444 | [DEBUG] graphics_quality result: Point(x=305, y=642)
+2026-05-08 18:58:30 | INFO | my_functions.py:1450 | [DEBUG] Clicking graphics quality...
+2026-05-08 18:58:31 | INFO | my_functions.py:1455 | [DEBUG] Scrolling down...
+2026-05-08 18:58:31 | INFO | my_functions.py:1458 | [DEBUG] Clicking sign_out...
+2026-05-08 18:58:31 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> sign_out.png timeout=20s delay_click=1s confidence=0.8
+2026-05-08 18:58:31 | INFO | my_functions.py:172 | Searching sign_out.png (timeout=20s)
+2026-05-08 18:58:31 | INFO | my_functions.py:198 | 
+✅ Found: sign_out.png pos=(380, 796) time=0.26s confidence=0.8
+2026-05-08 18:58:32 | INFO | my_functions.py:138 | Haciendo click en la posición (380, 796)
+2026-05-08 18:58:32 | INFO | my_functions.py:251 | 🖱️ Click OK: sign_out.png at (380, 796) delay=1s
+2026-05-08 18:58:33 | INFO | my_functions.py:1463 | [DEBUG] Clicking big sign_out...
+2026-05-08 18:58:33 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> sign_out_grande.png timeout=20s delay_click=1s confidence=0.8
+2026-05-08 18:58:33 | INFO | my_functions.py:172 | Searching sign_out_grande.png (timeout=20s)
+2026-05-08 18:58:34 | INFO | my_functions.py:198 | 
+✅ Found: sign_out_grande.png pos=(359, 437) time=0.23s confidence=0.8
+2026-05-08 18:58:35 | INFO | my_functions.py:138 | Haciendo click en la posición (359, 437)
+2026-05-08 18:58:35 | INFO | my_functions.py:251 | 🖱️ Click OK: sign_out_grande.png at (359, 437) delay=1s
+2026-05-08 18:58:35 | INFO | my_functions.py:1466 | [DEBUG] Clicking sign_out2...
+2026-05-08 18:58:35 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> sign_out2.png timeout=20s delay_click=1s confidence=0.8
+2026-05-08 18:58:35 | INFO | my_functions.py:172 | Searching sign_out2.png (timeout=20s)
+2026-05-08 18:58:35 | INFO | my_functions.py:198 | 
+✅ Found: sign_out2.png pos=(383, 634) time=0.24s confidence=0.8
+2026-05-08 18:58:36 | INFO | my_functions.py:138 | Haciendo click en la posición (383, 634)
+2026-05-08 18:58:36 | INFO | my_functions.py:251 | 🖱️ Click OK: sign_out2.png at (383, 634) delay=1s
+2026-05-08 18:58:36 | INFO | my_functions.py:1469 | [DEBUG] Resizing SNAP window...
+2026-05-08 18:58:36 | INFO | my_functions.py:1662 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-05-08 18:58:36 | INFO | my_functions.py:1669 | 🔍 Esperando ventana que contenga alguna de: SNAP (máx 20s)
+2026-05-08 18:58:36 | INFO | my_functions.py:1681 | ✅ Ventana encontrada: 'SNAP'
+2026-05-08 18:58:36 | INFO | my_functions.py:1696 | ✅ Ventana seleccionada: 'SNAP'
+2026-05-08 18:58:38 | INFO | my_functions.py:1719 | 🔁 Reajuste #1...
+2026-05-08 18:58:40 | INFO | my_functions.py:1726 | ✔ Verificación completa. Se hicieron 1 reajustes.
+2026-05-08 18:58:42 | INFO | my_functions.py:1478 | snap.exe closed
+2026-05-08 18:58:45 | INFO | my_functions.py:1481 | [DEBUG] Logout completed successfully.
+2026-05-08 18:58:45 | INFO | each_eight_hours.py:144 | Processing account: john
+2026-05-08 18:58:45 | INFO | each_eight_hours.py:147 | Game relaunched for account
+2026-05-08 18:58:45 | INFO | my_functions.py:1662 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-05-08 18:58:45 | INFO | my_functions.py:1669 | 🔍 Esperando ventana que contenga alguna de: ['SNAP'] (máx 20s)
+2026-05-08 18:58:48 | INFO | my_functions.py:1681 | ✅ Ventana encontrada: 'SNAP'
+2026-05-08 18:58:48 | INFO | my_functions.py:1696 | ✅ Ventana seleccionada: 'SNAP'
+2026-05-08 18:58:51 | INFO | my_functions.py:1728 | ✔ Verificación completa. No hubo cambios después del primer ajuste.
+2026-05-08 18:58:51 | INFO | each_eight_hours.py:154 | Game window resized
+2026-05-08 18:58:51 | INFO | my_functions.py:1201 | [DEBUG] Resizing SNAP window...
+2026-05-08 18:58:51 | INFO | my_functions.py:1662 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-05-08 18:58:51 | INFO | my_functions.py:1669 | 🔍 Esperando ventana que contenga alguna de: ['SNAP'] (máx 20s)
+2026-05-08 18:58:51 | INFO | my_functions.py:1681 | ✅ Ventana encontrada: 'SNAP'
+2026-05-08 18:58:51 | INFO | my_functions.py:1696 | ✅ Ventana seleccionada: 'SNAP'
+2026-05-08 18:58:54 | INFO | my_functions.py:1728 | ✔ Verificación completa. No hubo cambios después del primer ajuste.
+2026-05-08 18:58:54 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> submit.PNG timeout=90s delay_click=0.2s confidence=0.8
+2026-05-08 18:58:54 | INFO | my_functions.py:172 | Searching submit.PNG (timeout=90s)
+2026-05-08 18:58:59 | INFO | my_functions.py:198 | 
+✅ Found: submit.PNG pos=(385, 779) time=5.68s confidence=0.8
+2026-05-08 18:59:00 | INFO | my_functions.py:138 | Haciendo click en la posición (385, 779)
+2026-05-08 18:59:00 | INFO | my_functions.py:251 | 🖱️ Click OK: submit.PNG at (385, 779) delay=0.2s
+2026-05-08 18:59:00 | INFO | my_functions.py:1662 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-05-08 18:59:00 | INFO | my_functions.py:1669 | 🔍 Esperando ventana que contenga alguna de: ['SNAP'] (máx 20s)
+2026-05-08 18:59:00 | INFO | my_functions.py:1681 | ✅ Ventana encontrada: 'SNAP'
+2026-05-08 18:59:00 | INFO | my_functions.py:1696 | ✅ Ventana seleccionada: 'SNAP'
+2026-05-08 18:59:03 | INFO | my_functions.py:1728 | ✔ Verificación completa. No hubo cambios después del primer ajuste.
+2026-05-08 18:59:03 | INFO | my_functions.py:172 | Searching please_sign.png (timeout=0s)
+2026-05-08 18:59:03 | INFO | my_functions.py:209 | 
+⛔ Not found: please_sign.png after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:59:03 | INFO | my_functions.py:172 | Searching sign_in_with_google2.PNG (timeout=90s)
+2026-05-08 18:59:03 | INFO | my_functions.py:198 | 
+✅ Found: sign_in_with_google2.PNG pos=(406, 957) time=0.18s confidence=0.8
+2026-05-08 18:59:03 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> sign_in_with_google2.PNG timeout=20s delay_click=1s confidence=0.8
+2026-05-08 18:59:03 | INFO | my_functions.py:172 | Searching sign_in_with_google2.PNG (timeout=20s)
+2026-05-08 18:59:03 | INFO | my_functions.py:198 | 
+✅ Found: sign_in_with_google2.PNG pos=(406, 957) time=0.17s confidence=0.8
+2026-05-08 18:59:04 | INFO | my_functions.py:138 | Haciendo click en la posición (406, 957)
+2026-05-08 18:59:05 | INFO | my_functions.py:251 | 🖱️ Click OK: sign_in_with_google2.PNG at (406, 957) delay=1s
+2026-05-08 18:59:05 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> john.png timeout=30s delay_click=3s confidence=0.8
+2026-05-08 18:59:05 | INFO | my_functions.py:172 | Searching john.png (timeout=30s)
+2026-05-08 18:59:11 | INFO | my_functions.py:198 | 
+✅ Found: john.png pos=(1143, 619) time=6.21s confidence=0.8
+2026-05-08 18:59:14 | INFO | my_functions.py:138 | Haciendo click en la posición (1143, 619)
+2026-05-08 18:59:14 | INFO | my_functions.py:251 | 🖱️ Click OK: john.png at (1143, 619) delay=3s
+2026-05-08 18:59:16 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> python_icon.PNG timeout=5s delay_click=1s confidence=0.8
+2026-05-08 18:59:16 | INFO | my_functions.py:172 | Searching python_icon.PNG (timeout=5s)
+2026-05-08 18:59:16 | INFO | my_functions.py:198 | 
+✅ Found: python_icon.PNG pos=(709, 1054) time=0.36s confidence=0.8
+2026-05-08 18:59:17 | INFO | my_functions.py:138 | Haciendo click en la posición (709, 1054)
+2026-05-08 18:59:18 | INFO | my_functions.py:251 | 🖱️ Click OK: python_icon.PNG at (709, 1054) delay=1s
+2026-05-08 18:59:18 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> snap_icon_task_bar.PNG timeout=20s delay_click=1s confidence=0.8
+2026-05-08 18:59:18 | INFO | my_functions.py:172 | Searching snap_icon_task_bar.PNG (timeout=20s)
+2026-05-08 18:59:18 | INFO | my_functions.py:198 | 
+✅ Found: snap_icon_task_bar.PNG pos=(524, 1052) time=0.7s confidence=0.8
+2026-05-08 18:59:19 | INFO | my_functions.py:138 | Haciendo click en la posición (524, 1052)
+2026-05-08 18:59:20 | INFO | my_functions.py:251 | 🖱️ Click OK: snap_icon_task_bar.PNG at (524, 1052) delay=1s
+2026-05-08 18:59:20 | INFO | my_functions.py:172 | Searching play.PNG (timeout=30s)
+2026-05-08 18:59:23 | INFO | my_functions.py:198 | 
+✅ Found: play.PNG pos=(304, 775) time=2.98s confidence=0.8
+2026-05-08 18:59:23 | INFO | my_functions.py:1259 | [DEBUG] Login completado correctamente.
+2026-05-08 18:59:23 | INFO | each_eight_hours.py:158 | Login executed
+2026-05-08 18:59:23 | INFO | my_functions.py:172 | Searching shop_unselected.PNG (timeout=0s)
+2026-05-08 18:59:23 | INFO | my_functions.py:209 | 
+⛔ Not found: shop_unselected.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:59:23 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> super_premium.PNG timeout=0s delay_click=1s confidence=0.8
+2026-05-08 18:59:23 | INFO | my_functions.py:172 | Searching super_premium.PNG (timeout=0s)
+2026-05-08 18:59:23 | INFO | my_functions.py:209 | 
+⛔ Not found: super_premium.PNG after 0.01s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:59:23 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: super_premium.PNG
+2026-05-08 18:59:23 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> maybe_later.PNG timeout=0s delay_click=1s confidence=0.8
+2026-05-08 18:59:23 | INFO | my_functions.py:172 | Searching maybe_later.PNG (timeout=0s)
+2026-05-08 18:59:23 | INFO | my_functions.py:209 | 
+⛔ Not found: maybe_later.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:59:23 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: maybe_later.PNG
+2026-05-08 18:59:23 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> maybe_later2.PNG timeout=0s delay_click=1s confidence=0.8
+2026-05-08 18:59:23 | INFO | my_functions.py:172 | Searching maybe_later2.PNG (timeout=0s)
+2026-05-08 18:59:24 | INFO | my_functions.py:209 | 
+⛔ Not found: maybe_later2.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:59:24 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: maybe_later2.PNG
+2026-05-08 18:59:24 | INFO | my_functions.py:172 | Searching go_to_shop.PNG (timeout=0s)
+2026-05-08 18:59:24 | INFO | my_functions.py:209 | 
+⛔ Not found: go_to_shop.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:59:24 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> 14_days_of_winterverse.PNG timeout=0s delay_click=1s confidence=0.8
+2026-05-08 18:59:24 | INFO | my_functions.py:172 | Searching 14_days_of_winterverse.PNG (timeout=0s)
+2026-05-08 18:59:24 | INFO | my_functions.py:209 | 
+⛔ Not found: 14_days_of_winterverse.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:59:24 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: 14_days_of_winterverse.PNG
+2026-05-08 18:59:24 | INFO | my_functions.py:172 | Searching welcome_back_calendar.PNG (timeout=0s)
+2026-05-08 18:59:24 | INFO | my_functions.py:209 | 
+⛔ Not found: welcome_back_calendar.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:59:24 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> start_the_countdown.PNG timeout=0s delay_click=1s confidence=0.8
+2026-05-08 18:59:24 | INFO | my_functions.py:172 | Searching start_the_countdown.PNG (timeout=0s)
+2026-05-08 18:59:24 | INFO | my_functions.py:209 | 
+⛔ Not found: start_the_countdown.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:59:24 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: start_the_countdown.PNG
+2026-05-08 18:59:24 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> event_has_ended_sanctum.PNG timeout=0s delay_click=1s confidence=0.8
+2026-05-08 18:59:24 | INFO | my_functions.py:172 | Searching event_has_ended_sanctum.PNG (timeout=0s)
+2026-05-08 18:59:25 | INFO | my_functions.py:209 | 
+⛔ Not found: event_has_ended_sanctum.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:59:25 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: event_has_ended_sanctum.PNG
+2026-05-08 18:59:25 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> image_part_of_event_grand_arena_finished.PNG timeout=0s delay_click=1s confidence=0.8
+2026-05-08 18:59:25 | INFO | my_functions.py:172 | Searching image_part_of_event_grand_arena_finished.PNG (timeout=0s)
+2026-05-08 18:59:25 | INFO | my_functions.py:209 | 
+⛔ Not found: image_part_of_event_grand_arena_finished.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:59:25 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: image_part_of_event_grand_arena_finished.PNG
+2026-05-08 18:59:25 | INFO | my_functions.py:172 | Searching 28_day_event_login_rewards.PNG (timeout=0s)
+2026-05-08 18:59:25 | INFO | my_functions.py:209 | 
+⛔ Not found: 28_day_event_login_rewards.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:59:25 | INFO | my_functions.py:172 | Searching 7_day_event_login.PNG (timeout=0s)
+2026-05-08 18:59:25 | INFO | my_functions.py:209 | 
+⛔ Not found: 7_day_event_login.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:59:25 | INFO | my_functions.py:172 | Searching 14_days_event.PNG (timeout=0s)
+2026-05-08 18:59:25 | INFO | my_functions.py:209 | 
+⛔ Not found: 14_days_event.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:59:25 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> lets_go.PNG timeout=0s delay_click=1s confidence=0.8
+2026-05-08 18:59:25 | INFO | my_functions.py:172 | Searching lets_go.PNG (timeout=0s)
+2026-05-08 18:59:26 | INFO | my_functions.py:209 | 
+⛔ Not found: lets_go.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:59:26 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: lets_go.PNG
+2026-05-08 18:59:27 | INFO | my_functions.py:172 | Searching shop_unselected.PNG (timeout=0s)
+2026-05-08 18:59:27 | INFO | my_functions.py:209 | 
+⛔ Not found: shop_unselected.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:59:27 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> super_premium.PNG timeout=0s delay_click=1s confidence=0.8
+2026-05-08 18:59:27 | INFO | my_functions.py:172 | Searching super_premium.PNG (timeout=0s)
+2026-05-08 18:59:27 | INFO | my_functions.py:209 | 
+⛔ Not found: super_premium.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:59:27 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: super_premium.PNG
+2026-05-08 18:59:27 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> maybe_later.PNG timeout=0s delay_click=1s confidence=0.8
+2026-05-08 18:59:27 | INFO | my_functions.py:172 | Searching maybe_later.PNG (timeout=0s)
+2026-05-08 18:59:27 | INFO | my_functions.py:209 | 
+⛔ Not found: maybe_later.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:59:27 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: maybe_later.PNG
+2026-05-08 18:59:27 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> maybe_later2.PNG timeout=0s delay_click=1s confidence=0.8
+2026-05-08 18:59:27 | INFO | my_functions.py:172 | Searching maybe_later2.PNG (timeout=0s)
+2026-05-08 18:59:28 | INFO | my_functions.py:209 | 
+⛔ Not found: maybe_later2.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:59:28 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: maybe_later2.PNG
+2026-05-08 18:59:28 | INFO | my_functions.py:172 | Searching go_to_shop.PNG (timeout=0s)
+2026-05-08 18:59:28 | INFO | my_functions.py:209 | 
+⛔ Not found: go_to_shop.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:59:28 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> 14_days_of_winterverse.PNG timeout=0s delay_click=1s confidence=0.8
+2026-05-08 18:59:28 | INFO | my_functions.py:172 | Searching 14_days_of_winterverse.PNG (timeout=0s)
+2026-05-08 18:59:28 | INFO | my_functions.py:209 | 
+⛔ Not found: 14_days_of_winterverse.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:59:28 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: 14_days_of_winterverse.PNG
+2026-05-08 18:59:28 | INFO | my_functions.py:172 | Searching welcome_back_calendar.PNG (timeout=0s)
+2026-05-08 18:59:28 | INFO | my_functions.py:209 | 
+⛔ Not found: welcome_back_calendar.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:59:28 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> start_the_countdown.PNG timeout=0s delay_click=1s confidence=0.8
+2026-05-08 18:59:28 | INFO | my_functions.py:172 | Searching start_the_countdown.PNG (timeout=0s)
+2026-05-08 18:59:29 | INFO | my_functions.py:209 | 
+⛔ Not found: start_the_countdown.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:59:29 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: start_the_countdown.PNG
+2026-05-08 18:59:29 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> event_has_ended_sanctum.PNG timeout=0s delay_click=1s confidence=0.8
+2026-05-08 18:59:29 | INFO | my_functions.py:172 | Searching event_has_ended_sanctum.PNG (timeout=0s)
+2026-05-08 18:59:29 | INFO | my_functions.py:209 | 
+⛔ Not found: event_has_ended_sanctum.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:59:29 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: event_has_ended_sanctum.PNG
+2026-05-08 18:59:29 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> image_part_of_event_grand_arena_finished.PNG timeout=0s delay_click=1s confidence=0.8
+2026-05-08 18:59:29 | INFO | my_functions.py:172 | Searching image_part_of_event_grand_arena_finished.PNG (timeout=0s)
+2026-05-08 18:59:29 | INFO | my_functions.py:209 | 
+⛔ Not found: image_part_of_event_grand_arena_finished.PNG after 0.07s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:59:29 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: image_part_of_event_grand_arena_finished.PNG
+2026-05-08 18:59:29 | INFO | my_functions.py:172 | Searching 28_day_event_login_rewards.PNG (timeout=0s)
+2026-05-08 18:59:30 | INFO | my_functions.py:209 | 
+⛔ Not found: 28_day_event_login_rewards.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:59:30 | INFO | my_functions.py:172 | Searching 7_day_event_login.PNG (timeout=0s)
+2026-05-08 18:59:30 | INFO | my_functions.py:209 | 
+⛔ Not found: 7_day_event_login.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:59:30 | INFO | my_functions.py:172 | Searching 14_days_event.PNG (timeout=0s)
+2026-05-08 18:59:30 | INFO | my_functions.py:209 | 
+⛔ Not found: 14_days_event.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:59:30 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> lets_go.PNG timeout=0s delay_click=1s confidence=0.8
+2026-05-08 18:59:30 | INFO | my_functions.py:172 | Searching lets_go.PNG (timeout=0s)
+2026-05-08 18:59:30 | INFO | my_functions.py:209 | 
+⛔ Not found: lets_go.PNG after 0.01s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 18:59:30 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: lets_go.PNG
+2026-05-08 18:59:31 | INFO | my_functions.py:172 | Searching shop_unselected.PNG (timeout=0s)
+2026-05-08 18:59:32 | INFO | my_functions.py:198 | 
+✅ Found: shop_unselected.PNG pos=(88, 961) time=0.2s confidence=0.8
+2026-05-08 18:59:40 | INFO | my_functions.py:172 | Searching shop_unselected.PNG (timeout=0s)
+2026-05-08 18:59:40 | INFO | my_functions.py:198 | 
+✅ Found: shop_unselected.PNG pos=(88, 961) time=0.22s confidence=0.8
+2026-05-08 18:59:40 | INFO | my_functions.py:714 | Ya esta listo
+2026-05-08 18:59:40 | INFO | each_eight_hours.py:161 | Initial images processed
+2026-05-08 18:59:40 | INFO | each_eight_hours.py:164 | Chrome terminated
+2026-05-08 18:59:40 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> missions_unnotified2.png timeout=20s delay_click=1s confidence=0.8
+2026-05-08 18:59:40 | INFO | my_functions.py:172 | Searching missions_unnotified2.png (timeout=20s)
+2026-05-08 18:59:40 | INFO | my_functions.py:198 | 
+✅ Found: missions_unnotified2.png pos=(516, 127) time=0.21s confidence=0.8
+2026-05-08 18:59:41 | INFO | my_functions.py:138 | Haciendo click en la posición (516, 127)
+2026-05-08 18:59:41 | INFO | my_functions.py:251 | 🖱️ Click OK: missions_unnotified2.png at (516, 127) delay=1s
+2026-05-08 18:59:41 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> calendar_missions_daily.png timeout=3s delay_click=1s confidence=0.8
+2026-05-08 18:59:41 | INFO | my_functions.py:172 | Searching calendar_missions_daily.png (timeout=3s)
+2026-05-08 18:59:43 | INFO | my_functions.py:198 | 
+✅ Found: calendar_missions_daily.png pos=(189, 131) time=1.36s confidence=0.8
+2026-05-08 18:59:44 | INFO | my_functions.py:138 | Haciendo click en la posición (189, 131)
+2026-05-08 18:59:44 | INFO | my_functions.py:251 | 🖱️ Click OK: calendar_missions_daily.png at (189, 131) delay=1s
+2026-05-08 18:59:44 | INFO | each_eight_hours.py:178 | Mission screens opened
+2026-05-08 18:59:44 | INFO | my_functions.py:295 | JSON file located at C:\Users\Farm\AppData\LocalLow\Second Dinner\SNAP\Standalone\States\nvprod\MissionState.json
+2026-05-08 18:59:47 | INFO | my_functions.py:431 | AVAILABLE: 6
+2026-05-08 18:59:47 | INFO | my_functions.py:440 | [INFO] Waiting for Notepad++ process...
+2026-05-08 19:00:02 | WARNING | my_functions.py:477 | [WARNING] Notepad++ process was never detected
+2026-05-08 19:00:02 | INFO | my_functions.py:1587 | [INFO] Iniciando click_missions_blue2
+2026-05-08 19:00:02 | INFO | my_functions.py:138 | Haciendo click en la posición (150, 132)
+2026-05-08 19:00:04 | INFO | my_functions.py:1590 | [ACTION] Click hecho en icono de calendario que me dirige a las misiones ordinarias
+2026-05-08 19:00:04 | INFO | my_functions.py:172 | Searching bonus_challenge.png (timeout=0s)
+2026-05-08 19:00:04 | INFO | my_functions.py:209 | 
+⛔ Not found: bonus_challenge.png after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 19:00:06 | INFO | my_functions.py:172 | Searching flechita_mission.PNG (timeout=0s)
+2026-05-08 19:00:06 | INFO | my_functions.py:209 | 
+⛔ Not found: flechita_mission.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 19:00:06 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> weekly3.PNG timeout=0s delay_click=0.1s confidence=0.8
+2026-05-08 19:00:06 | INFO | my_functions.py:172 | Searching weekly3.PNG (timeout=0s)
+2026-05-08 19:00:06 | INFO | my_functions.py:209 | 
+⛔ Not found: weekly3.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 19:00:06 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: weekly3.PNG
+2026-05-08 19:00:06 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> weekly3.PNG timeout=0s delay_click=0.1s confidence=0.8
+2026-05-08 19:00:06 | INFO | my_functions.py:172 | Searching weekly3.PNG (timeout=0s)
+2026-05-08 19:00:06 | INFO | my_functions.py:209 | 
+⛔ Not found: weekly3.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 19:00:06 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: weekly3.PNG
+2026-05-08 19:00:06 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> weekly3.PNG timeout=0s delay_click=0.1s confidence=0.8
+2026-05-08 19:00:06 | INFO | my_functions.py:172 | Searching weekly3.PNG (timeout=0s)
+2026-05-08 19:00:07 | INFO | my_functions.py:209 | 
+⛔ Not found: weekly3.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 19:00:07 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: weekly3.PNG
+2026-05-08 19:00:07 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> weekly3.PNG timeout=0s delay_click=0.1s confidence=0.8
+2026-05-08 19:00:07 | INFO | my_functions.py:172 | Searching weekly3.PNG (timeout=0s)
+2026-05-08 19:00:07 | INFO | my_functions.py:209 | 
+⛔ Not found: weekly3.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 19:00:07 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: weekly3.PNG
+2026-05-08 19:00:07 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> weekly3.PNG timeout=0s delay_click=0.1s confidence=0.8
+2026-05-08 19:00:07 | INFO | my_functions.py:172 | Searching weekly3.PNG (timeout=0s)
+2026-05-08 19:00:07 | INFO | my_functions.py:209 | 
+⛔ Not found: weekly3.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 19:00:07 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: weekly3.PNG
+2026-05-08 19:00:07 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> weekly3.PNG timeout=0s delay_click=0.1s confidence=0.8
+2026-05-08 19:00:07 | INFO | my_functions.py:172 | Searching weekly3.PNG (timeout=0s)
+2026-05-08 19:00:07 | INFO | my_functions.py:209 | 
+⛔ Not found: weekly3.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 19:00:07 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: weekly3.PNG
+2026-05-08 19:00:07 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> weekly3.PNG timeout=0s delay_click=0.1s confidence=0.8
+2026-05-08 19:00:07 | INFO | my_functions.py:172 | Searching weekly3.PNG (timeout=0s)
+2026-05-08 19:00:07 | INFO | my_functions.py:209 | 
+⛔ Not found: weekly3.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 19:00:07 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: weekly3.PNG
+2026-05-08 19:00:07 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> weekly3.PNG timeout=0s delay_click=0.1s confidence=0.8
+2026-05-08 19:00:07 | INFO | my_functions.py:172 | Searching weekly3.PNG (timeout=0s)
+2026-05-08 19:00:08 | INFO | my_functions.py:209 | 
+⛔ Not found: weekly3.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 19:00:08 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: weekly3.PNG
+2026-05-08 19:00:08 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> weekly3.PNG timeout=0s delay_click=0.1s confidence=0.8
+2026-05-08 19:00:08 | INFO | my_functions.py:172 | Searching weekly3.PNG (timeout=0s)
+2026-05-08 19:00:08 | INFO | my_functions.py:209 | 
+⛔ Not found: weekly3.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 19:00:08 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: weekly3.PNG
+2026-05-08 19:00:08 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> weekly3.PNG timeout=0s delay_click=0.1s confidence=0.8
+2026-05-08 19:00:08 | INFO | my_functions.py:172 | Searching weekly3.PNG (timeout=0s)
+2026-05-08 19:00:08 | INFO | my_functions.py:209 | 
+⛔ Not found: weekly3.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 19:00:08 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: weekly3.PNG
+2026-05-08 19:00:08 | INFO | my_functions.py:295 | JSON file located at C:\Users\Farm\AppData\LocalLow\Second Dinner\SNAP\Standalone\States\nvprod\MissionState.json
+2026-05-08 19:00:11 | INFO | my_functions.py:431 | AVAILABLE: 6
+2026-05-08 19:00:11 | INFO | my_functions.py:440 | [INFO] Waiting for Notepad++ process...
+2026-05-08 19:00:26 | WARNING | my_functions.py:477 | [WARNING] Notepad++ process was never detected
+2026-05-08 19:00:26 | INFO | my_functions.py:146 | Presionando ESC (1/1)
+2026-05-08 19:00:27 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> white_x.png timeout=2s delay_click=1s confidence=0.8
+2026-05-08 19:00:27 | INFO | my_functions.py:172 | Searching white_x.png (timeout=2s)
+2026-05-08 19:00:29 | INFO | my_functions.py:209 | 
+⛔ Not found: white_x.png after 2.1s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 19:00:29 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: white_x.png
+2026-05-08 19:00:29 | INFO | my_functions.py:172 | Searching play.PNG (timeout=0s)
+2026-05-08 19:00:30 | INFO | my_functions.py:198 | 
+✅ Found: play.PNG pos=(384, 824) time=0.23s confidence=0.8
+2026-05-08 19:00:30 | INFO | my_functions.py:1557 | [INFO] Click realizado donde se equipa el deck a jugar
+2026-05-08 19:00:34 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> deck_666666.png timeout=3s delay_click=1s confidence=0.8
+2026-05-08 19:00:34 | INFO | my_functions.py:172 | Searching deck_666666.png (timeout=3s)
+2026-05-08 19:00:34 | INFO | my_functions.py:198 | 
+✅ Found: deck_666666.png pos=(384, 546) time=0.24s confidence=0.8
+2026-05-08 19:00:35 | INFO | my_functions.py:138 | Haciendo click en la posición (384, 546)
+2026-05-08 19:00:35 | INFO | my_functions.py:251 | 🖱️ Click OK: deck_666666.png at (384, 546) delay=1s
+2026-05-08 19:00:35 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> equip.png timeout=3s delay_click=1s confidence=0.95
+2026-05-08 19:00:35 | INFO | my_functions.py:172 | Searching equip.png (timeout=3s)
+2026-05-08 19:00:36 | INFO | my_functions.py:198 | 
+✅ Found: equip.png pos=(548, 983) time=0.22s confidence=0.95
+2026-05-08 19:00:37 | INFO | my_functions.py:138 | Haciendo click en la posición (548, 983)
+2026-05-08 19:00:37 | INFO | my_functions.py:251 | 🖱️ Click OK: equip.png at (548, 983) delay=1s
+2026-05-08 19:00:37 | INFO | each_eight_hours.py:217 | Deck selected: 6turns
+2026-05-08 19:00:37 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> maybe_later.PNG timeout=2s delay_click=1s confidence=0.8
+2026-05-08 19:00:37 | INFO | my_functions.py:172 | Searching maybe_later.PNG (timeout=2s)
+2026-05-08 19:00:39 | INFO | my_functions.py:209 | 
+⛔ Not found: maybe_later.PNG after 2.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 19:00:39 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: maybe_later.PNG
+2026-05-08 19:00:39 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> maybe_later2.PNG timeout=2s delay_click=1s confidence=0.8
+2026-05-08 19:00:39 | INFO | my_functions.py:172 | Searching maybe_later2.PNG (timeout=2s)
+2026-05-08 19:00:41 | INFO | my_functions.py:209 | 
+⛔ Not found: maybe_later2.PNG after 2.18s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-08 19:00:41 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: maybe_later2.PNG
+2026-05-08 19:00:41 | INFO | each_eight_hours.py:287 | Starting game loop 1
+2026-05-08 19:00:41 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> play.PNG timeout=20s delay_click=3s confidence=0.8
+2026-05-08 19:00:41 | INFO | my_functions.py:172 | Searching play.PNG (timeout=20s)
+2026-05-08 19:00:42 | INFO | my_functions.py:198 | 
+✅ Found: play.PNG pos=(384, 824) time=0.23s confidence=0.8
+2026-05-08 19:00:45 | INFO | my_functions.py:138 | Haciendo click en la posición (384, 824)
+2026-05-08 19:00:45 | INFO | my_functions.py:251 | 🖱️ Click OK: play.PNG at (384, 824) delay=3s
+2026-05-08 19:00:45 | INFO | each_eight_hours.py:293 | Play button clicked
+2026-05-08 19:01:03 | INFO | my_functions.py:198 | 
+✅ Found: end_turn.PNG pos=(681, 945) time=0.22s confidence=0.8
+2026-05-08 19:01:03 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> snap.PNG timeout=0s delay_click=1s confidence=0.8
+2026-05-08 19:01:03 | INFO | my_functions.py:198 | 
+✅ Found: snap.PNG pos=(386, 123) time=0.21s confidence=0.8
+2026-05-08 19:01:04 | INFO | my_functions.py:138 | Haciendo click en la posición (386, 123)
+2026-05-08 19:01:05 | INFO | my_functions.py:251 | 🖱️ Click OK: snap.PNG at (386, 123) delay=1s
+2026-05-08 19:01:06 | ERROR | each_eight_hours.py:49 | Error in sys.excepthook:
+2026-05-08 19:01:06 | ERROR | each_eight_hours.py:49 | Traceback (most recent call last):
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | File "C:\Users\Farm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 978, in handle
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | self.emit(record)
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | File "C:\Users\Farm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1230, in emit
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | StreamHandler.emit(self, record)
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | Original exception was:
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | Traceback (most recent call last):
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | File "Z:\SHARED FILES VM\MS\each_eight_hours.py", line 310, in <module>
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | )
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | File "Z:\SHARED FILES VM\MS\my_functions.py", line 1575, in play_cards_ahk
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | File "C:\Users\Farm\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 548, in run
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | stdout, stderr = process.communicate(input, timeout=timeout)
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | File "C:\Users\Farm\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1197, in communicate
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | self.wait()
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | File "C:\Users\Farm\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1260, in wait
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | return self._wait(timeout=timeout)
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:07 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:08 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:08 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:08 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:08 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:08 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:08 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:08 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:08 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:08 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:08 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:08 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:08 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:08 | ERROR | each_eight_hours.py:49 | File "C:\Users\Farm\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1541, in _wait
+2026-05-08 19:01:08 | ERROR | each_eight_hours.py:49 | result = _winapi.WaitForSingleObject(self._handle,
+2026-05-08 19:01:08 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:08 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:08 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:08 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:08 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:08 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:08 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:08 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:08 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:08 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:08 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:08 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:08 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:08 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:08 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:08 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:08 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:08 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:08 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:08 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:08 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:08 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:08 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:08 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:08 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:08 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:08 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:08 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:08 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:08 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:08 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:08 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:08 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:08 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:08 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:08 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:08 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:08 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:08 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:08 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:08 | ERROR | each_eight_hours.py:49 | ^
+2026-05-08 19:01:08 | ERROR | each_eight_hours.py:49 | KeyboardInterrupt

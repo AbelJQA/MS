@@ -1,0 +1,43 @@
+2026-06-03 14:53:31 | INFO | each_eight_hours.py:39 | LOG FILE PATH: \\vmware-host\Shared Folders\SHARED FILES VM\MS\logs\each_eight_hours_2026-06-03_14-53-31.log
+2026-06-03 14:53:31 | INFO | each_eight_hours.py:40 | Logger initialized
+2026-06-03 14:53:31 | INFO | each_eight_hours.py:67 | Script initialized
+2026-06-03 14:53:34 | INFO | each_eight_hours.py:128 | snap.exe terminated if it was running
+2026-06-03 14:53:34 | INFO | my_functions.py:57 | ⏳ Esperando WebSocket de OBS...
+2026-06-03 14:53:41 | INFO | baseclient.py:33 | Connecting with parameters: host='localhost' port=4455 password='' subs=0 timeout=None
+2026-06-03 14:53:41 | INFO | reqs.py:23 | Successfully identified ReqClient with the server using RPC version:1
+2026-06-03 14:53:41 | INFO | my_functions.py:63 | ✅ Conectado al OBS WebSocket
+2026-06-03 14:53:41 | ERROR | reqs.py:59 | OBSSDKRequestError: Request GetRecordStatus returned code 207. With message: OBS is not ready to perform the request.
+Traceback (most recent call last):
+  File "C:\Users\Farm\AppData\Local\Programs\Python\Python311\Lib\site-packages\obsws_python\reqs.py", line 53, in send
+    raise OBSSDKRequestError(
+obsws_python.error.OBSSDKRequestError: Request GetRecordStatus returned code 207. With message: OBS is not ready to perform the request.
+2026-06-03 14:53:42 | INFO | my_functions.py:88 | 🎬 Grabación iniciada
+2026-06-03 14:53:42 | INFO | my_functions.py:1325 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-06-03 14:53:43 | INFO | my_functions.py:1332 | 🔍 Esperando ventana que contenga alguna de: ['py', 'eight_hours'] (máx 20s)
+2026-06-03 14:53:43 | INFO | my_functions.py:1344 | ✅ Ventana encontrada: 'each_eight_hours  - Acceso directo'
+2026-06-03 14:53:43 | INFO | my_functions.py:1359 | ✅ Ventana seleccionada: 'each_eight_hours  - Acceso directo'
+2026-06-03 14:53:45 | INFO | my_functions.py:1382 | 🔁 Reajuste #1...
+2026-06-03 14:53:45 | INFO | my_functions.py:1389 | ✔ Verificación completa. Se hicieron 1 reajustes.
+2026-06-03 14:54:15 | INFO | my_functions.py:2155 | Starting Steam window scan
+2026-06-03 14:54:15 | INFO | my_functions.py:2158 | Found window: 
+2026-06-03 14:54:15 | INFO | my_functions.py:2158 | Found window: each_eight_hours  - Acceso directo
+2026-06-03 14:54:15 | INFO | my_functions.py:2158 | Found window: 
+2026-06-03 14:54:15 | INFO | my_functions.py:2158 | Found window: 
+2026-06-03 14:54:15 | INFO | my_functions.py:2158 | Found window: 
+2026-06-03 14:54:15 | INFO | my_functions.py:2158 | Found window: 
+2026-06-03 14:54:15 | INFO | my_functions.py:2158 | Found window: RivaTunerStatisticsServer
+2026-06-03 14:54:15 | INFO | my_functions.py:2158 | Found window: Program Manager
+2026-06-03 14:54:15 | INFO | each_eight_hours.py:139 | Processing account: jeremy
+2026-06-03 14:54:15 | INFO | each_eight_hours.py:142 | Game relaunched for account
+2026-06-03 14:54:15 | INFO | my_functions.py:1325 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-06-03 14:54:15 | INFO | my_functions.py:1332 | 🔍 Esperando ventana que contenga alguna de: ['SNAP'] (máx 20s)
+2026-06-03 14:54:22 | INFO | my_functions.py:1344 | ✅ Ventana encontrada: 'SNAP'
+2026-06-03 14:54:22 | INFO | my_functions.py:1359 | ✅ Ventana seleccionada: 'SNAP'
+2026-06-03 14:54:24 | INFO | my_functions.py:1391 | ✔ Verificación completa. No hubo cambios después del primer ajuste.
+2026-06-03 14:54:24 | INFO | my_functions.py:1028 | [DEBUG] Resizing SNAP window...
+2026-06-03 14:54:24 | INFO | my_functions.py:1325 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-06-03 14:54:24 | INFO | my_functions.py:1332 | 🔍 Esperando ventana que contenga alguna de: ['SNAP'] (máx 20s)
+2026-06-03 14:54:24 | INFO | my_functions.py:1344 | ✅ Ventana encontrada: 'SNAP'
+2026-06-03 14:54:24 | INFO | my_functions.py:1359 | ✅ Ventana seleccionada: 'SNAP'
+2026-06-03 14:54:27 | INFO | my_functions.py:1391 | ✔ Verificación completa. No hubo cambios después del primer ajuste.
+2026-06-03 14:54:27 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['small_submit.PNG', 'small_submit_hover.png', 'submit_hover_2.png', 'small_submit_hover_2.png'] | timeout=90s | confidence=0.8

@@ -1,0 +1,58 @@
+2026-07-20 14:20:59 | INFO | my_functions.py:56 | ⏳ Esperando WebSocket de OBS...
+2026-07-20 14:21:05 | INFO | baseclient.py:33 | Connecting with parameters: host='localhost' port=4455 password='' subs=0 timeout=None
+2026-07-20 14:21:05 | INFO | reqs.py:23 | Successfully identified ReqClient with the server using RPC version:1
+2026-07-20 14:21:05 | INFO | my_functions.py:62 | ✅ Conectado al OBS WebSocket
+2026-07-20 14:21:05 | ERROR | reqs.py:59 | OBSSDKRequestError: Request GetRecordStatus returned code 207. With message: OBS is not ready to perform the request.
+Traceback (most recent call last):
+  File "C:\Users\Farm\AppData\Local\Programs\Python\Python311\Lib\site-packages\obsws_python\reqs.py", line 53, in send
+    raise OBSSDKRequestError(
+obsws_python.error.OBSSDKRequestError: Request GetRecordStatus returned code 207. With message: OBS is not ready to perform the request.
+2026-07-20 14:21:06 | INFO | my_functions.py:87 | 🎬 Grabación iniciada
+2026-07-20 14:21:06 | INFO | each_eight_hours copy.py:105 | snap.exe terminated if it was running
+2026-07-20 14:21:06 | INFO | my_functions.py:1545 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-07-20 14:21:06 | INFO | my_functions.py:1552 | 🔍 Esperando ventana que contenga alguna de: ['py', 'eight_hours'] (máx 20s)
+2026-07-20 14:21:06 | INFO | my_functions.py:1564 | ✅ Ventana encontrada: 'C:\Windows\py.exe'
+2026-07-20 14:21:06 | INFO | my_functions.py:1579 | ✅ Ventana seleccionada: 'C:\Windows\py.exe'
+2026-07-20 14:21:08 | INFO | my_functions.py:1602 | 🔁 Reajuste #1...
+2026-07-20 14:21:08 | INFO | my_functions.py:1609 | ✔ Verificación completa. Se hicieron 1 reajustes.
+2026-07-20 14:21:08 | INFO | each_eight_hours copy.py:110 | Processing account: robert
+2026-07-20 14:21:09 | INFO | my_functions.py:1545 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-07-20 14:21:09 | INFO | my_functions.py:1552 | 🔍 Esperando ventana que contenga alguna de: ['SNAP'] (máx 20s)
+2026-07-20 14:21:12 | INFO | my_functions.py:1564 | ✅ Ventana encontrada: 'SNAP'
+2026-07-20 14:21:12 | INFO | my_functions.py:1579 | ✅ Ventana seleccionada: 'SNAP'
+2026-07-20 14:21:14 | INFO | my_functions.py:1602 | 🔁 Reajuste #1...
+2026-07-20 14:21:16 | INFO | my_functions.py:1609 | ✔ Verificación completa. Se hicieron 1 reajustes.
+2026-07-20 14:21:16 | INFO | my_functions.py:1206 | [DEBUG] Resizing SNAP window...
+2026-07-20 14:21:16 | INFO | my_functions.py:1545 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-07-20 14:21:16 | INFO | my_functions.py:1552 | 🔍 Esperando ventana que contenga alguna de: ['SNAP'] (máx 20s)
+2026-07-20 14:21:16 | INFO | my_functions.py:1564 | ✅ Ventana encontrada: 'SNAP'
+2026-07-20 14:21:16 | INFO | my_functions.py:1579 | ✅ Ventana seleccionada: 'SNAP'
+2026-07-20 14:21:23 | INFO | my_functions.py:1611 | ✔ Verificación completa. No hubo cambios después del primer ajuste.
+2026-07-20 14:21:23 | INFO | my_functions.py:247 | [DEBUG] Buscando en paralelo: ['small_submit.PNG', 'small_submit_hover.png', 'submit_hover_2.png', 'small_submit_hover_2.png'] | timeout=90s | confidence=0.8
+2026-07-20 14:21:25 | INFO | my_functions.py:134 | Haciendo click en la posición (380, 642)
+2026-07-20 14:21:25 | INFO | my_functions.py:269 | 🖱️ Click OK (En paralelo): small_submit.PNG at (380, 642) delay=0.2s
+2026-07-20 14:21:28 | INFO | my_functions.py:247 | [DEBUG] Buscando en paralelo: ['small_submit.PNG', 'small_submit_hover.png', 'submit_hover_2.png', 'small_submit_hover_2.png'] | timeout=20s | confidence=0.8
+2026-07-20 14:21:29 | INFO | my_functions.py:134 | Haciendo click en la posición (380, 721)
+2026-07-20 14:21:30 | INFO | my_functions.py:269 | 🖱️ Click OK (En paralelo): small_submit.PNG at (380, 721) delay=0.2s
+2026-07-20 14:21:31 | INFO | my_functions.py:1545 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-07-20 14:21:31 | INFO | my_functions.py:1552 | 🔍 Esperando ventana que contenga alguna de: ['SNAP'] (máx 20s)
+2026-07-20 14:21:31 | INFO | my_functions.py:1564 | ✅ Ventana encontrada: 'SNAP'
+2026-07-20 14:21:31 | INFO | my_functions.py:1579 | ✅ Ventana seleccionada: 'SNAP'
+2026-07-20 14:21:33 | INFO | my_functions.py:1602 | 🔁 Reajuste #1...
+2026-07-20 14:21:34 | INFO | my_functions.py:1609 | ✔ Verificación completa. Se hicieron 1 reajustes.
+2026-07-20 14:21:34 | INFO | my_functions.py:169 | Searching please_sign.png (timeout=0s)
+2026-07-20 14:21:34 | INFO | my_functions.py:199 | 
+✅ Found: please_sign.png pos=(383, 438) time=0.5s confidence=0.8
+2026-07-20 14:21:34 | INFO | my_functions.py:247 | [DEBUG] Buscando en paralelo: ['ok_btn.png'] | timeout=20s | confidence=0.8
+2026-07-20 14:21:36 | INFO | my_functions.py:134 | Haciendo click en la posición (382, 634)
+2026-07-20 14:21:37 | INFO | my_functions.py:269 | 🖱️ Click OK (En paralelo): ok_btn.png at (382, 634) delay=1s
+2026-07-20 14:21:38 | INFO | my_functions.py:247 | [DEBUG] Buscando en paralelo: ['small_submit.PNG', 'small_submit_hover.png', 'submit_hover_2.png', 'small_submit_hover_2.png'] | timeout=30s | confidence=0.8
+2026-07-20 14:21:41 | INFO | my_functions.py:134 | Haciendo click en la posición (383, 643)
+2026-07-20 14:21:41 | INFO | my_functions.py:269 | 🖱️ Click OK (En paralelo): small_submit_hover_2.png at (383, 643) delay=0.2s
+2026-07-20 14:21:42 | INFO | my_functions.py:247 | [DEBUG] Buscando en paralelo: ['small_submit.PNG', 'small_submit_hover.png', 'submit_hover_2.png', 'small_submit_hover_2.png'] | timeout=20s | confidence=0.8
+2026-07-20 14:21:43 | INFO | my_functions.py:134 | Haciendo click en la posición (380, 721)
+2026-07-20 14:21:44 | INFO | my_functions.py:269 | 🖱️ Click OK (En paralelo): small_submit.PNG at (380, 721) delay=0.2s
+2026-07-20 14:21:45 | INFO | my_functions.py:247 | [DEBUG] Buscando en paralelo: ['sign_in_with_google2.PNG'] | timeout=20s | confidence=0.8
+2026-07-20 14:21:47 | INFO | my_functions.py:134 | Haciendo click en la posición (406, 957)
+2026-07-20 14:21:47 | INFO | my_functions.py:269 | 🖱️ Click OK (En paralelo): sign_in_with_google2.PNG at (406, 957) delay=1s
+2026-07-20 14:21:49 | INFO | my_functions.py:169 | Searching pagina_cargada.png (timeout=60s)

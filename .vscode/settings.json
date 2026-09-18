@@ -1,0 +1,10 @@
+{
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/.idea": true,
+        "**/.pytest_cache": true,
+        "**/*.pyc": true,
+        "**/.vscode": true,
+        "**/nppBackup": true
+    }
+}

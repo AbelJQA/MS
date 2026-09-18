@@ -1,0 +1,382 @@
+2026-08-19 13:50:40 | INFO | my_functions.py:55 | ⏳ Esperando WebSocket de OBS...
+2026-08-19 13:50:57 | INFO | baseclient.py:33 | Connecting with parameters: host='localhost' port=4455 password='' subs=0 timeout=None
+2026-08-19 13:50:57 | INFO | reqs.py:23 | Successfully identified ReqClient with the server using RPC version:1
+2026-08-19 13:50:57 | INFO | my_functions.py:61 | ✅ Conectado al OBS WebSocket
+2026-08-19 13:50:57 | ERROR | reqs.py:59 | OBSSDKRequestError: Request GetRecordStatus returned code 207. With message: OBS is not ready to perform the request.
+Traceback (most recent call last):
+  File "C:\Users\Farm\AppData\Local\Programs\Python\Python311\Lib\site-packages\obsws_python\reqs.py", line 53, in send
+    raise OBSSDKRequestError(
+obsws_python.error.OBSSDKRequestError: Request GetRecordStatus returned code 207. With message: OBS is not ready to perform the request.
+2026-08-19 13:50:58 | INFO | my_functions.py:86 | 🎬 Grabación iniciada
+2026-08-19 13:50:58 | INFO | each_eight_hours copy 2.py:68 | snap.exe terminated if it was running
+2026-08-19 13:50:58 | INFO | my_functions.py:1577 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-08-19 13:50:58 | INFO | my_functions.py:1584 | 🔍 Esperando ventana que contenga alguna de: ['py', 'eight_hours'] (máx 20s)
+2026-08-19 13:50:58 | INFO | my_functions.py:1596 | ✅ Ventana encontrada: 'each_eight_hours copy 2 - Acceso directo'
+2026-08-19 13:50:58 | INFO | my_functions.py:1611 | ✅ Ventana seleccionada: 'each_eight_hours copy 2 - Acceso directo'
+2026-08-19 13:51:00 | INFO | my_functions.py:1634 | 🔁 Reajuste #1...
+2026-08-19 13:51:01 | INFO | my_functions.py:1641 | ✔ Verificación completa. Se hicieron 1 reajustes.
+2026-08-19 13:51:01 | INFO | each_eight_hours copy 2.py:73 | Processing account: robert
+2026-08-19 13:51:01 | INFO | my_functions.py:1577 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-08-19 13:51:01 | INFO | my_functions.py:1584 | 🔍 Esperando ventana que contenga alguna de: ['SNAP'] (máx 20s)
+2026-08-19 13:51:09 | INFO | my_functions.py:1596 | ✅ Ventana encontrada: 'SNAP'
+2026-08-19 13:51:09 | INFO | my_functions.py:1611 | ✅ Ventana seleccionada: 'SNAP'
+2026-08-19 13:51:11 | INFO | my_functions.py:1643 | ✔ Verificación completa. No hubo cambios después del primer ajuste.
+2026-08-19 13:51:11 | INFO | my_functions.py:1206 | [DEBUG] Resizing SNAP window...
+2026-08-19 13:51:11 | INFO | my_functions.py:1577 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-08-19 13:51:11 | INFO | my_functions.py:1584 | 🔍 Esperando ventana que contenga alguna de: ['SNAP'] (máx 20s)
+2026-08-19 13:51:11 | INFO | my_functions.py:1596 | ✅ Ventana encontrada: 'SNAP'
+2026-08-19 13:51:11 | INFO | my_functions.py:1611 | ✅ Ventana seleccionada: 'SNAP'
+2026-08-19 13:51:18 | INFO | my_functions.py:1643 | ✔ Verificación completa. No hubo cambios después del primer ajuste.
+2026-08-19 13:51:18 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['small_submit.PNG', 'small_submit_hover.png', 'submit_hover_2.png', 'small_submit_hover_2.png'] | timeout=90s | confidence=0.8
+2026-08-19 13:52:52 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 13:52:53 | INFO | my_functions.py:169 | Searching shop_unselected.PNG (timeout=0s)
+2026-08-19 13:52:54 | INFO | my_functions.py:213 | 
+⛔ Not found: shop_unselected.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-08-19 13:52:54 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['super_premium.PNG'] | timeout=0s | confidence=0.8
+2026-08-19 13:52:55 | INFO | my_functions.py:133 | Haciendo click en la posición (480, 777)
+2026-08-19 13:52:56 | INFO | my_functions.py:270 | 🖱️ Click OK (En paralelo): super_premium.PNG at (480, 777) delay=1s
+2026-08-19 13:52:57 | INFO | my_functions.py:141 | Presionando ESC (1/1)
+2026-08-19 13:53:05 | INFO | my_functions.py:169 | Searching shop_unselected.PNG (timeout=0s)
+2026-08-19 13:53:06 | INFO | my_functions.py:199 | 
+✅ Found: shop_unselected.PNG pos=(88, 961) time=0.71s confidence=0.8
+2026-08-19 13:53:06 | INFO | my_functions.py:714 | Ya esta listo
+2026-08-19 13:53:06 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['nut.png'] | timeout=20s | confidence=0.8
+2026-08-19 13:53:08 | INFO | my_functions.py:133 | Haciendo click en la posición (184, 78)
+2026-08-19 13:53:08 | INFO | my_functions.py:270 | 🖱️ Click OK (En paralelo): nut.png at (184, 78) delay=1s
+2026-08-19 13:53:09 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['graphics_quality.png'] | timeout=3s | confidence=0.8
+2026-08-19 13:53:11 | INFO | my_functions.py:133 | Haciendo click en la posición (304, 644)
+2026-08-19 13:53:11 | INFO | my_functions.py:270 | 🖱️ Click OK (En paralelo): graphics_quality.png at (304, 644) delay=1s
+2026-08-19 13:53:13 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['sign_out.png'] | timeout=20s | confidence=0.8
+2026-08-19 13:53:15 | INFO | my_functions.py:133 | Haciendo click en la posición (380, 796)
+2026-08-19 13:53:15 | INFO | my_functions.py:270 | 🖱️ Click OK (En paralelo): sign_out.png at (380, 796) delay=1s
+2026-08-19 13:53:17 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['sign_out_grande.png'] | timeout=20s | confidence=0.8
+2026-08-19 13:53:19 | INFO | my_functions.py:133 | Haciendo click en la posición (359, 437)
+2026-08-19 13:53:19 | INFO | my_functions.py:270 | 🖱️ Click OK (En paralelo): sign_out_grande.png at (359, 437) delay=1s
+2026-08-19 13:53:20 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['sign_out2.png'] | timeout=20s | confidence=0.8
+2026-08-19 13:53:22 | INFO | my_functions.py:133 | Haciendo click en la posición (383, 634)
+2026-08-19 13:53:22 | INFO | my_functions.py:270 | 🖱️ Click OK (En paralelo): sign_out2.png at (383, 634) delay=1s
+2026-08-19 13:53:23 | INFO | my_functions.py:1577 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-08-19 13:53:23 | INFO | my_functions.py:1584 | 🔍 Esperando ventana que contenga alguna de: SNAP (máx 20s)
+2026-08-19 13:53:23 | INFO | my_functions.py:1596 | ✅ Ventana encontrada: 'SNAP'
+2026-08-19 13:53:23 | INFO | my_functions.py:1611 | ✅ Ventana seleccionada: 'SNAP'
+2026-08-19 13:53:27 | INFO | my_functions.py:1643 | ✔ Verificación completa. No hubo cambios después del primer ajuste.
+2026-08-19 13:53:31 | INFO | my_functions.py:1206 | [DEBUG] Resizing SNAP window...
+2026-08-19 13:53:31 | INFO | my_functions.py:1577 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-08-19 13:53:31 | INFO | my_functions.py:1584 | 🔍 Esperando ventana que contenga alguna de: ['SNAP'] (máx 20s)
+2026-08-19 13:53:34 | INFO | my_functions.py:1596 | ✅ Ventana encontrada: 'SNAP'
+2026-08-19 13:53:34 | INFO | my_functions.py:1611 | ✅ Ventana seleccionada: 'SNAP'
+2026-08-19 13:53:37 | INFO | my_functions.py:1634 | 🔁 Reajuste #1...
+2026-08-19 13:53:37 | INFO | my_functions.py:1634 | 🔁 Reajuste #2...
+2026-08-19 13:53:37 | INFO | my_functions.py:1634 | 🔁 Reajuste #3...
+2026-08-19 13:53:38 | INFO | my_functions.py:1634 | 🔁 Reajuste #4...
+2026-08-19 13:53:39 | INFO | my_functions.py:1634 | 🔁 Reajuste #5...
+2026-08-19 13:53:40 | INFO | my_functions.py:1634 | 🔁 Reajuste #6...
+2026-08-19 13:53:40 | INFO | my_functions.py:1634 | 🔁 Reajuste #7...
+2026-08-19 13:53:40 | INFO | my_functions.py:1634 | 🔁 Reajuste #8...
+2026-08-19 13:53:41 | INFO | my_functions.py:1634 | 🔁 Reajuste #9...
+2026-08-19 13:53:41 | INFO | my_functions.py:1641 | ✔ Verificación completa. Se hicieron 9 reajustes.
+2026-08-19 13:53:41 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['small_submit.PNG', 'small_submit_hover.png', 'submit_hover_2.png', 'small_submit_hover_2.png'] | timeout=90s | confidence=0.8
+2026-08-19 13:53:53 | INFO | my_functions.py:133 | Haciendo click en la posición (961, 659)
+2026-08-19 13:53:54 | INFO | my_functions.py:270 | 🖱️ Click OK (En paralelo): small_submit_hover_2.png at (961, 659) delay=0.2s
+2026-08-19 13:53:57 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['small_submit.PNG', 'small_submit_hover.png', 'submit_hover_2.png', 'small_submit_hover_2.png'] | timeout=20s | confidence=0.8
+2026-08-19 13:54:03 | INFO | my_functions.py:133 | Haciendo click en la posición (961, 745)
+2026-08-19 13:54:03 | INFO | my_functions.py:270 | 🖱️ Click OK (En paralelo): small_submit_hover_2.png at (961, 745) delay=0.2s
+2026-08-19 13:54:04 | INFO | my_functions.py:1577 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-08-19 13:54:04 | INFO | my_functions.py:1584 | 🔍 Esperando ventana que contenga alguna de: ['SNAP'] (máx 20s)
+2026-08-19 13:54:04 | INFO | my_functions.py:1596 | ✅ Ventana encontrada: 'SNAP'
+2026-08-19 13:54:04 | INFO | my_functions.py:1611 | ✅ Ventana seleccionada: 'SNAP'
+2026-08-19 13:54:06 | INFO | my_functions.py:1634 | 🔁 Reajuste #1...
+2026-08-19 13:54:07 | INFO | my_functions.py:1634 | 🔁 Reajuste #2...
+2026-08-19 13:54:07 | INFO | my_functions.py:1634 | 🔁 Reajuste #3...
+2026-08-19 13:54:07 | INFO | my_functions.py:1634 | 🔁 Reajuste #4...
+2026-08-19 13:54:08 | INFO | my_functions.py:1641 | ✔ Verificación completa. Se hicieron 4 reajustes.
+2026-08-19 13:54:08 | INFO | my_functions.py:169 | Searching please_sign.png (timeout=0s)
+2026-08-19 13:54:08 | INFO | my_functions.py:213 | 
+⛔ Not found: please_sign.png after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-08-19 13:54:08 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['sign_in_with_google2.PNG'] | timeout=20s | confidence=0.8
+2026-08-19 13:54:28 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 13:54:29 | INFO | my_functions.py:169 | Searching pagina_cargada.png (timeout=60s)
+2026-08-19 13:55:31 | INFO | my_functions.py:213 | 
+⛔ Not found: pagina_cargada.png after 60.45s region=(0, 0, 765, 1038) confidence=0.8
+2026-08-19 13:55:31 | INFO | my_functions.py:169 | Searching marvelsnap_web.png (timeout=30s)
+2026-08-19 13:56:01 | INFO | my_functions.py:213 | 
+⛔ Not found: marvelsnap_web.png after 30.04s region=(0, 0, 765, 1038) confidence=0.7
+2026-08-19 13:56:01 | INFO | my_functions.py:169 | Searching shop_unselected.PNG (timeout=0s)
+2026-08-19 13:56:02 | INFO | my_functions.py:213 | 
+⛔ Not found: shop_unselected.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-08-19 13:56:02 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['super_premium.PNG'] | timeout=0s | confidence=0.8
+2026-08-19 13:56:02 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 13:56:04 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['maybe_later.PNG'] | timeout=0s | confidence=0.8
+2026-08-19 13:56:04 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 13:56:05 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['maybe_later2.PNG'] | timeout=0s | confidence=0.8
+2026-08-19 13:56:06 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 13:56:07 | INFO | my_functions.py:169 | Searching go_to_shop.PNG (timeout=0s)
+2026-08-19 13:56:08 | INFO | my_functions.py:213 | 
+⛔ Not found: go_to_shop.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-08-19 13:56:08 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['14_days_of_winterverse.PNG'] | timeout=0s | confidence=0.8
+2026-08-19 13:56:08 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 13:56:09 | INFO | my_functions.py:169 | Searching welcome_back_calendar.PNG (timeout=0s)
+2026-08-19 13:56:10 | INFO | my_functions.py:213 | 
+⛔ Not found: welcome_back_calendar.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-08-19 13:56:10 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['start_the_countdown.PNG'] | timeout=0s | confidence=0.8
+2026-08-19 13:56:10 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 13:56:11 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['event_has_ended_sanctum.PNG'] | timeout=0s | confidence=0.8
+2026-08-19 13:56:12 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 13:56:13 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['event_has_ended_teamclash.PNG'] | timeout=0s | confidence=0.8
+2026-08-19 13:56:14 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 13:56:15 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['image_part_of_event_grand_arena_finished.PNG'] | timeout=0s | confidence=0.8
+2026-08-19 13:56:15 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 13:56:16 | INFO | my_functions.py:169 | Searching 28_day_event_login_rewards.PNG (timeout=0s)
+2026-08-19 13:56:17 | INFO | my_functions.py:213 | 
+⛔ Not found: 28_day_event_login_rewards.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-08-19 13:56:17 | INFO | my_functions.py:169 | Searching 7_day_event_login.PNG (timeout=0s)
+2026-08-19 13:56:17 | INFO | my_functions.py:213 | 
+⛔ Not found: 7_day_event_login.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-08-19 13:56:17 | INFO | my_functions.py:169 | Searching 14_days_event.PNG (timeout=0s)
+2026-08-19 13:56:18 | INFO | my_functions.py:213 | 
+⛔ Not found: 14_days_event.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-08-19 13:56:18 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['lets_go.PNG'] | timeout=0s | confidence=0.8
+2026-08-19 13:56:18 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 13:56:20 | INFO | my_functions.py:169 | Searching shop_unselected.PNG (timeout=0s)
+2026-08-19 13:56:21 | INFO | my_functions.py:213 | 
+⛔ Not found: shop_unselected.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-08-19 13:56:21 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['super_premium.PNG'] | timeout=0s | confidence=0.8
+2026-08-19 13:56:22 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 13:56:23 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['maybe_later.PNG'] | timeout=0s | confidence=0.8
+2026-08-19 13:56:23 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 13:56:25 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['maybe_later2.PNG'] | timeout=0s | confidence=0.8
+2026-08-19 13:56:25 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 13:56:26 | INFO | my_functions.py:169 | Searching go_to_shop.PNG (timeout=0s)
+2026-08-19 13:56:27 | INFO | my_functions.py:213 | 
+⛔ Not found: go_to_shop.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-08-19 13:56:27 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['14_days_of_winterverse.PNG'] | timeout=0s | confidence=0.8
+2026-08-19 13:56:27 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 13:56:28 | INFO | my_functions.py:169 | Searching welcome_back_calendar.PNG (timeout=0s)
+2026-08-19 13:56:29 | INFO | my_functions.py:213 | 
+⛔ Not found: welcome_back_calendar.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-08-19 13:56:29 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['start_the_countdown.PNG'] | timeout=0s | confidence=0.8
+2026-08-19 13:56:29 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 13:56:31 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['event_has_ended_sanctum.PNG'] | timeout=0s | confidence=0.8
+2026-08-19 13:56:31 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 13:56:32 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['event_has_ended_teamclash.PNG'] | timeout=0s | confidence=0.8
+2026-08-19 13:56:33 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 13:56:34 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['image_part_of_event_grand_arena_finished.PNG'] | timeout=0s | confidence=0.8
+2026-08-19 13:56:34 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 13:56:36 | INFO | my_functions.py:169 | Searching 28_day_event_login_rewards.PNG (timeout=0s)
+2026-08-19 13:56:36 | INFO | my_functions.py:213 | 
+⛔ Not found: 28_day_event_login_rewards.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-08-19 13:56:36 | INFO | my_functions.py:169 | Searching 7_day_event_login.PNG (timeout=0s)
+2026-08-19 13:56:37 | INFO | my_functions.py:213 | 
+⛔ Not found: 7_day_event_login.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-08-19 13:56:37 | INFO | my_functions.py:169 | Searching 14_days_event.PNG (timeout=0s)
+2026-08-19 13:56:37 | INFO | my_functions.py:213 | 
+⛔ Not found: 14_days_event.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-08-19 13:56:37 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['lets_go.PNG'] | timeout=0s | confidence=0.8
+2026-08-19 13:56:37 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 13:56:40 | INFO | my_functions.py:169 | Searching shop_unselected.PNG (timeout=0s)
+2026-08-19 13:56:40 | INFO | my_functions.py:213 | 
+⛔ Not found: shop_unselected.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-08-19 13:56:40 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['super_premium.PNG'] | timeout=0s | confidence=0.8
+2026-08-19 13:56:41 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 13:56:42 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['maybe_later.PNG'] | timeout=0s | confidence=0.8
+2026-08-19 13:56:43 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 13:56:44 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['maybe_later2.PNG'] | timeout=0s | confidence=0.8
+2026-08-19 13:56:44 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 13:56:45 | INFO | my_functions.py:169 | Searching go_to_shop.PNG (timeout=0s)
+2026-08-19 13:56:46 | INFO | my_functions.py:213 | 
+⛔ Not found: go_to_shop.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-08-19 13:56:46 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['14_days_of_winterverse.PNG'] | timeout=0s | confidence=0.8
+2026-08-19 13:56:46 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 13:56:48 | INFO | my_functions.py:169 | Searching welcome_back_calendar.PNG (timeout=0s)
+2026-08-19 13:56:48 | INFO | my_functions.py:213 | 
+⛔ Not found: welcome_back_calendar.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-08-19 13:56:48 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['start_the_countdown.PNG'] | timeout=0s | confidence=0.8
+2026-08-19 13:56:48 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 13:56:50 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['event_has_ended_sanctum.PNG'] | timeout=0s | confidence=0.8
+2026-08-19 13:56:50 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 13:56:51 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['event_has_ended_teamclash.PNG'] | timeout=0s | confidence=0.8
+2026-08-19 13:56:52 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 13:56:53 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['image_part_of_event_grand_arena_finished.PNG'] | timeout=0s | confidence=0.8
+2026-08-19 13:56:53 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 13:56:55 | INFO | my_functions.py:169 | Searching 28_day_event_login_rewards.PNG (timeout=0s)
+2026-08-19 13:56:55 | INFO | my_functions.py:213 | 
+⛔ Not found: 28_day_event_login_rewards.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-08-19 13:56:55 | INFO | my_functions.py:169 | Searching 7_day_event_login.PNG (timeout=0s)
+2026-08-19 13:56:55 | INFO | my_functions.py:213 | 
+⛔ Not found: 7_day_event_login.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-08-19 13:56:55 | INFO | my_functions.py:169 | Searching 14_days_event.PNG (timeout=0s)
+2026-08-19 13:56:56 | INFO | my_functions.py:213 | 
+⛔ Not found: 14_days_event.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-08-19 13:56:56 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['lets_go.PNG'] | timeout=0s | confidence=0.8
+2026-08-19 13:56:56 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 13:56:59 | INFO | my_functions.py:169 | Searching shop_unselected.PNG (timeout=0s)
+2026-08-19 13:56:59 | INFO | my_functions.py:213 | 
+⛔ Not found: shop_unselected.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-08-19 13:56:59 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['super_premium.PNG'] | timeout=0s | confidence=0.8
+2026-08-19 13:57:00 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 13:57:01 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['maybe_later.PNG'] | timeout=0s | confidence=0.8
+2026-08-19 13:57:01 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 13:57:03 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['maybe_later2.PNG'] | timeout=0s | confidence=0.8
+2026-08-19 13:57:03 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 13:57:04 | INFO | my_functions.py:169 | Searching go_to_shop.PNG (timeout=0s)
+2026-08-19 13:57:05 | INFO | my_functions.py:213 | 
+⛔ Not found: go_to_shop.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-08-19 13:57:05 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['14_days_of_winterverse.PNG'] | timeout=0s | confidence=0.8
+2026-08-19 13:57:05 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 13:57:06 | INFO | my_functions.py:169 | Searching welcome_back_calendar.PNG (timeout=0s)
+2026-08-19 13:57:07 | INFO | my_functions.py:213 | 
+⛔ Not found: welcome_back_calendar.PNG after 0.46s region=(0, 0, 765, 1038) confidence=0.8
+2026-08-19 13:57:07 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['start_the_countdown.PNG'] | timeout=0s | confidence=0.8
+2026-08-19 13:57:08 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 13:57:09 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['event_has_ended_sanctum.PNG'] | timeout=0s | confidence=0.8
+2026-08-19 13:57:09 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 13:57:11 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['event_has_ended_teamclash.PNG'] | timeout=0s | confidence=0.8
+2026-08-19 13:57:11 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 13:57:12 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['image_part_of_event_grand_arena_finished.PNG'] | timeout=0s | confidence=0.8
+2026-08-19 13:57:13 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 13:57:14 | INFO | my_functions.py:169 | Searching 28_day_event_login_rewards.PNG (timeout=0s)
+2026-08-19 13:57:14 | INFO | my_functions.py:213 | 
+⛔ Not found: 28_day_event_login_rewards.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-08-19 13:57:14 | INFO | my_functions.py:169 | Searching 7_day_event_login.PNG (timeout=0s)
+2026-08-19 13:57:15 | INFO | my_functions.py:213 | 
+⛔ Not found: 7_day_event_login.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-08-19 13:57:15 | INFO | my_functions.py:169 | Searching 14_days_event.PNG (timeout=0s)
+2026-08-19 13:57:15 | INFO | my_functions.py:213 | 
+⛔ Not found: 14_days_event.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-08-19 13:57:15 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['lets_go.PNG'] | timeout=0s | confidence=0.8
+2026-08-19 13:57:16 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 13:57:18 | INFO | my_functions.py:169 | Searching shop_unselected.PNG (timeout=0s)
+2026-08-19 13:57:19 | INFO | my_functions.py:213 | 
+⛔ Not found: shop_unselected.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-08-19 13:57:19 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['super_premium.PNG'] | timeout=0s | confidence=0.8
+2026-08-19 13:57:19 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 13:57:20 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['maybe_later.PNG'] | timeout=0s | confidence=0.8
+2026-08-19 13:57:21 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 13:57:22 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['maybe_later2.PNG'] | timeout=0s | confidence=0.8
+2026-08-19 13:57:23 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 13:57:24 | INFO | my_functions.py:169 | Searching go_to_shop.PNG (timeout=0s)
+2026-08-19 13:57:24 | INFO | my_functions.py:213 | 
+⛔ Not found: go_to_shop.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-08-19 13:57:24 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['14_days_of_winterverse.PNG'] | timeout=0s | confidence=0.8
+2026-08-19 13:57:25 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 13:57:26 | INFO | my_functions.py:169 | Searching welcome_back_calendar.PNG (timeout=0s)
+2026-08-19 13:57:26 | INFO | my_functions.py:213 | 
+⛔ Not found: welcome_back_calendar.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-08-19 13:57:26 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['start_the_countdown.PNG'] | timeout=0s | confidence=0.8
+2026-08-19 13:57:27 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 13:57:28 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['event_has_ended_sanctum.PNG'] | timeout=0s | confidence=0.8
+2026-08-19 13:57:28 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 13:57:29 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['event_has_ended_teamclash.PNG'] | timeout=0s | confidence=0.8
+2026-08-19 13:57:30 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 13:57:31 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['image_part_of_event_grand_arena_finished.PNG'] | timeout=0s | confidence=0.8
+2026-08-19 13:57:32 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 13:57:33 | INFO | my_functions.py:169 | Searching 28_day_event_login_rewards.PNG (timeout=0s)
+2026-08-19 13:57:33 | INFO | my_functions.py:213 | 
+⛔ Not found: 28_day_event_login_rewards.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-08-19 13:57:33 | INFO | my_functions.py:169 | Searching 7_day_event_login.PNG (timeout=0s)
+2026-08-19 13:57:34 | INFO | my_functions.py:213 | 
+⛔ Not found: 7_day_event_login.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-08-19 13:57:34 | INFO | my_functions.py:169 | Searching 14_days_event.PNG (timeout=0s)
+2026-08-19 13:57:34 | INFO | my_functions.py:213 | 
+⛔ Not found: 14_days_event.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-08-19 13:57:34 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['lets_go.PNG'] | timeout=0s | confidence=0.8
+2026-08-19 13:57:35 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 13:57:39 | INFO | my_functions.py:169 | Searching play.PNG (timeout=0s)
+2026-08-19 13:57:40 | INFO | my_functions.py:213 | 
+⛔ Not found: play.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-08-19 13:57:40 | INFO | each_eight_hours copy 2.py:89 | Deck selected: 6turns
+2026-08-19 13:57:40 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['maybe_later.PNG'] | timeout=2s | confidence=0.8
+2026-08-19 13:57:42 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 13:57:43 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['maybe_later2.PNG'] | timeout=0.01s | confidence=0.8
+2026-08-19 13:57:44 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 13:57:45 | INFO | each_eight_hours copy 2.py:95 | Starting game loop 1
+2026-08-19 13:57:45 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['play.PNG'] | timeout=20s | confidence=0.8
+2026-08-19 13:58:05 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 13:58:06 | INFO | my_functions.py:169 | Searching 28_day_event_login_rewards.PNG (timeout=0s)
+2026-08-19 13:58:07 | INFO | my_functions.py:213 | 
+⛔ Not found: 28_day_event_login_rewards.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-08-19 13:58:09 | INFO | my_functions.py:169 | Searching hyper_cube.png (timeout=5s)
+2026-08-19 13:58:14 | INFO | my_functions.py:213 | 
+⛔ Not found: hyper_cube.png after 5.25s region=(0, 0, 765, 1038) confidence=0.8
+2026-08-19 13:58:14 | INFO | each_eight_hours copy 2.py:95 | Starting game loop 2
+2026-08-19 13:58:14 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['play.PNG'] | timeout=20s | confidence=0.8
+2026-08-19 13:58:34 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 13:58:36 | INFO | my_functions.py:169 | Searching 28_day_event_login_rewards.PNG (timeout=0s)
+2026-08-19 13:58:36 | INFO | my_functions.py:213 | 
+⛔ Not found: 28_day_event_login_rewards.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-08-19 13:58:38 | INFO | my_functions.py:169 | Searching hyper_cube.png (timeout=5s)
+2026-08-19 13:58:44 | INFO | my_functions.py:213 | 
+⛔ Not found: hyper_cube.png after 5.26s region=(0, 0, 765, 1038) confidence=0.8
+2026-08-19 13:58:44 | INFO | each_eight_hours copy 2.py:95 | Starting game loop 3
+2026-08-19 13:58:44 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['play.PNG'] | timeout=20s | confidence=0.8
+2026-08-19 13:59:04 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 13:59:05 | INFO | my_functions.py:169 | Searching 28_day_event_login_rewards.PNG (timeout=0s)
+2026-08-19 13:59:06 | INFO | my_functions.py:213 | 
+⛔ Not found: 28_day_event_login_rewards.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-08-19 13:59:08 | INFO | my_functions.py:169 | Searching hyper_cube.png (timeout=5s)
+2026-08-19 13:59:13 | INFO | my_functions.py:213 | 
+⛔ Not found: hyper_cube.png after 5.2s region=(0, 0, 765, 1038) confidence=0.8
+2026-08-19 13:59:13 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['missionsNotify2.png'] | timeout=20s | confidence=0.8
+2026-08-19 13:59:34 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 13:59:35 | INFO | my_functions.py:1494 | [INFO] Iniciando click_missions_blue_2
+2026-08-19 13:59:35 | INFO | my_functions.py:133 | Haciendo click en la posición (150, 132)
+2026-08-19 13:59:36 | INFO | my_functions.py:1497 | [ACTION] Click hecho en icono de calendario que me dirige a las misiones ordinarias
+2026-08-19 13:59:36 | INFO | my_functions.py:169 | Searching bonus_challenge.png (timeout=0s)
+2026-08-19 13:59:37 | INFO | my_functions.py:213 | 
+⛔ Not found: bonus_challenge.png after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-08-19 13:59:37 | INFO | my_functions.py:1504 | [INFO] No se detectó bonus_challenge. Usando coordenada Y por defecto: 493
+2026-08-19 13:59:37 | INFO | my_functions.py:1506 | [INFO] Esperando 2 segundos antes de iniciar clics...
+2026-08-19 13:59:39 | INFO | my_functions.py:133 | Haciendo click en la posición (362, 493)
+2026-08-19 13:59:40 | INFO | my_functions.py:1512 | [ACTION] Click 1/6 realizado en misión azul
+2026-08-19 13:59:40 | INFO | my_functions.py:133 | Haciendo click en la posición (362, 493)
+2026-08-19 13:59:41 | INFO | my_functions.py:1512 | [ACTION] Click 2/6 realizado en misión azul
+2026-08-19 13:59:42 | INFO | my_functions.py:133 | Haciendo click en la posición (362, 493)
+2026-08-19 13:59:43 | INFO | my_functions.py:1512 | [ACTION] Click 3/6 realizado en misión azul
+2026-08-19 13:59:44 | INFO | my_functions.py:133 | Haciendo click en la posición (362, 493)
+2026-08-19 13:59:45 | INFO | my_functions.py:1512 | [ACTION] Click 4/6 realizado en misión azul
+2026-08-19 13:59:45 | INFO | my_functions.py:133 | Haciendo click en la posición (362, 493)
+2026-08-19 13:59:47 | INFO | my_functions.py:1512 | [ACTION] Click 5/6 realizado en misión azul
+2026-08-19 13:59:47 | INFO | my_functions.py:133 | Haciendo click en la posición (362, 493)
+2026-08-19 13:59:48 | INFO | my_functions.py:1512 | [ACTION] Click 6/6 realizado en misión azul
+2026-08-19 13:59:49 | INFO | my_functions.py:1516 | [CHECK] Verificando si apareció flechita_mission tras los 6 clicks
+2026-08-19 13:59:49 | INFO | my_functions.py:169 | Searching flechita_mission.PNG (timeout=0s)
+2026-08-19 13:59:50 | INFO | my_functions.py:213 | 
+⛔ Not found: flechita_mission.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-08-19 13:59:50 | INFO | my_functions.py:1521 | [INFO] No se detectó flechita_mission
+2026-08-19 13:59:50 | INFO | my_functions.py:1523 | [INFO] Función click_blue_missions_2 terminada
+2026-08-19 13:59:50 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['weekly3.PNG'] | timeout=0s | confidence=0.8
+2026-08-19 13:59:51 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 13:59:52 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['weekly3.PNG'] | timeout=0s | confidence=0.8
+2026-08-19 13:59:53 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 13:59:54 | INFO | my_functions.py:133 | Haciendo click en la posición (557, 64)
+2026-08-19 13:59:55 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['cards_shop.PNG'] | timeout=20s | confidence=0.8
+2026-08-19 14:00:15 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 14:00:16 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['token_icon.PNG'] | timeout=20s | confidence=0.8
+2026-08-19 14:00:37 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 14:00:40 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['claim!_token_3.PNG'] | timeout=4s | confidence=0.8
+2026-08-19 14:00:44 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 14:00:45 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['cards_shop.PNG'] | timeout=20s | confidence=0.8
+2026-08-19 14:01:06 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 14:01:07 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['offers.PNG'] | timeout=20s | confidence=0.8
+2026-08-19 14:01:27 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 14:01:29 | INFO | my_functions.py:1350 | [INFO] Iniciando mejora de cartas
+2026-08-19 14:01:29 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['upgrade_cards_icon.PNG'] | timeout=3s | confidence=0.8
+2026-08-19 14:01:32 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 14:01:33 | WARNING | my_functions.py:1354 | [ALERT] No se encontró el ícono de upgrade_cards. Saltando función.
+2026-08-19 14:01:33 | INFO | my_functions.py:141 | Presionando ESC (1/1)
+2026-08-19 14:01:34 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['white_x.png'] | timeout=2s | confidence=0.8
+2026-08-19 14:01:37 | INFO | my_functions.py:282 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-08-19 14:01:38 | INFO | each_eight_hours copy 2.py:37 | [14:01:38.128] [DEBUG] === INICIANDO FUNCIÓN collect_cl_rewards ===
+2026-08-19 14:01:38 | INFO | each_eight_hours copy 2.py:37 | [14:01:38.147] [DEBUG] Haciendo click inicial en (387, 166)...
+2026-08-19 14:01:38 | INFO | my_functions.py:133 | Haciendo click en la posición (387, 166)
+2026-08-19 14:01:44 | INFO | each_eight_hours copy 2.py:37 | [14:01:44.521] [DEBUG] Se omitió el cambio de tamaño de ventanas (resize=False)
+2026-08-19 14:01:44 | INFO | each_eight_hours copy 2.py:37 | [14:01:44.593] [DEBUG] Recompensas iniciales detectadas por la API: 0
+2026-08-19 14:01:44 | INFO | each_eight_hours copy 2.py:37 | Finished collecting rewards
+2026-08-19 14:01:45 | INFO | my_functions.py:141 | Presionando ESC (1/1)
+2026-08-19 14:01:46 | ERROR | my_functions.py:1840 | Error leyendo nivel de colección: 'Amount'
+2026-08-19 14:01:46 | ERROR | each_eight_hours copy 2.py:237 | Unhandled exception occurred
+Traceback (most recent call last):
+  File "Z:\SHARED FILES VM\MS\each_eight_hours copy 2.py", line 201, in <module>
+    'Collection Level': f"{get_collection_level():,}",
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Cannot specify ',' with 's'.

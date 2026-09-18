@@ -1,0 +1,10 @@
+2026-05-14 18:46:45 | INFO | sandbox2.py:43 | LOG FILE PATH: \\vmware-host\Shared Folders\SHARED FILES VM\MS\logs\sandbox2_2026-05-14_18-46-45.log
+2026-05-14 18:46:45 | INFO | sandbox2.py:44 | Logger initialized
+2026-05-14 18:46:45 | INFO | sandbox2.py:71 | TEST LOG INITIALIZATION
+2026-05-14 18:46:45 | INFO | sandbox2.py:72 | Logger test executed
+2026-05-14 18:46:45 | INFO | my_functions.py:1487 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-05-14 18:46:45 | INFO | my_functions.py:1494 | 🔍 Esperando ventana que contenga alguna de: ['acceso directo'] (máx 20s)
+2026-05-14 18:46:45 | INFO | my_functions.py:1506 | ✅ Ventana encontrada: 'sandbox2 - Acceso directo'
+2026-05-14 18:46:45 | INFO | my_functions.py:1521 | ✅ Ventana seleccionada: 'sandbox2 - Acceso directo'
+2026-05-14 18:46:47 | INFO | my_functions.py:1544 | 🔁 Reajuste #1...
+2026-05-14 18:46:47 | INFO | my_functions.py:1551 | ✔ Verificación completa. Se hicieron 1 reajustes.

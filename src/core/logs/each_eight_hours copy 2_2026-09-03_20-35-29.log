@@ -1,0 +1,5 @@
+2026-09-03 20:35:30 | ERROR | each_eight_hours copy 2.py:49 | Uncaught exception
+Traceback (most recent call last):
+  File "Z:\SHARED FILES VM\MS\src\core\each_eight_hours copy 2.py", line 55, in <module>
+    import globals
+ModuleNotFoundError: No module named 'globals'

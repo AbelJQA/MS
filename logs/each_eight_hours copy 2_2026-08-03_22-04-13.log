@@ -1,0 +1,10 @@
+2026-08-03 22:04:32 | INFO | my_functions.py:55 | ⏳ Esperando WebSocket de OBS...
+2026-08-03 22:04:37 | INFO | baseclient.py:33 | Connecting with parameters: host='localhost' port=4455 password='' subs=0 timeout=None
+2026-08-03 22:04:37 | INFO | reqs.py:23 | Successfully identified ReqClient with the server using RPC version:1
+2026-08-03 22:04:37 | INFO | my_functions.py:61 | ✅ Conectado al OBS WebSocket
+2026-08-03 22:04:37 | ERROR | reqs.py:59 | OBSSDKRequestError: Request GetRecordStatus returned code 207. With message: OBS is not ready to perform the request.
+Traceback (most recent call last):
+  File "C:\Users\Farm\AppData\Local\Programs\Python\Python311\Lib\site-packages\obsws_python\reqs.py", line 53, in send
+    raise OBSSDKRequestError(
+obsws_python.error.OBSSDKRequestError: Request GetRecordStatus returned code 207. With message: OBS is not ready to perform the request.
+2026-08-03 22:04:38 | INFO | my_functions.py:86 | 🎬 Grabación iniciada

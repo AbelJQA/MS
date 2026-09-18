@@ -1,0 +1,20 @@
+2026-05-24 06:00:00 | INFO | each_eight_hours.py:39 | LOG FILE PATH: \\vmware-host\Shared Folders\SHARED FILES VM\MS\logs\each_eight_hours_2026-05-24_06-00-00.log
+2026-05-24 06:00:00 | INFO | each_eight_hours.py:40 | Logger initialized
+2026-05-24 06:00:00 | INFO | each_eight_hours.py:67 | Script initialized
+2026-05-24 06:00:02 | INFO | each_eight_hours.py:128 | snap.exe terminated if it was running
+2026-05-24 06:00:02 | INFO | my_functions.py:57 | ⏳ Esperando WebSocket de OBS...
+2026-05-24 06:00:09 | INFO | baseclient.py:33 | Connecting with parameters: host='localhost' port=4455 password='' subs=0 timeout=None
+2026-05-24 06:00:09 | INFO | reqs.py:23 | Successfully identified ReqClient with the server using RPC version:1
+2026-05-24 06:00:09 | INFO | my_functions.py:63 | ✅ Conectado al OBS WebSocket
+2026-05-24 06:00:09 | ERROR | reqs.py:59 | OBSSDKRequestError: Request GetRecordStatus returned code 207. With message: OBS is not ready to perform the request.
+Traceback (most recent call last):
+  File "C:\Users\Farm\AppData\Local\Programs\Python\Python311\Lib\site-packages\obsws_python\reqs.py", line 53, in send
+    raise OBSSDKRequestError(
+obsws_python.error.OBSSDKRequestError: Request GetRecordStatus returned code 207. With message: OBS is not ready to perform the request.
+2026-05-24 06:00:10 | INFO | my_functions.py:88 | 🎬 Grabación iniciada
+2026-05-24 06:00:10 | INFO | my_functions.py:1286 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-05-24 06:00:10 | INFO | my_functions.py:1293 | 🔍 Esperando ventana que contenga alguna de: ['py', 'eight_hours'] (máx 20s)
+2026-05-24 06:00:10 | INFO | my_functions.py:1305 | ✅ Ventana encontrada: 'each_eight_hours  - Acceso directo'
+2026-05-24 06:00:10 | INFO | my_functions.py:1320 | ✅ Ventana seleccionada: 'each_eight_hours  - Acceso directo'
+2026-05-24 06:00:12 | INFO | my_functions.py:1343 | 🔁 Reajuste #1...
+2026-05-24 06:00:12 | INFO | my_functions.py:1350 | ✔ Verificación completa. Se hicieron 1 reajustes.

@@ -1,0 +1,7 @@
+2026-05-09 05:14:30 | INFO | each_eight_hours.py:39 | LOG FILE PATH: \\vmware-host\Shared Folders\SHARED FILES VM\MS\logs\each_eight_hours_2026-05-09_05-14-30.log
+2026-05-09 05:14:30 | INFO | each_eight_hours.py:40 | Logger initialized
+2026-05-09 05:14:30 | INFO | each_eight_hours.py:67 | Script initialized
+2026-05-09 05:14:33 | INFO | each_eight_hours.py:117 | Execution started
+2026-05-09 05:14:33 | INFO | each_eight_hours.py:120 | Mouse moved to initial position
+2026-05-09 05:14:33 | INFO | each_eight_hours.py:127 | snap.exe terminated if it was running
+2026-05-09 05:14:33 | INFO | my_functions.py:60 | ⏳ Esperando WebSocket de OBS...

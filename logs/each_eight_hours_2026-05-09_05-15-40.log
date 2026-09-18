@@ -1,0 +1,94 @@
+2026-05-09 05:15:40 | INFO | each_eight_hours.py:39 | LOG FILE PATH: \\vmware-host\Shared Folders\SHARED FILES VM\MS\logs\each_eight_hours_2026-05-09_05-15-40.log
+2026-05-09 05:15:40 | INFO | each_eight_hours.py:40 | Logger initialized
+2026-05-09 05:15:40 | INFO | each_eight_hours.py:67 | Script initialized
+2026-05-09 05:15:41 | INFO | each_eight_hours.py:117 | Execution started
+2026-05-09 05:15:42 | INFO | each_eight_hours.py:120 | Mouse moved to initial position
+2026-05-09 05:15:42 | INFO | each_eight_hours.py:127 | snap.exe terminated if it was running
+2026-05-09 05:15:42 | INFO | my_functions.py:60 | ⏳ Esperando WebSocket de OBS...
+2026-05-09 05:15:42 | INFO | baseclient.py:33 | Connecting with parameters: host='localhost' port=4455 password='' subs=0 timeout=None
+2026-05-09 05:15:42 | INFO | reqs.py:23 | Successfully identified ReqClient with the server using RPC version:1
+2026-05-09 05:15:42 | INFO | my_functions.py:66 | ✅ Conectado al OBS WebSocket
+2026-05-09 05:15:42 | INFO | my_functions.py:91 | 🎬 Grabación iniciada
+2026-05-09 05:15:42 | INFO | each_eight_hours.py:130 | OBS started and recording
+2026-05-09 05:15:42 | INFO | my_functions.py:1668 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-05-09 05:15:42 | INFO | my_functions.py:1675 | 🔍 Esperando ventana que contenga alguna de: ['py', 'eight_hours'] (máx 20s)
+2026-05-09 05:15:42 | INFO | my_functions.py:1687 | ✅ Ventana encontrada: 'each_eight_hours - Acceso directo'
+2026-05-09 05:15:42 | INFO | my_functions.py:1702 | ✅ Ventana seleccionada: 'each_eight_hours - Acceso directo'
+2026-05-09 05:15:44 | INFO | my_functions.py:1725 | 🔁 Reajuste #1...
+2026-05-09 05:15:44 | INFO | my_functions.py:1732 | ✔ Verificación completa. Se hicieron 1 reajustes.
+2026-05-09 05:15:44 | INFO | each_eight_hours.py:136 | Console window resized
+2026-05-09 05:16:14 | INFO | my_functions.py:2515 | Starting Steam window scan
+2026-05-09 05:16:14 | INFO | my_functions.py:2518 | Found window: 
+2026-05-09 05:16:14 | INFO | my_functions.py:2518 | Found window: each_eight_hours - Acceso directo
+2026-05-09 05:16:14 | INFO | my_functions.py:2518 | Found window: Inicio
+2026-05-09 05:16:14 | INFO | my_functions.py:2518 | Found window: 
+2026-05-09 05:16:14 | INFO | my_functions.py:2518 | Found window: 
+2026-05-09 05:16:14 | INFO | my_functions.py:2518 | Found window: 
+2026-05-09 05:16:14 | INFO | my_functions.py:2518 | Found window: 
+2026-05-09 05:16:14 | INFO | my_functions.py:2518 | Found window: Program Manager
+2026-05-09 05:16:14 | INFO | each_eight_hours.py:142 | Steam popup windows closed
+2026-05-09 05:16:14 | INFO | each_eight_hours.py:146 | Processing account: percy
+2026-05-09 05:16:15 | INFO | each_eight_hours.py:149 | Game relaunched for account
+2026-05-09 05:16:15 | INFO | my_functions.py:1668 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-05-09 05:16:15 | INFO | my_functions.py:1675 | 🔍 Esperando ventana que contenga alguna de: ['SNAP'] (máx 20s)
+2026-05-09 05:16:17 | INFO | my_functions.py:1687 | ✅ Ventana encontrada: 'SNAP'
+2026-05-09 05:16:17 | INFO | my_functions.py:1702 | ✅ Ventana seleccionada: 'SNAP'
+2026-05-09 05:16:19 | INFO | my_functions.py:1725 | 🔁 Reajuste #1...
+2026-05-09 05:16:21 | INFO | my_functions.py:1732 | ✔ Verificación completa. Se hicieron 1 reajustes.
+2026-05-09 05:16:21 | INFO | each_eight_hours.py:156 | Game window resized
+2026-05-09 05:16:21 | INFO | my_functions.py:1207 | [DEBUG] Resizing SNAP window...
+2026-05-09 05:16:21 | INFO | my_functions.py:1668 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-05-09 05:16:21 | INFO | my_functions.py:1675 | 🔍 Esperando ventana que contenga alguna de: ['SNAP'] (máx 20s)
+2026-05-09 05:16:21 | INFO | my_functions.py:1687 | ✅ Ventana encontrada: 'SNAP'
+2026-05-09 05:16:21 | INFO | my_functions.py:1702 | ✅ Ventana seleccionada: 'SNAP'
+2026-05-09 05:16:23 | INFO | my_functions.py:1725 | 🔁 Reajuste #1...
+2026-05-09 05:16:23 | INFO | my_functions.py:1725 | 🔁 Reajuste #2...
+2026-05-09 05:16:24 | INFO | my_functions.py:1725 | 🔁 Reajuste #3...
+2026-05-09 05:16:24 | INFO | my_functions.py:1725 | 🔁 Reajuste #4...
+2026-05-09 05:16:25 | INFO | my_functions.py:1732 | ✔ Verificación completa. Se hicieron 4 reajustes.
+2026-05-09 05:16:25 | INFO | my_functions.py:231 | [DEBUG] wait_for_image_and_click -> submit.PNG timeout=90s delay_click=0.2s confidence=0.8
+2026-05-09 05:16:25 | INFO | my_functions.py:172 | Searching submit.PNG (timeout=90s)
+2026-05-09 05:17:55 | INFO | my_functions.py:209 | 
+⛔ Not found: submit.PNG after 90.15s region=None confidence=0.8
+2026-05-09 05:17:55 | INFO | my_functions.py:258 | [DEBUG] Click skipped, image not found: submit.PNG
+2026-05-09 05:17:55 | INFO | my_functions.py:1668 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-05-09 05:17:56 | INFO | my_functions.py:1675 | 🔍 Esperando ventana que contenga alguna de: ['SNAP'] (máx 20s)
+2026-05-09 05:17:56 | INFO | my_functions.py:1687 | ✅ Ventana encontrada: 'SNAP'
+2026-05-09 05:17:56 | INFO | my_functions.py:1702 | ✅ Ventana seleccionada: 'SNAP'
+2026-05-09 05:17:58 | INFO | my_functions.py:1725 | 🔁 Reajuste #1...
+2026-05-09 05:17:58 | INFO | my_functions.py:1725 | 🔁 Reajuste #2...
+2026-05-09 05:17:58 | INFO | my_functions.py:1725 | 🔁 Reajuste #3...
+2026-05-09 05:17:58 | INFO | my_functions.py:1725 | 🔁 Reajuste #4...
+2026-05-09 05:17:59 | INFO | my_functions.py:1732 | ✔ Verificación completa. Se hicieron 4 reajustes.
+2026-05-09 05:17:59 | INFO | my_functions.py:172 | Searching please_sign.png (timeout=0s)
+2026-05-09 05:17:59 | INFO | my_functions.py:209 | 
+⛔ Not found: please_sign.png after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-09 05:17:59 | INFO | my_functions.py:172 | Searching sign_in_with_google2.PNG (timeout=90s)
+2026-05-09 05:18:56 | ERROR | each_eight_hours.py:60 | Uncaught exception
+Traceback (most recent call last):
+  File "Z:\SHARED FILES VM\MS\each_eight_hours.py", line 159, in <module>
+    login(account)
+  File "Z:\SHARED FILES VM\MS\my_functions.py", line 1227, in login
+    search_MS_img(r'images/stages/main_stage/sign_in_with_google2.PNG', timeout=90)
+  File "Z:\SHARED FILES VM\MS\my_functions.py", line 181, in search_MS_img
+    position = pg.locateCenterOnScreen(
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Farm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyautogui\__init__.py", line 175, in wrapper
+    return wrappedFunction(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Farm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyautogui\__init__.py", line 207, in locateCenterOnScreen
+    return pyscreeze.locateCenterOnScreen(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Farm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyscreeze\__init__.py", line 413, in locateCenterOnScreen
+    coords = locateOnScreen(image, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Farm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyscreeze\__init__.py", line 373, in locateOnScreen
+    retVal = locate(image, screenshotIm, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Farm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyscreeze\__init__.py", line 353, in locate
+    points = tuple(locateAll(needleImage, haystackImage, **kwargs))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Farm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyscreeze\__init__.py", line 229, in _locateAll_opencv
+    result = cv2.matchTemplate(haystackImage, needleImage, cv2.TM_CCOEFF_NORMED)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

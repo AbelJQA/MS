@@ -1,0 +1,46 @@
+2026-05-13 16:19:43 | INFO | each_eight_hours.py:39 | LOG FILE PATH: \\vmware-host\Shared Folders\SHARED FILES VM\MS\logs\each_eight_hours_2026-05-13_16-19-43.log
+2026-05-13 16:19:43 | INFO | each_eight_hours.py:40 | Logger initialized
+2026-05-13 16:19:43 | INFO | each_eight_hours.py:67 | Script initialized
+2026-05-13 16:19:44 | INFO | each_eight_hours.py:121 | Execution started
+2026-05-13 16:19:45 | INFO | each_eight_hours.py:124 | Mouse moved to initial position
+2026-05-13 16:19:45 | INFO | each_eight_hours.py:131 | snap.exe terminated if it was running
+2026-05-13 16:19:45 | INFO | my_functions.py:57 | ⏳ Esperando WebSocket de OBS...
+2026-05-13 16:19:51 | INFO | baseclient.py:33 | Connecting with parameters: host='localhost' port=4455 password='' subs=0 timeout=None
+2026-05-13 16:19:51 | INFO | reqs.py:23 | Successfully identified ReqClient with the server using RPC version:1
+2026-05-13 16:19:51 | INFO | my_functions.py:63 | ✅ Conectado al OBS WebSocket
+2026-05-13 16:19:51 | ERROR | reqs.py:59 | OBSSDKRequestError: Request GetRecordStatus returned code 207. With message: OBS is not ready to perform the request.
+Traceback (most recent call last):
+  File "C:\Users\Farm\AppData\Local\Programs\Python\Python311\Lib\site-packages\obsws_python\reqs.py", line 53, in send
+    raise OBSSDKRequestError(
+obsws_python.error.OBSSDKRequestError: Request GetRecordStatus returned code 207. With message: OBS is not ready to perform the request.
+2026-05-13 16:19:52 | INFO | my_functions.py:88 | 🎬 Grabación iniciada
+2026-05-13 16:19:52 | INFO | each_eight_hours.py:134 | OBS started and recording
+2026-05-13 16:19:52 | INFO | my_functions.py:1429 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-05-13 16:19:52 | INFO | my_functions.py:1436 | 🔍 Esperando ventana que contenga alguna de: ['py', 'eight_hours'] (máx 20s)
+2026-05-13 16:19:52 | INFO | my_functions.py:1448 | ✅ Ventana encontrada: 'each_eight_hours  - Acceso directo'
+2026-05-13 16:19:52 | INFO | my_functions.py:1463 | ✅ Ventana seleccionada: 'each_eight_hours  - Acceso directo'
+2026-05-13 16:19:54 | INFO | my_functions.py:1486 | 🔁 Reajuste #1...
+2026-05-13 16:19:54 | INFO | my_functions.py:1493 | ✔ Verificación completa. Se hicieron 1 reajustes.
+2026-05-13 16:19:54 | INFO | each_eight_hours.py:140 | Console window resized
+2026-05-13 16:20:24 | INFO | my_functions.py:2276 | Starting Steam window scan
+2026-05-13 16:20:24 | INFO | my_functions.py:2279 | Found window: 
+2026-05-13 16:20:24 | INFO | my_functions.py:2279 | Found window: each_eight_hours  - Acceso directo
+2026-05-13 16:20:24 | INFO | my_functions.py:2279 | Found window: RivaTunerStatisticsServer
+2026-05-13 16:20:24 | INFO | my_functions.py:2279 | Found window: 
+2026-05-13 16:20:24 | INFO | my_functions.py:2279 | Found window: 
+2026-05-13 16:20:24 | INFO | my_functions.py:2279 | Found window: 
+2026-05-13 16:20:24 | INFO | my_functions.py:2279 | Found window: 
+2026-05-13 16:20:24 | INFO | my_functions.py:2279 | Found window: Program Manager
+2026-05-13 16:20:24 | INFO | each_eight_hours.py:146 | Steam popup windows closed
+2026-05-13 16:20:24 | INFO | each_eight_hours.py:150 | Processing account: reeps_vm
+2026-05-13 16:20:24 | INFO | each_eight_hours.py:153 | Game relaunched for account
+2026-05-13 16:20:24 | INFO | my_functions.py:1429 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-05-13 16:20:24 | INFO | my_functions.py:1436 | 🔍 Esperando ventana que contenga alguna de: ['SNAP'] (máx 20s)
+2026-05-13 16:20:44 | INFO | my_functions.py:1454 | ❌ No se encontró ninguna ventana con '['SNAP']' tras 20s
+2026-05-13 16:20:44 | INFO | each_eight_hours.py:160 | Game window resized
+2026-05-13 16:20:44 | INFO | my_functions.py:1095 | [DEBUG] Resizing SNAP window...
+2026-05-13 16:20:44 | INFO | my_functions.py:1429 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-05-13 16:20:45 | INFO | my_functions.py:1436 | 🔍 Esperando ventana que contenga alguna de: ['SNAP'] (máx 20s)
+2026-05-13 16:21:05 | INFO | my_functions.py:1454 | ❌ No se encontró ninguna ventana con '['SNAP']' tras 20s
+2026-05-13 16:21:05 | INFO | my_functions.py:228 | [DEBUG] wait_for_image_and_click -> submit.PNG timeout=90s delay_click=0.2s confidence=0.8
+2026-05-13 16:21:05 | INFO | my_functions.py:169 | Searching submit.PNG (timeout=90s)

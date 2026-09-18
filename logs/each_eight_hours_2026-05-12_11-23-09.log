@@ -1,0 +1,14 @@
+2026-05-12 11:23:09 | INFO | each_eight_hours.py:39 | LOG FILE PATH: \\vmware-host\Shared Folders\SHARED FILES VM\MS\logs\each_eight_hours_2026-05-12_11-23-09.log
+2026-05-12 11:23:09 | INFO | each_eight_hours.py:40 | Logger initialized
+2026-05-12 11:23:09 | INFO | each_eight_hours.py:67 | Script initialized
+2026-05-12 11:23:10 | INFO | each_eight_hours.py:117 | Execution started
+2026-05-12 11:23:10 | INFO | each_eight_hours.py:120 | Mouse moved to initial position
+2026-05-12 11:23:10 | INFO | each_eight_hours.py:127 | snap.exe terminated if it was running
+2026-05-12 11:23:10 | INFO | my_functions.py:60 | ⏳ Esperando WebSocket de OBS...
+2026-05-12 11:23:10 | INFO | baseclient.py:33 | Connecting with parameters: host='localhost' port=4455 password='' subs=0 timeout=None
+2026-05-12 11:23:10 | INFO | reqs.py:23 | Successfully identified ReqClient with the server using RPC version:1
+2026-05-12 11:23:10 | INFO | my_functions.py:66 | ✅ Conectado al OBS WebSocket
+2026-05-12 11:23:10 | INFO | my_functions.py:82 | ⏹ Grabación ya estaba activa, deteniéndola...
+2026-05-12 11:23:10 | INFO | baseclient.py:33 | Connecting with parameters: host='localhost' port=4455 password='' subs=0 timeout=None
+2026-05-12 11:23:10 | INFO | reqs.py:23 | Successfully identified ReqClient with the server using RPC version:1
+2026-05-12 11:23:10 | INFO | my_functions.py:97 | Record stopped.

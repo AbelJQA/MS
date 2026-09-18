@@ -1,0 +1,461 @@
+import subprocess
+import time
+import os
+import logging
+from datetime import datetime
+from pathlib import Path
+import sys
+
+# ============================================================
+# BASIC LOGGING CONFIGURATION
+# ============================================================
+
+LOG_DIR = Path(__file__).resolve().parent / "logs"
+LOG_DIR.mkdir(parents=True, exist_ok=True)
+
+# Nombre del script
+script_name = os.path.splitext(os.path.basename(__file__))[0]
+
+LOG_FILE = LOG_DIR / (
+    f"{script_name}_{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.log"
+)
+
+
+logging.basicConfig(
+    force=True,
+    level=logging.INFO,
+    format=(
+        "%(asctime)s | %(levelname)s | "
+        "%(filename)s:%(lineno)d | %(message)s"
+    ),
+    datefmt="%Y-%m-%d %H:%M:%S",
+    handlers=[
+        logging.FileHandler(LOG_FILE, mode="w", encoding="utf-8"),
+        logging.StreamHandler(sys.__stdout__),
+    ],
+)
+
+logger = logging.getLogger(__name__)
+logger.info("LOG FILE PATH: %s", LOG_FILE)
+logger.info("Logger initialized")
+
+class StreamToLogger:
+    def __init__(self, logger, level, original_stream):
+        self.logger = logger
+        self.level = level
+        self.original_stream = original_stream
+    def write(self, message):
+        if message.strip():
+            self.logger.log(self.level, message.strip())
+            self.original_stream.write(message)
+            self.original_stream.flush()
+    def flush(self):
+        self.original_stream.flush()
+
+sys.stdout = StreamToLogger(logger, logging.INFO, sys.__stdout__)
+sys.stderr = StreamToLogger(logger, logging.ERROR, sys.__stderr__)
+
+# visual comment: capture any uncaught exception and log it
+def global_exception_handler(exc_type, exc_value, exc_traceback):
+    logger.exception(
+        "Uncaught exception",
+        exc_info=(exc_type, exc_value, exc_traceback),
+    )
+
+sys.excepthook = global_exception_handler
+
+logger.info("Script initialized")
+#logger.info("Working directory set to %s", script_dir)
+
+
+import psutil
+import pyautogui as pg
+import pygetwindow as gw
+
+import globals
+
+'''
+from my_functions import (
+    close_steam_windows,
+    confirm_initial_images_passed,
+    count_available_submissions3,
+    open_nvprod_json,
+    play_cards_ahk,
+    select_deck_2,
+    start_obs_then_record,
+    resize_window_by_tuple2,
+    login,
+    search_initial_imgs,
+    click_MS_img,
+    click_pos,
+    presionar_esc,
+    logout,
+    search_MS_img,
+    check_at_least_n_submissions_complete,
+    after_finish_all_games,
+    beep_forever,
+    end_record_obs,
+    click_blue_missions,
+    get_weekly_rewards,
+    wait_and_close_notepad_plus_plus,
+)
+'''
+
+from my_functions import *
+
+# ============================================================
+# INITIAL CONFIGURATION
+# ============================================================
+
+script_dir = os.path.dirname(os.path.abspath(__file__))
+os.chdir(script_dir)
+
+globals.set_mode("normal_6t")
+
+
+# ============================================================
+# MAIN EXECUTION
+# ============================================================
+
+try:
+    logger.info("Execution started")
+
+    pg.moveTo(1500, 100)
+    logger.info("Mouse moved to initial position")
+
+    subprocess.run(
+        ["taskkill", "/im", "snap.exe", "/f"],
+        stdout=subprocess.DEVNULL,
+        stderr=subprocess.DEVNULL,
+    )
+    logger.info("snap.exe terminated if it was running")
+
+    start_obs_then_record()
+    logger.info("OBS started and recording")
+
+    resize_window_by_tuple2(
+        title_contains=["py", "eight_hours"],
+        region=globals.REGION_TOTAL_MINUS_MS_WINDOW,
+    )
+    logger.info("Console window resized")
+    
+    
+    if globals.first_time_login:
+        time.sleep(30)
+        close_steam_windows()
+        logger.info("Steam popup windows closed")
+    
+    
+    for account in globals.accounts:
+        logger.info("Processing account: %s", account)
+
+        os.startfile("steam://rungameid/1997040")
+        logger.info("Game relaunched for account")
+        
+        
+        resize_window_by_tuple2(
+            ["SNAP"],
+            region=globals.REGION_MS_WINDOW,
+        )
+        logger.info("Game window resized")
+        
+        
+        login(account)
+        logger.info("Login executed")
+
+        search_initial_imgs()
+        logger.info("Initial images processed")
+
+        #os.system("taskkill /im chrome.exe /f")
+        
+        open_nvprod_json('MissionState.json')
+        wait_and_close_notepad_plus_plus()
+
+        click_MS_img(
+            "images/stages/main_stage/missions_unnotified2.png"
+        )
+        click_MS_img(
+            "images/stages/missions_stage/calendar_missions_daily.png",
+            timeout=3,
+        )
+        logger.info("Mission screens opened")
+
+        '''
+        process = open_nvprod_json('MissionState.json')
+
+        time.sleep(1)
+        
+        # "Solo ejecuta count_available_submissions2() si Notepad++ todavía está abierto."
+        if process.poll() is None:
+            submissions = count_available_submissions2()
+        '''
+
+        submissions = count_available_submissions3()
+
+        
+        # Verificacion de misiones sin reclamar
+        click_blue_missions()
+        get_weekly_rewards()
+        
+        '''
+        process = open_nvprod_json('MissionState.json')
+
+        time.sleep(1)
+        
+        # "Solo ejecuta count_available_submissions2() si Notepad++ todavía está abierto."
+        if process.poll() is None:
+            submissions = count_available_submissions2()
+        '''
+        
+        submissions = count_available_submissions3()
+
+
+        if submissions in (5, 6):
+            presionar_esc()
+            
+            if click_MS_img(
+                "images/start_screen/offer_window/white_x.png",
+                timeout=2,
+            ):
+                logger.info("Offer popup closed")
+            
+            select_deck_2("6turns")
+            logger.info("Deck selected: 6turns")
+        else:
+            logger.info("Entering shop to claim credits")
+
+            click_pos((557, 64))
+
+            start_time = time.time()
+            while time.time() - start_time < 3:
+                if click_MS_img(
+                    "images/stages/shop/offers.PNG",
+                    timeout=0,
+                ):
+                    logger.info("Offers screen opened")
+                    break
+
+                if click_MS_img(
+                    "images/offers_selected.PNG",
+                    timeout=0,
+                ):
+                    break
+
+            start_time = time.time()
+            while time.time() - start_time < 3:
+                if click_MS_img(
+                    "images/credits_selected.png",
+                    timeout=0,
+                ):
+                    break
+
+                if click_MS_img(
+                    "images/stages/shop/credits.PNG",
+                    timeout=0,
+                ):
+                    break
+
+            time.sleep(1.5)
+
+            click_MS_img(
+                "images/claim_25_credits.png",
+                timeout=3,
+            )
+            logger.info("Credits claimed")
+
+            presionar_esc()
+
+            if click_MS_img(
+                "images/start_screen/offer_window/white_x.png",
+                timeout=2,
+            ):
+                logger.info("Offer popup closed")
+
+            logout()
+            logger.info("Logged out due to insufficient submissions")
+
+            time.sleep(1)
+            os.system("taskkill /im snap.exe /f")
+            logger.info("snap.exe closed")
+            time.sleep(3)
+            continue
+
+        if click_MS_img(
+            r'images/start_screen/maybe_later.PNG', timeout=2
+        ):
+            pass
+        elif click_MS_img(r'images/start_screen/maybe_later2.PNG', timeout=2):
+            pass
+        
+        
+        
+        for game_index in range(globals.total_games):
+            logger.info("Starting game loop %s", game_index + 1)
+
+            if click_MS_img(
+                "images/stages/play_stage/play.PNG",
+                delay_click=3,
+            ):
+                logger.info("Play button clicked")
+
+                while not search_MS_img(
+                    "images/stages/play_stage/collect_rewards.PNG",
+                    quick_check=True,
+                ):
+                    end_turn = search_MS_img(
+                        "images/stages/play_stage/end_turn.PNG",
+                        quick_check=True,
+                    )
+
+                    if end_turn:
+                        click_MS_img(
+                            "images/stages/play_stage/snap.PNG",
+                            quick_check=True,
+                            timeout=0,
+                        )
+                        play_cards_ahk(
+                            globals.POSITIONS_MOUSE_6_TURNS
+                        )
+                        click_pos(end_turn)
+                        logger.info("End turn executed")
+
+                    never = search_MS_img(
+                        "images/stages/play_stage/never_seen_before.png",
+                        quick_check=True,
+                        timeout=0,
+                    )
+
+                    if never:
+                        pg.moveTo(never)
+                        pg.move(0, 300)
+                        time.sleep(0.3)
+                        pg.click()
+                        logger.warning("Unknown popup handled")
+
+                    if search_MS_img(
+                        "images/aw_snap.png",
+                        timeout=0,
+                        quick_check=True,
+                    ):
+                        time.sleep(2)
+                        presionar_esc()
+                        logger.warning("aw_snap detected")
+                        click_MS_img(r'images/play_hover.png')
+
+                    if search_MS_img(
+                        rf"C:\Users\{os.getlogin()}\OneDrive\my_py_projects\MS\images\stages\play_stage\flechas.png",
+                        timeout=0,
+                        quick_check=True,
+                    ):
+                        time.sleep(2)
+                        presionar_esc()
+                        click_MS_img(
+                            "images/stages/play_stage/end_turn.PNG",
+                            quick_check=True,
+                            timeout=0,
+                        )
+                        logger.warning("Arrow overlay handled")
+
+                logger.info("Rewards detected, exiting match")
+
+                click_MS_img(
+                    "images/stages/play_stage/collect_rewards.PNG"
+                )
+                click_MS_img(
+                    "images/stages/play_stage/next.PNG"
+                )
+            
+            elif search_MS_img(r'images/start_screen/28_day_event_login_rewards.PNG', timeout=0):
+                
+                presionar_esc()
+                # Moviendo puntero para evitar distorsion de imagen
+                pg.moveTo(10, 10)
+
+                if claim := search_MS_img(r'images/claim!.PNG', timeout=5):
+                    time.sleep(3)
+                    click_pos(claim)
+
+                    # Durante unos segundos, intenta detectar y hacer click en
+                    # todas las pantallas de recompensa que pueden aparecer.
+                    # No importa el orden ni si alguna no aparece.
+                    # El loop termina solo por tiempo.
+                    start_time = time.time()
+
+                    images = [
+                        r'images/stages/collection_rewards_stage/nice!.PNG',
+                        r'images/claim!.PNG',
+                        r'images/claim_hover.PNG',
+                        r'images/nice_hover_half.PNG',
+                        r'images/claim_After_receive_new_deck.PNG',
+                    ]
+
+                    while time.time() - start_time < 30:
+                        for img in images:
+                            click_MS_img(img, timeout=0)
+                
+                elif claim := search_MS_img(r'images/claim_hover.png', timeout=3):
+                    time.sleep(3)
+                    click_pos(claim)
+
+                    # Durante unos segundos, intenta detectar y hacer click en
+                    # todas las pantallas de recompensa que pueden aparecer.
+                    # No importa el orden ni si alguna no aparece.
+                    # El loop termina solo por tiempo.
+                    start_time = time.time()
+
+                    images = [
+                        r'images/stages/collection_rewards_stage/nice!.PNG',
+                        r'images/claim!.PNG',
+                        r'images/claim_hover.PNG',
+                        r'images/nice_hover_half.PNG',
+                    ]
+
+                    while time.time() - start_time < 15:
+                        for img in images:
+                            click_MS_img(img, timeout=0)
+                
+                # Moviendo puntero
+                pg.moveTo(10, 10)
+                
+                if confirm_initial_images_passed():
+                    break
+            
+            
+            time.sleep(2)
+
+            submissions = count_available_submissions3()
+            logger.info("Submissions after match: %s", submissions)
+
+            if submissions == 6:
+                if check_at_least_n_submissions_complete(2):
+                    logger.info("Submission condition met, breaking loop")
+                    break
+            elif submissions == 5:
+                if check_at_least_n_submissions_complete(1):
+                    logger.info("Submission condition met, breaking loop")
+                    break
+            
+            
+            
+            
+        after_finish_all_games()
+        logger.info("Finished all games")
+
+        #get_CL_from_json()
+        #logger.info("CL extracted from JSON")
+
+        logout()
+
+
+    # beep_forever()
+
+    end_record_obs()
+    logger.info("OBS recording stopped")
+
+    os.system("shutdown /s /t 0")
+    #logger.info("System shutdown issued")
+    
+    
+    
+except Exception:
+    logger.exception("Unhandled exception occurred")

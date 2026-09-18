@@ -1,0 +1,128 @@
+import os
+from datetime import datetime
+from pathlib import Path
+
+import keyboard
+
+mode = "normal"
+deck_name = None
+total_games = None
+
+first_time_login = True
+
+def set_mode(new_mode):
+    global mode, deck_name, total_games
+    mode = new_mode
+
+    if mode == 'normal_6t':
+        deck_name = 'deck_6_vm'
+        total_games = 20
+        
+    elif mode == 'conquest_3t':
+        deck_name = 'deck_3_vm'
+        total_games = 10
+        
+    elif mode == 'high_voltage':
+        deck_name = 'deck_high_voltage'
+        total_games = 15
+    
+    elif mode == 'test':
+        deck_name = 'deck_6_vm'
+        total_games = 1
+
+accounts_dic = {
+    "user3": {
+        "login": "admin_login",
+        "password": "admin_pass"
+    }
+}
+
+# Es importante que cada cuenta termine con una coma para que accounts se reconozca como tupla aunque tenga solo 1 elemento
+
+accounts = (
+    #'gabriel',
+    #'simon',
+    # cuentas vendidas pero abandonadas por sus compradores
+    'jeremy',
+    'reeps_vm',
+    'overture_vm',
+    #'bender_vm',
+    #'john',
+    #'james',
+    #'guille',
+    #'robert',
+    #'michael',
+    #'william',
+    #'percy',
+
+)
+
+accounts_with_agatha = (
+    'james',
+    'guille',
+)
+
+accounts_without_agatha = (
+    #'gabriel',
+    'simon',
+    'percy',
+    'john',
+)
+
+accounts2 = {
+    "gabriel": "852c1e63-42ff-43e1-8f46-7308a7787e12",
+    "simon": "fba55558-4855-43ab-9603-57389b11588a",
+    "percy": "eb543f54-fffb-402a-89a9-bf4a8975862b"
+}
+
+
+EVENT_IMAGES = [
+    r'images/start_screen/three_years_of_snap.PNG',
+    r'images/start_screen/imposing_giant.PNG'
+]
+
+# Nombre del archivo según el día
+hoy = datetime.now().date().isoformat()
+HISTORIAL_FILE = f"historial_{hoy}.txt"
+
+POSITIONS_FIELDS= [
+    (231, 726),  # 1er campo 4to slot
+    (416, 726),  # 2do campo 4to slot
+    (598, 726)   # 3er campo 4to slot
+]
+POSITIONS_MOUSE_3_TURNS= [
+    (272+75,    847),  # 1er campo
+    (375,       847),  # 2do campo
+    (468-75,    847)   # 3er campo
+]
+POSITIONS_MOUSE_6_TURNS= [
+    (272, 847),  # 1er campo
+    (375, 847),  # 2do campo
+    (468, 847)   # 3er campo
+]
+
+REGION_BTNS = (565, 902, 755-565, 1021-902)
+REGION_MS_WINDOW = (0, 0, 765, 1038)
+REGION_END_TURN = (590, 918, 156, 105)
+REGION_TOTAL_MINUS_MS_WINDOW = (765, 0, 1920-765, 1038)
+
+REGION_BOUNTIES = (138, 430, 448, 388)
+slot_bounties = [(224, 435), (375, 435), (518, 435)]
+imagen_bounties = list(Path('images/stages/alliances_stage/bounties/').glob("*.png"))  # Cambia la extensión si es necesario
+imagen_bounties_win_location = list(Path('images/stages/alliances_stage/bounties/win_location').glob("*.png"))  # Cambia la extensión si es necesario
+
+BUG = False
+
+base_path = r'C:\Program Files (x86)\Steam\steamapps\common\MSs'
+#MSs = [fr'{base_path}\MARVEL SNAP - {account}\SNAP.exe' for account in accounts]
+
+SOLO_UNA_CUENTA = True  # Cambia a False cuando uses varias cuentas
+
+
+
+def on_key_press(event):
+    global stop_loop
+    if keyboard.is_pressed('ctrl+alt+p'):
+        stop_loop = True
+keyboard.on_press(on_key_press)
+stop_loop = False

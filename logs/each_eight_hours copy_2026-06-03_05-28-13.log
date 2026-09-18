@@ -1,0 +1,834 @@
+2026-06-03 05:28:13 | INFO | each_eight_hours copy.py:40 | LOG FILE PATH: \\vmware-host\Shared Folders\SHARED FILES VM\MS\logs\each_eight_hours copy_2026-06-03_05-28-13.log
+2026-06-03 05:28:13 | INFO | each_eight_hours copy.py:41 | Logger initialized
+2026-06-03 05:28:13 | INFO | each_eight_hours copy.py:68 | Script initialized
+2026-06-03 05:28:14 | INFO | each_eight_hours copy.py:98 | snap.exe terminated if it was running
+2026-06-03 05:28:14 | INFO | my_functions.py:57 | ⏳ Esperando WebSocket de OBS...
+2026-06-03 05:28:14 | INFO | baseclient.py:33 | Connecting with parameters: host='localhost' port=4455 password='' subs=0 timeout=None
+2026-06-03 05:28:14 | INFO | reqs.py:23 | Successfully identified ReqClient with the server using RPC version:1
+2026-06-03 05:28:14 | INFO | my_functions.py:63 | ✅ Conectado al OBS WebSocket
+2026-06-03 05:28:14 | INFO | my_functions.py:79 | ⏹ Grabación ya estaba activa, deteniéndola...
+2026-06-03 05:28:14 | INFO | baseclient.py:33 | Connecting with parameters: host='localhost' port=4455 password='' subs=0 timeout=None
+2026-06-03 05:28:14 | INFO | reqs.py:23 | Successfully identified ReqClient with the server using RPC version:1
+2026-06-03 05:28:14 | INFO | my_functions.py:94 | Record stopped.
+2026-06-03 05:28:26 | INFO | my_functions.py:124 | Archivo renombrado a: C:\Users\Farm\Videos\my_functions_2026-06-03_05-28-26.mkv
+2026-06-03 05:28:29 | INFO | my_functions.py:84 | 🎬 Nueva grabación iniciada
+2026-06-03 05:28:29 | INFO | my_functions.py:1325 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-06-03 05:28:30 | INFO | my_functions.py:1332 | 🔍 Esperando ventana que contenga alguna de: ['py', 'eight_hours'] (máx 20s)
+2026-06-03 05:28:30 | INFO | my_functions.py:1344 | ✅ Ventana encontrada: 'C:\Windows\py.exe'
+2026-06-03 05:28:30 | INFO | my_functions.py:1359 | ✅ Ventana seleccionada: 'C:\Windows\py.exe'
+2026-06-03 05:28:32 | INFO | my_functions.py:1382 | 🔁 Reajuste #1...
+2026-06-03 05:28:32 | INFO | my_functions.py:1389 | ✔ Verificación completa. Se hicieron 1 reajustes.
+2026-06-03 05:29:02 | INFO | my_functions.py:2155 | Starting Steam window scan
+2026-06-03 05:29:02 | INFO | my_functions.py:2158 | Found window: 
+2026-06-03 05:29:02 | INFO | my_functions.py:2158 | Found window: C:\Windows\py.exe
+2026-06-03 05:29:02 | INFO | my_functions.py:2158 | Found window: MS
+2026-06-03 05:29:02 | INFO | my_functions.py:2158 | Found window: Microsoft Text Input Application
+2026-06-03 05:29:02 | INFO | my_functions.py:2158 | Found window: 
+2026-06-03 05:29:02 | INFO | my_functions.py:2158 | Found window: 
+2026-06-03 05:29:02 | INFO | my_functions.py:2158 | Found window: 
+2026-06-03 05:29:02 | INFO | my_functions.py:2158 | Found window: 
+2026-06-03 05:29:02 | INFO | my_functions.py:2158 | Found window: Program Manager
+2026-06-03 05:29:02 | INFO | each_eight_hours copy.py:112 | Processing account: jeremy
+2026-06-03 05:29:02 | INFO | each_eight_hours copy.py:115 | Game relaunched for account
+2026-06-03 05:29:02 | INFO | my_functions.py:1325 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-06-03 05:29:02 | INFO | my_functions.py:1332 | 🔍 Esperando ventana que contenga alguna de: ['SNAP'] (máx 20s)
+2026-06-03 05:29:04 | INFO | my_functions.py:1344 | ✅ Ventana encontrada: 'SNAP'
+2026-06-03 05:29:04 | INFO | my_functions.py:1359 | ✅ Ventana seleccionada: 'SNAP'
+2026-06-03 05:29:06 | INFO | my_functions.py:1391 | ✔ Verificación completa. No hubo cambios después del primer ajuste.
+2026-06-03 05:29:06 | INFO | my_functions.py:1028 | [DEBUG] Resizing SNAP window...
+2026-06-03 05:29:06 | INFO | my_functions.py:1325 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-06-03 05:29:07 | INFO | my_functions.py:1332 | 🔍 Esperando ventana que contenga alguna de: ['SNAP'] (máx 20s)
+2026-06-03 05:29:07 | INFO | my_functions.py:1344 | ✅ Ventana encontrada: 'SNAP'
+2026-06-03 05:29:07 | INFO | my_functions.py:1359 | ✅ Ventana seleccionada: 'SNAP'
+2026-06-03 05:29:10 | INFO | my_functions.py:1391 | ✔ Verificación completa. No hubo cambios después del primer ajuste.
+2026-06-03 05:29:10 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['small_submit.PNG', 'small_submit_hover.png', 'submit_hover_2.png', 'small_submit_hover_2.png'] | timeout=90s | confidence=0.8
+2026-06-03 05:29:13 | INFO | my_functions.py:163 | Haciendo click en la posición (380, 642)
+2026-06-03 05:29:14 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): small_submit.PNG at (380, 642) delay=0.2s
+2026-06-03 05:29:17 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['small_submit.PNG', 'small_submit_hover.png', 'submit_hover_2.png', 'small_submit_hover_2.png'] | timeout=20s | confidence=0.8
+2026-06-03 05:29:18 | INFO | my_functions.py:163 | Haciendo click en la posición (380, 721)
+2026-06-03 05:29:19 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): small_submit.PNG at (380, 721) delay=0.2s
+2026-06-03 05:29:20 | INFO | my_functions.py:1325 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-06-03 05:29:20 | INFO | my_functions.py:1332 | 🔍 Esperando ventana que contenga alguna de: ['SNAP'] (máx 20s)
+2026-06-03 05:29:20 | INFO | my_functions.py:1344 | ✅ Ventana encontrada: 'SNAP'
+2026-06-03 05:29:20 | INFO | my_functions.py:1359 | ✅ Ventana seleccionada: 'SNAP'
+2026-06-03 05:29:23 | INFO | my_functions.py:1391 | ✔ Verificación completa. No hubo cambios después del primer ajuste.
+2026-06-03 05:29:23 | INFO | my_functions.py:201 | Searching please_sign.png (timeout=0s)
+2026-06-03 05:29:24 | INFO | my_functions.py:245 | 
+⛔ Not found: please_sign.png after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-06-03 05:29:24 | INFO | my_functions.py:201 | Searching sign_in_with_google2.PNG (timeout=90s)
+2026-06-03 05:29:24 | INFO | my_functions.py:231 | 
+✅ Found: sign_in_with_google2.PNG pos=(406, 957) time=0.16s confidence=0.8
+2026-06-03 05:29:24 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['sign_in_with_google2.PNG'] | timeout=20s | confidence=0.8
+2026-06-03 05:29:25 | INFO | my_functions.py:163 | Haciendo click en la posición (406, 957)
+2026-06-03 05:29:26 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): sign_in_with_google2.PNG at (406, 957) delay=1s
+2026-06-03 05:29:27 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['jeremy.png'] | timeout=30s | confidence=0.8
+2026-06-03 05:29:57 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:29:59 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['jeremy.png'] | timeout=0s | confidence=0.8
+2026-06-03 05:30:03 | INFO | my_functions.py:163 | Haciendo click en la posición (1143, 645)
+2026-06-03 05:30:04 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): jeremy.png at (1143, 645) delay=3s
+2026-06-03 05:30:06 | INFO | my_functions.py:201 | Searching marvelsnap_web.png (timeout=30s)
+2026-06-03 05:30:09 | INFO | my_functions.py:231 | 
+✅ Found: marvelsnap_web.png pos=(258, 80) time=2.27s confidence=0.7
+2026-06-03 05:30:09 | INFO | my_functions.py:201 | Searching shop_unselected.PNG (timeout=0s)
+2026-06-03 05:30:09 | INFO | my_functions.py:245 | 
+⛔ Not found: shop_unselected.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-06-03 05:30:09 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['super_premium.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:30:09 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:30:10 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['maybe_later.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:30:11 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:30:12 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['maybe_later2.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:30:12 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:30:13 | INFO | my_functions.py:201 | Searching go_to_shop.PNG (timeout=0s)
+2026-06-03 05:30:13 | INFO | my_functions.py:245 | 
+⛔ Not found: go_to_shop.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-06-03 05:30:13 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['14_days_of_winterverse.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:30:13 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:30:14 | INFO | my_functions.py:201 | Searching welcome_back_calendar.PNG (timeout=0s)
+2026-06-03 05:30:15 | INFO | my_functions.py:245 | 
+⛔ Not found: welcome_back_calendar.PNG after 0.17s region=(0, 0, 765, 1038) confidence=0.8
+2026-06-03 05:30:15 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['start_the_countdown.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:30:15 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:30:16 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['event_has_ended_sanctum.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:30:16 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:30:17 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['image_part_of_event_grand_arena_finished.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:30:18 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:30:19 | INFO | my_functions.py:201 | Searching 28_day_event_login_rewards.PNG (timeout=0s)
+2026-06-03 05:30:19 | INFO | my_functions.py:245 | 
+⛔ Not found: 28_day_event_login_rewards.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-06-03 05:30:19 | INFO | my_functions.py:201 | Searching 7_day_event_login.PNG (timeout=0s)
+2026-06-03 05:30:19 | INFO | my_functions.py:245 | 
+⛔ Not found: 7_day_event_login.PNG after 0.01s region=(0, 0, 765, 1038) confidence=0.8
+2026-06-03 05:30:19 | INFO | my_functions.py:201 | Searching 14_days_event.PNG (timeout=0s)
+2026-06-03 05:30:19 | INFO | my_functions.py:245 | 
+⛔ Not found: 14_days_event.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-06-03 05:30:19 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['lets_go.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:30:20 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:30:22 | INFO | my_functions.py:201 | Searching shop_unselected.PNG (timeout=0s)
+2026-06-03 05:30:22 | INFO | my_functions.py:231 | 
+✅ Found: shop_unselected.PNG pos=(88, 961) time=0.24s confidence=0.8
+2026-06-03 05:30:30 | INFO | my_functions.py:201 | Searching shop_unselected.PNG (timeout=0s)
+2026-06-03 05:30:30 | INFO | my_functions.py:231 | 
+✅ Found: shop_unselected.PNG pos=(88, 961) time=0.18s confidence=0.8
+2026-06-03 05:30:30 | INFO | my_functions.py:555 | Ya esta listo
+2026-06-03 05:30:34 | INFO | each_eight_hours copy.py:130 | Extracting data for account: jeremy
+2026-06-03 05:30:34 | INFO | each_eight_hours copy.py:144 | Account jeremy summary -> CL: 28993 | Unclaimed: 34 | Credits: 325, Gold: 950, Tokens: 775
+2026-06-03 05:30:34 | INFO | my_functions.py:361 | AVAILABLE: 4
+2026-06-03 05:30:34 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['white_x.png'] | timeout=2s | confidence=0.8
+2026-06-03 05:30:37 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:30:38 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['nut.png'] | timeout=20s | confidence=0.8
+2026-06-03 05:30:39 | INFO | my_functions.py:163 | Haciendo click en la posición (184, 78)
+2026-06-03 05:30:40 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): nut.png at (184, 78) delay=1s
+2026-06-03 05:30:41 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['graphics_quality.png'] | timeout=3s | confidence=0.8
+2026-06-03 05:30:43 | INFO | my_functions.py:163 | Haciendo click en la posición (304, 644)
+2026-06-03 05:30:44 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): graphics_quality.png at (304, 644) delay=1s
+2026-06-03 05:30:46 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['sign_out.png'] | timeout=20s | confidence=0.8
+2026-06-03 05:30:47 | INFO | my_functions.py:163 | Haciendo click en la posición (380, 796)
+2026-06-03 05:30:49 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): sign_out.png at (380, 796) delay=1s
+2026-06-03 05:30:51 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['sign_out_grande.png'] | timeout=20s | confidence=0.8
+2026-06-03 05:30:52 | INFO | my_functions.py:163 | Haciendo click en la posición (359, 437)
+2026-06-03 05:30:53 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): sign_out_grande.png at (359, 437) delay=1s
+2026-06-03 05:30:54 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['sign_out2.png'] | timeout=20s | confidence=0.8
+2026-06-03 05:30:56 | INFO | my_functions.py:163 | Haciendo click en la posición (383, 634)
+2026-06-03 05:30:57 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): sign_out2.png at (383, 634) delay=1s
+2026-06-03 05:30:58 | INFO | my_functions.py:1325 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-06-03 05:30:58 | INFO | my_functions.py:1332 | 🔍 Esperando ventana que contenga alguna de: SNAP (máx 20s)
+2026-06-03 05:30:58 | INFO | my_functions.py:1344 | ✅ Ventana encontrada: 'SNAP'
+2026-06-03 05:30:58 | INFO | my_functions.py:1359 | ✅ Ventana seleccionada: 'SNAP'
+2026-06-03 05:31:00 | INFO | my_functions.py:1382 | 🔁 Reajuste #1...
+2026-06-03 05:31:02 | INFO | my_functions.py:1389 | ✔ Verificación completa. Se hicieron 1 reajustes.
+2026-06-03 05:31:06 | INFO | each_eight_hours copy.py:169 | Logged out due to insufficient submissions
+2026-06-03 05:31:07 | INFO | each_eight_hours copy.py:172 | snap.exe closed
+2026-06-03 05:31:10 | INFO | each_eight_hours copy.py:112 | Processing account: reeps_vm
+2026-06-03 05:31:10 | INFO | each_eight_hours copy.py:115 | Game relaunched for account
+2026-06-03 05:31:10 | INFO | my_functions.py:1325 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-06-03 05:31:11 | INFO | my_functions.py:1332 | 🔍 Esperando ventana que contenga alguna de: ['SNAP'] (máx 20s)
+2026-06-03 05:31:13 | INFO | my_functions.py:1344 | ✅ Ventana encontrada: 'SNAP'
+2026-06-03 05:31:13 | INFO | my_functions.py:1359 | ✅ Ventana seleccionada: 'SNAP'
+2026-06-03 05:31:15 | INFO | my_functions.py:1391 | ✔ Verificación completa. No hubo cambios después del primer ajuste.
+2026-06-03 05:31:15 | INFO | my_functions.py:1028 | [DEBUG] Resizing SNAP window...
+2026-06-03 05:31:15 | INFO | my_functions.py:1325 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-06-03 05:31:15 | INFO | my_functions.py:1332 | 🔍 Esperando ventana que contenga alguna de: ['SNAP'] (máx 20s)
+2026-06-03 05:31:15 | INFO | my_functions.py:1344 | ✅ Ventana encontrada: 'SNAP'
+2026-06-03 05:31:15 | INFO | my_functions.py:1359 | ✅ Ventana seleccionada: 'SNAP'
+2026-06-03 05:31:18 | INFO | my_functions.py:1391 | ✔ Verificación completa. No hubo cambios después del primer ajuste.
+2026-06-03 05:31:18 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['small_submit.PNG', 'small_submit_hover.png', 'submit_hover_2.png', 'small_submit_hover_2.png'] | timeout=90s | confidence=0.8
+2026-06-03 05:31:23 | INFO | my_functions.py:163 | Haciendo click en la posición (380, 642)
+2026-06-03 05:31:24 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): small_submit.PNG at (380, 642) delay=0.2s
+2026-06-03 05:31:28 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['small_submit.PNG', 'small_submit_hover.png', 'submit_hover_2.png', 'small_submit_hover_2.png'] | timeout=20s | confidence=0.8
+2026-06-03 05:31:28 | INFO | my_functions.py:163 | Haciendo click en la posición (380, 721)
+2026-06-03 05:31:29 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): small_submit.PNG at (380, 721) delay=0.2s
+2026-06-03 05:31:30 | INFO | my_functions.py:1325 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-06-03 05:31:31 | INFO | my_functions.py:1332 | 🔍 Esperando ventana que contenga alguna de: ['SNAP'] (máx 20s)
+2026-06-03 05:31:31 | INFO | my_functions.py:1344 | ✅ Ventana encontrada: 'SNAP'
+2026-06-03 05:31:31 | INFO | my_functions.py:1359 | ✅ Ventana seleccionada: 'SNAP'
+2026-06-03 05:31:33 | INFO | my_functions.py:1382 | 🔁 Reajuste #1...
+2026-06-03 05:31:34 | INFO | my_functions.py:1389 | ✔ Verificación completa. Se hicieron 1 reajustes.
+2026-06-03 05:31:34 | INFO | my_functions.py:201 | Searching please_sign.png (timeout=0s)
+2026-06-03 05:31:34 | INFO | my_functions.py:231 | 
+✅ Found: please_sign.png pos=(383, 438) time=0.18s confidence=0.8
+2026-06-03 05:31:34 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['ok_btn.png'] | timeout=20s | confidence=0.8
+2026-06-03 05:31:35 | INFO | my_functions.py:163 | Haciendo click en la posición (382, 634)
+2026-06-03 05:31:36 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): ok_btn.png at (382, 634) delay=1s
+2026-06-03 05:31:37 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['small_submit.PNG', 'small_submit_hover.png', 'submit_hover_2.png', 'small_submit_hover_2.png'] | timeout=90s | confidence=0.8
+2026-06-03 05:31:39 | INFO | my_functions.py:163 | Haciendo click en la posición (383, 643)
+2026-06-03 05:31:40 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): small_submit_hover_2.png at (383, 643) delay=0.2s
+2026-06-03 05:31:41 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['small_submit.PNG', 'small_submit_hover.png', 'submit_hover_2.png', 'small_submit_hover_2.png'] | timeout=20s | confidence=0.8
+2026-06-03 05:31:41 | INFO | my_functions.py:163 | Haciendo click en la posición (380, 721)
+2026-06-03 05:31:43 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): small_submit.PNG at (380, 721) delay=0.2s
+2026-06-03 05:31:44 | INFO | my_functions.py:201 | Searching sign_in_with_google2.PNG (timeout=90s)
+2026-06-03 05:31:44 | INFO | my_functions.py:231 | 
+✅ Found: sign_in_with_google2.PNG pos=(406, 957) time=0.15s confidence=0.8
+2026-06-03 05:31:44 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['sign_in_with_google2.PNG'] | timeout=20s | confidence=0.8
+2026-06-03 05:31:45 | INFO | my_functions.py:163 | Haciendo click en la posición (406, 957)
+2026-06-03 05:31:47 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): sign_in_with_google2.PNG at (406, 957) delay=1s
+2026-06-03 05:31:48 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['reeps_vm.png'] | timeout=30s | confidence=0.8
+2026-06-03 05:31:59 | INFO | my_functions.py:163 | Haciendo click en la posición (1126, 534)
+2026-06-03 05:32:00 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): reeps_vm.png at (1126, 534) delay=3s
+2026-06-03 05:32:01 | INFO | my_functions.py:201 | Searching marvelsnap_web.png (timeout=30s)
+2026-06-03 05:32:04 | INFO | my_functions.py:231 | 
+✅ Found: marvelsnap_web.png pos=(258, 80) time=3.09s confidence=0.7
+2026-06-03 05:32:05 | INFO | my_functions.py:201 | Searching shop_unselected.PNG (timeout=0s)
+2026-06-03 05:32:05 | INFO | my_functions.py:245 | 
+⛔ Not found: shop_unselected.PNG after 0.01s region=(0, 0, 765, 1038) confidence=0.8
+2026-06-03 05:32:05 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['super_premium.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:32:05 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:32:06 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['maybe_later.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:32:06 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:32:07 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['maybe_later2.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:32:08 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:32:09 | INFO | my_functions.py:201 | Searching go_to_shop.PNG (timeout=0s)
+2026-06-03 05:32:09 | INFO | my_functions.py:245 | 
+⛔ Not found: go_to_shop.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-06-03 05:32:09 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['14_days_of_winterverse.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:32:09 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:32:10 | INFO | my_functions.py:201 | Searching welcome_back_calendar.PNG (timeout=0s)
+2026-06-03 05:32:10 | INFO | my_functions.py:245 | 
+⛔ Not found: welcome_back_calendar.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-06-03 05:32:10 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['start_the_countdown.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:32:11 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:32:12 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['event_has_ended_sanctum.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:32:12 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:32:13 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['image_part_of_event_grand_arena_finished.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:32:13 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:32:14 | INFO | my_functions.py:201 | Searching 28_day_event_login_rewards.PNG (timeout=0s)
+2026-06-03 05:32:15 | INFO | my_functions.py:245 | 
+⛔ Not found: 28_day_event_login_rewards.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-06-03 05:32:15 | INFO | my_functions.py:201 | Searching 7_day_event_login.PNG (timeout=0s)
+2026-06-03 05:32:15 | INFO | my_functions.py:245 | 
+⛔ Not found: 7_day_event_login.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-06-03 05:32:15 | INFO | my_functions.py:201 | Searching 14_days_event.PNG (timeout=0s)
+2026-06-03 05:32:15 | INFO | my_functions.py:245 | 
+⛔ Not found: 14_days_event.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-06-03 05:32:15 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['lets_go.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:32:15 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:32:17 | INFO | my_functions.py:201 | Searching shop_unselected.PNG (timeout=0s)
+2026-06-03 05:32:18 | INFO | my_functions.py:245 | 
+⛔ Not found: shop_unselected.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-06-03 05:32:18 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['super_premium.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:32:19 | INFO | my_functions.py:163 | Haciendo click en la posición (480, 777)
+2026-06-03 05:32:20 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): super_premium.PNG at (480, 777) delay=1s
+2026-06-03 05:32:21 | INFO | my_functions.py:174 | Presionando ESC (1/1)
+2026-06-03 05:32:30 | INFO | my_functions.py:201 | Searching shop_unselected.PNG (timeout=0s)
+2026-06-03 05:32:30 | INFO | my_functions.py:231 | 
+✅ Found: shop_unselected.PNG pos=(88, 961) time=0.2s confidence=0.8
+2026-06-03 05:32:30 | INFO | my_functions.py:555 | Ya esta listo
+2026-06-03 05:32:34 | INFO | each_eight_hours copy.py:130 | Extracting data for account: reeps_vm
+2026-06-03 05:32:34 | INFO | each_eight_hours copy.py:144 | Account reeps_vm summary -> CL: 2883 | Unclaimed: 175 | Credits: 875, Gold: 4280, Tokens: 10650
+2026-06-03 05:32:34 | INFO | my_functions.py:361 | AVAILABLE: 4
+2026-06-03 05:32:34 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['white_x.png'] | timeout=2s | confidence=0.8
+2026-06-03 05:32:36 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:32:37 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['nut.png'] | timeout=20s | confidence=0.8
+2026-06-03 05:32:39 | INFO | my_functions.py:163 | Haciendo click en la posición (184, 78)
+2026-06-03 05:32:40 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): nut.png at (184, 78) delay=1s
+2026-06-03 05:32:41 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['graphics_quality.png'] | timeout=3s | confidence=0.8
+2026-06-03 05:32:42 | INFO | my_functions.py:163 | Haciendo click en la posición (304, 644)
+2026-06-03 05:32:43 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): graphics_quality.png at (304, 644) delay=1s
+2026-06-03 05:32:46 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['sign_out.png'] | timeout=20s | confidence=0.8
+2026-06-03 05:32:47 | INFO | my_functions.py:163 | Haciendo click en la posición (380, 796)
+2026-06-03 05:32:48 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): sign_out.png at (380, 796) delay=1s
+2026-06-03 05:32:51 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['sign_out_grande.png'] | timeout=20s | confidence=0.8
+2026-06-03 05:32:52 | INFO | my_functions.py:163 | Haciendo click en la posición (359, 437)
+2026-06-03 05:32:53 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): sign_out_grande.png at (359, 437) delay=1s
+2026-06-03 05:32:54 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['sign_out2.png'] | timeout=20s | confidence=0.8
+2026-06-03 05:32:56 | INFO | my_functions.py:163 | Haciendo click en la posición (383, 634)
+2026-06-03 05:32:57 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): sign_out2.png at (383, 634) delay=1s
+2026-06-03 05:32:58 | INFO | my_functions.py:1325 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-06-03 05:32:58 | INFO | my_functions.py:1332 | 🔍 Esperando ventana que contenga alguna de: SNAP (máx 20s)
+2026-06-03 05:32:58 | INFO | my_functions.py:1344 | ✅ Ventana encontrada: 'SNAP'
+2026-06-03 05:32:58 | INFO | my_functions.py:1359 | ✅ Ventana seleccionada: 'SNAP'
+2026-06-03 05:33:00 | INFO | my_functions.py:1382 | 🔁 Reajuste #1...
+2026-06-03 05:33:02 | INFO | my_functions.py:1389 | ✔ Verificación completa. Se hicieron 1 reajustes.
+2026-06-03 05:33:06 | INFO | each_eight_hours copy.py:169 | Logged out due to insufficient submissions
+2026-06-03 05:33:07 | INFO | each_eight_hours copy.py:172 | snap.exe closed
+2026-06-03 05:33:10 | INFO | each_eight_hours copy.py:112 | Processing account: overture_vm
+2026-06-03 05:33:10 | INFO | each_eight_hours copy.py:115 | Game relaunched for account
+2026-06-03 05:33:10 | INFO | my_functions.py:1325 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-06-03 05:33:10 | INFO | my_functions.py:1332 | 🔍 Esperando ventana que contenga alguna de: ['SNAP'] (máx 20s)
+2026-06-03 05:33:13 | INFO | my_functions.py:1344 | ✅ Ventana encontrada: 'SNAP'
+2026-06-03 05:33:13 | INFO | my_functions.py:1359 | ✅ Ventana seleccionada: 'SNAP'
+2026-06-03 05:33:15 | INFO | my_functions.py:1391 | ✔ Verificación completa. No hubo cambios después del primer ajuste.
+2026-06-03 05:33:15 | INFO | my_functions.py:1028 | [DEBUG] Resizing SNAP window...
+2026-06-03 05:33:15 | INFO | my_functions.py:1325 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-06-03 05:33:15 | INFO | my_functions.py:1332 | 🔍 Esperando ventana que contenga alguna de: ['SNAP'] (máx 20s)
+2026-06-03 05:33:15 | INFO | my_functions.py:1344 | ✅ Ventana encontrada: 'SNAP'
+2026-06-03 05:33:15 | INFO | my_functions.py:1359 | ✅ Ventana seleccionada: 'SNAP'
+2026-06-03 05:33:18 | INFO | my_functions.py:1391 | ✔ Verificación completa. No hubo cambios después del primer ajuste.
+2026-06-03 05:33:18 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['small_submit.PNG', 'small_submit_hover.png', 'submit_hover_2.png', 'small_submit_hover_2.png'] | timeout=90s | confidence=0.8
+2026-06-03 05:33:21 | INFO | my_functions.py:163 | Haciendo click en la posición (383, 637)
+2026-06-03 05:33:22 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): submit_hover_2.png at (383, 637) delay=0.2s
+2026-06-03 05:33:25 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['small_submit.PNG', 'small_submit_hover.png', 'submit_hover_2.png', 'small_submit_hover_2.png'] | timeout=20s | confidence=0.8
+2026-06-03 05:33:26 | INFO | my_functions.py:163 | Haciendo click en la posición (380, 721)
+2026-06-03 05:33:27 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): small_submit.PNG at (380, 721) delay=0.2s
+2026-06-03 05:33:28 | INFO | my_functions.py:1325 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-06-03 05:33:28 | INFO | my_functions.py:1332 | 🔍 Esperando ventana que contenga alguna de: ['SNAP'] (máx 20s)
+2026-06-03 05:33:28 | INFO | my_functions.py:1344 | ✅ Ventana encontrada: 'SNAP'
+2026-06-03 05:33:28 | INFO | my_functions.py:1359 | ✅ Ventana seleccionada: 'SNAP'
+2026-06-03 05:33:30 | INFO | my_functions.py:1382 | 🔁 Reajuste #1...
+2026-06-03 05:33:31 | INFO | my_functions.py:1389 | ✔ Verificación completa. Se hicieron 1 reajustes.
+2026-06-03 05:33:31 | INFO | my_functions.py:201 | Searching please_sign.png (timeout=0s)
+2026-06-03 05:33:32 | INFO | my_functions.py:231 | 
+✅ Found: please_sign.png pos=(383, 438) time=0.18s confidence=0.8
+2026-06-03 05:33:32 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['ok_btn.png'] | timeout=20s | confidence=0.8
+2026-06-03 05:33:33 | INFO | my_functions.py:163 | Haciendo click en la posición (382, 634)
+2026-06-03 05:33:34 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): ok_btn.png at (382, 634) delay=1s
+2026-06-03 05:33:35 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['small_submit.PNG', 'small_submit_hover.png', 'submit_hover_2.png', 'small_submit_hover_2.png'] | timeout=90s | confidence=0.8
+2026-06-03 05:33:36 | INFO | my_functions.py:163 | Haciendo click en la posición (383, 643)
+2026-06-03 05:33:38 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): small_submit_hover_2.png at (383, 643) delay=0.2s
+2026-06-03 05:33:39 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['small_submit.PNG', 'small_submit_hover.png', 'submit_hover_2.png', 'small_submit_hover_2.png'] | timeout=20s | confidence=0.8
+2026-06-03 05:33:39 | INFO | my_functions.py:163 | Haciendo click en la posición (380, 721)
+2026-06-03 05:33:40 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): small_submit.PNG at (380, 721) delay=0.2s
+2026-06-03 05:33:42 | INFO | my_functions.py:201 | Searching sign_in_with_google2.PNG (timeout=90s)
+2026-06-03 05:33:42 | INFO | my_functions.py:231 | 
+✅ Found: sign_in_with_google2.PNG pos=(406, 957) time=0.16s confidence=0.8
+2026-06-03 05:33:42 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['sign_in_with_google2.PNG'] | timeout=20s | confidence=0.8
+2026-06-03 05:33:43 | INFO | my_functions.py:163 | Haciendo click en la posición (406, 957)
+2026-06-03 05:33:44 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): sign_in_with_google2.PNG at (406, 957) delay=1s
+2026-06-03 05:33:45 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['overture_vm.png'] | timeout=30s | confidence=0.8
+2026-06-03 05:33:52 | INFO | my_functions.py:163 | Haciendo click en la posición (1126, 447)
+2026-06-03 05:33:53 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): overture_vm.png at (1126, 447) delay=3s
+2026-06-03 05:33:54 | INFO | my_functions.py:201 | Searching marvelsnap_web.png (timeout=30s)
+2026-06-03 05:33:57 | INFO | my_functions.py:231 | 
+✅ Found: marvelsnap_web.png pos=(258, 80) time=3.22s confidence=0.7
+2026-06-03 05:33:58 | INFO | my_functions.py:201 | Searching shop_unselected.PNG (timeout=0s)
+2026-06-03 05:33:58 | INFO | my_functions.py:245 | 
+⛔ Not found: shop_unselected.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-06-03 05:33:58 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['super_premium.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:33:58 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:33:59 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['maybe_later.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:33:59 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:34:00 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['maybe_later2.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:34:01 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:34:02 | INFO | my_functions.py:201 | Searching go_to_shop.PNG (timeout=0s)
+2026-06-03 05:34:02 | INFO | my_functions.py:245 | 
+⛔ Not found: go_to_shop.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-06-03 05:34:02 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['14_days_of_winterverse.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:34:02 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:34:03 | INFO | my_functions.py:201 | Searching welcome_back_calendar.PNG (timeout=0s)
+2026-06-03 05:34:03 | INFO | my_functions.py:245 | 
+⛔ Not found: welcome_back_calendar.PNG after 0.17s region=(0, 0, 765, 1038) confidence=0.8
+2026-06-03 05:34:03 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['start_the_countdown.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:34:04 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:34:05 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['event_has_ended_sanctum.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:34:05 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:34:06 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['image_part_of_event_grand_arena_finished.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:34:06 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:34:07 | INFO | my_functions.py:201 | Searching 28_day_event_login_rewards.PNG (timeout=0s)
+2026-06-03 05:34:08 | INFO | my_functions.py:245 | 
+⛔ Not found: 28_day_event_login_rewards.PNG after 0.21s region=(0, 0, 765, 1038) confidence=0.8
+2026-06-03 05:34:08 | INFO | my_functions.py:201 | Searching 7_day_event_login.PNG (timeout=0s)
+2026-06-03 05:34:08 | INFO | my_functions.py:245 | 
+⛔ Not found: 7_day_event_login.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-06-03 05:34:08 | INFO | my_functions.py:201 | Searching 14_days_event.PNG (timeout=0s)
+2026-06-03 05:34:08 | INFO | my_functions.py:245 | 
+⛔ Not found: 14_days_event.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-06-03 05:34:08 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['lets_go.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:34:08 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:34:11 | INFO | my_functions.py:201 | Searching shop_unselected.PNG (timeout=0s)
+2026-06-03 05:34:11 | INFO | my_functions.py:245 | 
+⛔ Not found: shop_unselected.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-06-03 05:34:11 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['super_premium.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:34:11 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:34:12 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['maybe_later.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:34:12 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:34:13 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['maybe_later2.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:34:14 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:34:15 | INFO | my_functions.py:201 | Searching go_to_shop.PNG (timeout=0s)
+2026-06-03 05:34:15 | INFO | my_functions.py:231 | 
+✅ Found: go_to_shop.PNG pos=(275, 827) time=0.19s confidence=0.8
+2026-06-03 05:34:17 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['white_x.png'] | timeout=20s | confidence=0.8
+2026-06-03 05:34:18 | INFO | my_functions.py:163 | Haciendo click en la posición (597, 113)
+2026-06-03 05:34:19 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): white_x.png at (597, 113) delay=1s
+2026-06-03 05:34:29 | INFO | my_functions.py:201 | Searching shop_unselected.PNG (timeout=0s)
+2026-06-03 05:34:29 | INFO | my_functions.py:245 | 
+⛔ Not found: shop_unselected.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-06-03 05:34:30 | INFO | my_functions.py:201 | Searching shop_unselected.PNG (timeout=0s)
+2026-06-03 05:34:30 | INFO | my_functions.py:245 | 
+⛔ Not found: shop_unselected.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-06-03 05:34:30 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['super_premium.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:34:31 | INFO | my_functions.py:163 | Haciendo click en la posición (480, 777)
+2026-06-03 05:34:33 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): super_premium.PNG at (480, 777) delay=1s
+2026-06-03 05:34:34 | INFO | my_functions.py:174 | Presionando ESC (1/1)
+2026-06-03 05:34:42 | INFO | my_functions.py:201 | Searching shop_unselected.PNG (timeout=0s)
+2026-06-03 05:34:43 | INFO | my_functions.py:231 | 
+✅ Found: shop_unselected.PNG pos=(88, 961) time=0.18s confidence=0.8
+2026-06-03 05:34:43 | INFO | my_functions.py:555 | Ya esta listo
+2026-06-03 05:34:47 | INFO | each_eight_hours copy.py:130 | Extracting data for account: overture_vm
+2026-06-03 05:34:47 | INFO | each_eight_hours copy.py:144 | Account overture_vm summary -> CL: 5959 | Unclaimed: 142 | Credits: 2400, Gold: 4930, Tokens: 5800
+2026-06-03 05:34:47 | INFO | my_functions.py:361 | AVAILABLE: 4
+2026-06-03 05:34:47 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['white_x.png'] | timeout=2s | confidence=0.8
+2026-06-03 05:34:49 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:34:50 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['nut.png'] | timeout=20s | confidence=0.8
+2026-06-03 05:34:51 | INFO | my_functions.py:163 | Haciendo click en la posición (184, 78)
+2026-06-03 05:34:53 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): nut.png at (184, 78) delay=1s
+2026-06-03 05:34:54 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['graphics_quality.png'] | timeout=3s | confidence=0.8
+2026-06-03 05:34:55 | INFO | my_functions.py:163 | Haciendo click en la posición (304, 644)
+2026-06-03 05:34:56 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): graphics_quality.png at (304, 644) delay=1s
+2026-06-03 05:34:58 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['sign_out.png'] | timeout=20s | confidence=0.8
+2026-06-03 05:34:59 | INFO | my_functions.py:163 | Haciendo click en la posición (380, 796)
+2026-06-03 05:35:01 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): sign_out.png at (380, 796) delay=1s
+2026-06-03 05:35:03 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['sign_out_grande.png'] | timeout=20s | confidence=0.8
+2026-06-03 05:35:04 | INFO | my_functions.py:163 | Haciendo click en la posición (359, 437)
+2026-06-03 05:35:05 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): sign_out_grande.png at (359, 437) delay=1s
+2026-06-03 05:35:06 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['sign_out2.png'] | timeout=20s | confidence=0.8
+2026-06-03 05:35:07 | INFO | my_functions.py:163 | Haciendo click en la posición (383, 634)
+2026-06-03 05:35:08 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): sign_out2.png at (383, 634) delay=1s
+2026-06-03 05:35:09 | INFO | my_functions.py:1325 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-06-03 05:35:09 | INFO | my_functions.py:1332 | 🔍 Esperando ventana que contenga alguna de: SNAP (máx 20s)
+2026-06-03 05:35:09 | INFO | my_functions.py:1344 | ✅ Ventana encontrada: 'SNAP'
+2026-06-03 05:35:09 | INFO | my_functions.py:1359 | ✅ Ventana seleccionada: 'SNAP'
+2026-06-03 05:35:11 | INFO | my_functions.py:1382 | 🔁 Reajuste #1...
+2026-06-03 05:35:13 | INFO | my_functions.py:1389 | ✔ Verificación completa. Se hicieron 1 reajustes.
+2026-06-03 05:35:18 | INFO | each_eight_hours copy.py:169 | Logged out due to insufficient submissions
+2026-06-03 05:35:19 | INFO | each_eight_hours copy.py:172 | snap.exe closed
+2026-06-03 05:35:22 | INFO | each_eight_hours copy.py:112 | Processing account: bender_vm
+2026-06-03 05:35:22 | INFO | each_eight_hours copy.py:115 | Game relaunched for account
+2026-06-03 05:35:22 | INFO | my_functions.py:1325 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-06-03 05:35:22 | INFO | my_functions.py:1332 | 🔍 Esperando ventana que contenga alguna de: ['SNAP'] (máx 20s)
+2026-06-03 05:35:24 | INFO | my_functions.py:1344 | ✅ Ventana encontrada: 'SNAP'
+2026-06-03 05:35:24 | INFO | my_functions.py:1359 | ✅ Ventana seleccionada: 'SNAP'
+2026-06-03 05:35:26 | INFO | my_functions.py:1391 | ✔ Verificación completa. No hubo cambios después del primer ajuste.
+2026-06-03 05:35:26 | INFO | my_functions.py:1028 | [DEBUG] Resizing SNAP window...
+2026-06-03 05:35:26 | INFO | my_functions.py:1325 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-06-03 05:35:26 | INFO | my_functions.py:1332 | 🔍 Esperando ventana que contenga alguna de: ['SNAP'] (máx 20s)
+2026-06-03 05:35:26 | INFO | my_functions.py:1344 | ✅ Ventana encontrada: 'SNAP'
+2026-06-03 05:35:26 | INFO | my_functions.py:1359 | ✅ Ventana seleccionada: 'SNAP'
+2026-06-03 05:35:30 | INFO | my_functions.py:1391 | ✔ Verificación completa. No hubo cambios después del primer ajuste.
+2026-06-03 05:35:30 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['small_submit.PNG', 'small_submit_hover.png', 'submit_hover_2.png', 'small_submit_hover_2.png'] | timeout=90s | confidence=0.8
+2026-06-03 05:35:33 | INFO | my_functions.py:163 | Haciendo click en la posición (383, 646)
+2026-06-03 05:35:34 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): small_submit_hover_2.png at (383, 646) delay=0.2s
+2026-06-03 05:35:37 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['small_submit.PNG', 'small_submit_hover.png', 'submit_hover_2.png', 'small_submit_hover_2.png'] | timeout=20s | confidence=0.8
+2026-06-03 05:35:38 | INFO | my_functions.py:163 | Haciendo click en la posición (380, 721)
+2026-06-03 05:35:39 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): small_submit.PNG at (380, 721) delay=0.2s
+2026-06-03 05:35:40 | INFO | my_functions.py:1325 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-06-03 05:35:40 | INFO | my_functions.py:1332 | 🔍 Esperando ventana que contenga alguna de: ['SNAP'] (máx 20s)
+2026-06-03 05:35:40 | INFO | my_functions.py:1344 | ✅ Ventana encontrada: 'SNAP'
+2026-06-03 05:35:40 | INFO | my_functions.py:1359 | ✅ Ventana seleccionada: 'SNAP'
+2026-06-03 05:35:42 | INFO | my_functions.py:1382 | 🔁 Reajuste #1...
+2026-06-03 05:35:43 | INFO | my_functions.py:1389 | ✔ Verificación completa. Se hicieron 1 reajustes.
+2026-06-03 05:35:43 | INFO | my_functions.py:201 | Searching please_sign.png (timeout=0s)
+2026-06-03 05:35:43 | INFO | my_functions.py:231 | 
+✅ Found: please_sign.png pos=(383, 438) time=0.19s confidence=0.8
+2026-06-03 05:35:43 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['ok_btn.png'] | timeout=20s | confidence=0.8
+2026-06-03 05:35:44 | INFO | my_functions.py:163 | Haciendo click en la posición (382, 634)
+2026-06-03 05:35:46 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): ok_btn.png at (382, 634) delay=1s
+2026-06-03 05:35:47 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['small_submit.PNG', 'small_submit_hover.png', 'submit_hover_2.png', 'small_submit_hover_2.png'] | timeout=90s | confidence=0.8
+2026-06-03 05:35:49 | INFO | my_functions.py:163 | Haciendo click en la posición (383, 643)
+2026-06-03 05:35:50 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): small_submit_hover_2.png at (383, 643) delay=0.2s
+2026-06-03 05:35:51 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['small_submit.PNG', 'small_submit_hover.png', 'submit_hover_2.png', 'small_submit_hover_2.png'] | timeout=20s | confidence=0.8
+2026-06-03 05:35:51 | INFO | my_functions.py:163 | Haciendo click en la posición (380, 721)
+2026-06-03 05:35:53 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): small_submit.PNG at (380, 721) delay=0.2s
+2026-06-03 05:35:54 | INFO | my_functions.py:201 | Searching sign_in_with_google2.PNG (timeout=90s)
+2026-06-03 05:35:54 | INFO | my_functions.py:231 | 
+✅ Found: sign_in_with_google2.PNG pos=(406, 957) time=0.18s confidence=0.8
+2026-06-03 05:35:54 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['sign_in_with_google2.PNG'] | timeout=20s | confidence=0.8
+2026-06-03 05:35:55 | INFO | my_functions.py:163 | Haciendo click en la posición (406, 957)
+2026-06-03 05:35:56 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): sign_in_with_google2.PNG at (406, 957) delay=1s
+2026-06-03 05:35:58 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['bender_vm.png'] | timeout=30s | confidence=0.8
+2026-06-03 05:36:04 | INFO | my_functions.py:163 | Haciendo click en la posición (1125, 358)
+2026-06-03 05:36:06 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): bender_vm.png at (1125, 358) delay=3s
+2026-06-03 05:36:07 | INFO | my_functions.py:201 | Searching marvelsnap_web.png (timeout=30s)
+2026-06-03 05:36:10 | INFO | my_functions.py:231 | 
+✅ Found: marvelsnap_web.png pos=(258, 80) time=3.57s confidence=0.7
+2026-06-03 05:36:11 | INFO | my_functions.py:201 | Searching shop_unselected.PNG (timeout=0s)
+2026-06-03 05:36:11 | INFO | my_functions.py:245 | 
+⛔ Not found: shop_unselected.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-06-03 05:36:11 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['super_premium.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:36:11 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:36:12 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['maybe_later.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:36:12 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:36:14 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['maybe_later2.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:36:14 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:36:15 | INFO | my_functions.py:201 | Searching go_to_shop.PNG (timeout=0s)
+2026-06-03 05:36:15 | INFO | my_functions.py:245 | 
+⛔ Not found: go_to_shop.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-06-03 05:36:15 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['14_days_of_winterverse.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:36:15 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:36:16 | INFO | my_functions.py:201 | Searching welcome_back_calendar.PNG (timeout=0s)
+2026-06-03 05:36:17 | INFO | my_functions.py:245 | 
+⛔ Not found: welcome_back_calendar.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-06-03 05:36:17 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['start_the_countdown.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:36:17 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:36:18 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['event_has_ended_sanctum.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:36:18 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:36:19 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['image_part_of_event_grand_arena_finished.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:36:19 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:36:21 | INFO | my_functions.py:201 | Searching 28_day_event_login_rewards.PNG (timeout=0s)
+2026-06-03 05:36:21 | INFO | my_functions.py:245 | 
+⛔ Not found: 28_day_event_login_rewards.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-06-03 05:36:21 | INFO | my_functions.py:201 | Searching 7_day_event_login.PNG (timeout=0s)
+2026-06-03 05:36:21 | INFO | my_functions.py:245 | 
+⛔ Not found: 7_day_event_login.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-06-03 05:36:21 | INFO | my_functions.py:201 | Searching 14_days_event.PNG (timeout=0s)
+2026-06-03 05:36:21 | INFO | my_functions.py:245 | 
+⛔ Not found: 14_days_event.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-06-03 05:36:21 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['lets_go.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:36:21 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:36:23 | INFO | my_functions.py:201 | Searching shop_unselected.PNG (timeout=0s)
+2026-06-03 05:36:24 | INFO | my_functions.py:245 | 
+⛔ Not found: shop_unselected.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-06-03 05:36:24 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['super_premium.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:36:24 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:36:25 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['maybe_later.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:36:25 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:36:26 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['maybe_later2.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:36:26 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:36:28 | INFO | my_functions.py:201 | Searching go_to_shop.PNG (timeout=0s)
+2026-06-03 05:36:28 | INFO | my_functions.py:231 | 
+✅ Found: go_to_shop.PNG pos=(275, 827) time=0.21s confidence=0.8
+2026-06-03 05:36:30 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['white_x.png'] | timeout=20s | confidence=0.8
+2026-06-03 05:36:31 | INFO | my_functions.py:163 | Haciendo click en la posición (597, 113)
+2026-06-03 05:36:32 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): white_x.png at (597, 113) delay=1s
+2026-06-03 05:36:41 | INFO | my_functions.py:201 | Searching shop_unselected.PNG (timeout=0s)
+2026-06-03 05:36:42 | INFO | my_functions.py:245 | 
+⛔ Not found: shop_unselected.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-06-03 05:36:43 | INFO | my_functions.py:201 | Searching shop_unselected.PNG (timeout=0s)
+2026-06-03 05:36:43 | INFO | my_functions.py:245 | 
+⛔ Not found: shop_unselected.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-06-03 05:36:43 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['super_premium.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:36:44 | INFO | my_functions.py:163 | Haciendo click en la posición (480, 777)
+2026-06-03 05:36:46 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): super_premium.PNG at (480, 777) delay=1s
+2026-06-03 05:36:47 | INFO | my_functions.py:174 | Presionando ESC (1/1)
+2026-06-03 05:36:55 | INFO | my_functions.py:201 | Searching shop_unselected.PNG (timeout=0s)
+2026-06-03 05:36:56 | INFO | my_functions.py:231 | 
+✅ Found: shop_unselected.PNG pos=(88, 961) time=0.18s confidence=0.8
+2026-06-03 05:36:56 | INFO | my_functions.py:555 | Ya esta listo
+2026-06-03 05:37:00 | INFO | each_eight_hours copy.py:130 | Extracting data for account: bender_vm
+2026-06-03 05:37:00 | INFO | each_eight_hours copy.py:144 | Account bender_vm summary -> CL: 4912 | Unclaimed: 144 | Credits: 3275, Gold: 2465, Tokens: 6550
+2026-06-03 05:37:00 | INFO | my_functions.py:361 | AVAILABLE: 4
+2026-06-03 05:37:00 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['white_x.png'] | timeout=2s | confidence=0.8
+2026-06-03 05:37:02 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:37:03 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['nut.png'] | timeout=20s | confidence=0.8
+2026-06-03 05:37:04 | INFO | my_functions.py:163 | Haciendo click en la posición (184, 78)
+2026-06-03 05:37:06 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): nut.png at (184, 78) delay=1s
+2026-06-03 05:37:07 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['graphics_quality.png'] | timeout=3s | confidence=0.8
+2026-06-03 05:37:08 | INFO | my_functions.py:163 | Haciendo click en la posición (304, 644)
+2026-06-03 05:37:09 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): graphics_quality.png at (304, 644) delay=1s
+2026-06-03 05:37:11 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['sign_out.png'] | timeout=20s | confidence=0.8
+2026-06-03 05:37:12 | INFO | my_functions.py:163 | Haciendo click en la posición (380, 796)
+2026-06-03 05:37:14 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): sign_out.png at (380, 796) delay=1s
+2026-06-03 05:37:16 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['sign_out_grande.png'] | timeout=20s | confidence=0.8
+2026-06-03 05:37:17 | INFO | my_functions.py:163 | Haciendo click en la posición (359, 437)
+2026-06-03 05:37:19 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): sign_out_grande.png at (359, 437) delay=1s
+2026-06-03 05:37:20 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['sign_out2.png'] | timeout=20s | confidence=0.8
+2026-06-03 05:37:21 | INFO | my_functions.py:163 | Haciendo click en la posición (383, 634)
+2026-06-03 05:37:22 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): sign_out2.png at (383, 634) delay=1s
+2026-06-03 05:37:23 | INFO | my_functions.py:1325 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-06-03 05:37:24 | INFO | my_functions.py:1332 | 🔍 Esperando ventana que contenga alguna de: SNAP (máx 20s)
+2026-06-03 05:37:24 | INFO | my_functions.py:1344 | ✅ Ventana encontrada: 'SNAP'
+2026-06-03 05:37:24 | INFO | my_functions.py:1359 | ✅ Ventana seleccionada: 'SNAP'
+2026-06-03 05:37:26 | INFO | my_functions.py:1382 | 🔁 Reajuste #1...
+2026-06-03 05:37:28 | INFO | my_functions.py:1389 | ✔ Verificación completa. Se hicieron 1 reajustes.
+2026-06-03 05:37:32 | INFO | each_eight_hours copy.py:169 | Logged out due to insufficient submissions
+2026-06-03 05:37:33 | INFO | each_eight_hours copy.py:172 | snap.exe closed
+2026-06-03 05:37:36 | INFO | each_eight_hours copy.py:112 | Processing account: john
+2026-06-03 05:37:36 | INFO | each_eight_hours copy.py:115 | Game relaunched for account
+2026-06-03 05:37:36 | INFO | my_functions.py:1325 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-06-03 05:37:36 | INFO | my_functions.py:1332 | 🔍 Esperando ventana que contenga alguna de: ['SNAP'] (máx 20s)
+2026-06-03 05:37:38 | INFO | my_functions.py:1344 | ✅ Ventana encontrada: 'SNAP'
+2026-06-03 05:37:38 | INFO | my_functions.py:1359 | ✅ Ventana seleccionada: 'SNAP'
+2026-06-03 05:37:40 | INFO | my_functions.py:1391 | ✔ Verificación completa. No hubo cambios después del primer ajuste.
+2026-06-03 05:37:40 | INFO | my_functions.py:1028 | [DEBUG] Resizing SNAP window...
+2026-06-03 05:37:40 | INFO | my_functions.py:1325 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-06-03 05:37:41 | INFO | my_functions.py:1332 | 🔍 Esperando ventana que contenga alguna de: ['SNAP'] (máx 20s)
+2026-06-03 05:37:41 | INFO | my_functions.py:1344 | ✅ Ventana encontrada: 'SNAP'
+2026-06-03 05:37:41 | INFO | my_functions.py:1359 | ✅ Ventana seleccionada: 'SNAP'
+2026-06-03 05:37:44 | INFO | my_functions.py:1391 | ✔ Verificación completa. No hubo cambios después del primer ajuste.
+2026-06-03 05:37:44 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['small_submit.PNG', 'small_submit_hover.png', 'submit_hover_2.png', 'small_submit_hover_2.png'] | timeout=90s | confidence=0.8
+2026-06-03 05:37:47 | INFO | my_functions.py:163 | Haciendo click en la posición (383, 646)
+2026-06-03 05:37:48 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): small_submit_hover_2.png at (383, 646) delay=0.2s
+2026-06-03 05:37:51 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['small_submit.PNG', 'small_submit_hover.png', 'submit_hover_2.png', 'small_submit_hover_2.png'] | timeout=20s | confidence=0.8
+2026-06-03 05:37:52 | INFO | my_functions.py:163 | Haciendo click en la posición (380, 721)
+2026-06-03 05:37:54 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): small_submit.PNG at (380, 721) delay=0.2s
+2026-06-03 05:37:55 | INFO | my_functions.py:1325 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-06-03 05:37:55 | INFO | my_functions.py:1332 | 🔍 Esperando ventana que contenga alguna de: ['SNAP'] (máx 20s)
+2026-06-03 05:37:55 | INFO | my_functions.py:1344 | ✅ Ventana encontrada: 'SNAP'
+2026-06-03 05:37:55 | INFO | my_functions.py:1359 | ✅ Ventana seleccionada: 'SNAP'
+2026-06-03 05:37:57 | INFO | my_functions.py:1382 | 🔁 Reajuste #1...
+2026-06-03 05:37:58 | INFO | my_functions.py:1389 | ✔ Verificación completa. Se hicieron 1 reajustes.
+2026-06-03 05:37:58 | INFO | my_functions.py:201 | Searching please_sign.png (timeout=0s)
+2026-06-03 05:37:58 | INFO | my_functions.py:231 | 
+✅ Found: please_sign.png pos=(383, 438) time=0.18s confidence=0.8
+2026-06-03 05:37:58 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['ok_btn.png'] | timeout=20s | confidence=0.8
+2026-06-03 05:37:59 | INFO | my_functions.py:163 | Haciendo click en la posición (382, 634)
+2026-06-03 05:38:01 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): ok_btn.png at (382, 634) delay=1s
+2026-06-03 05:38:02 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['small_submit.PNG', 'small_submit_hover.png', 'submit_hover_2.png', 'small_submit_hover_2.png'] | timeout=90s | confidence=0.8
+2026-06-03 05:38:03 | INFO | my_functions.py:163 | Haciendo click en la posición (383, 643)
+2026-06-03 05:38:04 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): small_submit_hover_2.png at (383, 643) delay=0.2s
+2026-06-03 05:38:05 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['small_submit.PNG', 'small_submit_hover.png', 'submit_hover_2.png', 'small_submit_hover_2.png'] | timeout=20s | confidence=0.8
+2026-06-03 05:38:06 | INFO | my_functions.py:163 | Haciendo click en la posición (380, 721)
+2026-06-03 05:38:07 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): small_submit.PNG at (380, 721) delay=0.2s
+2026-06-03 05:38:08 | INFO | my_functions.py:201 | Searching sign_in_with_google2.PNG (timeout=90s)
+2026-06-03 05:38:08 | INFO | my_functions.py:231 | 
+✅ Found: sign_in_with_google2.PNG pos=(406, 957) time=0.18s confidence=0.8
+2026-06-03 05:38:08 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['sign_in_with_google2.PNG'] | timeout=20s | confidence=0.8
+2026-06-03 05:38:09 | INFO | my_functions.py:163 | Haciendo click en la posición (406, 957)
+2026-06-03 05:38:11 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): sign_in_with_google2.PNG at (406, 957) delay=1s
+2026-06-03 05:38:12 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['john.png'] | timeout=30s | confidence=0.8
+2026-06-03 05:38:20 | INFO | my_functions.py:163 | Haciendo click en la posición (1143, 619)
+2026-06-03 05:38:21 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): john.png at (1143, 619) delay=3s
+2026-06-03 05:38:22 | INFO | my_functions.py:201 | Searching marvelsnap_web.png (timeout=30s)
+2026-06-03 05:38:25 | INFO | my_functions.py:231 | 
+✅ Found: marvelsnap_web.png pos=(258, 80) time=3.28s confidence=0.7
+2026-06-03 05:38:26 | INFO | my_functions.py:201 | Searching shop_unselected.PNG (timeout=0s)
+2026-06-03 05:38:26 | INFO | my_functions.py:245 | 
+⛔ Not found: shop_unselected.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-06-03 05:38:26 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['super_premium.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:38:26 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:38:27 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['maybe_later.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:38:27 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:38:29 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['maybe_later2.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:38:29 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:38:30 | INFO | my_functions.py:201 | Searching go_to_shop.PNG (timeout=0s)
+2026-06-03 05:38:30 | INFO | my_functions.py:245 | 
+⛔ Not found: go_to_shop.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-06-03 05:38:30 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['14_days_of_winterverse.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:38:30 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:38:31 | INFO | my_functions.py:201 | Searching welcome_back_calendar.PNG (timeout=0s)
+2026-06-03 05:38:32 | INFO | my_functions.py:245 | 
+⛔ Not found: welcome_back_calendar.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-06-03 05:38:32 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['start_the_countdown.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:38:32 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:38:33 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['event_has_ended_sanctum.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:38:33 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:38:34 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['image_part_of_event_grand_arena_finished.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:38:34 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:38:35 | INFO | my_functions.py:201 | Searching 28_day_event_login_rewards.PNG (timeout=0s)
+2026-06-03 05:38:36 | INFO | my_functions.py:245 | 
+⛔ Not found: 28_day_event_login_rewards.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-06-03 05:38:36 | INFO | my_functions.py:201 | Searching 7_day_event_login.PNG (timeout=0s)
+2026-06-03 05:38:36 | INFO | my_functions.py:245 | 
+⛔ Not found: 7_day_event_login.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-06-03 05:38:36 | INFO | my_functions.py:201 | Searching 14_days_event.PNG (timeout=0s)
+2026-06-03 05:38:36 | INFO | my_functions.py:245 | 
+⛔ Not found: 14_days_event.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-06-03 05:38:36 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['lets_go.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:38:36 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:38:38 | INFO | my_functions.py:201 | Searching shop_unselected.PNG (timeout=0s)
+2026-06-03 05:38:39 | INFO | my_functions.py:231 | 
+✅ Found: shop_unselected.PNG pos=(88, 961) time=0.25s confidence=0.8
+2026-06-03 05:38:47 | INFO | my_functions.py:201 | Searching shop_unselected.PNG (timeout=0s)
+2026-06-03 05:38:47 | INFO | my_functions.py:245 | 
+⛔ Not found: shop_unselected.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-06-03 05:38:48 | INFO | my_functions.py:201 | Searching shop_unselected.PNG (timeout=0s)
+2026-06-03 05:38:48 | INFO | my_functions.py:245 | 
+⛔ Not found: shop_unselected.PNG after 0.19s region=(0, 0, 765, 1038) confidence=0.8
+2026-06-03 05:38:48 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['super_premium.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:38:49 | INFO | my_functions.py:163 | Haciendo click en la posición (480, 777)
+2026-06-03 05:38:51 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): super_premium.PNG at (480, 777) delay=1s
+2026-06-03 05:38:52 | INFO | my_functions.py:174 | Presionando ESC (1/1)
+2026-06-03 05:39:01 | INFO | my_functions.py:201 | Searching shop_unselected.PNG (timeout=0s)
+2026-06-03 05:39:01 | INFO | my_functions.py:231 | 
+✅ Found: shop_unselected.PNG pos=(88, 961) time=0.19s confidence=0.8
+2026-06-03 05:39:01 | INFO | my_functions.py:555 | Ya esta listo
+2026-06-03 05:39:05 | INFO | each_eight_hours copy.py:130 | Extracting data for account: john
+2026-06-03 05:39:05 | INFO | each_eight_hours copy.py:144 | Account john summary -> CL: 1709 | Unclaimed: 107 | Credits: 1525, Gold: 4045, Tokens: 28050
+2026-06-03 05:39:05 | INFO | my_functions.py:361 | AVAILABLE: 5
+2026-06-03 05:39:05 | INFO | my_functions.py:383 | Misiones completadas: 0
+2026-06-03 05:39:05 | INFO | my_functions.py:201 | Searching play.PNG (timeout=0s)
+2026-06-03 05:39:05 | INFO | my_functions.py:231 | 
+✅ Found: play.PNG pos=(384, 825) time=0.23s confidence=0.8
+2026-06-03 05:39:06 | INFO | my_functions.py:1220 | [INFO] Click realizado donde se equipa el deck a jugar
+2026-06-03 05:39:10 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['deck_666666.png'] | timeout=3s | confidence=0.8
+2026-06-03 05:39:11 | INFO | my_functions.py:163 | Haciendo click en la posición (384, 546)
+2026-06-03 05:39:12 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): deck_666666.png at (384, 546) delay=1s
+2026-06-03 05:39:13 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['equip.png'] | timeout=3s | confidence=0.95
+2026-06-03 05:39:15 | INFO | my_functions.py:163 | Haciendo click en la posición (548, 983)
+2026-06-03 05:39:16 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): equip.png at (548, 983) delay=1s
+2026-06-03 05:39:17 | INFO | each_eight_hours copy.py:165 | Deck selected: 6turns
+2026-06-03 05:39:17 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['maybe_later.PNG'] | timeout=2s | confidence=0.8
+2026-06-03 05:39:19 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:39:20 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['maybe_later2.PNG'] | timeout=0.01s | confidence=0.8
+2026-06-03 05:39:21 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:39:22 | INFO | each_eight_hours copy.py:180 | Starting game loop 1
+2026-06-03 05:39:22 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['play.PNG'] | timeout=20s | confidence=0.8
+2026-06-03 05:39:25 | INFO | my_functions.py:163 | Haciendo click en la posición (384, 824)
+2026-06-03 05:39:26 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): play.PNG at (384, 824) delay=3s
+2026-06-03 05:39:43 | INFO | my_functions.py:231 | 
+✅ Found: end_turn.PNG pos=(681, 945) time=0.21s confidence=0.8
+2026-06-03 05:39:43 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['snap.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:39:44 | INFO | my_functions.py:163 | Haciendo click en la posición (386, 122)
+2026-06-03 05:39:46 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): snap.PNG at (386, 122) delay=1s
+2026-06-03 05:39:52 | INFO | my_functions.py:163 | Haciendo click en la posición (681, 945)
+2026-06-03 05:39:54 | INFO | each_eight_hours copy.py:196 | End turn executed
+2026-06-03 05:40:10 | INFO | my_functions.py:231 | 
+✅ Found: end_turn.PNG pos=(681, 945) time=0.19s confidence=0.8
+2026-06-03 05:40:10 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['snap.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:40:10 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:40:16 | INFO | my_functions.py:163 | Haciendo click en la posición (681, 945)
+2026-06-03 05:40:18 | INFO | each_eight_hours copy.py:196 | End turn executed
+2026-06-03 05:40:29 | INFO | my_functions.py:231 | 
+✅ Found: end_turn.PNG pos=(681, 945) time=0.2s confidence=0.8
+2026-06-03 05:40:29 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['snap.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:40:29 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:40:36 | INFO | my_functions.py:163 | Haciendo click en la posición (681, 945)
+2026-06-03 05:40:38 | INFO | each_eight_hours copy.py:196 | End turn executed
+2026-06-03 05:40:50 | INFO | my_functions.py:231 | 
+✅ Found: end_turn.PNG pos=(681, 945) time=0.21s confidence=0.8
+2026-06-03 05:40:50 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['snap.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:40:50 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:40:57 | INFO | my_functions.py:163 | Haciendo click en la posición (681, 945)
+2026-06-03 05:40:59 | INFO | each_eight_hours copy.py:196 | End turn executed
+2026-06-03 05:41:20 | INFO | my_functions.py:231 | 
+✅ Found: end_turn.PNG pos=(681, 945) time=0.18s confidence=0.8
+2026-06-03 05:41:20 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['snap.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:41:20 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:41:27 | INFO | my_functions.py:163 | Haciendo click en la posición (681, 945)
+2026-06-03 05:41:29 | INFO | each_eight_hours copy.py:196 | End turn executed
+2026-06-03 05:41:45 | INFO | my_functions.py:231 | 
+✅ Found: end_turn.PNG pos=(681, 945) time=0.2s confidence=0.8
+2026-06-03 05:41:45 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['snap.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:41:46 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:41:52 | INFO | my_functions.py:163 | Haciendo click en la posición (681, 945)
+2026-06-03 05:41:55 | INFO | each_eight_hours copy.py:196 | End turn executed
+2026-06-03 05:42:22 | INFO | my_functions.py:231 | 
+✅ Found: collect_rewards.PNG pos=(680, 972) time=0.24s confidence=0.8
+2026-06-03 05:42:22 | INFO | each_eight_hours copy.py:235 | Rewards detected, exiting match
+2026-06-03 05:42:22 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['collect_rewards.PNG'] | timeout=20s | confidence=0.8
+2026-06-03 05:42:23 | INFO | my_functions.py:163 | Haciendo click en la posición (679, 959)
+2026-06-03 05:42:24 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): collect_rewards.PNG at (679, 959) delay=1s
+2026-06-03 05:42:25 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['next.PNG'] | timeout=20s | confidence=0.8
+2026-06-03 05:42:29 | INFO | my_functions.py:163 | Haciendo click en la posición (677, 973)
+2026-06-03 05:42:30 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): next.PNG at (677, 973) delay=1s
+2026-06-03 05:42:33 | INFO | my_functions.py:361 | AVAILABLE: 5
+2026-06-03 05:42:33 | INFO | each_eight_hours copy.py:302 | Submissions after match: 5
+2026-06-03 05:42:33 | INFO | my_functions.py:383 | Misiones completadas: 0
+2026-06-03 05:42:33 | INFO | each_eight_hours copy.py:180 | Starting game loop 2
+2026-06-03 05:42:33 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['play.PNG'] | timeout=20s | confidence=0.8
+2026-06-03 05:42:37 | INFO | my_functions.py:163 | Haciendo click en la posición (384, 824)
+2026-06-03 05:42:38 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): play.PNG at (384, 824) delay=3s
+2026-06-03 05:42:53 | INFO | my_functions.py:231 | 
+✅ Found: end_turn.PNG pos=(682, 945) time=0.18s confidence=0.8
+2026-06-03 05:42:53 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['snap.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:42:55 | INFO | my_functions.py:163 | Haciendo click en la posición (386, 122)
+2026-06-03 05:42:56 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): snap.PNG at (386, 122) delay=1s
+2026-06-03 05:43:02 | INFO | my_functions.py:163 | Haciendo click en la posición (682, 945)
+2026-06-03 05:43:04 | INFO | each_eight_hours copy.py:196 | End turn executed
+2026-06-03 05:43:18 | INFO | my_functions.py:231 | 
+✅ Found: end_turn.PNG pos=(681, 945) time=0.17s confidence=0.8
+2026-06-03 05:43:18 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['snap.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:43:18 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:43:24 | INFO | my_functions.py:163 | Haciendo click en la posición (681, 945)
+2026-06-03 05:43:27 | INFO | each_eight_hours copy.py:196 | End turn executed
+2026-06-03 05:43:34 | INFO | my_functions.py:231 | 
+✅ Found: end_turn.PNG pos=(681, 945) time=0.19s confidence=0.8
+2026-06-03 05:43:34 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['snap.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:43:35 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:43:41 | INFO | my_functions.py:163 | Haciendo click en la posición (681, 945)
+2026-06-03 05:43:43 | INFO | each_eight_hours copy.py:196 | End turn executed
+2026-06-03 05:43:59 | INFO | my_functions.py:231 | 
+✅ Found: end_turn.PNG pos=(681, 945) time=0.22s confidence=0.8
+2026-06-03 05:43:59 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['snap.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:43:59 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:44:06 | INFO | my_functions.py:163 | Haciendo click en la posición (681, 945)
+2026-06-03 05:44:08 | INFO | each_eight_hours copy.py:196 | End turn executed
+2026-06-03 05:44:27 | INFO | my_functions.py:231 | 
+✅ Found: end_turn.PNG pos=(681, 945) time=0.19s confidence=0.8
+2026-06-03 05:44:27 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['snap.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:44:28 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:44:34 | INFO | my_functions.py:163 | Haciendo click en la posición (681, 945)
+2026-06-03 05:44:36 | INFO | each_eight_hours copy.py:196 | End turn executed
+2026-06-03 05:44:49 | INFO | my_functions.py:231 | 
+✅ Found: end_turn.PNG pos=(681, 945) time=0.2s confidence=0.8
+2026-06-03 05:44:49 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['snap.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:44:49 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:44:55 | INFO | my_functions.py:163 | Haciendo click en la posición (681, 945)
+2026-06-03 05:44:57 | INFO | each_eight_hours copy.py:196 | End turn executed
+2026-06-03 05:45:04 | INFO | my_functions.py:231 | 
+✅ Found: collect_rewards.PNG pos=(679, 957) time=0.24s confidence=0.8
+2026-06-03 05:45:04 | INFO | each_eight_hours copy.py:235 | Rewards detected, exiting match
+2026-06-03 05:45:04 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['collect_rewards.PNG'] | timeout=20s | confidence=0.8
+2026-06-03 05:45:05 | INFO | my_functions.py:163 | Haciendo click en la posición (679, 957)
+2026-06-03 05:45:07 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): collect_rewards.PNG at (679, 957) delay=1s
+2026-06-03 05:45:08 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['next.PNG'] | timeout=20s | confidence=0.8
+2026-06-03 05:45:12 | INFO | my_functions.py:163 | Haciendo click en la posición (677, 973)
+2026-06-03 05:45:13 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): next.PNG at (677, 973) delay=1s
+2026-06-03 05:45:16 | INFO | my_functions.py:361 | AVAILABLE: 5
+2026-06-03 05:45:16 | INFO | each_eight_hours copy.py:302 | Submissions after match: 5
+2026-06-03 05:45:16 | INFO | my_functions.py:383 | Misiones completadas: 2
+2026-06-03 05:45:16 | INFO | each_eight_hours copy.py:310 | Submission condition met, breaking loop
+2026-06-03 05:45:16 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['missionsNotify2.png'] | timeout=20s | confidence=0.8
+2026-06-03 05:45:20 | INFO | my_functions.py:163 | Haciendo click en la posición (538, 124)
+2026-06-03 05:45:21 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): missionsNotify2.png at (538, 124) delay=3s
+2026-06-03 05:45:22 | INFO | my_functions.py:1250 | [INFO] Iniciando click_missions_blue2
+2026-06-03 05:45:22 | INFO | my_functions.py:163 | Haciendo click en la posición (150, 132)
+2026-06-03 05:45:25 | INFO | my_functions.py:1253 | [ACTION] Click hecho en icono de calendario que me dirige a las misiones ordinarias
+2026-06-03 05:45:25 | INFO | my_functions.py:201 | Searching bonus_challenge.png (timeout=0s)
+2026-06-03 05:45:25 | INFO | my_functions.py:245 | 
+⛔ Not found: bonus_challenge.png after 0.01s region=(0, 0, 765, 1038) confidence=0.8
+2026-06-03 05:45:27 | INFO | my_functions.py:163 | Haciendo click en la posición (362, 493)
+2026-06-03 05:45:29 | INFO | my_functions.py:1266 | [ACTION] Click 1/2 en misión azul
+2026-06-03 05:45:30 | INFO | my_functions.py:163 | Haciendo click en la posición (362, 493)
+2026-06-03 05:45:31 | INFO | my_functions.py:1266 | [ACTION] Click 2/2 en misión azul
+2026-06-03 05:45:32 | INFO | my_functions.py:201 | Searching flechita_mission.PNG (timeout=0s)
+2026-06-03 05:45:32 | INFO | my_functions.py:245 | 
+⛔ Not found: flechita_mission.PNG after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-06-03 05:45:32 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['weekly3.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:45:32 | INFO | my_functions.py:163 | Haciendo click en la posición (218, 266)
+2026-06-03 05:45:33 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): weekly3.PNG at (218, 266) delay=0.1s
+2026-06-03 05:45:35 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['claim!.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:45:35 | INFO | my_functions.py:163 | Haciendo click en la posición (381, 924)
+2026-06-03 05:45:36 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): claim!.PNG at (381, 924) delay=0.2s
+2026-06-03 05:45:38 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['claim_hover.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:45:38 | INFO | my_functions.py:163 | Haciendo click en la posición (383, 921)
+2026-06-03 05:45:40 | INFO | my_functions.py:301 | 🖱️ Click OK (En paralelo): claim_hover.PNG at (383, 921) delay=0.2s
+2026-06-03 05:45:41 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['weekly3.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:45:41 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:45:42 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['weekly3.PNG'] | timeout=0s | confidence=0.8
+2026-06-03 05:45:42 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:45:43 | INFO | my_functions.py:163 | Haciendo click en la posición (557, 64)
+2026-06-03 05:45:45 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['cards_shop.PNG'] | timeout=20s | confidence=0.8
+2026-06-03 05:46:05 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:46:07 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['token_icon.PNG'] | timeout=20s | confidence=0.8
+2026-06-03 05:46:27 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:46:30 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['claim!_token_3.PNG'] | timeout=4s | confidence=0.8
+2026-06-03 05:46:34 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:46:35 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['cards_shop.PNG'] | timeout=20s | confidence=0.8
+2026-06-03 05:46:55 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:46:56 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['offers.PNG'] | timeout=20s | confidence=0.8
+2026-06-03 05:47:16 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:47:17 | INFO | my_functions.py:1150 | [INFO] Iniciando mejora de cartas
+2026-06-03 05:47:17 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['upgrade_cards_icon.PNG'] | timeout=20s | confidence=0.8
+2026-06-03 05:47:37 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:47:39 | INFO | my_functions.py:1154 | [INFO] Abriendo icono de upgrade_cards
+2026-06-03 05:47:40 | INFO | my_functions.py:1160 | [STEP] Mejorando carta 1
+2026-06-03 05:47:40 | INFO | my_functions.py:1164 | [ACTION] Click en carta 1
+2026-06-03 05:47:41 | INFO | my_functions.py:163 | Haciendo click en la posición (374, 889)
+2026-06-03 05:47:43 | INFO | my_functions.py:1169 | [ACTION] Click en botón upgrade
+2026-06-03 05:47:50 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['you_need_more_credits!.png'] | timeout=3s | confidence=0.8
+2026-06-03 05:47:53 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 05:47:54 | ERROR | each_eight_hours copy.py:61 | Uncaught exception
+Traceback (most recent call last):
+  File "Z:\SHARED FILES VM\MS\each_eight_hours copy.py", line 313, in <module>
+    after_finish_all_games()
+  File "Z:\SHARED FILES VM\MS\my_functions.py", line 532, in after_finish_all_games
+    upgrade_cards(3)
+  File "Z:\SHARED FILES VM\MS\my_functions.py", line 1176, in upgrade_cards
+    if click_any_MS_img(r'images/you_need_more_credits!.png', timeout=3):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\SHARED FILES VM\MS\my_functions.py", line 318, in click_any_MS_img
+    pg.moveTo(1,1)
+  File "C:\Users\Farm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyautogui\__init__.py", line 599, in wrapper
+    _handlePause(kwargs.get("_pause", True))
+  File "C:\Users\Farm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyautogui\__init__.py", line 643, in _handlePause
+    time.sleep(PAUSE)
+KeyboardInterrupt

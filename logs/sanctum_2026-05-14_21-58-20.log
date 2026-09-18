@@ -1,0 +1,13 @@
+2026-05-14 21:58:20 | INFO | sanctum.py:39 | LOG FILE PATH: \\vmware-host\Shared Folders\SHARED FILES VM\MS\logs\sanctum_2026-05-14_21-58-20.log
+2026-05-14 21:58:20 | INFO | sanctum.py:40 | Logger initialized
+2026-05-14 21:58:20 | INFO | sanctum.py:67 | Script initialized
+2026-05-14 21:58:23 | INFO | sanctum.py:121 | Execution started
+2026-05-14 21:58:23 | INFO | sanctum.py:124 | Mouse moved to initial position
+2026-05-14 21:58:23 | INFO | sanctum.py:131 | snap.exe terminated if it was running
+2026-05-14 21:58:23 | INFO | my_functions.py:57 | ⏳ Esperando WebSocket de OBS...
+2026-05-14 21:58:23 | INFO | baseclient.py:33 | Connecting with parameters: host='localhost' port=4455 password='' subs=0 timeout=None
+2026-05-14 21:58:23 | INFO | reqs.py:23 | Successfully identified ReqClient with the server using RPC version:1
+2026-05-14 21:58:23 | INFO | my_functions.py:63 | ✅ Conectado al OBS WebSocket
+2026-05-14 21:58:23 | INFO | my_functions.py:88 | 🎬 Grabación iniciada
+2026-05-14 21:58:23 | INFO | my_functions.py:1486 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-05-14 21:58:24 | INFO | my_functions.py:1493 | 🔍 Esperando ventana que contenga alguna de: ['py', 'sanctum'] (máx 20s)

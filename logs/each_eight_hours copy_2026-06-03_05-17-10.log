@@ -1,0 +1,54 @@
+2026-06-03 05:17:10 | INFO | each_eight_hours copy.py:40 | LOG FILE PATH: \\vmware-host\Shared Folders\SHARED FILES VM\MS\logs\each_eight_hours copy_2026-06-03_05-17-10.log
+2026-06-03 05:17:10 | INFO | each_eight_hours copy.py:41 | Logger initialized
+2026-06-03 05:17:10 | INFO | each_eight_hours copy.py:68 | Script initialized
+2026-06-03 05:17:12 | INFO | each_eight_hours copy.py:98 | snap.exe terminated if it was running
+2026-06-03 05:17:12 | INFO | my_functions.py:57 | ⏳ Esperando WebSocket de OBS...
+2026-06-03 05:17:12 | INFO | baseclient.py:33 | Connecting with parameters: host='localhost' port=4455 password='' subs=0 timeout=None
+2026-06-03 05:17:12 | INFO | reqs.py:23 | Successfully identified ReqClient with the server using RPC version:1
+2026-06-03 05:17:12 | INFO | my_functions.py:63 | ✅ Conectado al OBS WebSocket
+2026-06-03 05:17:12 | INFO | my_functions.py:79 | ⏹ Grabación ya estaba activa, deteniéndola...
+2026-06-03 05:17:12 | INFO | baseclient.py:33 | Connecting with parameters: host='localhost' port=4455 password='' subs=0 timeout=None
+2026-06-03 05:17:12 | INFO | reqs.py:23 | Successfully identified ReqClient with the server using RPC version:1
+2026-06-03 05:17:12 | INFO | my_functions.py:94 | Record stopped.
+2026-06-03 05:17:24 | INFO | my_functions.py:124 | Archivo renombrado a: C:\Users\Farm\Videos\my_functions_2026-06-03_05-17-24.mkv
+2026-06-03 05:17:27 | INFO | my_functions.py:84 | 🎬 Nueva grabación iniciada
+2026-06-03 05:17:27 | INFO | my_functions.py:1335 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-06-03 05:17:27 | INFO | my_functions.py:1342 | 🔍 Esperando ventana que contenga alguna de: ['py', 'eight_hours'] (máx 20s)
+2026-06-03 05:17:27 | INFO | my_functions.py:1354 | ✅ Ventana encontrada: 'C:\Windows\py.exe'
+2026-06-03 05:17:27 | INFO | my_functions.py:1369 | ✅ Ventana seleccionada: 'C:\Windows\py.exe'
+2026-06-03 05:17:29 | INFO | my_functions.py:1392 | 🔁 Reajuste #1...
+2026-06-03 05:17:30 | INFO | my_functions.py:1399 | ✔ Verificación completa. Se hicieron 1 reajustes.
+2026-06-03 05:18:00 | INFO | my_functions.py:2165 | Starting Steam window scan
+2026-06-03 05:18:00 | INFO | my_functions.py:2168 | Found window: 
+2026-06-03 05:18:00 | INFO | my_functions.py:2168 | Found window: C:\Windows\py.exe
+2026-06-03 05:18:00 | INFO | my_functions.py:2168 | Found window: MS
+2026-06-03 05:18:00 | INFO | my_functions.py:2168 | Found window: Microsoft Text Input Application
+2026-06-03 05:18:00 | INFO | my_functions.py:2168 | Found window: 
+2026-06-03 05:18:00 | INFO | my_functions.py:2168 | Found window: 
+2026-06-03 05:18:00 | INFO | my_functions.py:2168 | Found window: 
+2026-06-03 05:18:00 | INFO | my_functions.py:2168 | Found window: 
+2026-06-03 05:18:00 | INFO | my_functions.py:2168 | Found window: Program Manager
+2026-06-03 05:18:00 | INFO | each_eight_hours copy.py:112 | Processing account: jeremy
+2026-06-03 05:18:00 | INFO | each_eight_hours copy.py:115 | Game relaunched for account
+2026-06-03 05:18:00 | INFO | my_functions.py:1335 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-06-03 05:18:00 | INFO | my_functions.py:1342 | 🔍 Esperando ventana que contenga alguna de: ['SNAP'] (máx 20s)
+2026-06-03 05:18:03 | INFO | my_functions.py:1354 | ✅ Ventana encontrada: 'SNAP'
+2026-06-03 05:18:03 | INFO | my_functions.py:1369 | ✅ Ventana seleccionada: 'SNAP'
+2026-06-03 05:18:05 | INFO | my_functions.py:1392 | 🔁 Reajuste #1...
+2026-06-03 05:18:06 | INFO | my_functions.py:1399 | ✔ Verificación completa. Se hicieron 1 reajustes.
+2026-06-03 05:18:06 | INFO | my_functions.py:1038 | [DEBUG] Resizing SNAP window...
+2026-06-03 05:18:06 | INFO | my_functions.py:1335 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-06-03 05:18:06 | INFO | my_functions.py:1342 | 🔍 Esperando ventana que contenga alguna de: ['SNAP'] (máx 20s)
+2026-06-03 05:18:06 | INFO | my_functions.py:1354 | ✅ Ventana encontrada: 'SNAP'
+2026-06-03 05:18:06 | INFO | my_functions.py:1369 | ✅ Ventana seleccionada: 'SNAP'
+2026-06-03 05:18:09 | INFO | my_functions.py:1401 | ✔ Verificación completa. No hubo cambios después del primer ajuste.
+2026-06-03 05:18:09 | INFO | my_functions.py:289 | [DEBUG] Buscando en paralelo: ['small_submit.PNG', 'small_submit_hover.png', 'submit_hover_2.png', 'small_submit_hover_2.png'] | timeout=90s | confidence=0.8
+2026-06-03 05:18:11 | ERROR | each_eight_hours copy.py:334 | Unhandled exception occurred
+Traceback (most recent call last):
+  File "Z:\SHARED FILES VM\MS\each_eight_hours copy.py", line 122, in <module>
+    login(account)
+  File "Z:\SHARED FILES VM\MS\my_functions.py", line 1045, in login
+    click_any_MS_img([r'images/small_submit.PNG',r'images/small_submit_hover.png', r'images/submit_hover_2.png', r'images/small_submit_hover_2.png'], region=None, delay_click=.2, timeout=90)
+  File "Z:\SHARED FILES VM\MS\my_functions.py", line 309, in click_any_MS_img
+    click_pos(position, delay_click=0)
+TypeError: click_pos() got an unexpected keyword argument 'delay_click'

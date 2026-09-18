@@ -1,0 +1,44 @@
+2026-05-14 18:24:10 | INFO | sandbox2.py:43 | LOG FILE PATH: \\vmware-host\Shared Folders\SHARED FILES VM\MS\logs\sandbox2_2026-05-14_18-24-10.log
+2026-05-14 18:24:10 | INFO | sandbox2.py:44 | Logger initialized
+2026-05-14 18:24:10 | INFO | sandbox2.py:71 | TEST LOG INITIALIZATION
+2026-05-14 18:24:10 | INFO | sandbox2.py:72 | Logger test executed
+2026-05-14 18:24:10 | INFO | my_functions.py:1479 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-05-14 18:24:10 | INFO | my_functions.py:1486 | 🔍 Esperando ventana que contenga alguna de: ['acceso directo'] (máx 20s)
+2026-05-14 18:24:10 | INFO | my_functions.py:1498 | ✅ Ventana encontrada: 'sandbox2 - Acceso directo'
+2026-05-14 18:24:10 | INFO | my_functions.py:1513 | ✅ Ventana seleccionada: 'sandbox2 - Acceso directo'
+2026-05-14 18:24:12 | INFO | my_functions.py:1536 | 🔁 Reajuste #1...
+2026-05-14 18:24:12 | INFO | my_functions.py:1543 | ✔ Verificación completa. Se hicieron 1 reajustes.
+2026-05-14 18:24:12 | INFO | sandbox2.py:92 | Console window resized
+2026-05-14 18:24:12 | INFO | my_functions.py:1479 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-05-14 18:24:12 | INFO | my_functions.py:1486 | 🔍 Esperando ventana que contenga alguna de: ['SNAP'] (máx 20s)
+2026-05-14 18:24:12 | INFO | my_functions.py:1498 | ✅ Ventana encontrada: 'SNAP'
+2026-05-14 18:24:12 | INFO | my_functions.py:1513 | ✅ Ventana seleccionada: 'SNAP'
+2026-05-14 18:24:14 | INFO | my_functions.py:1545 | ✔ Verificación completa. No hubo cambios después del primer ajuste.
+2026-05-14 18:24:14 | INFO | sandbox2.py:98 | Game window resized
+2026-05-14 18:24:14 | INFO | sandbox2.py:104 | Entrando al bucle de juego...
+2026-05-14 18:24:14 | INFO | my_functions.py:169 | Searching next_after_concede_conquest_2.PNG (timeout=0s)
+2026-05-14 18:24:14 | INFO | my_functions.py:195 | 
+✅ Found: next_after_concede_conquest_2.PNG pos=(680, 959) time=0.19s confidence=0.8
+2026-05-14 18:24:14 | INFO | sandbox2.py:84 | Fin de la partida. Mostrando resultados.
+2026-05-14 18:24:14 | INFO | my_functions.py:228 | [DEBUG] wait_for_image_and_click -> next_after_concede_conquest_2.PNG timeout=20s delay_click=1s confidence=0.8
+2026-05-14 18:24:14 | INFO | my_functions.py:169 | Searching next_after_concede_conquest_2.PNG (timeout=20s)
+2026-05-14 18:24:15 | INFO | my_functions.py:195 | 
+✅ Found: next_after_concede_conquest_2.PNG pos=(680, 959) time=0.19s confidence=0.8
+2026-05-14 18:24:16 | INFO | my_functions.py:135 | Haciendo click en la posición (680, 959)
+2026-05-14 18:24:16 | INFO | my_functions.py:248 | 🖱️ Click OK: next_after_concede_conquest_2.PNG at (680, 959) delay=1s
+2026-05-14 18:24:16 | INFO | my_functions.py:169 | Searching battle_victory_conquest.PNG (timeout=3s)
+2026-05-14 18:24:19 | INFO | my_functions.py:206 | 
+⛔ Not found: battle_victory_conquest.PNG after 3.2s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-14 18:24:19 | INFO | sandbox2.py:84 | Derrota detectada. No se reclama nada.
+2026-05-14 18:24:19 | INFO | my_functions.py:228 | [DEBUG] wait_for_image_and_click -> next_conquest.PNG timeout=20s delay_click=1s confidence=0.8
+2026-05-14 18:24:19 | INFO | my_functions.py:169 | Searching next_conquest.PNG (timeout=20s)
+2026-05-14 18:24:19 | INFO | my_functions.py:195 | 
+✅ Found: next_conquest.PNG pos=(679, 973) time=0.18s confidence=0.8
+2026-05-14 18:24:20 | INFO | my_functions.py:135 | Haciendo click en la posición (679, 973)
+2026-05-14 18:24:21 | INFO | my_functions.py:248 | 🖱️ Click OK: next_conquest.PNG at (679, 973) delay=1s
+2026-05-14 18:24:21 | INFO | my_functions.py:228 | [DEBUG] wait_for_image_and_click -> next_conquest.PNG timeout=20s delay_click=1s confidence=0.8
+2026-05-14 18:24:21 | INFO | my_functions.py:169 | Searching next_conquest.PNG (timeout=20s)
+2026-05-14 18:24:23 | INFO | my_functions.py:195 | 
+✅ Found: next_conquest.PNG pos=(679, 973) time=1.58s confidence=0.8
+2026-05-14 18:24:24 | INFO | my_functions.py:135 | Haciendo click en la posición (679, 973)
+2026-05-14 18:24:24 | INFO | my_functions.py:248 | 🖱️ Click OK: next_conquest.PNG at (679, 973) delay=1s

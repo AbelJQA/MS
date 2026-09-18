@@ -1,0 +1,59 @@
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | Error in sys.excepthook:
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | Traceback (most recent call last):
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | File "C:\Users\Farm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 978, in handle
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | self.emit(record)
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | File "C:\Users\Farm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1230, in emit
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | StreamHandler.emit(self, record)
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | File "C:\Users\Farm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1110, in emit
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | msg = self.format(record)
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | ^
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | ^
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | ^
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | ^
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | ^
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | ^
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | ^
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | ^
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | ^
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | ^
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | ^
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | ^
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | ^
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | ^
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | ^
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | ^
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | ^
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | ^
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | ^
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | File "C:\Users\Farm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 953, in format
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | return fmt.format(record)
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | ^
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | ^
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | ^
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | ^
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | Original exception was:
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | Traceback (most recent call last):
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | File "Z:\SHARED FILES VM\MS\each_eight_hours copy 2.py", line 54, in <module>
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | from my_functions import *
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | File "Z:\SHARED FILES VM\MS\my_functions.py", line 17, in <module>
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | from obsws_python import ReqClient
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | File "C:\Users\Farm\AppData\Local\Programs\Python\Python311\Lib\site-packages\obsws_python\__init__.py", line 1, in <module>
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | from .events import EventClient
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | File "C:\Users\Farm\AppData\Local\Programs\Python\Python311\Lib\site-packages\obsws_python\events.py", line 5, in <module>
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | from websocket import WebSocketConnectionClosedException, WebSocketTimeoutException
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | File "C:\Users\Farm\AppData\Local\Programs\Python\Python311\Lib\site-packages\websocket\__init__.py", line 20, in <module>
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | from ._app import WebSocketApp as WebSocketApp, setReconnect as setReconnect
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | File "C:\Users\Farm\AppData\Local\Programs\Python\Python311\Lib\site-packages\websocket\_app.py", line 10, in <module>
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | from ._core import WebSocket, getdefaulttimeout
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | File "C:\Users\Farm\AppData\Local\Programs\Python\Python311\Lib\site-packages\websocket\_core.py", line 10, in <module>
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | from ._handshake import SUPPORTED_REDIRECT_STATUSES, handshake
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | File "C:\Users\Farm\AppData\Local\Programs\Python\Python311\Lib\site-packages\websocket\_handshake.py", line 27, in <module>
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | File "C:\Users\Farm\AppData\Local\Programs\Python\Python311\Lib\site-packages\websocket\_http.py", line 32, in <module>
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | from ._url import get_proxy_info, parse_url
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | File "<frozen importlib._bootstrap>", line 1149, in _find_and_load_unlocked
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | File "<frozen importlib._bootstrap_external>", line 1032, in get_code
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | File "<frozen importlib._bootstrap_external>", line 1131, in get_data
+2026-08-12 18:18:32 | ERROR | each_eight_hours copy 2.py:37 | KeyboardInterrupt

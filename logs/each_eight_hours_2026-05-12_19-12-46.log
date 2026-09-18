@@ -1,0 +1,104 @@
+2026-05-12 19:12:46 | INFO | each_eight_hours.py:39 | LOG FILE PATH: \\vmware-host\Shared Folders\SHARED FILES VM\MS\logs\each_eight_hours_2026-05-12_19-12-46.log
+2026-05-12 19:12:46 | INFO | each_eight_hours.py:40 | Logger initialized
+2026-05-12 19:12:46 | INFO | each_eight_hours.py:67 | Script initialized
+2026-05-12 19:12:48 | INFO | each_eight_hours.py:121 | Execution started
+2026-05-12 19:12:48 | INFO | each_eight_hours.py:124 | Mouse moved to initial position
+2026-05-12 19:12:48 | INFO | each_eight_hours.py:131 | snap.exe terminated if it was running
+2026-05-12 19:12:49 | INFO | my_functions.py:57 | ⏳ Esperando WebSocket de OBS...
+2026-05-12 19:12:49 | INFO | baseclient.py:33 | Connecting with parameters: host='localhost' port=4455 password='' subs=0 timeout=None
+2026-05-12 19:12:49 | INFO | reqs.py:23 | Successfully identified ReqClient with the server using RPC version:1
+2026-05-12 19:12:49 | INFO | my_functions.py:63 | ✅ Conectado al OBS WebSocket
+2026-05-12 19:12:49 | INFO | my_functions.py:79 | ⏹ Grabación ya estaba activa, deteniéndola...
+2026-05-12 19:12:49 | INFO | baseclient.py:33 | Connecting with parameters: host='localhost' port=4455 password='' subs=0 timeout=None
+2026-05-12 19:12:49 | INFO | reqs.py:23 | Successfully identified ReqClient with the server using RPC version:1
+2026-05-12 19:12:49 | INFO | my_functions.py:94 | Record stopped.
+2026-05-12 19:13:01 | INFO | my_functions.py:124 | Archivo renombrado a: C:\Users\Farm\Videos\my_functions_2026-05-12_19-13-01.mkv
+2026-05-12 19:13:04 | INFO | my_functions.py:84 | 🎬 Nueva grabación iniciada
+2026-05-12 19:13:04 | INFO | each_eight_hours.py:134 | OBS started and recording
+2026-05-12 19:13:04 | INFO | my_functions.py:1591 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-05-12 19:13:04 | INFO | my_functions.py:1598 | 🔍 Esperando ventana que contenga alguna de: ['py', 'eight_hours'] (máx 20s)
+2026-05-12 19:13:04 | INFO | my_functions.py:1610 | ✅ Ventana encontrada: 'each_eight_hours  - Acceso directo'
+2026-05-12 19:13:04 | INFO | my_functions.py:1625 | ✅ Ventana seleccionada: 'each_eight_hours  - Acceso directo'
+2026-05-12 19:13:06 | INFO | my_functions.py:1648 | 🔁 Reajuste #1...
+2026-05-12 19:13:06 | INFO | my_functions.py:1655 | ✔ Verificación completa. Se hicieron 1 reajustes.
+2026-05-12 19:13:06 | INFO | each_eight_hours.py:140 | Console window resized
+2026-05-12 19:13:36 | INFO | my_functions.py:2438 | Starting Steam window scan
+2026-05-12 19:13:36 | INFO | my_functions.py:2441 | Found window: 
+2026-05-12 19:13:36 | INFO | my_functions.py:2441 | Found window: each_eight_hours  - Acceso directo
+2026-05-12 19:13:36 | INFO | my_functions.py:2441 | Found window: 
+2026-05-12 19:13:36 | INFO | my_functions.py:2441 | Found window: 
+2026-05-12 19:13:36 | INFO | my_functions.py:2441 | Found window: 
+2026-05-12 19:13:36 | INFO | my_functions.py:2441 | Found window: 
+2026-05-12 19:13:36 | INFO | my_functions.py:2441 | Found window: Program Manager
+2026-05-12 19:13:36 | INFO | each_eight_hours.py:146 | Steam popup windows closed
+2026-05-12 19:13:36 | INFO | each_eight_hours.py:150 | Processing account: reeps_vm
+2026-05-12 19:13:36 | INFO | each_eight_hours.py:153 | Game relaunched for account
+2026-05-12 19:13:36 | INFO | my_functions.py:1591 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-05-12 19:13:36 | INFO | my_functions.py:1598 | 🔍 Esperando ventana que contenga alguna de: ['SNAP'] (máx 20s)
+2026-05-12 19:13:39 | INFO | my_functions.py:1610 | ✅ Ventana encontrada: 'SNAP'
+2026-05-12 19:13:39 | INFO | my_functions.py:1625 | ✅ Ventana seleccionada: 'SNAP'
+2026-05-12 19:13:41 | INFO | my_functions.py:1648 | 🔁 Reajuste #1...
+2026-05-12 19:13:43 | INFO | my_functions.py:1655 | ✔ Verificación completa. Se hicieron 1 reajustes.
+2026-05-12 19:13:43 | INFO | each_eight_hours.py:160 | Game window resized
+2026-05-12 19:13:43 | INFO | my_functions.py:1130 | [DEBUG] Resizing SNAP window...
+2026-05-12 19:13:43 | INFO | my_functions.py:1591 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-05-12 19:13:43 | INFO | my_functions.py:1598 | 🔍 Esperando ventana que contenga alguna de: ['SNAP'] (máx 20s)
+2026-05-12 19:13:43 | INFO | my_functions.py:1610 | ✅ Ventana encontrada: 'SNAP'
+2026-05-12 19:13:43 | INFO | my_functions.py:1625 | ✅ Ventana seleccionada: 'SNAP'
+2026-05-12 19:13:46 | INFO | my_functions.py:1657 | ✔ Verificación completa. No hubo cambios después del primer ajuste.
+2026-05-12 19:13:46 | INFO | my_functions.py:228 | [DEBUG] wait_for_image_and_click -> submit.PNG timeout=90s delay_click=0.2s confidence=0.8
+2026-05-12 19:13:46 | INFO | my_functions.py:169 | Searching submit.PNG (timeout=90s)
+2026-05-12 19:13:47 | INFO | my_functions.py:195 | 
+✅ Found: submit.PNG pos=(385, 761) time=0.34s confidence=0.8
+2026-05-12 19:13:47 | INFO | my_functions.py:135 | Haciendo click en la posición (385, 761)
+2026-05-12 19:13:47 | INFO | my_functions.py:248 | 🖱️ Click OK: submit.PNG at (385, 761) delay=0.2s
+2026-05-12 19:13:47 | INFO | my_functions.py:1591 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-05-12 19:13:47 | INFO | my_functions.py:1598 | 🔍 Esperando ventana que contenga alguna de: ['SNAP'] (máx 20s)
+2026-05-12 19:13:47 | INFO | my_functions.py:1610 | ✅ Ventana encontrada: 'SNAP'
+2026-05-12 19:13:47 | INFO | my_functions.py:1625 | ✅ Ventana seleccionada: 'SNAP'
+2026-05-12 19:13:50 | INFO | my_functions.py:1657 | ✔ Verificación completa. No hubo cambios después del primer ajuste.
+2026-05-12 19:13:50 | INFO | my_functions.py:169 | Searching please_sign.png (timeout=0s)
+2026-05-12 19:13:50 | INFO | my_functions.py:206 | 
+⛔ Not found: please_sign.png after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-12 19:13:50 | INFO | my_functions.py:169 | Searching sign_in_with_google2.PNG (timeout=90s)
+2026-05-12 19:13:50 | INFO | my_functions.py:195 | 
+✅ Found: sign_in_with_google2.PNG pos=(406, 957) time=0.17s confidence=0.8
+2026-05-12 19:13:50 | INFO | my_functions.py:228 | [DEBUG] wait_for_image_and_click -> sign_in_with_google2.PNG timeout=20s delay_click=1s confidence=0.8
+2026-05-12 19:13:50 | INFO | my_functions.py:169 | Searching sign_in_with_google2.PNG (timeout=20s)
+2026-05-12 19:13:51 | INFO | my_functions.py:195 | 
+✅ Found: sign_in_with_google2.PNG pos=(406, 957) time=0.19s confidence=0.8
+2026-05-12 19:13:52 | INFO | my_functions.py:135 | Haciendo click en la posición (406, 957)
+2026-05-12 19:13:52 | INFO | my_functions.py:248 | 🖱️ Click OK: sign_in_with_google2.PNG at (406, 957) delay=1s
+2026-05-12 19:13:52 | INFO | my_functions.py:228 | [DEBUG] wait_for_image_and_click -> reeps_vm.png timeout=30s delay_click=3s confidence=0.8
+2026-05-12 19:13:52 | INFO | my_functions.py:169 | Searching reeps_vm.png (timeout=30s)
+2026-05-12 19:14:00 | INFO | my_functions.py:195 | 
+✅ Found: reeps_vm.png pos=(1126, 534) time=8.59s confidence=0.8
+2026-05-12 19:14:03 | INFO | my_functions.py:135 | Haciendo click en la posición (1126, 534)
+2026-05-12 19:14:04 | INFO | my_functions.py:248 | 🖱️ Click OK: reeps_vm.png at (1126, 534) delay=3s
+2026-05-12 19:14:06 | INFO | my_functions.py:228 | [DEBUG] wait_for_image_and_click -> console_icon.PNG timeout=5s delay_click=1s confidence=0.8
+2026-05-12 19:14:06 | INFO | my_functions.py:169 | Searching console_icon.PNG (timeout=5s)
+2026-05-12 19:14:06 | INFO | my_functions.py:195 | 
+✅ Found: console_icon.PNG pos=(585, 1055) time=0.32s confidence=0.8
+2026-05-12 19:14:07 | INFO | my_functions.py:135 | Haciendo click en la posición (585, 1055)
+2026-05-12 19:14:07 | INFO | my_functions.py:248 | 🖱️ Click OK: console_icon.PNG at (585, 1055) delay=1s
+2026-05-12 19:14:07 | INFO | my_functions.py:228 | [DEBUG] wait_for_image_and_click -> snap_icon_task_bar.PNG timeout=20s delay_click=1s confidence=0.8
+2026-05-12 19:14:07 | INFO | my_functions.py:169 | Searching snap_icon_task_bar.PNG (timeout=20s)
+2026-05-12 19:14:08 | INFO | my_functions.py:195 | 
+✅ Found: snap_icon_task_bar.PNG pos=(524, 1052) time=0.3s confidence=0.8
+2026-05-12 19:14:09 | INFO | my_functions.py:135 | Haciendo click en la posición (524, 1052)
+2026-05-12 19:14:09 | INFO | my_functions.py:248 | 🖱️ Click OK: snap_icon_task_bar.PNG at (524, 1052) delay=1s
+2026-05-12 19:14:09 | INFO | my_functions.py:169 | Searching play.PNG (timeout=30s)
+2026-05-12 19:14:39 | INFO | my_functions.py:206 | 
+⛔ Not found: play.PNG after 30.11s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-12 19:14:39 | INFO | my_functions.py:228 | [DEBUG] wait_for_image_and_click -> cancel.PNG timeout=20s delay_click=1s confidence=0.8
+2026-05-12 19:14:39 | INFO | my_functions.py:169 | Searching cancel.PNG (timeout=20s)
+2026-05-12 19:14:59 | INFO | my_functions.py:206 | 
+⛔ Not found: cancel.PNG after 20.11s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-12 19:14:59 | INFO | my_functions.py:255 | [DEBUG] Click skipped, image not found: cancel.PNG
+2026-05-12 19:14:59 | INFO | my_functions.py:228 | [DEBUG] wait_for_image_and_click -> sign_in_with_google2.PNG timeout=20s delay_click=1s confidence=0.8
+2026-05-12 19:14:59 | INFO | my_functions.py:169 | Searching sign_in_with_google2.PNG (timeout=20s)
+2026-05-12 19:15:20 | INFO | my_functions.py:206 | 
+⛔ Not found: sign_in_with_google2.PNG after 20.02s region=(0, 0, 765, 1038) confidence=0.8
+2026-05-12 19:15:20 | INFO | my_functions.py:255 | [DEBUG] Click skipped, image not found: sign_in_with_google2.PNG
+2026-05-12 19:15:20 | INFO | my_functions.py:228 | [DEBUG] wait_for_image_and_click -> reeps_vm.png timeout=20s delay_click=3s confidence=0.8
+2026-05-12 19:15:20 | INFO | my_functions.py:169 | Searching reeps_vm.png (timeout=20s)

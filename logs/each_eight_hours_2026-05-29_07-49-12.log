@@ -1,0 +1,327 @@
+2026-05-29 07:49:12 | INFO | each_eight_hours.py:39 | LOG FILE PATH: \\vmware-host\Shared Folders\SHARED FILES VM\MS\logs\each_eight_hours_2026-05-29_07-49-12.log
+2026-05-29 07:49:12 | INFO | each_eight_hours.py:40 | Logger initialized
+2026-05-29 07:49:12 | INFO | each_eight_hours.py:67 | Script initialized
+2026-05-29 07:49:13 | INFO | each_eight_hours.py:128 | snap.exe terminated if it was running
+2026-05-29 07:49:13 | INFO | my_functions.py:57 | ⏳ Esperando WebSocket de OBS...
+2026-05-29 07:49:13 | INFO | baseclient.py:33 | Connecting with parameters: host='localhost' port=4455 password='' subs=0 timeout=None
+2026-05-29 07:49:13 | INFO | reqs.py:23 | Successfully identified ReqClient with the server using RPC version:1
+2026-05-29 07:49:13 | INFO | my_functions.py:63 | ✅ Conectado al OBS WebSocket
+2026-05-29 07:49:13 | INFO | my_functions.py:79 | ⏹ Grabación ya estaba activa, deteniéndola...
+2026-05-29 07:49:13 | INFO | baseclient.py:33 | Connecting with parameters: host='localhost' port=4455 password='' subs=0 timeout=None
+2026-05-29 07:49:13 | INFO | reqs.py:23 | Successfully identified ReqClient with the server using RPC version:1
+2026-05-29 07:49:13 | INFO | my_functions.py:94 | Record stopped.
+2026-05-29 07:49:25 | INFO | my_functions.py:124 | Archivo renombrado a: C:\Users\Farm\Videos\my_functions_2026-05-29_07-49-25.mkv
+2026-05-29 07:49:28 | INFO | my_functions.py:84 | 🎬 Nueva grabación iniciada
+2026-05-29 07:49:28 | INFO | my_functions.py:1261 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-05-29 07:49:29 | INFO | my_functions.py:1268 | 🔍 Esperando ventana que contenga alguna de: ['py', 'eight_hours'] (máx 20s)
+2026-05-29 07:49:29 | INFO | my_functions.py:1280 | ✅ Ventana encontrada: 'each_eight_hours  - Acceso directo'
+2026-05-29 07:49:29 | INFO | my_functions.py:1295 | ✅ Ventana seleccionada: 'each_eight_hours  - Acceso directo'
+2026-05-29 07:49:31 | INFO | my_functions.py:1318 | 🔁 Reajuste #1...
+2026-05-29 07:49:31 | INFO | my_functions.py:1325 | ✔ Verificación completa. Se hicieron 1 reajustes.
+2026-05-29 07:50:01 | INFO | my_functions.py:2091 | Starting Steam window scan
+2026-05-29 07:50:01 | INFO | my_functions.py:2094 | Found window: 
+2026-05-29 07:50:01 | INFO | my_functions.py:2094 | Found window: each_eight_hours  - Acceso directo
+2026-05-29 07:50:01 | INFO | my_functions.py:2094 | Found window: 
+2026-05-29 07:50:01 | INFO | my_functions.py:2094 | Found window: 
+2026-05-29 07:50:01 | INFO | my_functions.py:2094 | Found window: 
+2026-05-29 07:50:01 | INFO | my_functions.py:2094 | Found window: 
+2026-05-29 07:50:01 | INFO | my_functions.py:2094 | Found window: Program Manager
+2026-05-29 07:50:01 | INFO | each_eight_hours.py:139 | Processing account: jeremy
+2026-05-29 07:50:01 | INFO | each_eight_hours.py:142 | Game relaunched for account
+2026-05-29 07:50:01 | INFO | my_functions.py:1261 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-05-29 07:50:01 | INFO | my_functions.py:1268 | 🔍 Esperando ventana que contenga alguna de: ['SNAP'] (máx 20s)
+2026-05-29 07:50:03 | INFO | my_functions.py:1280 | ✅ Ventana encontrada: 'SNAP'
+2026-05-29 07:50:03 | INFO | my_functions.py:1295 | ✅ Ventana seleccionada: 'SNAP'
+2026-05-29 07:50:06 | INFO | my_functions.py:1327 | ✔ Verificación completa. No hubo cambios después del primer ajuste.
+2026-05-29 07:50:06 | INFO | my_functions.py:966 | [DEBUG] Resizing SNAP window...
+2026-05-29 07:50:06 | INFO | my_functions.py:1261 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-05-29 07:50:06 | INFO | my_functions.py:1268 | 🔍 Esperando ventana que contenga alguna de: ['SNAP'] (máx 20s)
+2026-05-29 07:50:06 | INFO | my_functions.py:1280 | ✅ Ventana encontrada: 'SNAP'
+2026-05-29 07:50:06 | INFO | my_functions.py:1295 | ✅ Ventana seleccionada: 'SNAP'
+2026-05-29 07:50:09 | INFO | my_functions.py:1327 | ✔ Verificación completa. No hubo cambios después del primer ajuste.
+2026-05-29 07:50:09 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['small_submit.PNG', 'small_submit_hover.png', 'submit_hover_2.png', 'small_submit_hover_2.png'] | timeout=90s | confidence=0.8
+2026-05-29 07:51:39 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:51:40 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['small_submit.PNG', 'small_submit_hover.png', 'submit_hover_2.png', 'small_submit_hover_2.png'] | timeout=20s | confidence=0.8
+2026-05-29 07:52:00 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:52:01 | INFO | my_functions.py:1261 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-05-29 07:52:01 | INFO | my_functions.py:1268 | 🔍 Esperando ventana que contenga alguna de: ['SNAP'] (máx 20s)
+2026-05-29 07:52:01 | INFO | my_functions.py:1280 | ✅ Ventana encontrada: 'SNAP'
+2026-05-29 07:52:01 | INFO | my_functions.py:1295 | ✅ Ventana seleccionada: 'SNAP'
+2026-05-29 07:52:04 | INFO | my_functions.py:1327 | ✔ Verificación completa. No hubo cambios después del primer ajuste.
+2026-05-29 07:52:04 | INFO | my_functions.py:172 | Searching please_sign.png (timeout=0s)
+2026-05-29 07:52:05 | INFO | my_functions.py:181 | [ERROR] Exception while searching please_sign.png -> Failed to read please_sign.png because file is missing, has improper permissions, or is an unsupported or invalid format
+2026-05-29 07:52:05 | INFO | my_functions.py:172 | Searching stages/main_stage/sign_in_with_google2.PNG (timeout=90s)
+2026-05-29 07:52:05 | INFO | my_functions.py:181 | [ERROR] Exception while searching stages/main_stage/sign_in_with_google2.PNG -> Failed to read stages/main_stage/sign_in_with_google2.PNG because file is missing, has improper permissions, or is an unsupported or invalid format
+2026-05-29 07:52:05 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['stages/main_stage/sign_in_with_google2.PNG'] | timeout=20s | confidence=0.8
+2026-05-29 07:52:25 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:52:26 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['images/accounts/relogin_accounts/gmail_accounts/vm/jeremy.png'] | timeout=30s | confidence=0.8
+2026-05-29 07:52:56 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:52:58 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['images/accounts/relogin_accounts/gmail_accounts/vm/jeremy.png'] | timeout=0s | confidence=0.8
+2026-05-29 07:52:58 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:53:00 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['images/accounts/relogin_accounts/gmail_accounts/vm/jeremy.png'] | timeout=0s | confidence=0.8
+2026-05-29 07:53:00 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:53:02 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['images/accounts/relogin_accounts/gmail_accounts/vm/jeremy.png'] | timeout=0s | confidence=0.8
+2026-05-29 07:53:02 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:53:03 | INFO | my_functions.py:172 | Searching marvelsnap_web.png (timeout=30s)
+2026-05-29 07:53:04 | INFO | my_functions.py:181 | [ERROR] Exception while searching marvelsnap_web.png -> Failed to read marvelsnap_web.png because file is missing, has improper permissions, or is an unsupported or invalid format
+2026-05-29 07:53:04 | INFO | my_functions.py:172 | Searching unselected/shop_unselected.PNG (timeout=0s)
+2026-05-29 07:53:04 | INFO | my_functions.py:181 | [ERROR] Exception while searching unselected/shop_unselected.PNG -> Failed to read unselected/shop_unselected.PNG because file is missing, has improper permissions, or is an unsupported or invalid format
+2026-05-29 07:53:04 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['super_premium.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:53:04 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:53:05 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['start_screen/maybe_later.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:53:05 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:53:06 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['start_screen/maybe_later2.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:53:06 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:53:07 | INFO | my_functions.py:172 | Searching start_screen/go_to_shop.PNG (timeout=0s)
+2026-05-29 07:53:07 | INFO | my_functions.py:181 | [ERROR] Exception while searching start_screen/go_to_shop.PNG -> Failed to read start_screen/go_to_shop.PNG because file is missing, has improper permissions, or is an unsupported or invalid format
+2026-05-29 07:53:07 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['start_screen/14_days_of_winterverse.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:53:07 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:53:09 | INFO | my_functions.py:172 | Searching start_screen/welcome_back_calendar.PNG (timeout=0s)
+2026-05-29 07:53:09 | INFO | my_functions.py:181 | [ERROR] Exception while searching start_screen/welcome_back_calendar.PNG -> Failed to read start_screen/welcome_back_calendar.PNG because file is missing, has improper permissions, or is an unsupported or invalid format
+2026-05-29 07:53:09 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['start_screen/start_the_countdown.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:53:09 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:53:10 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['start_screen/event_has_ended_sanctum.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:53:10 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:53:11 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['start_screen/image_part_of_event_grand_arena_finished.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:53:11 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:53:12 | INFO | my_functions.py:172 | Searching start_screen/28_day_event_login_rewards.PNG (timeout=0s)
+2026-05-29 07:53:12 | INFO | my_functions.py:181 | [ERROR] Exception while searching start_screen/28_day_event_login_rewards.PNG -> Failed to read start_screen/28_day_event_login_rewards.PNG because file is missing, has improper permissions, or is an unsupported or invalid format
+2026-05-29 07:53:12 | INFO | my_functions.py:172 | Searching 7_day_event_login.PNG (timeout=0s)
+2026-05-29 07:53:12 | INFO | my_functions.py:181 | [ERROR] Exception while searching 7_day_event_login.PNG -> Failed to read 7_day_event_login.PNG because file is missing, has improper permissions, or is an unsupported or invalid format
+2026-05-29 07:53:12 | INFO | my_functions.py:172 | Searching 14_days_event.PNG (timeout=0s)
+2026-05-29 07:53:12 | INFO | my_functions.py:181 | [ERROR] Exception while searching 14_days_event.PNG -> Failed to read 14_days_event.PNG because file is missing, has improper permissions, or is an unsupported or invalid format
+2026-05-29 07:53:12 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['lets_go.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:53:12 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:53:15 | INFO | my_functions.py:172 | Searching unselected/shop_unselected.PNG (timeout=0s)
+2026-05-29 07:53:15 | INFO | my_functions.py:181 | [ERROR] Exception while searching unselected/shop_unselected.PNG -> Failed to read unselected/shop_unselected.PNG because file is missing, has improper permissions, or is an unsupported or invalid format
+2026-05-29 07:53:15 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['super_premium.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:53:15 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:53:16 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['start_screen/maybe_later.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:53:16 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:53:17 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['start_screen/maybe_later2.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:53:17 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:53:18 | INFO | my_functions.py:172 | Searching start_screen/go_to_shop.PNG (timeout=0s)
+2026-05-29 07:53:18 | INFO | my_functions.py:181 | [ERROR] Exception while searching start_screen/go_to_shop.PNG -> Failed to read start_screen/go_to_shop.PNG because file is missing, has improper permissions, or is an unsupported or invalid format
+2026-05-29 07:53:18 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['start_screen/14_days_of_winterverse.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:53:18 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:53:19 | INFO | my_functions.py:172 | Searching start_screen/welcome_back_calendar.PNG (timeout=0s)
+2026-05-29 07:53:20 | INFO | my_functions.py:181 | [ERROR] Exception while searching start_screen/welcome_back_calendar.PNG -> Failed to read start_screen/welcome_back_calendar.PNG because file is missing, has improper permissions, or is an unsupported or invalid format
+2026-05-29 07:53:20 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['start_screen/start_the_countdown.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:53:20 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:53:21 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['start_screen/event_has_ended_sanctum.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:53:21 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:53:22 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['start_screen/image_part_of_event_grand_arena_finished.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:53:22 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:53:23 | INFO | my_functions.py:172 | Searching start_screen/28_day_event_login_rewards.PNG (timeout=0s)
+2026-05-29 07:53:23 | INFO | my_functions.py:181 | [ERROR] Exception while searching start_screen/28_day_event_login_rewards.PNG -> Failed to read start_screen/28_day_event_login_rewards.PNG because file is missing, has improper permissions, or is an unsupported or invalid format
+2026-05-29 07:53:23 | INFO | my_functions.py:172 | Searching 7_day_event_login.PNG (timeout=0s)
+2026-05-29 07:53:23 | INFO | my_functions.py:181 | [ERROR] Exception while searching 7_day_event_login.PNG -> Failed to read 7_day_event_login.PNG because file is missing, has improper permissions, or is an unsupported or invalid format
+2026-05-29 07:53:23 | INFO | my_functions.py:172 | Searching 14_days_event.PNG (timeout=0s)
+2026-05-29 07:53:23 | INFO | my_functions.py:181 | [ERROR] Exception while searching 14_days_event.PNG -> Failed to read 14_days_event.PNG because file is missing, has improper permissions, or is an unsupported or invalid format
+2026-05-29 07:53:23 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['lets_go.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:53:23 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:53:26 | INFO | my_functions.py:172 | Searching unselected/shop_unselected.PNG (timeout=0s)
+2026-05-29 07:53:26 | INFO | my_functions.py:181 | [ERROR] Exception while searching unselected/shop_unselected.PNG -> Failed to read unselected/shop_unselected.PNG because file is missing, has improper permissions, or is an unsupported or invalid format
+2026-05-29 07:53:26 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['super_premium.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:53:26 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:53:27 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['start_screen/maybe_later.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:53:27 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:53:28 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['start_screen/maybe_later2.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:53:28 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:53:29 | INFO | my_functions.py:172 | Searching start_screen/go_to_shop.PNG (timeout=0s)
+2026-05-29 07:53:29 | INFO | my_functions.py:181 | [ERROR] Exception while searching start_screen/go_to_shop.PNG -> Failed to read start_screen/go_to_shop.PNG because file is missing, has improper permissions, or is an unsupported or invalid format
+2026-05-29 07:53:29 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['start_screen/14_days_of_winterverse.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:53:29 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:53:31 | INFO | my_functions.py:172 | Searching start_screen/welcome_back_calendar.PNG (timeout=0s)
+2026-05-29 07:53:31 | INFO | my_functions.py:181 | [ERROR] Exception while searching start_screen/welcome_back_calendar.PNG -> Failed to read start_screen/welcome_back_calendar.PNG because file is missing, has improper permissions, or is an unsupported or invalid format
+2026-05-29 07:53:31 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['start_screen/start_the_countdown.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:53:31 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:53:32 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['start_screen/event_has_ended_sanctum.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:53:32 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:53:33 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['start_screen/image_part_of_event_grand_arena_finished.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:53:33 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:53:34 | INFO | my_functions.py:172 | Searching start_screen/28_day_event_login_rewards.PNG (timeout=0s)
+2026-05-29 07:53:34 | INFO | my_functions.py:181 | [ERROR] Exception while searching start_screen/28_day_event_login_rewards.PNG -> Failed to read start_screen/28_day_event_login_rewards.PNG because file is missing, has improper permissions, or is an unsupported or invalid format
+2026-05-29 07:53:34 | INFO | my_functions.py:172 | Searching 7_day_event_login.PNG (timeout=0s)
+2026-05-29 07:53:34 | INFO | my_functions.py:181 | [ERROR] Exception while searching 7_day_event_login.PNG -> Failed to read 7_day_event_login.PNG because file is missing, has improper permissions, or is an unsupported or invalid format
+2026-05-29 07:53:34 | INFO | my_functions.py:172 | Searching 14_days_event.PNG (timeout=0s)
+2026-05-29 07:53:34 | INFO | my_functions.py:181 | [ERROR] Exception while searching 14_days_event.PNG -> Failed to read 14_days_event.PNG because file is missing, has improper permissions, or is an unsupported or invalid format
+2026-05-29 07:53:34 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['lets_go.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:53:35 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:53:37 | INFO | my_functions.py:172 | Searching unselected/shop_unselected.PNG (timeout=0s)
+2026-05-29 07:53:37 | INFO | my_functions.py:181 | [ERROR] Exception while searching unselected/shop_unselected.PNG -> Failed to read unselected/shop_unselected.PNG because file is missing, has improper permissions, or is an unsupported or invalid format
+2026-05-29 07:53:37 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['super_premium.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:53:37 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:53:38 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['start_screen/maybe_later.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:53:38 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:53:39 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['start_screen/maybe_later2.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:53:39 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:53:40 | INFO | my_functions.py:172 | Searching start_screen/go_to_shop.PNG (timeout=0s)
+2026-05-29 07:53:40 | INFO | my_functions.py:181 | [ERROR] Exception while searching start_screen/go_to_shop.PNG -> Failed to read start_screen/go_to_shop.PNG because file is missing, has improper permissions, or is an unsupported or invalid format
+2026-05-29 07:53:40 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['start_screen/14_days_of_winterverse.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:53:40 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:53:41 | INFO | my_functions.py:172 | Searching start_screen/welcome_back_calendar.PNG (timeout=0s)
+2026-05-29 07:53:42 | INFO | my_functions.py:181 | [ERROR] Exception while searching start_screen/welcome_back_calendar.PNG -> Failed to read start_screen/welcome_back_calendar.PNG because file is missing, has improper permissions, or is an unsupported or invalid format
+2026-05-29 07:53:42 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['start_screen/start_the_countdown.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:53:42 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:53:43 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['start_screen/event_has_ended_sanctum.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:53:43 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:53:44 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['start_screen/image_part_of_event_grand_arena_finished.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:53:44 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:53:45 | INFO | my_functions.py:172 | Searching start_screen/28_day_event_login_rewards.PNG (timeout=0s)
+2026-05-29 07:53:45 | INFO | my_functions.py:181 | [ERROR] Exception while searching start_screen/28_day_event_login_rewards.PNG -> Failed to read start_screen/28_day_event_login_rewards.PNG because file is missing, has improper permissions, or is an unsupported or invalid format
+2026-05-29 07:53:45 | INFO | my_functions.py:172 | Searching 7_day_event_login.PNG (timeout=0s)
+2026-05-29 07:53:45 | INFO | my_functions.py:181 | [ERROR] Exception while searching 7_day_event_login.PNG -> Failed to read 7_day_event_login.PNG because file is missing, has improper permissions, or is an unsupported or invalid format
+2026-05-29 07:53:45 | INFO | my_functions.py:172 | Searching 14_days_event.PNG (timeout=0s)
+2026-05-29 07:53:45 | INFO | my_functions.py:181 | [ERROR] Exception while searching 14_days_event.PNG -> Failed to read 14_days_event.PNG because file is missing, has improper permissions, or is an unsupported or invalid format
+2026-05-29 07:53:45 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['lets_go.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:53:45 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:53:48 | INFO | my_functions.py:172 | Searching unselected/shop_unselected.PNG (timeout=0s)
+2026-05-29 07:53:48 | INFO | my_functions.py:181 | [ERROR] Exception while searching unselected/shop_unselected.PNG -> Failed to read unselected/shop_unselected.PNG because file is missing, has improper permissions, or is an unsupported or invalid format
+2026-05-29 07:53:48 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['super_premium.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:53:48 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:53:49 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['start_screen/maybe_later.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:53:49 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:53:50 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['start_screen/maybe_later2.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:53:50 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:53:51 | INFO | my_functions.py:172 | Searching start_screen/go_to_shop.PNG (timeout=0s)
+2026-05-29 07:53:51 | INFO | my_functions.py:181 | [ERROR] Exception while searching start_screen/go_to_shop.PNG -> Failed to read start_screen/go_to_shop.PNG because file is missing, has improper permissions, or is an unsupported or invalid format
+2026-05-29 07:53:51 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['start_screen/14_days_of_winterverse.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:53:51 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:53:53 | INFO | my_functions.py:172 | Searching start_screen/welcome_back_calendar.PNG (timeout=0s)
+2026-05-29 07:53:53 | INFO | my_functions.py:181 | [ERROR] Exception while searching start_screen/welcome_back_calendar.PNG -> Failed to read start_screen/welcome_back_calendar.PNG because file is missing, has improper permissions, or is an unsupported or invalid format
+2026-05-29 07:53:53 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['start_screen/start_the_countdown.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:53:53 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:53:54 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['start_screen/event_has_ended_sanctum.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:53:54 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:53:55 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['start_screen/image_part_of_event_grand_arena_finished.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:53:55 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:53:56 | INFO | my_functions.py:172 | Searching start_screen/28_day_event_login_rewards.PNG (timeout=0s)
+2026-05-29 07:53:56 | INFO | my_functions.py:181 | [ERROR] Exception while searching start_screen/28_day_event_login_rewards.PNG -> Failed to read start_screen/28_day_event_login_rewards.PNG because file is missing, has improper permissions, or is an unsupported or invalid format
+2026-05-29 07:53:56 | INFO | my_functions.py:172 | Searching 7_day_event_login.PNG (timeout=0s)
+2026-05-29 07:53:56 | INFO | my_functions.py:181 | [ERROR] Exception while searching 7_day_event_login.PNG -> Failed to read 7_day_event_login.PNG because file is missing, has improper permissions, or is an unsupported or invalid format
+2026-05-29 07:53:56 | INFO | my_functions.py:172 | Searching 14_days_event.PNG (timeout=0s)
+2026-05-29 07:53:56 | INFO | my_functions.py:181 | [ERROR] Exception while searching 14_days_event.PNG -> Failed to read 14_days_event.PNG because file is missing, has improper permissions, or is an unsupported or invalid format
+2026-05-29 07:53:56 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['lets_go.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:53:57 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:53:59 | INFO | my_functions.py:172 | Searching unselected/shop_unselected.PNG (timeout=0s)
+2026-05-29 07:53:59 | INFO | my_functions.py:181 | [ERROR] Exception while searching unselected/shop_unselected.PNG -> Failed to read unselected/shop_unselected.PNG because file is missing, has improper permissions, or is an unsupported or invalid format
+2026-05-29 07:53:59 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['super_premium.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:53:59 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:54:00 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['start_screen/maybe_later.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:54:00 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:54:01 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['start_screen/maybe_later2.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:54:01 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:54:02 | INFO | my_functions.py:172 | Searching start_screen/go_to_shop.PNG (timeout=0s)
+2026-05-29 07:54:02 | INFO | my_functions.py:181 | [ERROR] Exception while searching start_screen/go_to_shop.PNG -> Failed to read start_screen/go_to_shop.PNG because file is missing, has improper permissions, or is an unsupported or invalid format
+2026-05-29 07:54:02 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['start_screen/14_days_of_winterverse.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:54:02 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:54:04 | INFO | my_functions.py:172 | Searching start_screen/welcome_back_calendar.PNG (timeout=0s)
+2026-05-29 07:54:04 | INFO | my_functions.py:181 | [ERROR] Exception while searching start_screen/welcome_back_calendar.PNG -> Failed to read start_screen/welcome_back_calendar.PNG because file is missing, has improper permissions, or is an unsupported or invalid format
+2026-05-29 07:54:04 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['start_screen/start_the_countdown.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:54:04 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:54:05 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['start_screen/event_has_ended_sanctum.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:54:05 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:54:06 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['start_screen/image_part_of_event_grand_arena_finished.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:54:06 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:54:07 | INFO | my_functions.py:172 | Searching start_screen/28_day_event_login_rewards.PNG (timeout=0s)
+2026-05-29 07:54:07 | INFO | my_functions.py:181 | [ERROR] Exception while searching start_screen/28_day_event_login_rewards.PNG -> Failed to read start_screen/28_day_event_login_rewards.PNG because file is missing, has improper permissions, or is an unsupported or invalid format
+2026-05-29 07:54:07 | INFO | my_functions.py:172 | Searching 7_day_event_login.PNG (timeout=0s)
+2026-05-29 07:54:07 | INFO | my_functions.py:181 | [ERROR] Exception while searching 7_day_event_login.PNG -> Failed to read 7_day_event_login.PNG because file is missing, has improper permissions, or is an unsupported or invalid format
+2026-05-29 07:54:07 | INFO | my_functions.py:172 | Searching 14_days_event.PNG (timeout=0s)
+2026-05-29 07:54:07 | INFO | my_functions.py:181 | [ERROR] Exception while searching 14_days_event.PNG -> Failed to read 14_days_event.PNG because file is missing, has improper permissions, or is an unsupported or invalid format
+2026-05-29 07:54:07 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['lets_go.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:54:08 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:54:10 | INFO | my_functions.py:172 | Searching unselected/shop_unselected.PNG (timeout=0s)
+2026-05-29 07:54:10 | INFO | my_functions.py:181 | [ERROR] Exception while searching unselected/shop_unselected.PNG -> Failed to read unselected/shop_unselected.PNG because file is missing, has improper permissions, or is an unsupported or invalid format
+2026-05-29 07:54:10 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['super_premium.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:54:10 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:54:11 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['start_screen/maybe_later.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:54:11 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:54:12 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['start_screen/maybe_later2.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:54:12 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:54:13 | INFO | my_functions.py:172 | Searching start_screen/go_to_shop.PNG (timeout=0s)
+2026-05-29 07:54:14 | INFO | my_functions.py:181 | [ERROR] Exception while searching start_screen/go_to_shop.PNG -> Failed to read start_screen/go_to_shop.PNG because file is missing, has improper permissions, or is an unsupported or invalid format
+2026-05-29 07:54:14 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['start_screen/14_days_of_winterverse.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:54:14 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:54:15 | INFO | my_functions.py:172 | Searching start_screen/welcome_back_calendar.PNG (timeout=0s)
+2026-05-29 07:54:15 | INFO | my_functions.py:181 | [ERROR] Exception while searching start_screen/welcome_back_calendar.PNG -> Failed to read start_screen/welcome_back_calendar.PNG because file is missing, has improper permissions, or is an unsupported or invalid format
+2026-05-29 07:54:15 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['start_screen/start_the_countdown.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:54:15 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:54:16 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['start_screen/event_has_ended_sanctum.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:54:16 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:54:17 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['start_screen/image_part_of_event_grand_arena_finished.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:54:17 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:54:18 | INFO | my_functions.py:172 | Searching start_screen/28_day_event_login_rewards.PNG (timeout=0s)
+2026-05-29 07:54:18 | INFO | my_functions.py:181 | [ERROR] Exception while searching start_screen/28_day_event_login_rewards.PNG -> Failed to read start_screen/28_day_event_login_rewards.PNG because file is missing, has improper permissions, or is an unsupported or invalid format
+2026-05-29 07:54:18 | INFO | my_functions.py:172 | Searching 7_day_event_login.PNG (timeout=0s)
+2026-05-29 07:54:19 | INFO | my_functions.py:181 | [ERROR] Exception while searching 7_day_event_login.PNG -> Failed to read 7_day_event_login.PNG because file is missing, has improper permissions, or is an unsupported or invalid format
+2026-05-29 07:54:19 | INFO | my_functions.py:172 | Searching 14_days_event.PNG (timeout=0s)
+2026-05-29 07:54:19 | INFO | my_functions.py:181 | [ERROR] Exception while searching 14_days_event.PNG -> Failed to read 14_days_event.PNG because file is missing, has improper permissions, or is an unsupported or invalid format
+2026-05-29 07:54:19 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['lets_go.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:54:19 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:54:21 | INFO | my_functions.py:172 | Searching unselected/shop_unselected.PNG (timeout=0s)
+2026-05-29 07:54:21 | INFO | my_functions.py:181 | [ERROR] Exception while searching unselected/shop_unselected.PNG -> Failed to read unselected/shop_unselected.PNG because file is missing, has improper permissions, or is an unsupported or invalid format
+2026-05-29 07:54:21 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['super_premium.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:54:21 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:54:22 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['start_screen/maybe_later.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:54:22 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:54:23 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['start_screen/maybe_later2.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:54:23 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:54:24 | INFO | my_functions.py:172 | Searching start_screen/go_to_shop.PNG (timeout=0s)
+2026-05-29 07:54:25 | INFO | my_functions.py:181 | [ERROR] Exception while searching start_screen/go_to_shop.PNG -> Failed to read start_screen/go_to_shop.PNG because file is missing, has improper permissions, or is an unsupported or invalid format
+2026-05-29 07:54:25 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['start_screen/14_days_of_winterverse.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:54:25 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:54:26 | INFO | my_functions.py:172 | Searching start_screen/welcome_back_calendar.PNG (timeout=0s)
+2026-05-29 07:54:26 | INFO | my_functions.py:181 | [ERROR] Exception while searching start_screen/welcome_back_calendar.PNG -> Failed to read start_screen/welcome_back_calendar.PNG because file is missing, has improper permissions, or is an unsupported or invalid format
+2026-05-29 07:54:26 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['start_screen/start_the_countdown.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:54:26 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:54:27 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['start_screen/event_has_ended_sanctum.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:54:27 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:54:28 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['start_screen/image_part_of_event_grand_arena_finished.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:54:28 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:54:29 | INFO | my_functions.py:172 | Searching start_screen/28_day_event_login_rewards.PNG (timeout=0s)
+2026-05-29 07:54:29 | INFO | my_functions.py:181 | [ERROR] Exception while searching start_screen/28_day_event_login_rewards.PNG -> Failed to read start_screen/28_day_event_login_rewards.PNG because file is missing, has improper permissions, or is an unsupported or invalid format
+2026-05-29 07:54:29 | INFO | my_functions.py:172 | Searching 7_day_event_login.PNG (timeout=0s)
+2026-05-29 07:54:30 | INFO | my_functions.py:181 | [ERROR] Exception while searching 7_day_event_login.PNG -> Failed to read 7_day_event_login.PNG because file is missing, has improper permissions, or is an unsupported or invalid format
+2026-05-29 07:54:30 | INFO | my_functions.py:172 | Searching 14_days_event.PNG (timeout=0s)
+2026-05-29 07:54:30 | INFO | my_functions.py:181 | [ERROR] Exception while searching 14_days_event.PNG -> Failed to read 14_days_event.PNG because file is missing, has improper permissions, or is an unsupported or invalid format
+2026-05-29 07:54:30 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['lets_go.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:54:30 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:54:32 | INFO | my_functions.py:172 | Searching unselected/shop_unselected.PNG (timeout=0s)
+2026-05-29 07:54:32 | INFO | my_functions.py:181 | [ERROR] Exception while searching unselected/shop_unselected.PNG -> Failed to read unselected/shop_unselected.PNG because file is missing, has improper permissions, or is an unsupported or invalid format
+2026-05-29 07:54:32 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['super_premium.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:54:32 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:54:33 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['start_screen/maybe_later.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:54:33 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:54:34 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['start_screen/maybe_later2.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:54:34 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:54:35 | INFO | my_functions.py:172 | Searching start_screen/go_to_shop.PNG (timeout=0s)
+2026-05-29 07:54:36 | INFO | my_functions.py:181 | [ERROR] Exception while searching start_screen/go_to_shop.PNG -> Failed to read start_screen/go_to_shop.PNG because file is missing, has improper permissions, or is an unsupported or invalid format
+2026-05-29 07:54:36 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['start_screen/14_days_of_winterverse.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:54:36 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:54:37 | INFO | my_functions.py:172 | Searching start_screen/welcome_back_calendar.PNG (timeout=0s)
+2026-05-29 07:54:37 | INFO | my_functions.py:181 | [ERROR] Exception while searching start_screen/welcome_back_calendar.PNG -> Failed to read start_screen/welcome_back_calendar.PNG because file is missing, has improper permissions, or is an unsupported or invalid format
+2026-05-29 07:54:37 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['start_screen/start_the_countdown.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:54:37 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:54:38 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['start_screen/event_has_ended_sanctum.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:54:38 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:54:39 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['start_screen/image_part_of_event_grand_arena_finished.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:54:39 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:54:40 | INFO | my_functions.py:172 | Searching start_screen/28_day_event_login_rewards.PNG (timeout=0s)
+2026-05-29 07:54:40 | INFO | my_functions.py:181 | [ERROR] Exception while searching start_screen/28_day_event_login_rewards.PNG -> Failed to read start_screen/28_day_event_login_rewards.PNG because file is missing, has improper permissions, or is an unsupported or invalid format
+2026-05-29 07:54:40 | INFO | my_functions.py:172 | Searching 7_day_event_login.PNG (timeout=0s)
+2026-05-29 07:54:41 | INFO | my_functions.py:181 | [ERROR] Exception while searching 7_day_event_login.PNG -> Failed to read 7_day_event_login.PNG because file is missing, has improper permissions, or is an unsupported or invalid format
+2026-05-29 07:54:41 | INFO | my_functions.py:172 | Searching 14_days_event.PNG (timeout=0s)
+2026-05-29 07:54:41 | INFO | my_functions.py:181 | [ERROR] Exception while searching 14_days_event.PNG -> Failed to read 14_days_event.PNG because file is missing, has improper permissions, or is an unsupported or invalid format
+2026-05-29 07:54:41 | INFO | my_functions.py:224 | [DEBUG] Buscando en paralelo: ['lets_go.PNG'] | timeout=0s | confidence=0.8
+2026-05-29 07:54:41 | INFO | my_functions.py:257 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-29 07:54:45 | ERROR | each_eight_hours.py:330 | Unhandled exception occurred
+Traceback (most recent call last):
+  File "Z:\SHARED FILES VM\MS\each_eight_hours.py", line 152, in <module>
+    submissions = count_available_submissions()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\SHARED FILES VM\MS\my_functions.py", line 298, in count_available_submissions
+    with open(file_path, 'r', encoding='utf-8-sig') as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\Farm\\AppData\\LocalLow\\Second Dinner\\SNAP\\Standalone\\States\\nvprod\\MissionState.json'

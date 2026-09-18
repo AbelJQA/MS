@@ -1,0 +1,63 @@
+2026-05-19 15:38:38 | INFO | each_eight_hours.py:39 | LOG FILE PATH: \\vmware-host\Shared Folders\SHARED FILES VM\MS\logs\each_eight_hours_2026-05-19_15-38-38.log
+2026-05-19 15:38:38 | INFO | each_eight_hours.py:40 | Logger initialized
+2026-05-19 15:38:38 | INFO | each_eight_hours.py:67 | Script initialized
+2026-05-19 15:38:41 | INFO | each_eight_hours.py:128 | snap.exe terminated if it was running
+2026-05-19 15:38:41 | INFO | my_functions.py:57 | ⏳ Esperando WebSocket de OBS...
+2026-05-19 15:38:41 | INFO | baseclient.py:33 | Connecting with parameters: host='localhost' port=4455 password='' subs=0 timeout=None
+2026-05-19 15:38:41 | INFO | reqs.py:23 | Successfully identified ReqClient with the server using RPC version:1
+2026-05-19 15:38:41 | INFO | my_functions.py:63 | ✅ Conectado al OBS WebSocket
+2026-05-19 15:38:41 | INFO | my_functions.py:79 | ⏹ Grabación ya estaba activa, deteniéndola...
+2026-05-19 15:38:41 | INFO | baseclient.py:33 | Connecting with parameters: host='localhost' port=4455 password='' subs=0 timeout=None
+2026-05-19 15:38:41 | INFO | reqs.py:23 | Successfully identified ReqClient with the server using RPC version:1
+2026-05-19 15:38:41 | INFO | my_functions.py:94 | Record stopped.
+2026-05-19 15:38:53 | INFO | my_functions.py:124 | Archivo renombrado a: C:\Users\Farm\Videos\my_functions_2026-05-19_15-38-53.mkv
+2026-05-19 15:38:56 | INFO | my_functions.py:84 | 🎬 Nueva grabación iniciada
+2026-05-19 15:38:56 | INFO | my_functions.py:1281 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-05-19 15:38:56 | INFO | my_functions.py:1288 | 🔍 Esperando ventana que contenga alguna de: ['py', 'eight_hours'] (máx 20s)
+2026-05-19 15:38:56 | INFO | my_functions.py:1300 | ✅ Ventana encontrada: 'each_eight_hours  - Acceso directo'
+2026-05-19 15:38:56 | INFO | my_functions.py:1315 | ✅ Ventana seleccionada: 'each_eight_hours  - Acceso directo'
+2026-05-19 15:38:58 | INFO | my_functions.py:1338 | 🔁 Reajuste #1...
+2026-05-19 15:38:58 | INFO | my_functions.py:1345 | ✔ Verificación completa. Se hicieron 1 reajustes.
+2026-05-19 15:39:28 | INFO | my_functions.py:2111 | Starting Steam window scan
+2026-05-19 15:39:28 | INFO | my_functions.py:2114 | Found window: 
+2026-05-19 15:39:28 | INFO | my_functions.py:2114 | Found window: each_eight_hours  - Acceso directo
+2026-05-19 15:39:28 | INFO | my_functions.py:2114 | Found window: Microsoft Text Input Application
+2026-05-19 15:39:28 | INFO | my_functions.py:2114 | Found window: 
+2026-05-19 15:39:28 | INFO | my_functions.py:2114 | Found window: 
+2026-05-19 15:39:28 | INFO | my_functions.py:2114 | Found window: 
+2026-05-19 15:39:28 | INFO | my_functions.py:2114 | Found window: 
+2026-05-19 15:39:28 | INFO | my_functions.py:2114 | Found window: Program Manager
+2026-05-19 15:39:28 | INFO | each_eight_hours.py:139 | Processing account: reeps_vm
+2026-05-19 15:39:28 | INFO | each_eight_hours.py:142 | Game relaunched for account
+2026-05-19 15:39:28 | INFO | my_functions.py:1281 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-05-19 15:39:29 | INFO | my_functions.py:1288 | 🔍 Esperando ventana que contenga alguna de: ['SNAP'] (máx 20s)
+2026-05-19 15:39:31 | INFO | my_functions.py:1300 | ✅ Ventana encontrada: 'SNAP'
+2026-05-19 15:39:31 | INFO | my_functions.py:1315 | ✅ Ventana seleccionada: 'SNAP'
+2026-05-19 15:39:33 | INFO | my_functions.py:1347 | ✔ Verificación completa. No hubo cambios después del primer ajuste.
+2026-05-19 15:39:33 | INFO | my_functions.py:986 | [DEBUG] Resizing SNAP window...
+2026-05-19 15:39:33 | INFO | my_functions.py:1281 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-05-19 15:39:33 | INFO | my_functions.py:1288 | 🔍 Esperando ventana que contenga alguna de: ['SNAP'] (máx 20s)
+2026-05-19 15:39:33 | INFO | my_functions.py:1300 | ✅ Ventana encontrada: 'SNAP'
+2026-05-19 15:39:33 | INFO | my_functions.py:1315 | ✅ Ventana seleccionada: 'SNAP'
+2026-05-19 15:39:36 | INFO | my_functions.py:1347 | ✔ Verificación completa. No hubo cambios después del primer ajuste.
+2026-05-19 15:39:36 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['small_submit.PNG', 'small_submit_hover.png'] | timeout=90s | confidence=0.7
+2026-05-19 15:39:39 | INFO | my_functions.py:135 | Haciendo click en la posición (380, 639)
+2026-05-19 15:39:40 | INFO | my_functions.py:270 | 🖱️ Click OK (En paralelo): small_submit.PNG at (380, 639) delay=0.2s
+2026-05-19 15:39:40 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['small_submit.PNG', 'small_submit_hover.png'] | timeout=90s | confidence=0.7
+2026-05-19 15:39:40 | INFO | my_functions.py:135 | Haciendo click en la posición (381, 720)
+2026-05-19 15:39:41 | INFO | my_functions.py:270 | 🖱️ Click OK (En paralelo): small_submit.PNG at (381, 720) delay=0.2s
+2026-05-19 15:39:41 | INFO | my_functions.py:1281 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-05-19 15:39:41 | INFO | my_functions.py:1288 | 🔍 Esperando ventana que contenga alguna de: ['SNAP'] (máx 20s)
+2026-05-19 15:39:41 | INFO | my_functions.py:1300 | ✅ Ventana encontrada: 'SNAP'
+2026-05-19 15:39:41 | INFO | my_functions.py:1315 | ✅ Ventana seleccionada: 'SNAP'
+2026-05-19 15:39:43 | INFO | my_functions.py:1338 | 🔁 Reajuste #1...
+2026-05-19 15:39:44 | INFO | my_functions.py:1345 | ✔ Verificación completa. Se hicieron 1 reajustes.
+2026-05-19 15:39:44 | INFO | my_functions.py:170 | Searching please_sign.png (timeout=0s)
+2026-05-19 15:39:44 | INFO | my_functions.py:200 | 
+✅ Found: please_sign.png pos=(383, 438) time=0.19s confidence=0.8
+2026-05-19 15:39:44 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['ok_btn.png'] | timeout=20s | confidence=0.8
+2026-05-19 15:39:45 | INFO | my_functions.py:135 | Haciendo click en la posición (382, 634)
+2026-05-19 15:39:45 | INFO | my_functions.py:270 | 🖱️ Click OK (En paralelo): ok_btn.png at (382, 634) delay=1s
+2026-05-19 15:39:45 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['small_submit.PNG', 'small_submit_hover.png'] | timeout=90s | confidence=0.8
+2026-05-19 15:41:16 | INFO | my_functions.py:280 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-05-19 15:41:16 | INFO | my_functions.py:248 | [DEBUG] Buscando en paralelo: ['small_submit.PNG', 'small_submit_hover.png'] | timeout=90s | confidence=0.8

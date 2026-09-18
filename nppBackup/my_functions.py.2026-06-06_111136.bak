@@ -1,0 +1,2471 @@
+import logging
+logger = logging.getLogger(__name__)
+
+import re
+import socket
+import globals
+import json
+import subprocess
+from datetime import datetime
+from datetime import time as tm
+import os
+import pyautogui as pg
+import time
+import keyboard
+import pygetwindow as gw
+import winsound
+import psutil
+from obsws_python import ReqClient
+import shutil
+global record_start_time
+import cv2
+import numpy as np
+import easyocr
+
+    
+
+def wait_for_port(host, port, timeout=60):
+    start = time.time()
+    while time.time() - start < timeout:
+        try:
+            with socket.create_connection((host, port), timeout=2):
+                return True
+        except OSError:
+            time.sleep(1)
+    return False
+
+
+record_start_time = None
+
+def start_obs_then_record():
+    # time.sleep(15)
+
+    ruta_obs = r"C:\Program Files\obs-studio\bin\64bit\obs64.exe"
+    carpeta_obs = r"C:\Program Files\obs-studio\bin\64bit"
+
+    obs_activo = any(
+        proc.info["name"] == "obs64.exe"
+        for proc in psutil.process_iter(["name"])
+    )
+
+    if not obs_activo:
+        subprocess.Popen(
+            [ruta_obs, "--minimize-to-tray", "--disable-shutdown-check"],
+            cwd=carpeta_obs
+        )
+
+    logger.info("⏳ Esperando WebSocket de OBS...")
+    if not wait_for_port("localhost", 4455, timeout=90):
+        logger.info("❌ El WebSocket no se levantó")
+        return
+
+    client = ReqClient(host="localhost", port=4455, password="")
+    logger.info("✅ Conectado al OBS WebSocket")
+
+    for _ in range(20):
+        try:
+            status = client.get_record_status()
+            break
+        except Exception:
+            time.sleep(1)
+    else:
+        logger.info("❌ OBS no respondió a tiempo")
+        return
+
+    # If a recording is already running, stop it first
+    global record_start_time
+
+    if status.output_active:
+        logger.info("⏹ Grabación ya estaba activa, deteniéndola...")
+        end_record_obs()
+        time.sleep(3)
+        client.start_record()
+        record_start_time = datetime.now()
+        logger.info("🎬 Nueva grabación iniciada")
+    else:
+        client.start_record()
+        record_start_time = datetime.now()
+        logger.info("🎬 Grabación iniciada")
+
+
+def end_record_obs():
+    client = ReqClient(host="localhost", port=4455, password="")
+    client.stop_record()
+    logger.info("Record stopped.")
+
+    time.sleep(12)  # Waiting to OBS finish to save
+
+    output_folder = rf"C:\Users\{os.getlogin()}\Videos"
+    files = [os.path.join(output_folder, f) for f in os.listdir(output_folder)]
+    video_files = [f for f in files if f.lower().endswith(('.mp4', '.mkv'))]
+
+    if not video_files:
+        logger.info("Not found records.")
+        return
+
+    most_recent_file = max(video_files, key=os.path.getmtime)
+
+
+
+    if record_start_time is None:
+        timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+    else:
+        timestamp = record_start_time.strftime("%Y-%m-%d_%H-%M-%S")
+        
+        
+    extension = os.path.splitext(most_recent_file)[1]
+    script_name = os.path.splitext(os.path.basename(__file__))[0]
+
+    nuevo_nombre = os.path.join(
+        output_folder, f"{script_name}_{timestamp}{extension}")
+
+    try:
+        shutil.move(most_recent_file, nuevo_nombre)
+        logger.info(f"Archivo renombrado a: {nuevo_nombre}")
+    except Exception as e:
+        logger.info(f"Error al renombrar: {e}")
+
+
+def click_pos(pos, delay_click=1):
+    # param pos is a tuple
+    if pos is None:
+        logger.info("click_pos recibió None, no se hace clic")
+        return
+    x, y = pos
+    logger.info(f"Haciendo click en la posición ({x}, {y})")  # <-- print agregado
+    pg.moveTo(x, y)
+    time.sleep(delay_click)
+    pg.click(x, y)
+
+
+def presionar_esc(veces=1):
+    for i in range(veces):
+        logger.info(f"Presionando ESC ({i+1}/{veces})")
+        time.sleep(0.2)
+        keyboard.press('\x1b')
+        time.sleep(0.1)
+        keyboard.release('\x1b')
+        time.sleep(0.3)
+
+
+def beep_forever():
+    while True:
+        winsound.Beep(500, 500)
+        time.sleep(10)
+
+def search_MS_img(
+        path,
+        timeout=0,
+        confidence=0.8,
+        region=globals.REGION_MS_WINDOW,
+        interval_searching=0,
+        quick_check=False,
+        alert_on_fail=False,
+        verbose=True
+):
+
+    start_time = time.time()
+
+    if not quick_check and verbose:
+        logger.info(
+            f"Searching {os.path.basename(path)} (timeout={timeout}s)"
+        )
+
+    while True:
+
+        elapsed = time.time() - start_time
+
+        try:
+            position = pg.locateCenterOnScreen(
+                path,
+                confidence=confidence,
+                region=region,
+            )
+        except Exception as e:
+            if verbose:
+                logger.info(
+                    f"[ERROR] Exception while searching "
+                    f"{os.path.basename(path)} -> {e}"
+                )
+
+            if alert_on_fail:
+                beep_forever()
+
+            return None
+
+        if position:
+            total_time = round(time.time() - start_time, 2)
+
+            if verbose:
+                logger.info(
+                    f"\n✅ Found: {os.path.basename(path)} "
+                    f"pos=({int(position[0])}, {int(position[1])}) "
+                    f"time={total_time}s confidence={confidence}"
+                )
+
+            return position
+
+        if quick_check:
+            return None
+
+        if elapsed > timeout:
+
+            if verbose:
+                logger.info(
+                    f"\n⛔ Not found: {os.path.basename(path)} "
+                    f"after {round(elapsed, 2)}s "
+                    f"region={region} confidence={confidence}"
+                )
+
+            if alert_on_fail:
+                beep_forever()
+
+            return None
+
+        time.sleep(interval_searching)
+
+def click_any_MS_img(
+    paths, 
+    timeout=20, 
+    delay_click=1, 
+    region=globals.REGION_MS_WINDOW, 
+    confidence=0.8, 
+    **kwargs
+):
+    """
+    Busca una o varias imágenes al mismo tiempo.
+    Evita conflictos si se pasan 'quick_check' o 'timeout' por kwargs.
+    """
+    if isinstance(paths, str):
+        paths = [paths]
+
+    # 🌟 CORRECCIÓN: Limpiamos kwargs para que no duplique parámetros en search_MS_img
+    kwargs.pop('quick_check', None)
+    kwargs.pop('timeout', None)
+
+    start_time = time.time()
+    
+    logger.info(
+        f"[DEBUG] Buscando en paralelo: {[os.path.basename(p) for p in paths]} "
+        f"| timeout={timeout}s | confidence={confidence}"
+    )
+
+    while True:
+        for path in paths:
+            # Ahora ya no fallará aunque invoques la función con quick_check=True fuera
+            position = search_MS_img(
+                path,
+                timeout=0, # Forzado a 0 para que sea inmediato en el bucle
+                region=region,
+                confidence=confidence,
+                quick_check=True, # Forzado a True para que no se quede trabado
+                verbose=False,
+                **kwargs,
+            )
+
+            if position:
+                time.sleep(delay_click)
+                click_pos(position, delay_click=0)
+
+                logger.info(
+                    f"🖱️ Click OK (En paralelo): {os.path.basename(path)} "
+                    f"at ({int(position[0])}, {int(position[1])}) "
+                    f"delay={delay_click}s"
+                )
+                time.sleep(1)
+                pg.moveTo(1,1)  
+                return True
+
+        # Si el timeout original que pasaste era 0, o si ya pasó el tiempo, sale.
+        elapsed = time.time() - start_time
+        if timeout == 0 or elapsed > timeout:
+            logger.info(
+                f"[DEBUG] Click skipped, ninguna de las imágenes se encontró "
+                f"en el intento."
+            )
+            time.sleep(1)
+            pg.moveTo(0,500)  
+            return False
+        
+        time.sleep(0.1)
+
+
+
+
+# Asumo que 'reader' ya está inicializado en tu script globalmente:
+reader = easyocr.Reader(['es']) 
+
+def search_MS_text_ocr(
+        path_or_text,  # Ahora acepta el texto a buscar en lugar de una ruta de imagen
+        timeout=0,
+        confidence=0.35, # Equivalente al text_threshold / umbral_minimo
+        region=globals.REGION_MS_WINDOW,
+        interval_searching=0,
+        quick_check=False,
+        alert_on_fail=False,
+        verbose=True
+):
+    start_time = time.time()
+    palabra_buscar_clean = str(path_or_text).strip().upper()
+
+    if not quick_check and verbose:
+        logger.info(
+            f"Searching text '{path_or_text}' (timeout={timeout}s)"
+        )
+
+    screenshot = None
+
+    while True:
+        elapsed = time.time() - start_time
+        position = None
+
+        try:
+            # 1. Tomar captura de la región para procesar con EasyOCR
+            screenshot = pg.screenshot(region=region)
+            image_cv = cv2.cvtColor(np.array(screenshot), cv2.COLOR_RGB2BGR)
+
+            # 2. Procesar con EasyOCR usando el confidence como umbral mínimo
+            results = reader.readtext(image_cv, paragraph=False, text_threshold=confidence)
+
+            for bbox, text, prob in results:
+                text_clean = text.strip().upper()
+
+                # Verificar coincidencia de texto y umbral de confianza
+                if palabra_buscar_clean in text_clean and prob >= confidence:
+                    puntos_en_pantalla = [tuple(map(int, p)) for p in bbox]
+                    top_left = puntos_en_pantalla[0]
+                    bottom_right = puntos_en_pantalla[2]
+
+                    # Calcular centro LOCAL
+                    centro_x = int((top_left[0] + bottom_right[0]) / 2)
+                    centro_y = int((top_left[1] + bottom_right[1]) / 2)
+
+                    # =========================================================
+                    # LÓGICA DE GUARDADO EN CASO DE ÉXITO
+                    # =========================================================
+                    carpeta_exito = "exito_ocr"
+                    if not os.path.exists(carpeta_exito):
+                        os.makedirs(carpeta_exito)
+
+                    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+                    palabra_segura = "".join([c for c in str(path_or_text) if c.isalpha() or c.isdigit()]).rstrip()
+                    nombre_archivo_exito = f"{carpeta_exito}/exito_{palabra_segura}_{timestamp}.png"
+
+                    cv2.rectangle(image_cv, top_left, bottom_right, (0, 255, 0), 2)
+                    cv2.imwrite(nombre_archivo_exito, image_cv)
+
+                    # Ajustar coordenadas LOCALES a GLOBALES si hay una región activa
+                    if region:
+                        centro_x += region[0]
+                        centro_y += region[1]
+
+                    position = (centro_x, centro_y)
+                    break # Salimos del for al encontrar la primera coincidencia válida
+
+        except Exception as e:
+            if verbose:
+                logger.info(
+                    f"[ERROR] Exception while searching text "
+                    f"'{path_or_text}' -> {e}"
+                )
+            if alert_on_fail:
+                beep_forever()
+            return None
+
+        # Si se encontró la posición, registrar logs y retornar
+        if position:
+            total_time = round(time.time() - start_time, 2)
+            if verbose:
+                logger.info(
+                    f"\n✅ Found text: '{path_or_text}' "
+                    f"pos=({int(position[0])}, {int(position[1])}) "
+                    f"time={total_time}s confidence={confidence}"
+                )
+            return position
+
+        if quick_check:
+            return None
+
+        # Verificar si excedió el timeout general
+        if elapsed > timeout:
+            if verbose:
+                logger.info(
+                    f"\n⛔ Text not found: '{path_or_text}' "
+                    f"after {round(elapsed, 2)}s "
+                    f"region={region} confidence={confidence}"
+                )
+
+            # =========================================================
+            # LÓGICA DE GUARDADO EN CASO DE ERROR (TIMEOUT EXCEDIDO)
+            # =========================================================
+            if screenshot is not None:
+                carpeta_errores = "errores_ocr"
+                if not os.path.exists(carpeta_errores):
+                    os.makedirs(carpeta_errores)
+                
+                timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+                palabra_segura = "".join([c for c in str(path_or_text) if c.isalpha() or c.isdigit()]).rstrip()
+                nombre_archivo_error = f"{carpeta_errores}/error_{palabra_segura}_{timestamp}.png"
+                screenshot.save(nombre_archivo_error)
+
+            if alert_on_fail:
+                beep_forever()
+
+            return None
+
+        # Control del delay de escaneo (interval_searching) configurado en tu función original
+        time.sleep(interval_searching if interval_searching > 0 else 0.1)
+
+
+def click_any_MS_text_ocr(
+    paths, # Ahora representará una lista de textos a buscar en paralelo
+    timeout=20, 
+    delay_click=1, 
+    region=globals.REGION_MS_WINDOW, 
+    confidence=0.35, 
+    **kwargs
+):
+    """
+    Busca una o varias palabras al mismo tiempo en la pantalla.
+    Evita conflictos si se pasan 'quick_check' o 'timeout' por kwargs.
+    """
+    if isinstance(paths, str):
+        paths = [paths]
+
+    kwargs.pop('quick_check', None)
+    kwargs.pop('timeout', None)
+
+    start_time = time.time()
+    
+    logger.info(
+        f"[DEBUG] Buscando texto en paralelo: {paths} "
+        f"| timeout={timeout}s | confidence={confidence}"
+    )
+
+    while True:
+        for path in paths:
+            position = search_MS_img(
+                path,
+                timeout=0, 
+                region=region,
+                confidence=confidence,
+                quick_check=True, 
+                verbose=False,
+                **kwargs,
+            )
+
+            if position:
+                time.sleep(delay_click)
+                click_pos(position, delay_click=0)
+
+                logger.info(
+                    f"🖱️ Click OK (Texto en paralelo): '{path}' "
+                    f"at ({int(position[0])}, {int(position[1])}) "
+                    f"delay={delay_click}s"
+                )
+                time.sleep(1)
+                pg.moveTo(1,1)  
+                return True
+
+        elapsed = time.time() - start_time
+        if timeout == 0 or elapsed > timeout:
+            logger.info(
+                f"[DEBUG] Click skipped, ninguno de los textos se encontró "
+                f"en el intento."
+            )
+            time.sleep(1)
+            pg.moveTo(0,500)  
+            return False
+        
+        time.sleep(0.1)
+
+
+def get_nvprod_json_path(json_filename):
+    return (
+        rf"C:\Users\{os.getlogin()}\AppData\LocalLow\Second Dinner"
+        rf"\SNAP\Standalone\States\nvprod\{json_filename}.json"
+    )
+
+
+def update_json_info(json_filename):
+    ruta_archivo = get_nvprod_json_path(json_filename)
+    subprocess.Popen(["notepad.exe", ruta_archivo])
+    time.sleep(2)
+    subprocess.run(['taskkill', '/F', '/IM', 'notepad.exe'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+
+
+# Conquest
+def get_postgame_xp_value():
+    with open(get_nvprod_json_path("BattlePassState"), "r", encoding="utf-8-sig") as f:
+        data = json.load(f)
+    return (
+        data.get("ServerState", {})
+            .get("BattlePass", {})
+            .get("PostGameXpTrackedAmount", 0)
+    )
+#
+
+
+
+def count_available_submissions():
+    file_path = get_nvprod_json_path('MissionState')
+
+    with open(file_path, 'r', encoding='utf-8-sig') as f:
+        data = json.load(f)
+
+    daily_group = data['ServerState']['State']['DailyMissionGroup']
+    submissions = daily_group.get('SubMissions', [])
+
+    available = min(len(submissions), 6)
+    logger.info("AVAILABLE: %s", available)
+    
+    return available
+
+
+
+def check_at_least_n_submissions_complete(required_missions):
+    file_path=get_nvprod_json_path('MissionState')
+    
+    """Verifica si hay al menos N misiones completas."""
+    with open(file_path, 'r', encoding='utf-8-sig') as f:
+        data = json.load(f)
+        daily_group = data['ServerState']['State']['DailyMissionGroup']
+        submissions = daily_group.get('SubMissions', [])
+
+    completed = 0
+    for sub in submissions:
+        required = sub.get('RequiredProgress')
+        current = sub.get('CurrentProgress')
+        if required is not None and current is not None and required == current:
+            completed += 1
+
+    logger.info(f"Misiones completadas: {completed}")
+
+    return completed >= required_missions
+
+
+
+def extract_value_from_json(file_path, key_path):
+    """
+    file_path: string con la ruta al archivo JSON
+    key_path: lista de llaves en orden, por ejemplo:
+              ['ServerState', 'CollectionScore', 'Amount']
+    """
+    with open(file_path, 'r', encoding='utf-8-sig') as f:
+        data = json.load(f)
+
+    current = data
+    for key in key_path:
+        current = current[key]
+
+    return current
+
+
+
+
+def get_CL_from_json():
+    
+    update_json_info('CollectionState')
+
+    with open(get_nvprod_json_path('CollectionState'), 'r', encoding='utf-8-sig') as f:
+        data = json.load(f)
+
+    daily_group = data['ServerState']['CollectionScore']['Amount']
+    logger.info(daily_group)
+
+    return daily_group
+
+
+
+def get_completed_missions():
+    '''Devuelve la cantidad de misiones completadas'''    
+    with open(get_nvprod_json_path('MissionState'), 'r', encoding='utf-8-sig') as f:
+        data = json.load(f)
+
+    daily_group = data['ServerState']['State']['DailyMissionGroup']
+    submissions = daily_group.get('SubMissions', [])
+
+    count_equal = 0
+
+    for m in submissions:
+        current = m.get("CurrentProgress", 0)
+        required = m.get("RequiredProgress", 0)
+
+        if current == required:
+            count_equal += 1
+
+    return count_equal
+
+
+def check_rank_reached(target_rank=10):
+    file_path = get_nvprod_json_path('ProfileState')
+
+    rank = extract_value_from_json(
+        file_path,
+        ['ServerState', 'RankLog', 'Rank']
+    )
+
+    print(f"Rank actual: {rank}")
+    logger.info(f"Current rank: {rank}")
+
+    if rank >= target_rank:
+        logger.info("Rank objetivo alcanzado")
+        beep_forever()
+        return True
+
+    return False
+
+
+
+def has_snap_account(retries=5, delay=2):
+    """Try to read AccountState JSON several times until SnapAccount is found."""
+    file_path = get_nvprod_json_path('AccountState')
+
+    for _ in range(retries):
+        with open(file_path, 'r', encoding='utf-8-sig') as f:
+            data = json.load(f)
+
+        server_state = data.get('ServerState', {})
+        partner_account = server_state.get('PartnerAccount')
+
+        if partner_account and partner_account.get('SnapAccountId'):
+            snap_id = partner_account['SnapAccountId']
+            logger.info(f"Snap Account detected: {snap_id}")
+            return True
+
+        time.sleep(delay)
+
+    logger.info("No Snap Account found")
+    return False
+
+def reclamar_25creditos_gratis():
+    # Entrando a la tienda para reclamar 25 credits
+
+    click_any_MS_img(["images/stages/shop/offers.PNG", "images/offers_selected.PNG"])
+    click_any_MS_img(["images/credits_selected.png", "images/stages/shop/credits.PNG"], timeout=3)
+    time.sleep(1.5)
+    click_any_MS_img("images/claim_25_credits.png", timeout=3)
+    if search_MS_img("images/aw_snap.png", timeout=3):
+        click_any_MS_img("images/x.png")
+
+
+def after_finish_all_games():
+    if globals.mode == "sanctum":
+        presionar_esc()
+
+    # Chequeando las misiones y recoger las recompensas
+    click_any_MS_img(
+        r'images/stages/main_stage/missionsNotify2.png',
+        delay_click=3
+    )
+    click_blue_missions()
+    get_weekly_rewards()
+
+    # Entrando a la tienda para reclamar tokens y creditos gratis
+
+    click_pos((557, 64))  # Position of gold icon
+    click_any_MS_img(r'images/stages/shop/cards_shop.PNG')
+    click_any_MS_img(r'images/stages/shop/token_icon.PNG')
+    time.sleep(2)
+    click_any_MS_img(r'images/stages/shop/claim!_token_3.PNG', timeout=4)
+    # reclamar_25creditos_gratis()
+        
+    # Entrando a la tienda para levear cartas
+    
+    click_any_MS_img(r'images/stages/shop/cards_shop.PNG')
+    click_any_MS_img(r'images/stages/shop/offers.PNG')
+    upgrade_cards(3)
+    presionar_esc() # Saliendo al menu principal
+    click_any_MS_img("images/start_screen/offer_window/white_x.png", timeout=2)
+
+
+
+def get_current_account_name():
+    path = rf"C:\Users\{os.getlogin()}\AppData\LocalLow\Second Dinner\SNAP\Standalone\States\nvprod\AccountState.json"
+    
+    with open(path, "r", encoding="utf-8-sig") as file:
+        data = json.load(file)
+    
+    current_id = data["ServerState"]["Account"]["Id"]
+    
+    for name, acc_id in globals.accounts2.items():
+        if acc_id == current_id:
+            return name
+    
+    return "Desconocido"
+
+
+def confirm_initial_images_passed():
+    time.sleep(8)
+    if search_MS_img(r'images/unselected/shop_unselected.PNG', timeout=0):
+        logger.info('Ya esta listo')
+        return True
+    return False
+
+
+def search_initial_imgs():
+
+    # Buscando imagenes que aparecen siempre al inicio del juego
+    start_time = time.time()
+    while time.time() - start_time < 90:
+
+        if search_MS_img(r'images/unselected/shop_unselected.PNG', timeout=0):
+            if confirm_initial_images_passed():
+                break
+
+        elif click_any_MS_img(
+            r'images/super_premium.PNG', timeout=0
+        ):
+            presionar_esc()
+            if confirm_initial_images_passed():
+                break
+        
+        elif click_any_MS_img(
+            r'images/start_screen/maybe_later.PNG', timeout=0
+        ):
+            if confirm_initial_images_passed():
+                break
+
+        elif click_any_MS_img(r'images/start_screen/maybe_later2.PNG', timeout=0):
+            if confirm_initial_images_passed():
+                break
+
+        elif search_MS_img(r'images/start_screen/go_to_shop.PNG', timeout=0):
+            time.sleep(2)
+            click_any_MS_img(r'images/start_screen/offer_window/white_x.png')
+            if confirm_initial_images_passed():
+                break
+
+        # Cambiar name de la imagen segun el evento
+        elif click_any_MS_img(
+            r'images/start_screen/14_days_of_winterverse.PNG',
+            timeout=0
+        ):
+            presionar_esc()
+            # Moviendo puntero para evitar distorsion de imagen
+            pg.moveTo(10, 10)
+
+            if claim := search_MS_img(r'images/claim!.PNG', timeout=5):
+                time.sleep(3)
+                click_pos(claim)
+
+                # Durante unos segundos, intenta detectar y hacer click en
+                # todas las pantallas de recompensa que pueden aparecer.
+                # No importa el orden ni si alguna no aparece.
+                # El loop termina solo por tiempo.
+                start_time = time.time()
+
+                images = [
+                    r'images/stages/collection_rewards_stage/nice!.PNG',
+                    r'images/claim!.PNG',
+                    r'images/claim_hover.PNG',
+                    r'images/nice_hover_half.PNG',
+                ]
+
+                while time.time() - start_time < 15:
+                    for img in images:
+                        click_any_MS_img(img, timeout=0)
+
+            # Moviendo puntero
+            pg.moveTo(10, 10)
+
+            if confirm_initial_images_passed():
+                break
+
+        elif search_MS_img(
+            r'images/start_screen/welcome_back_calendar.PNG',
+            timeout=0
+        ):
+            presionar_esc()
+            # Moviendo puntero para evitar distorsion de imagen
+            pg.moveTo(10, 10)
+
+            if claim := search_MS_img(r'images/claim!.PNG', timeout=5):
+                time.sleep(3)
+                click_pos(claim)
+
+                # Durante unos segundos, intenta detectar y hacer click en
+                # todas las pantallas de recompensa que pueden aparecer.
+                # No importa el orden ni si alguna no aparece.
+                # El loop termina solo por tiempo.
+                start_time = time.time()
+
+                images = [
+                    r'images/stages/collection_rewards_stage/nice!.PNG',
+                    r'images/claim!.PNG',
+                    r'images/claim_hover.PNG',
+                    r'images/nice_hover_half.PNG',
+                ]
+
+                while time.time() - start_time < 15:
+                    for img in images:
+                        click_any_MS_img(img, timeout=0)
+            
+            elif claim := search_MS_img(r'images/claim_hover.png', timeout=3):
+                time.sleep(3)
+                click_pos(claim)
+
+                # Durante unos segundos, intenta detectar y hacer click en
+                # todas las pantallas de recompensa que pueden aparecer.
+                # No importa el orden ni si alguna no aparece.
+                # El loop termina solo por tiempo.
+                start_time = time.time()
+
+                images = [
+                    r'images/stages/collection_rewards_stage/nice!.PNG',
+                    r'images/claim!.PNG',
+                    r'images/claim_hover.PNG',
+                    r'images/nice_hover_half.PNG',
+                ]
+
+                while time.time() - start_time < 15:
+                    for img in images:
+                        click_any_MS_img(img, timeout=0)
+
+            # Moviendo puntero
+            pg.moveTo(10, 10)
+
+            if confirm_initial_images_passed():
+                break
+        
+        elif click_any_MS_img(
+            r'images/start_screen/start_the_countdown.PNG', timeout=0
+        ):
+            presionar_esc()
+            # Moviendo puntero para evitar distorsion de imagen
+            pg.moveTo(10, 10)
+
+            '''
+            if claim := wait_for_image(r'images/claim!.PNG', timeout=5):
+                time.sleep(3)
+                click_pos(claim)
+                wait_for_image_and_click(r'images/stages/collection_rewards_stage/nice!.PNG', timeout=5)
+            '''
+
+            start2 = time.time()
+            while time.time() - start2 < 7:
+
+                click_any_MS_img(r'images/claim!.PNG', timeout=0)
+                click_any_MS_img(r'images/claim_hover.PNG', timeout=0)
+                click_any_MS_img(
+                    r'images/stages/collection_rewards_stage/nice!.PNG',
+                    timeout=0
+                )
+
+            # Moviendo puntero
+            pg.moveTo(10, 10)
+
+            if confirm_initial_images_passed():
+                break
+
+        elif click_any_MS_img(
+            r'images/start_screen/event_has_ended_sanctum.PNG', timeout=0
+        ):
+            click_any_MS_img(r'images/x.png')
+            # Moviendo puntero para evitar distorsion de imagen
+            pg.moveTo(10, 10)
+            
+            if claim := search_MS_img(r'images/claim!.PNG', timeout=5):
+                time.sleep(3)
+                click_pos(claim)
+                click_any_MS_img(r'images/stages/collection_rewards_stage/nice!.PNG', timeout=5)
+            
+            # Moviendo puntero
+            pg.moveTo(10, 10)
+            
+            if confirm_initial_images_passed():
+                break
+                
+        elif click_any_MS_img(
+            r'images/event_has_ended_teamclash.PNG', timeout=0
+        ):
+            click_any_MS_img(r'images/x.png')
+            # Moviendo puntero para evitar distorsion de imagen
+            pg.moveTo(10, 10)
+            
+            if claim := search_MS_img(r'images/claim!.PNG', timeout=5):
+                time.sleep(3)
+                click_pos(claim)
+                click_any_MS_img(r'images/stages/collection_rewards_stage/nice!.PNG', timeout=5)
+            
+            # Moviendo puntero
+            pg.moveTo(10, 10)
+            
+            if confirm_initial_images_passed():
+                break
+        
+        elif click_any_MS_img(r'images/start_screen/image_part_of_event_grand_arena_finished.PNG', timeout=0):
+            presionar_esc()
+            # Moviendo puntero para evitar distorsion de imagen
+            pg.moveTo(10, 10)
+            
+            if claim := search_MS_img(r'images/claim!.PNG', timeout=5):
+                time.sleep(3)
+                click_pos(claim)
+                click_any_MS_img(r'images/stages/collection_rewards_stage/nice!.PNG', timeout=5)
+            
+            # Moviendo puntero
+            pg.moveTo(10, 10)
+            
+            if confirm_initial_images_passed():
+                break
+                
+        elif search_MS_img(r'images/start_screen/28_day_event_login_rewards.PNG', timeout=0):
+            
+            presionar_esc()
+            # Moviendo puntero para evitar distorsion de imagen
+            pg.moveTo(10, 10)
+
+            if claim := search_MS_img(r'images/claim!.PNG', timeout=5):
+                time.sleep(3)
+                click_pos(claim)
+
+                # Durante unos segundos, intenta detectar y hacer click en
+                # todas las pantallas de recompensa que pueden aparecer.
+                # No importa el orden ni si alguna no aparece.
+                # El loop termina solo por tiempo.
+                start_time = time.time()
+
+                images = [
+                    r'images/stages/collection_rewards_stage/nice!.PNG',
+                    r'images/claim!.PNG',
+                    r'images/claim_hover.PNG',
+                    r'images/nice_hover_half.PNG',
+                    r'images/claim_After_receive_new_deck.PNG',
+                ]
+
+                while time.time() - start_time < 30:
+                    for img in images:
+                        click_any_MS_img(img, timeout=0)
+            
+            elif claim := search_MS_img(r'images/claim_hover.png', timeout=3):
+                time.sleep(3)
+                click_pos(claim)
+
+                # Durante unos segundos, intenta detectar y hacer click en
+                # todas las pantallas de recompensa que pueden aparecer.
+                # No importa el orden ni si alguna no aparece.
+                # El loop termina solo por tiempo.
+                start_time = time.time()
+
+                images = [
+                    r'images/stages/collection_rewards_stage/nice!.PNG',
+                    r'images/claim!.PNG',
+                    r'images/claim_hover.PNG',
+                    r'images/nice_hover_half.PNG',
+                ]
+
+                while time.time() - start_time < 15:
+                    for img in images:
+                        click_any_MS_img(img, timeout=0)
+            
+            # Moviendo puntero
+            pg.moveTo(10, 10)
+            
+            if confirm_initial_images_passed():
+                break        
+        
+        elif search_MS_img(r'images/7_day_event_login.PNG', timeout=0):
+            
+            presionar_esc()
+            # Moviendo puntero para evitar distorsion de imagen
+            pg.moveTo(10, 10)
+
+            if claim := search_MS_img(r'images/claim!.PNG', timeout=5):
+                time.sleep(3)
+                click_pos(claim)
+
+                # Durante unos segundos, intenta detectar y hacer click en
+                # todas las pantallas de recompensa que pueden aparecer.
+                # No importa el orden ni si alguna no aparece.
+                # El loop termina solo por tiempo.
+                start_time = time.time()
+
+                images = [
+                    r'images/stages/collection_rewards_stage/nice!.PNG',
+                    r'images/claim!.PNG',
+                    r'images/claim_hover.PNG',
+                    r'images/nice_hover_half.PNG',
+                ]
+
+                while time.time() - start_time < 15:
+                    for img in images:
+                        click_any_MS_img(img, timeout=0)
+            
+            elif claim := search_MS_img(r'images/claim_hover.png', timeout=3):
+                time.sleep(3)
+                click_pos(claim)
+
+                # Durante unos segundos, intenta detectar y hacer click en
+                # todas las pantallas de recompensa que pueden aparecer.
+                # No importa el orden ni si alguna no aparece.
+                # El loop termina solo por tiempo.
+                start_time = time.time()
+
+                images = [
+                    r'images/stages/collection_rewards_stage/nice!.PNG',
+                    r'images/claim!.PNG',
+                    r'images/claim_hover.PNG',
+                    r'images/nice_hover_half.PNG',
+                ]
+
+                while time.time() - start_time < 15:
+                    for img in images:
+                        click_any_MS_img(img, timeout=0)
+            
+            # Moviendo puntero
+            pg.moveTo(10, 10)
+            
+            if confirm_initial_images_passed():
+                break        
+        
+        
+        elif search_MS_img(r'images/14_days_event.PNG', timeout=0):
+            
+            presionar_esc()
+            # Moviendo puntero para evitar distorsion de imagen
+            pg.moveTo(10, 10)
+
+            if claim := search_MS_img(r'images/claim!.PNG', timeout=5):
+                time.sleep(3)
+                click_pos(claim)
+
+                # Durante unos segundos, intenta detectar y hacer click en
+                # todas las pantallas de recompensa que pueden aparecer.
+                # No importa el orden ni si alguna no aparece.
+                # El loop termina solo por tiempo.
+                start_time = time.time()
+
+                images = [
+                    r'images/stages/collection_rewards_stage/nice!.PNG',
+                    r'images/claim!.PNG',
+                    r'images/claim_hover.PNG',
+                    r'images/nice_hover_half.PNG',
+                ]
+
+                while time.time() - start_time < 15:
+                    for img in images:
+                        click_any_MS_img(img, timeout=0)
+            
+            elif claim := search_MS_img(r'images/claim_hover.png', timeout=3):
+                time.sleep(3)
+                click_pos(claim)
+
+                # Durante unos segundos, intenta detectar y hacer click en
+                # todas las pantallas de recompensa que pueden aparecer.
+                # No importa el orden ni si alguna no aparece.
+                # El loop termina solo por tiempo.
+                start_time = time.time()
+
+                images = [
+                    r'images/stages/collection_rewards_stage/nice!.PNG',
+                    r'images/claim!.PNG',
+                    r'images/claim_hover.PNG',
+                    r'images/nice_hover_half.PNG',
+                ]
+
+                while time.time() - start_time < 15:
+                    for img in images:
+                        click_any_MS_img(img, timeout=0)
+            
+            # Moviendo puntero
+            pg.moveTo(10, 10)
+            
+            if confirm_initial_images_passed():
+                break        
+        
+        
+        elif click_any_MS_img(r'images/lets_go.PNG', timeout=0):
+            # Moviendo puntero para evitar distorsion de imagen
+            pg.moveTo(10, 10)
+            
+            if claim := search_MS_img(r'images/claim!.PNG', timeout=5):
+                time.sleep(3)
+                click_pos(claim)
+
+                # Durante unos segundos, intenta detectar y hacer click en
+                # todas las pantallas de recompensa que pueden aparecer.
+                # No importa el orden ni si alguna no aparece.
+                # El loop termina solo por tiempo.
+                start_time = time.time()
+
+                images = [
+                    r'images/stages/collection_rewards_stage/nice!.PNG',
+                    r'images/claim!.PNG',
+                    r'images/claim_hover.PNG',
+                    r'images/nice_hover_half.PNG',
+                ]
+
+                while time.time() - start_time < 60:
+                    for img in images:
+                        click_any_MS_img(img, timeout=0)
+            
+            elif claim := search_MS_img(r'images/claim_hover.png', timeout=3):
+                time.sleep(3)
+                click_pos(claim)
+
+                # Durante unos segundos, intenta detectar y hacer click en
+                # todas las pantallas de recompensa que pueden aparecer.
+                # No importa el orden ni si alguna no aparece.
+                # El loop termina solo por tiempo.
+                start_time = time.time()
+
+                images = [
+                    r'images/stages/collection_rewards_stage/nice!.PNG',
+                    r'images/claim!.PNG',
+                    r'images/claim_hover.PNG',
+                    r'images/nice_hover_half.PNG',
+                ]
+
+                while time.time() - start_time < 20:
+                    for img in images:
+                        click_any_MS_img(img, timeout=0)
+            
+            # Moviendo puntero
+            pg.moveTo(10, 10)
+            
+            '''
+            if clain := wait_for_image(r'images/claim_recompensas no reclamadas de final de season.PNG'):
+                while time.time() - start_time < 10: 
+                    click_pos(claim)
+            '''
+            
+            if confirm_initial_images_passed():
+                break
+        
+    
+        time.sleep(1)
+
+
+CURRENT_ACCOUNT = None  # inicializar global
+
+def login(acc):
+    """
+    Performs the full login process into SNAP using a specific Google account.
+
+    The function automates the UI flow required to authenticate a user.
+    It resizes the SNAP window, navigates through the login interface,
+    selects the corresponding Gmail account image, and confirms that the
+    login succeeded by detecting the Play screen.
+
+    Parameters
+    ----------
+    acc : str
+        Account identifier used to locate the account image inside:
+        images/accounts/relogin_accounts/gmail_accounts/vm/{acc}.png
+
+    Process
+    -------
+    1. Resize the SNAP window to a predefined region.
+    2. Click the "submit" button on the main screen.
+    3. Wait until the "Sign in with Google" button appears.
+    4. Click the Google login button.
+    5. Select the Gmail account image corresponding to `acc`.
+    6. Handle the temporary focus change to Python.
+    7. Return focus to the SNAP application from the taskbar.
+    8. Verify successful login by detecting the Play screen.
+
+    Fallback Behavior
+    -----------------
+    If the Play screen does not appear within the timeout:
+    1. Cancel the login dialog.
+    2. Repeat the Google login sequence once more.
+
+    Notes
+    -----
+    Some optional sections are commented out:
+    - First-time login flow.
+    - FPS configuration (switching from 60 FPS to 30 FPS).
+    These can be re-enabled if required for the environment setup.
+    """
+    
+    global CURRENT_ACCOUNT
+    CURRENT_ACCOUNT = acc
+    
+    account_img = rf'images/accounts/relogin_accounts/gmail_accounts/vm/{acc}.png'
+
+    if not os.path.exists(account_img):
+        print(f"[ERROR] Account image not found: {account_img}")
+        beep_forever()
+        raise FileNotFoundError(f"Account image not found: {account_img}")
+    
+    logger.info("[DEBUG] Resizing SNAP window...")
+    resize_window_by_tuple(
+        ["SNAP"],
+        region=globals.REGION_MS_WINDOW,
+        timeout=1,
+    )
+    
+    click_any_MS_img([r'images/small_submit.PNG',r'images/small_submit_hover.png', r'images/submit_hover_2.png', r'images/small_submit_hover_2.png'], region=None, delay_click=.2, timeout=90)
+    time.sleep(2)
+    click_any_MS_img([r'images/small_submit.PNG',r'images/small_submit_hover.png', r'images/submit_hover_2.png', r'images/small_submit_hover_2.png'], region=None, delay_click=.2)
+    
+    resize_window_by_tuple(
+        ["SNAP"],
+        region=globals.REGION_MS_WINDOW,
+        timeout=1,
+    )
+    
+    if search_MS_img(r'images/please_sign.png', alert_on_fail=False):
+        click_any_MS_img(r'images/ok_btn.png')
+        if click_any_MS_img([r'images/small_submit.PNG',r'images/small_submit_hover.png', r'images/submit_hover_2.png', r'images/small_submit_hover_2.png'], delay_click=.2, timeout=30):
+            pass
+        else:
+            if search_MS_img("images/aw_snap.png", timeout=3):
+                click_any_MS_img("images/x.png")
+        click_any_MS_img([r'images/small_submit.PNG',r'images/small_submit_hover.png', r'images/submit_hover_2.png', r'images/small_submit_hover_2.png'], region=None, delay_click=.2)
+    
+    search_MS_img(r'images/stages/main_stage/sign_in_with_google2.PNG', timeout=90)
+    
+    # Para setear los fps a 30
+    '''
+    logger.info("[DEBUG] Haciendo click en posición (691, 955) (nut2)...")
+    click_pos((691, 955))  # ⚠️ Depende de la resolución de SNAP definida en globals.REGION_MS_WINDOW
+        
+    if wait_for_image_and_click(r'images/stages/main_stage/60fps.PNG', timeout=3, confidence=.9):
+        logger.info("[DEBUG] '60fps' encontrado, cambiando a '30fps'...")
+        wait_for_image_and_click(r'images/stages/main_stage/30fps.PNG')
+    
+    presionar_esc()
+    '''
+
+    click_any_MS_img(r'images/stages/main_stage/sign_in_with_google2.PNG')
+    
+    if search_MS_img(r'images/pagina_cargada.png', timeout=60):
+        # visual comment: first try full search without scrolling
+        if not click_any_MS_img(account_img, region=None, delay_click=3):
+
+            # visual comment: fallback scrolling search
+            start_time = time.time()
+
+            while time.time() - start_time < 5:
+                # visual comment: move mouse to scrollable area before scrolling
+                pg.moveTo(500, 500)  
+
+                # visual comment: perform scroll (negative = down)
+                pg.scroll(-500)
+                time.sleep(0.5)
+
+                if click_any_MS_img(account_img, region=None, delay_click=3, timeout=0):
+                    time.sleep(1)
+                    break
+    
+    if search_MS_img(r'images/marvelsnap_web.png', timeout=30, confidence=.7):
+        os.system("taskkill /im chrome.exe /f")
+
+       
+
+def logout():
+    
+    """
+    Performs the logout sequence from the SNAP application.
+
+    The function automates the interface navigation required to
+    sign out from the currently logged-in account. It assumes the
+    process begins from the main screen where the settings icon
+    (gear / "nut") is visible.
+
+    Process
+    -------
+    1. Click the settings icon.
+    2. Wait for the settings panel to appear by detecting the
+       "graphics_quality" element.
+    3. Click the detected element to ensure the settings panel
+       has focus.
+    4. Scroll down through the settings menu.
+    5. Click the logout option.
+    6. Confirm the logout through the confirmation dialogs.
+    7. Resize the SNAP window back to the predefined region.
+
+    Behavior
+    --------
+    If the settings panel cannot be detected within the timeout,
+    the function stops execution and reports the failure.
+
+    Notes
+    -----
+    There is an optional section commented out that forcefully
+    terminates the SNAP process using taskkill. This can be
+    enabled if a hard reset of the application becomes necessary.
+    """
+
+    click_any_MS_img(r'images/stages/main_stage/nut.png')
+    click_any_MS_img(r'images/graphics_quality.png', timeout=3)
+
+    '''
+    a = search_MS_img(r'images/graphics_quality.png', timeout=3)
+
+    if a is None:
+        logger.info("[ERROR] graphics_quality image not found.")
+        return
+
+    logger.info("[DEBUG] Clicking graphics quality...")
+    pg.click(a)
+    '''
+    
+    time.sleep(1)
+    pg.scroll(-800)
+    click_any_MS_img(r'images/stages/main_stage/sign_out.png')
+    time.sleep(1)
+    click_any_MS_img(r'images/sign_out_grande.png')
+    click_any_MS_img(r'images/stages/main_stage/sign_out2.png')
+    resize_window_by_tuple("SNAP",region=globals.REGION_MS_WINDOW,timeout=2)
+    time.sleep(1)
+    os.system("taskkill /im snap.exe /f")
+    time.sleep(3)
+
+
+def upgrade_cards(cards_to_upgrade):
+    logger.info("[INFO] Iniciando mejora de cartas")
+
+    # Hacer clic en el ícono inicial
+    click_any_MS_img(r'images/stages/shop/upgrade_cards_icon.PNG')
+    logger.info("[INFO] Abriendo icono de upgrade_cards")
+    time.sleep(1)
+    
+    cartas_a_mejorar = cards_to_upgrade
+    i = 0  # Inicializamos el contador manualmente
+
+    while i < cartas_a_mejorar:
+        logger.info(f"[STEP] Mejorando carta {i+1}")
+
+        # Click en cada carta según posición
+        pg.click(218 + 150 * i, 580)
+        logger.info(f"[ACTION] Click en carta {i+1}")
+        time.sleep(1)
+
+        # Primer clic en UPGRADE
+        pg.click(374, 889)
+        logger.info("[ACTION] Click en botón upgrade")
+        time.sleep(7)
+
+        # Confirmación UPGRADE
+        pg.click(374, 889)
+        
+        # --- CASO AW SNAP ---
+        if search_MS_img("images/aw_snap.png", timeout=3):
+            logger.warning("[ALERT] Se detectó Aw Snap. Reiniciando desde la primera carta...")
+            click_any_MS_img("images/x.png")
+            
+            # Navegación para resetear la pantalla
+            click_any_MS_img(r'images/unselected/shop_unselected.PNG')
+            click_any_MS_img(r'images/stages/shop/cards_shop.PNG')
+            click_any_MS_img(r'images/stages/shop/offers.PNG')
+            click_any_MS_img([r'images/stages/shop/upgrade_cards_icon.PNG', r'images/upgrade_cards_icon_selected.png'])
+            time.sleep(1)
+            
+            cartas_a_mejorar = 3  # Aseguramos que intente las 3 cartas
+            i = 0                 # <--- CRUCIAL: Reseteamos el contador a la primera carta (0)
+            continue              # Salta al inicio del while sin sumar el contador
+
+        # --- CASO FALTA DE CRÉDITOS ---
+        if click_any_MS_img(r'images/you_need_more_credits!.png', timeout=3):
+            presionar_esc(2)
+            time.sleep(2)
+            break
+            
+        # --- CASO ÉXITO ---
+        else:
+            time.sleep(5)
+            # Click para continuar a stage de nivel de coleccion
+            pg.click(374, 889)
+            logger.info("[ACTION] Click para continuar a stage de nivel de coleccion")
+            time.sleep(5)
+
+            # Salir de stage nivel de coleccion
+            presionar_esc()
+            logger.info("[ACTION] Saliendo de stage nivel de coleccion con ESC")
+            time.sleep(1)
+
+        # Reabrir el menú excepto después de la última carta
+        if i < cartas_a_mejorar - 1:  # Dinámico según el total de cartas
+            start_time = time.time()
+            while time.time() - start_time < 3:
+                if click_any_MS_img(r'images/stages/shop/upgrade_cards_icon_selected.PNG', timeout=0):
+                    break
+                if click_any_MS_img(r'images/stages/shop/upgrade_cards_icon.PNG', timeout=0):
+                    break
+
+            logger.info("[INFO] Reabriendo icono de upgrade_cards")
+            time.sleep(1)
+
+        # Avanzamos a la siguiente carta solo si todo salió bien
+        i += 1
+
+    logger.info("[INFO] Mejora de cartas completada ✅")
+    
+
+def select_deck(deck):
+    if play_location := search_MS_img(r'images/stages/play_stage/play.PNG'):
+        pg.moveTo(play_location.x - 160, play_location.y)
+        pg.click()
+        logger.info("[INFO] Click realizado donde se equipa el deck a jugar")
+        
+        time.sleep(4)
+        
+        if deck == '6turns':
+            click_any_MS_img(r'images/deck_666666.png', timeout=3)
+        elif deck == '3turns':
+            click_any_MS_img(r'images/deck_333.png', timeout=3)
+            
+        if click_any_MS_img(r'images/equip.png', timeout=3, confidence=.95):
+            pass
+        else:
+            presionar_esc()
+    
+
+def play_cards_ahk(turns):
+    # Hacer los drags
+    for start, end in zip(turns, globals.POSITIONS_FIELDS):
+        subprocess.run([
+            r"C:\Program Files\AutoHotkey\v2\AutoHotkey.exe",
+            r"arrastrar_mouse.ahk",
+            str(start[0]), str(start[1]),
+            str(end[0]), str(end[1])
+        ])
+    # Rotar los destinos: el primero pasa al final
+    globals.POSITIONS_FIELDS = globals.POSITIONS_FIELDS[1:] + globals.POSITIONS_FIELDS[:1]
+
+
+def click_blue_missions():
+
+    logger.info("[INFO] Iniciando click_missions_blue2")
+    # time.sleep(1)
+    click_pos((150, 132), delay_click=1) # Icono de calendar missions basics
+    logger.info("[ACTION] Click hecho en icono de calendario que me dirige a las misiones ordinarias")
+    
+    claim_mission_y_coord = 493
+    
+    if search_MS_img(r'images/bonus_challenge.png'):
+        claim_mission_y_coord = 790
+    
+    time.sleep(2)
+
+    missions_to_claim = get_completed_missions()
+
+    for i in range(get_completed_missions()):
+        click_pos((362, claim_mission_y_coord))
+        logger.info(f"[ACTION] Click {i+1}/{missions_to_claim} en misión azul")
+        time.sleep(.5)
+
+    if search_MS_img('images/stages/missions_stage/flechita_mission.PNG'):
+        logger.info("[INFO] Detectada flechita_mission -> presionando ESC")
+        presionar_esc()
+
+
+def get_weekly_rewards():
+    
+    start = time.time()
+    while time.time() - start < 2:
+        
+        if click_any_MS_img(r'images/stages/missions_stage/weekly3.PNG', delay_click=.1,timeout=0):
+            
+            start2 = time.time()
+            while time.time() - start2 < 5:
+            
+                click_any_MS_img(r'images/claim!.PNG', delay_click=.2, timeout=0)
+                click_any_MS_img(r'images/claim_hover.PNG', delay_click=.2, timeout=0)
+
+            start = time.time()
+
+
+def resize_window_by_tuple(
+    title_contains: list[str] = None,  # Lista de strings entre corchetes: ["parte_del_titulo1", "parte_del_titulo2"]
+    region: tuple = (0, 0, 800, 600),  # Tupla de 4 enteros: (left, top, width, height)
+    delay: int = 0.1,                  # Tiempo en segundos antes de iniciar (float o int)
+    check_interval: float = 0.1,       # Intervalo en segundos para comprobar cambios (float)
+    timeout: int = 0.1,                # Tiempo total en segundos para verificar y reajustar (float o int)
+    wait_for_window: int = 20           # Tiempo máximo en segundos para esperar que aparezca la ventana (int)
+):
+    """
+    Redimensiona una ventana según `region`.
+
+    Parámetros:
+    - title_contains (list[str] | None): Lista de palabras o fragmentos de título de la ventana a buscar.
+      Ejemplo: ["notepad", "python"]. Si se deja None, se usará la ventana activa actual.
+      Cada string debe ir entre corchetes y comillas.
+
+    - region (tuple[int, int, int, int]): Tupla con las coordenadas y tamaño deseado: (left, top, width, height).
+      Ejemplo: (100, 100, 800, 600)
+
+    - delay (float | int): Segundos a esperar antes de iniciar el redimensionamiento.
+
+    - check_interval (float): Segundos entre verificaciones de cambio de tamaño.
+
+    - timeout (float | int): Tiempo total en segundos para mantener el tamaño deseado y reajustar si cambia.
+
+    - wait_for_window (int): Segundos máximos para esperar a que aparezca una ventana que contenga
+      alguno de los textos en `title_contains`.
+
+    Comportamiento:
+    - Si la ventana está minimizada o maximizada, la restaura antes de redimensionar.
+    - Ajusta la ventana al tamaño y posición indicados en `region`.
+    - Verifica durante `timeout` segundos que la ventana mantenga el tamaño y reaplica si cambia.
+    - Imprime información sobre cada paso y los reajustes realizados.
+    """
+
+    logger.info(f"⏱ Esperando {delay} segundos antes de empezar...")
+    time.sleep(delay)
+
+    left, top, width, height = region
+
+    # Esperar a que aparezca una ventana con el título indicado
+    if title_contains:
+        logger.info(f"🔍 Esperando ventana que contenga alguna de: {title_contains} (máx {wait_for_window}s)")
+        start_wait = time.time()
+        target_window = None
+
+        while time.time() - start_wait < wait_for_window:
+            for win in gw.getAllWindows():
+                win_title_lower = win.title.lower()
+                if any(word.lower() in win_title_lower for word in title_contains):
+                    target_window = win
+                    break
+
+            if target_window:
+                logger.info(f"✅ Ventana encontrada: '{target_window.title}'")
+                break
+
+            time.sleep(check_interval)
+
+        if not target_window:
+            logger.info(f"❌ No se encontró ninguna ventana con '{title_contains}' tras {wait_for_window}s")
+            return
+    else:
+        target_window = gw.getActiveWindow()
+        if not target_window:
+            logger.info("❌ No hay ventana activa para redimensionar.")
+            return
+
+
+    logger.info(f"✅ Ventana seleccionada: '{target_window.title}'")
+    
+    try:
+        target_window.activate()
+    except Exception:
+        pass
+        
+    time.sleep(2)
+
+    start_time = time.time()
+    reapplied_count = 0
+
+    while time.time() - start_time <= timeout:
+        # Si está minimizada o maximizada, restaurarla
+        if target_window.isMinimized or target_window.isMaximized:
+            logger.info("↗ Ventana minimizada o maximizada. Restaurando...")
+            target_window.restore()
+            time.sleep(0.3)
+
+        current_state = (target_window.left, target_window.top, target_window.width, target_window.height)
+
+        if current_state != (left, top, width, height):
+            reapplied_count += 1
+            logger.info(f"🔁 Reajuste #{reapplied_count}...")
+            target_window.moveTo(left, top)
+            target_window.resizeTo(width, height)
+
+        time.sleep(check_interval)
+
+    if reapplied_count > 0:
+        logger.info(f"✔ Verificación completa. Se hicieron {reapplied_count} reajustes.")
+    else:
+        logger.info("✔ Verificación completa. No hubo cambios después del primer ajuste.")
+
+
+def alliances_bounties(account):
+    logger.info("Iniciando función alliances_bounties()...")
+
+    while True:
+        # Buscamos missions_unnotified2 para saber si estamos en la pantalla principal (main)
+        if search_MS_img(r'images/stages/main_stage/missions_unnotified2.png', timeout=0):
+            break
+
+        time.sleep(1)
+
+    # Ya que estamos en main ahora buscamos alliances
+    if click_any_MS_img(
+        'images/stages/main_stage/alliances_notification2.png', 
+        confidence=0.95,
+        delay_click=3,
+        timeout=3,
+        region=(635,913,707-635,983-913),
+        alert_on_fail=False
+        ):
+
+        for x, y in globals.slot_bounties:
+
+            time.sleep(5)
+            click_pos((x, y))
+            time.sleep(1)
+
+            if search_MS_img(r'images/stages/alliances_stage/drop.PNG', timeout=0):
+                presionar_esc()
+
+            elif search_MS_img(r'images/stages/alliances_stage/bounty_board.PNG', timeout=0):
+                presionar_esc()
+
+        if search_MS_img(r'images/stages/alliances_stage/personal_bounties_complete.PNG', confidence=.85, timeout=1):
+            beep_forever()
+            presionar_esc()
+
+        else:
+            click_any_MS_img('images/stages/alliances_stage/bounty_plus_sign.PNG')
+
+            start_time_while = time.time()
+            salir = True
+            ejecutar_esc = True
+            imagen_encontrada = False
+
+            while (time.time() - start_time_while < 30) and salir:
+
+                for img in globals.imagen_bounties:
+
+                    if bounty := search_MS_img(str(img), region=globals.REGION_BOUNTIES, confidence=.9, timeout=0):
+
+                        click_pos(bounty)
+                        click_any_MS_img(r'images/stages/alliances_stage/grab.PNG')
+                        imagen_encontrada = True
+
+                        if search_MS_img('images/stages/alliances_stage/unable_to_grab_bounty.PNG'):
+
+                            presionar_esc()
+                            capture_screenshot(f'{account}, primary bounties checked and as least one added')
+                            presionar_esc(2)
+
+                            salir = False
+                            ejecutar_esc = False
+                            break
+
+                if not imagen_encontrada:
+
+                    time.sleep(0.3)  # Small pause to avoid excessive CPU usage
+
+            # Paso 2: Si no se encontró ninguna, buscar en la lista secundaria
+            if not imagen_encontrada and salir:
+                capture_screenshot(f'{account}, primary bounties checked and no one added ')
+                #beep_forever()
+
+                for img in globals.imagen_bounties_win_location:
+
+                    if bounty := search_MS_img(str(img), region=globals.REGION_BOUNTIES, timeout=0):
+                        logger.info(bounty)
+                        click_pos(bounty)
+                        click_any_MS_img(r'images/stages/alliances_stage/grab.PNG')
+
+                        if search_MS_img('images/stages/alliances_stage/unable_to_grab_bounty.PNG'):
+                            presionar_esc()
+                            capture_screenshot(f'{account}, secondary bounties checked and as least one added')
+                            presionar_esc(2)
+                            ejecutar_esc = False
+                        break
+
+            if ejecutar_esc:
+                capture_screenshot(f'{account}, all bounties checked')
+                presionar_esc(2)
+
+
+def get_unclaimed_collection_rewards_count():
+
+    # Abrir y cargar el JSON
+    with open(get_nvprod_json_path('CollectionState'), "r", encoding="utf-8-sig") as f:
+        data = json.load(f)
+
+    # Contar elementos
+    return len(data["ServerState"]["CollectionScoreRewardDefIdsUnclaimed"]["CollectionScoreRewardDefIds"])
+
+
+
+# USO PUNTUAL
+
+def collect_cl_rewards():
+    """
+    Collects collection level rewards from the game UI.
+
+    Steps:
+    1. Resize required windows.
+    2. Count number of rewards available.
+    3. Loop through left and right reward positions.
+    4. Click reward and detect reward type.
+    5. Claim reward depending on detected screen.
+    6. Scroll to next rewards.
+    """
+
+    print("Starting collect_cl_rewards()")
+
+    resize_window_by_tuple(["sandbox"], region=globals.REGION_TOTAL_MINUS_MS_WINDOW, wait_for_window=3)
+    print("Sandbox window resized")
+
+    resize_window_by_tuple(["SNAP"], region=globals.REGION_MS_WINDOW, wait_for_window=3)
+    print("SNAP window resized")
+
+    print("Before counting rewards")
+    number_of_rewards = get_unclaimed_collection_rewards_count()
+    print("After counting rewards")
+    print(f"Number of rewards detected: {number_of_rewards}")
+
+    for reward_index in range(number_of_rewards - 3):
+        print(f"Processing reward group {reward_index + 1}")
+
+        if globals.stop_loop:
+            logger.info("Bucle detenido manualmente.")
+            print("Loop stopped manually")
+            break
+
+        coord_left_reward = 260
+        coord_right_reward = 470
+
+        for x in (coord_left_reward, coord_right_reward):
+            print(f"Clicking reward at X position: {x}")
+
+            time.sleep(1)
+            pg.click(x, 580)
+            time.sleep(1)
+            pg.click()
+            print("Clicked reward")
+
+            if search_MS_img(r'images/claim!.PNG', timeout=3):
+                print("Claim button found")
+
+                time.sleep(3)
+
+                if search_MS_img(r'images/stages/collection_rewards_stage/base_card.png', timeout=0):
+                    print("Base card reward detected")
+                    time.sleep(.5)
+                    click_any_MS_img(r'images/claim!.PNG', timeout=0)
+                    pg.move(-200, -300)
+
+                elif search_MS_img(r'images/stages/collection_rewards_stage/set.png', timeout=0):
+                    print("Set reward detected")
+                    time.sleep(5)
+                    click_any_MS_img(r'images/claim!.PNG', timeout=0)
+                    pg.move(-200, -300)
+
+                    nice = search_MS_img(r'images/nice!2.PNG', timeout=4)
+                    if nice:
+                        print("Nice screen detected")
+                        click_pos(nice)
+                        pg.move(-200, -300)
+
+                else:
+                    print("Unknown reward type, clicking claim anyway")
+                    click_any_MS_img(r'images/claim!.PNG', timeout=0)
+                    pg.move(-200, -300)
+
+            elif search_MS_img(r'images/x.PNG'):
+                print("Close button detected")
+                pass
+
+            else:
+                print("ERROR: No claim or close button detected")
+                beep_forever()
+                break
+
+            time.sleep(1)
+            pg.click(350, 580)  # Mover el mouse a la zona scrolleable
+            time.sleep(0.3)
+            pg.scroll(120)
+            print("Scrolled to next reward")
+
+    print("Finished collecting rewards")
+    beep_forever()
+
+
+
+def collect_cl_rewards2():
+    """
+    Collects collection level rewards from the game UI.
+
+    Steps:
+    1. Resize required windows.
+    2. Count number of rewards available.
+    3. Loop through left and right reward positions.
+    4. Click reward and detect reward type.
+    5. Claim reward depending on detected screen.
+    6. Scroll to next rewards.
+    """
+
+    print("Starting collect_cl_rewards()")
+
+    resize_window_by_tuple(["sandbox"], region=globals.REGION_TOTAL_MINUS_MS_WINDOW, wait_for_window=3)
+    print("Sandbox window resized")
+
+    resize_window_by_tuple(["SNAP"], region=globals.REGION_MS_WINDOW, wait_for_window=3)
+    print("SNAP window resized")
+
+    print("Before counting rewards")
+    
+    # ================================
+    # INITIAL COUNT
+    # ================================
+    remaining_rewards = get_unclaimed_collection_rewards_count()
+    print(f"Initial rewards detected: {remaining_rewards}")
+
+    reward_index = 0
+
+    # ================================
+    # DYNAMIC LOOP (RE-EVALUATES JSON)
+    # ================================
+    while remaining_rewards > 0:
+
+        print(f"Processing reward group {reward_index + 1}")
+
+        if globals.stop_loop:
+            logger.info("Bucle detenido manualmente.")
+            print("Loop stopped manually")
+            break
+
+        coord_left_reward = 260
+        coord_right_reward = 470
+
+        for x in (coord_left_reward, coord_right_reward):
+
+            print(f"Clicking reward at X position: {x}")
+
+            time.sleep(1)
+            pg.click(x, 580)
+            time.sleep(1)
+            pg.click()
+            print("Clicked reward")
+
+            # ================================
+            # CLAIM DETECTION
+            # ================================
+            if search_MS_img(r'images/claim!.PNG', timeout=3):
+                print("Claim button found")
+
+                time.sleep(3)
+
+                if search_MS_img(r'images/stages/collection_rewards_stage/base_card.png', timeout=0):
+                    print("Base card reward detected")
+                    time.sleep(0.5)
+                    click_any_MS_img(r'images/claim!.PNG', timeout=0)
+                    pg.move(-200, -300)
+
+                elif search_MS_img(r'images/stages/collection_rewards_stage/set.png', timeout=0):
+                    print("Set reward detected")
+                    time.sleep(5)
+                    click_any_MS_img(r'images/claim!.PNG', timeout=0)
+                    pg.move(-200, -300)
+
+                    nice = search_MS_img(r'images/nice!2.PNG', timeout=4)
+                    if nice:
+                        print("Nice screen detected")
+                        click_pos(nice)
+                        pg.move(-200, -300)
+
+                else:
+                    print("Unknown reward type, clicking claim anyway")
+                    click_any_MS_img(r'images/claim!.PNG', timeout=0)
+                    pg.move(-200, -300)
+
+
+                # ================================
+                # REFRESH JSON SAFELY (CLOSE NOTEPAD++)
+                # ================================
+
+                def close_notepad_plus_plus():
+                    # Visual: force close Notepad++ if it is blocking the game
+                    try:
+                        subprocess.run(
+                            ["taskkill", "/F", "/IM", "notepad++.exe"],
+                            stdout=subprocess.DEVNULL,
+                            stderr=subprocess.DEVNULL
+                        )
+                    except Exception as e:
+                        print(f"[WARN] Could not close Notepad++: {e}")
+
+
+                # AFTER EACH CLAIM
+                close_notepad_plus_plus()
+
+                remaining_rewards = get_unclaimed_collection_rewards_count()
+
+                print(
+                    f"Remaining rewards after claim: {remaining_rewards}"
+                )
+
+            elif search_MS_img(r'images/x.PNG'):
+                print("Close button detected")
+                pass
+
+            else:
+                print("ERROR: No claim or close button detected")
+                beep_forever()
+                break
+
+            time.sleep(1)
+            pg.click(350, 580)
+            time.sleep(0.3)
+            pg.scroll(120)
+            print("Scrolled to next reward")
+            
+    print("Finished collecting rewards")
+    beep_forever()
+
+
+
+def collect_cl_rewards3():
+    """
+    Collect collection level rewards from the game UI.
+
+    Logic:
+    - Reads JSON only once at the beginning.
+    - Alternates automatically between left and right rewards.
+    - Scrolls after every collected reward.
+    - Handles optional post-claim screens.
+    """
+
+    print("Starting collect_cl_rewards3()")
+
+    # ========================================
+    # RESIZE WINDOWS
+    # ========================================
+    resize_window_by_tuple(
+        ["sandbox"],
+        region=globals.REGION_TOTAL_MINUS_MS_WINDOW,
+        wait_for_window=3
+    )
+    print("Sandbox window resized")
+
+    resize_window_by_tuple(
+        ["SNAP"],
+        region=globals.REGION_MS_WINDOW,
+        wait_for_window=3
+    )
+    print("SNAP window resized")
+
+    # ========================================
+    # INITIAL REWARD COUNT
+    # ========================================
+    remaining_rewards = get_unclaimed_collection_rewards_count()
+
+    print(
+        f"Initial rewards detected: "
+        f"{remaining_rewards}"
+    )
+
+    # ========================================
+    # START SIDE
+    # ========================================
+    start_side = "left"
+
+    reward_x = (
+        260
+        if start_side == "left"
+        else 470
+    )
+
+    reward_y = 580
+
+    # ========================================
+    # MAIN LOOP
+    # ========================================
+    while remaining_rewards > 0:
+
+        if globals.stop_loop:
+            logger.info("Loop stopped manually")
+            print("Loop stopped manually")
+            break
+
+        print(
+            f"Rewards remaining: "
+            f"{remaining_rewards}"
+        )
+
+        # ========================================
+        # CLICK CURRENT REWARD
+        # ========================================
+        print(
+            f"Clicking reward at "
+            f"X={reward_x}"
+        )
+
+        pg.click(reward_x, reward_y)
+
+        subprocess.run(
+            ["taskkill", "/F", "/IM", "notepad++.exe"],
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL
+        )
+
+        time.sleep(1)
+       
+
+        # ========================================
+        # CLAIM FLOW
+        # ========================================
+        if search_MS_img(
+            r'images/claim!.PNG',
+            timeout=3
+        ):
+
+            print("Claim button found")
+
+            # ========================================
+            # SET REWARD
+            # ========================================
+            if search_MS_img(
+                r'images/stages/collection_rewards_stage/set.png',
+                timeout=0
+            ):
+
+                print("Set reward detected")
+
+                time.sleep(5)
+
+                click_any_MS_img(
+                    r'images/claim!.PNG',
+                    timeout=0
+                )
+
+                pg.move(-200, -300)
+
+                nice = search_MS_img(
+                    r'images/nice!2.PNG',
+                    timeout=4
+                )
+
+                if nice:
+
+                    print("Nice screen detected")
+
+                    click_pos(nice)
+
+                    pg.move(-200, -300)
+
+            # ========================================
+            # NORMAL REWARD
+            # ========================================
+            else:
+
+                click_any_MS_img(
+                    r'images/claim!.PNG',
+                    timeout=0
+                )
+
+        else:
+
+            print(
+                "No claim button detected"
+            )
+
+        # ========================================
+        # SMOOTH EXACT SCROLL
+        # ========================================
+        pg.moveTo(
+            350,
+            580,
+            duration=0.2
+        )
+
+        for _ in range(8):
+
+            pg.scroll(15)
+
+            time.sleep(0.05)
+
+        print("Scrolled to next reward")
+
+        # ========================================
+        # SWITCH SIDE
+        # ========================================
+        reward_x = (
+            470
+            if reward_x == 260
+            else 260
+        )
+
+        # ========================================
+        # UPDATE COUNTER
+        # ========================================
+        remaining_rewards -= 1
+
+    print("Finished collecting rewards")
+
+    beep_forever()
+    
+    
+    
+# WEB
+
+def verificar_si_sigue_buscando_jugador():
+    # Para asegurar que no se quedó bugeado buscando jugador
+    while True:
+        if search_MS_img(r'images/stages/play_stage/end_turn.PNG', timeout=45):
+            logger.info("[INFO] Se encontró end_turn, saliendo del bucle de verificación")
+            break
+        else:
+            logger.info("[WARN] No se encontró end_turn, intentando salir con ESC y volver a Play")
+            presionar_esc()
+            time.sleep(2)
+            click_any_MS_img(r'images/stages/play_stage/play.PNG')
+
+
+# USO RARO PERO UTIL
+
+def collect_battle_pass_rewards():
+    
+    resize_window_by_tuple(["SNAP"], region = globals.REGION_MS_WINDOW)
+    
+    '''
+    Inicia en la pantalla main_stage
+    '''
+    logger.info("Intentando detectar y hacer clic en el botón del season pass")
+    click_any_MS_img(r'images/stages/main_stage/season_pass.PNG', delay_click=.1)
+
+    start = time.time()
+    logger.info("Entrando al bucle principal por 4 segundos...")
+
+    while time.time() - start < 4:
+        logger.info("Buscando botón 'free'...")
+        free = search_MS_img(r'images/stages/season_pass_stage/free.PNG')
+        if free:
+            logger.info("Encontrado botón 'free' en", free)
+            click_pos(free, delay_click=.1)
+
+            logger.info("Buscando imagen 'claim!' con tiempo mínimo 3s...")
+            if search_MS_img(r'images/claim!.PNG', timeout=3):
+                logger.info("'claim!' detectado")
+
+                logger.info("Verificando si estamos en la pantalla de rewards con el botón 'set'")
+                if search_MS_img(r'images/stages/collection_rewards_stage/set.png'):
+                    logger.info("Botón 'set' detectado, esperando 5s...")
+                    time.sleep(5)
+
+                    logger.info("Haciendo clic en 'claim!'")
+                    click_any_MS_img(r'images/claim!.PNG', delay_click=.1)
+                    pg.move(-200, -300)
+
+                    logger.info("Buscando botón 'nice!' con tiempo mínimo 4s...")
+                    nice = search_MS_img(r'images/stages/collection_rewards_stage/nice!.PNG', timeout=4)
+                    if nice:
+                        logger.info("Botón 'nice!' detectado en", nice)
+                        click_pos(nice)
+                        pg.move(-200, -300)
+                    else:
+                        logger.info("No se detectó 'nice!'")
+                else:
+                    logger.info("No se detectó botón 'set', solo se hace clic en 'claim!'")
+                    click_any_MS_img(r'images/claim!.PNG', delay_click=.1)
+                    pg.move(-200, -300)
+
+            else:
+                logger.info("No se detectó 'claim!'")
+
+            logger.info("Reseteando temporizador del bucle")
+            start = time.time()
+        else:
+            logger.info("'free' no detectado en este ciclo")
+
+        time.sleep(1)
+
+    logger.info("Terminó el bucle, iniciando beep_forever()")
+    beep_forever()
+
+
+# CHECK APPDATA NPROV JSON
+
+
+def obtener_postgame_xp(json_file=rf'C:\Users\{os.getlogin()}\AppData\LocalLow\Second Dinner\SNAP\Standalone\States\nvprod\BattlePassState.json'):
+    try:
+        with open(json_file, 'r', encoding='utf-8-sig') as file:
+            data = json.load(file)
+        return data['ServerState']['BattlePass']['PostGameXpTrackedAmount']
+    except KeyError:
+        logger.info("⚠️ No se encontró 'PostGameXpTrackedAmount' en el archivo, se omitió este valor.")
+        return 0
+    except Exception as e:
+        logger.info(f"❌ Error al leer el archivo: {e}")
+        return 0
+
+
+def guardar_datos_en_txt():
+    # Abrir el archivo JSON
+    with open(rf'C:\Users\{globals.USER_NAME}\AppData\LocalLow\Second Dinner\SNAP\Standalone\States\nvprod\BattlePassState.json', 'r', encoding='utf-8-sig') as file:
+        data = json.load(file)
+
+    # Guardar el valor de la llave "PostGameXpTrackedAmount"
+    postgame_xp_tracked_amount = data['ServerState']['BattlePass']['PostGameXpTrackedAmount']
+
+    # Iterar sobre los valores de MSs
+    for snap_path in globals.MSs:
+        # Guardar los valores en el archivo de texto para cada snap_path
+        with open(rf'C:\Users\{globals.USER_NAME}\Desktop\aea.txt', 'a') as file:  # Usamos 'a' para agregar datos al archivo
+            file.write(f"{snap_path}: {postgame_xp_tracked_amount}\n")
+
+    logger.info("Datos guardados")
+
+
+# UTILITARIOS 2
+
+
+def buscar_palabra_en_varios_archivos_json(palabra, carpeta = rf'C:\Users\{os.getlogin()}\AppData\LocalLow\Second Dinner\SNAP\Standalone\States\nvprod'):
+    for archivo in os.listdir(carpeta):
+        if archivo.endswith(".json"):
+            ruta = os.path.join(carpeta, archivo)
+            with open(ruta, "r", encoding="utf-8-sig") as f:
+                for i, linea in enumerate(f, 1):
+                    if palabra in linea:
+                        logger.info(f"{archivo} - línea {i}: {linea.strip()}")
+
+
+def buscar_palabra_en_varios_archivos_json2(palabra, carpeta = rf'C:\Users\{os.getlogin()}\AppData\LocalLow\Second Dinner\SNAP\Standalone\States\nvprod'):
+    for archivo in os.listdir(carpeta):
+        if archivo.endswith(".json"):
+            ruta = os.path.join(carpeta, archivo)
+            with open(ruta, "r", encoding="utf-8-sig") as f:
+                datos = json.load(f)  # Cargar el archivo JSON como un diccionario
+
+                for clave, valor in datos.items():
+                    if isinstance(valor, str) and palabra in valor:  # Verificar si el valor es una cadena
+                        logger.info(f"{archivo} - Clave: {clave} - Valor: {valor}")
+                    elif isinstance(valor, list) or isinstance(valor, dict):  # Si el valor es lista o diccionario
+                        for item in valor:
+                            if isinstance(item, str) and palabra in item:
+                                logger.info(f"{archivo} - Clave: {clave} - Valor: {item}")
+
+
+def capture_screenshot(label="", save_path="~/Pictures", region=None):
+    """
+    Captura una captura de pantalla, opcionalmente de una región específica,
+    y la guarda en un subdirectorio con la fecha de la primera llamada.
+
+    :param label: Etiqueta para incluir en el nombre del archivo.
+    :param save_path: Ruta del directorio raíz para guardar las capturas.
+    :param region: Una tupla (left, top, width, height) que define el área a capturar.
+                   Si es None, se captura la pantalla completa.
+    """
+    # 1. Expandir la ruta de inicio del usuario (e.g., "~/Pictures")
+    root_path = os.path.expanduser(save_path)
+    
+    # 2. Verificar y crear el directorio de sesión (solo la primera vez)
+    if capture_screenshot.session_dir is None:
+        # Generar el nombre de la nueva carpeta basado en la fecha
+        fecha_dir = datetime.now().strftime("Capturas_%Y-%m-%d_%H-%M-%S")
+        
+        # Crear la ruta completa del nuevo directorio
+        session_path = os.path.join(root_path, fecha_dir)
+        
+        # Crear el directorio si no existe
+        try:
+            os.makedirs(session_path, exist_ok=True)
+            logger.info(f"✅ Carpeta de sesión creada: {session_path}")
+            
+            # Guardar la ruta para usarla en llamadas futuras
+            capture_screenshot.session_dir = session_path
+        except OSError as e:
+            logger.info(f"❌ Error al crear el directorio: {e}")
+            # Si hay un error, volvemos a la ruta raíz por seguridad
+            capture_screenshot.session_dir = root_path
+
+
+    # 3. Asignar la ruta de guardado a la carpeta de sesión creada
+    filepath_to_save = capture_screenshot.session_dir
+
+    # Sanitizar la etiqueta para el nombre del archivo
+    safe_label = re.sub(r'[\\/*?:"<>|]', "_", label)
+    
+    # Crear el nombre del archivo con la etiqueta y la marca de tiempo
+    filename_label = f"_{safe_label}" if safe_label else ""
+    filename = datetime.now().strftime(f"screenshot_%H-%M-%S{filename_label}.png")
+    
+    # Ruta final del archivo
+    filepath = os.path.join(filepath_to_save, filename)
+
+    # 4. Tomar la captura: usando la región si se especifica, sino, la pantalla completa
+    try:
+        if region and isinstance(region, tuple) and len(region) == 4:
+            # Captura la región específica: (left, top, width, height)
+            screenshot = pg.screenshot(region=region)
+            logger.info(f"Capturando región: {region}")
+        else:
+            # Captura la pantalla completa
+            screenshot = pg.screenshot()
+            logger.info("Capturando pantalla completa.")
+            
+        screenshot.save(filepath)
+        logger.info(f"Captura guardada en {filepath}")
+        
+    except Exception as e:
+        logger.info(f"❌ Error al tomar o guardar la captura: {e}")
+
+
+# Variable 'estática' para rastrear si el directorio de la sesión ya existe.
+capture_screenshot.session_dir = None
+
+def is_steam_running():
+    for proc in psutil.process_iter(['name']):
+        if proc.info['name'] and proc.info['name'].lower() == 'steam.exe':
+            return True
+    return False
+
+
+def close_steam_windows():
+    # Close Steam windows
+    to_close = ["Special Offers", "Steam"]
+    updating_keywords = ["update", "updating", "downloading", "installing"]
+
+    logger.info("Starting Steam window scan")
+
+    for title in gw.getAllTitles():
+        logger.info(f"Found window: {title}")
+
+        for target in to_close:
+            if target.lower() in title.lower():
+                logger.info(f"Matched target '{target}' in window: {title}")
+
+                windows = gw.getWindowsWithTitle(title)
+
+                if not windows:
+                    logger.info(f"No active window found for: {title}")
+                    continue
+
+                win = windows[0]
+
+                # --- WAIT WHILE STEAM IS BUSY ---
+                while any(keyword in win.title.lower() for keyword in updating_keywords):
+                    logger.info(f"Waiting, Steam busy: {win.title}")
+                    time.sleep(5)
+
+                    windows = gw.getWindowsWithTitle(title)
+                    if not windows:
+                        logger.info(f"Window disappeared while waiting: {title}")
+                        break
+
+                    win = windows[0]
+                # --- END WAIT ---
+
+                # Close window if still exists
+                if win:
+                    logger.info(f"Closing window: {win.title}")
+                    win.close()
+                    logger.info(f"Closed window: {win.title}")                
+
+
+# Get info JSON
+
+def get_deck_card_names(deck_name):
+    # Abrir JSON con filepath fijo
+    with open(get_nvprod_json_path('CollectionState.json'), 'r', encoding='utf-8-sig') as f:
+        data = json.load(f)
+
+    # Acceder a ServerState -> Decks
+    for deck in data['ServerState']['Decks']:
+        if deck['Name'] == deck_name:
+            return [card['CardDefId'] for card in deck['Cards']]
+
+    return []
+
+
+def get_missions():
+    # Abrir JSON con filepath fijo
+    with open(get_nvprod_json_path('MissionState.json'), 'r', encoding='utf-8-sig') as f:
+        data = json.load(f)
+
+    # Lista de submisiones
+    sub_missions = data['ServerState']['State']['DailyMissionGroup']['SubMissions']
+
+    missions_info = []
+    for mission in sub_missions:
+        missions_info.append({
+            'MissionDefId': mission['MissionDefId'],
+            'MissionDifficulty': mission['MissionDifficulty'],
+            'RequiredProgress': mission['RequiredProgress'],
+            'CurrentProgress': mission.get('CurrentProgress', 0)
+        })
+
+    return missions_info
+
+
+def get_wallet_amounts():
+    with open(get_nvprod_json_path('ProfileState.json'), 'r', encoding='utf-8-sig') as f:
+        data = json.load(f)
+
+    currencies = data['ServerState']['Wallet']['_currencies']
+    amounts = {
+        'Credits': currencies['Credits']['Credits']['TotalAmount'],
+        'Gold': currencies['Gold']['Gold']['TotalAmount'],
+        'CollectorsTokens': currencies['CollectorsTokens']['CollectorsTokens']['TotalAmount']
+    }
+
+    return amounts
+
+
+def check_logged_in(account_state: dict) -> dict:
+    logger.info("Checking AccountState...")
+
+    accounts = {
+        "ximena": "b00a4d44-aa38-4f66-b5b2-72aa8cea3392",
+        "gabriel": "852c1e63-42ff-43e1-8f46-7308a7787e12",
+        "simon": "fba55558-4855-43ab-9603-57389b11588a",
+        "percy": "eb543f54-fffb-402a-89a9-bf4a8975862b"
+    }
+
+    server_state = account_state.get("ServerState", {})
+    logger.info("ServerState found:", bool(server_state))
+
+    account = server_state.get("Account", {})
+    logger.info("Account keys:", list(account.keys()))
+
+    account_id = account.get("Id")
+    bytedance_id = account.get("BytedanceAccountId")
+
+    logger.info("Account.Id:", account_id)
+    logger.info("Account.BytedanceAccountId:", bytedance_id)
+
+    if not account_id or not bytedance_id:
+        logger.info("Status: NOT LOGGED IN")
+        return {
+            "logged": False,
+            "name": "unknown",
+            "account_id": None
+        }
+
+    name = next((k for k, v in accounts.items() if v == account_id), None)
+
+    if name:
+        logger.info(f"Status: LOGGED IN as {name}")
+    else:
+        logger.info("Status: LOGGED IN but account name not mapped")
+
+    return {
+        "logged": True,
+        "name": name or "unknown",
+        "account_id": account_id,
+        "bytedance_id": bytedance_id
+    }
+
+
+def get_unclaimed_collection_rewards_count():
+    try:
+        with open(get_nvprod_json_path('CollectionState'), "r", encoding="utf-8-sig") as f:
+            data = json.load(f)
+        return len(data["ServerState"]["CollectionScoreRewardDefIdsUnclaimed"]["CollectionScoreRewardDefIds"])
+    except Exception as e:
+        logger.error("Error leyendo recompensas no reclamadas: %s", e)
+        return 0
+
+def get_wallet_amounts():
+    try:
+        with open(get_nvprod_json_path('ProfileState'), 'r', encoding='utf-8-sig') as f:
+            data = json.load(f)
+        
+        currencies = data['ServerState']['Wallet']['_currencies']
+        return {
+            'Credits': currencies['Credits']['Credits']['TotalAmount'],
+            'Gold': currencies['Gold']['Gold']['TotalAmount'],
+            'CollectorsTokens': currencies['CollectorsTokens']['CollectorsTokens']['TotalAmount']
+        }
+    except Exception as e:
+        logger.error("Error leyendo billetera: %s", e)
+        return {'Credits': 0, 'Gold': 0, 'CollectorsTokens': 0}
+
+def get_collection_level():
+    try:
+        with open(get_nvprod_json_path('CollectionState'), "r", encoding="utf-8-sig") as f:
+            data = json.load(f)
+        return data["ServerState"]["CollectionScore"]["Amount"]
+    except Exception as e:
+        logger.error("Error leyendo nivel de colección: %s", e)
+        return 0

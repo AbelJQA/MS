@@ -1,0 +1,68 @@
+import time
+import os
+import logging
+from datetime import datetime
+from pathlib import Path
+import sys
+import pyautogui as pg
+import globals
+from my_functions import *
+
+globals.set_mode("normal_6t")
+
+try:
+    pg.moveTo(1500, 100)
+    os.system("taskkill /im snap.exe /f")
+    start_obs_then_record()
+    resize_window_by_tuple(title_contains=["py", "eight_hours"], region=globals.REGION_TOTAL_MINUS_MS_WINDOW)
+    rows = []
+    
+    for account in globals.accounts:
+        print("Processing account: %s", account)
+        os.startfile("steam://rungameid/1997040")
+        resize_window_by_tuple(["SNAP"],region=globals.REGION_MS_WINDOW)
+        login(account)
+        search_initial_imgs()
+        update_json_info('MissionState')
+        update_json_info('ProfileState')
+        update_json_info("CollectionState")
+     
+        click_any_MS_img(r'images/start_screen/maybe_later.PNG', timeout=2)
+        click_any_MS_img(r'images/start_screen/maybe_later2.PNG', timeout=0.01)
+        
+        wallet = get_wallet_amounts()
+        missions = get_missions()
+
+        completed_missions = sum(
+            1
+            for m in missions
+            if m["CurrentProgress"] >= m["RequiredProgress"]
+        )
+
+        rows.append({
+            "Account": account,
+            "CollectionLevel": get_collection_level(),
+            "UnclaimedRewards": get_unclaimed_collection_rewards_count(),
+            "Credits": wallet["Credits"],
+            "Gold": wallet["Gold"],
+            "CollectorsTokens": wallet["CollectorsTokens"],
+            "TotalMissions": len(missions),
+            "CompletedMissions": completed_missions,
+            "CaptureDate": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        })
+        
+        logout()
+    
+    pd.DataFrame(rows).to_csv(
+        "accounts_info.csv",
+        index=False,
+        encoding="utf-8-sig"
+    )
+    
+    #beep_forever()
+    end_record_obs()
+    print("OBS recording stopped")
+    #os.system("shutdown /s /t 0")    
+    
+except Exception:
+    logger.exception("Unhandled exception occurred")

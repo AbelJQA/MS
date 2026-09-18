@@ -1,0 +1,656 @@
+2026-06-03 11:31:26 | INFO | each_eight_hours.py:39 | LOG FILE PATH: \\vmware-host\Shared Folders\SHARED FILES VM\MS\logs\each_eight_hours_2026-06-03_11-31-26.log
+2026-06-03 11:31:26 | INFO | each_eight_hours.py:40 | Logger initialized
+2026-06-03 11:31:26 | INFO | each_eight_hours.py:67 | Script initialized
+2026-06-03 11:31:29 | INFO | each_eight_hours.py:128 | snap.exe terminated if it was running
+2026-06-03 11:31:29 | INFO | my_functions.py:57 | ⏳ Esperando WebSocket de OBS...
+2026-06-03 11:31:37 | INFO | baseclient.py:33 | Connecting with parameters: host='localhost' port=4455 password='' subs=0 timeout=None
+2026-06-03 11:31:37 | INFO | reqs.py:23 | Successfully identified ReqClient with the server using RPC version:1
+2026-06-03 11:31:37 | INFO | my_functions.py:63 | ✅ Conectado al OBS WebSocket
+2026-06-03 11:31:37 | ERROR | reqs.py:59 | OBSSDKRequestError: Request GetRecordStatus returned code 207. With message: OBS is not ready to perform the request.
+Traceback (most recent call last):
+  File "C:\Users\Farm\AppData\Local\Programs\Python\Python311\Lib\site-packages\obsws_python\reqs.py", line 53, in send
+    raise OBSSDKRequestError(
+obsws_python.error.OBSSDKRequestError: Request GetRecordStatus returned code 207. With message: OBS is not ready to perform the request.
+2026-06-03 11:31:38 | INFO | my_functions.py:88 | 🎬 Grabación iniciada
+2026-06-03 11:31:38 | INFO | my_functions.py:1325 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-06-03 11:31:38 | INFO | my_functions.py:1332 | 🔍 Esperando ventana que contenga alguna de: ['py', 'eight_hours'] (máx 20s)
+2026-06-03 11:31:38 | INFO | my_functions.py:1344 | ✅ Ventana encontrada: 'each_eight_hours  - Acceso directo'
+2026-06-03 11:31:38 | INFO | my_functions.py:1359 | ✅ Ventana seleccionada: 'each_eight_hours  - Acceso directo'
+2026-06-03 11:31:40 | INFO | my_functions.py:1382 | 🔁 Reajuste #1...
+2026-06-03 11:31:40 | INFO | my_functions.py:1389 | ✔ Verificación completa. Se hicieron 1 reajustes.
+2026-06-03 11:32:10 | INFO | my_functions.py:2155 | Starting Steam window scan
+2026-06-03 11:32:10 | INFO | my_functions.py:2158 | Found window: 
+2026-06-03 11:32:10 | INFO | my_functions.py:2158 | Found window: each_eight_hours  - Acceso directo
+2026-06-03 11:32:10 | INFO | my_functions.py:2158 | Found window: 
+2026-06-03 11:32:10 | INFO | my_functions.py:2158 | Found window: 
+2026-06-03 11:32:10 | INFO | my_functions.py:2158 | Found window: 
+2026-06-03 11:32:10 | INFO | my_functions.py:2158 | Found window: 
+2026-06-03 11:32:10 | INFO | my_functions.py:2158 | Found window: RivaTunerStatisticsServer
+2026-06-03 11:32:10 | INFO | my_functions.py:2158 | Found window: Program Manager
+2026-06-03 11:32:10 | INFO | each_eight_hours.py:139 | Processing account: jeremy
+2026-06-03 11:32:11 | INFO | each_eight_hours.py:142 | Game relaunched for account
+2026-06-03 11:32:11 | INFO | my_functions.py:1325 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-06-03 11:32:11 | INFO | my_functions.py:1332 | 🔍 Esperando ventana que contenga alguna de: ['SNAP'] (máx 20s)
+2026-06-03 11:32:17 | INFO | my_functions.py:1344 | ✅ Ventana encontrada: 'SNAP'
+2026-06-03 11:32:17 | INFO | my_functions.py:1359 | ✅ Ventana seleccionada: 'SNAP'
+2026-06-03 11:32:20 | INFO | my_functions.py:1391 | ✔ Verificación completa. No hubo cambios después del primer ajuste.
+2026-06-03 11:32:20 | INFO | my_functions.py:1028 | [DEBUG] Resizing SNAP window...
+2026-06-03 11:32:20 | INFO | my_functions.py:1325 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-06-03 11:32:20 | INFO | my_functions.py:1332 | 🔍 Esperando ventana que contenga alguna de: ['SNAP'] (máx 20s)
+2026-06-03 11:32:20 | INFO | my_functions.py:1344 | ✅ Ventana encontrada: 'SNAP'
+2026-06-03 11:32:20 | INFO | my_functions.py:1359 | ✅ Ventana seleccionada: 'SNAP'
+2026-06-03 11:32:23 | INFO | my_functions.py:1391 | ✔ Verificación completa. No hubo cambios después del primer ajuste.
+2026-06-03 11:32:23 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['small_submit.PNG', 'small_submit_hover.png', 'submit_hover_2.png', 'small_submit_hover_2.png'] | timeout=90s | confidence=0.8
+2026-06-03 11:33:54 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 11:33:58 | INFO | my_functions.py:279 | [DEBUG] Buscando en paralelo: ['small_submit.PNG', 'small_submit_hover.png', 'submit_hover_2.png', 'small_submit_hover_2.png'] | timeout=20s | confidence=0.8
+2026-06-03 11:34:19 | INFO | my_functions.py:313 | [DEBUG] Click skipped, ninguna de las imágenes se encontró en el intento.
+2026-06-03 11:34:20 | INFO | my_functions.py:1325 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-06-03 11:34:20 | INFO | my_functions.py:1332 | 🔍 Esperando ventana que contenga alguna de: ['SNAP'] (máx 20s)
+2026-06-03 11:34:20 | INFO | my_functions.py:1344 | ✅ Ventana encontrada: 'SNAP'
+2026-06-03 11:34:20 | INFO | my_functions.py:1359 | ✅ Ventana seleccionada: 'SNAP'
+2026-06-03 11:34:23 | INFO | my_functions.py:1391 | ✔ Verificación completa. No hubo cambios después del primer ajuste.
+2026-06-03 11:34:23 | INFO | my_functions.py:201 | Searching please_sign.png (timeout=0s)
+2026-06-03 11:34:26 | INFO | my_functions.py:245 | 
+⛔ Not found: please_sign.png after 0.0s region=(0, 0, 765, 1038) confidence=0.8
+2026-06-03 11:34:26 | INFO | my_functions.py:201 | Searching sign_in_with_google2.PNG (timeout=90s)
+2026-06-03 11:35:12 | ERROR | each_eight_hours.py:49 | Error in sys.excepthook:
+2026-06-03 11:35:12 | ERROR | each_eight_hours.py:49 | Traceback (most recent call last):
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | File "C:\Users\Farm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 978, in handle
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | self.emit(record)
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | File "C:\Users\Farm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1230, in emit
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | StreamHandler.emit(self, record)
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | File "C:\Users\Farm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1110, in emit
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | msg = self.format(record)
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | File "C:\Users\Farm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 953, in format
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | return fmt.format(record)
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | File "C:\Users\Farm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 695, in format
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | record.exc_text = self.formatException(record.exc_info)
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | File "C:\Users\Farm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 645, in formatException
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | traceback.print_exception(ei[0], ei[1], tb, None, sio)
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | File "C:\Users\Farm\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 124, in print_exception
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:13 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | File "C:\Users\Farm\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 688, in __init__
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | self.stack = StackSummary._extract_from_extended_frame_gen(
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | File "C:\Users\Farm\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 436, in _extract_from_extended_frame_gen
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | f.line
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | File "C:\Users\Farm\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 321, in line
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | self._line = linecache.getline(self.filename, self.lineno)
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | File "C:\Users\Farm\AppData\Local\Programs\Python\Python311\Lib\linecache.py", line 30, in getline
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | lines = getlines(filename, module_globals)
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:14 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | File "C:\Users\Farm\AppData\Local\Programs\Python\Python311\Lib\linecache.py", line 46, in getlines
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | return updatecache(filename, module_globals)
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | Original exception was:
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | Traceback (most recent call last):
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | File "Z:\SHARED FILES VM\MS\each_eight_hours.py", line 149, in <module>
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | login(account)
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | File "Z:\SHARED FILES VM\MS\my_functions.py", line 1050, in login
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | search_MS_img(r'images/stages/main_stage/sign_in_with_google2.PNG', timeout=90)
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | File "Z:\SHARED FILES VM\MS\my_functions.py", line 210, in search_MS_img
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | File "C:\Users\Farm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyautogui\__init__.py", line 175, in wrapper
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | return wrappedFunction(*args, **kwargs)
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | File "C:\Users\Farm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyautogui\__init__.py", line 207, in locateCenterOnScreen
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | return pyscreeze.locateCenterOnScreen(*args, **kwargs)
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | File "C:\Users\Farm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyscreeze\__init__.py", line 413, in locateCenterOnScreen
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | coords = locateOnScreen(image, **kwargs)
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:15 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | File "C:\Users\Farm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyscreeze\__init__.py", line 373, in locateOnScreen
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | retVal = locate(image, screenshotIm, **kwargs)
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | File "C:\Users\Farm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyscreeze\__init__.py", line 353, in locate
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | points = tuple(locateAll(needleImage, haystackImage, **kwargs))
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | File "C:\Users\Farm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyscreeze\__init__.py", line 209, in _locateAll_opencv
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | haystackImage = _load_cv2(haystackImage, grayscale)
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | File "C:\Users\Farm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyscreeze\__init__.py", line 182, in _load_cv2
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | img_cv = img_array[:, :, ::-1].copy()  # -1 does RGB -> BGR
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | ^
+2026-06-03 11:35:16 | ERROR | each_eight_hours.py:49 | KeyboardInterrupt

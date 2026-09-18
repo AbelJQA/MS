@@ -1,0 +1,4 @@
+2026-07-04 19:13:45 | INFO | sandbox2.py:36 | LOG FILE PATH: \\vmware-host\Shared Folders\SHARED FILES VM\MS\logs\sandbox2_2026-07-04_19-13-45.log
+2026-07-04 19:13:45 | INFO | sandbox2.py:37 | Logger initialized
+2026-07-04 19:13:45 | INFO | sandbox2.py:64 | Script initialized
+2026-07-04 19:14:02 | INFO | my_functions.py:56 | ⏳ Esperando WebSocket de OBS...

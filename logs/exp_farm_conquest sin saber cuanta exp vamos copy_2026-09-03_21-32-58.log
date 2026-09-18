@@ -1,0 +1,52 @@
+2026-09-03 21:32:58 | INFO | exp_farm_conquest sin saber cuanta exp vamos copy.py:61 | LOG FILE PATH: C:\Users\Abel\Documents\SHARED FILES VM\MS\logs\exp_farm_conquest sin saber cuanta exp vamos copy_2026-09-03_21-32-58.log
+2026-09-03 21:32:58 | INFO | exp_farm_conquest sin saber cuanta exp vamos copy.py:62 | Logger initialized
+2026-09-03 21:32:58 | INFO | exp_farm_conquest sin saber cuanta exp vamos copy.py:89 | TEST LOG INITIALIZATION
+2026-09-03 21:32:58 | INFO | exp_farm_conquest sin saber cuanta exp vamos copy.py:90 | Logger test executed
+2026-09-03 21:32:58 | INFO | obs_helpers.py:42 | ⏳ Esperando WebSocket de OBS...
+2026-09-03 21:33:03 | INFO | baseclient.py:33 | Connecting with parameters: host='localhost' port=4455 password='' subs=0 timeout=None
+2026-09-03 21:33:03 | INFO | reqs.py:23 | Successfully identified ReqClient with the server using RPC version:1
+2026-09-03 21:33:03 | INFO | obs_helpers.py:48 | ✅ Conectado al OBS WebSocket
+2026-09-03 21:33:03 | ERROR | reqs.py:59 | OBSSDKRequestError: Request GetRecordStatus returned code 207. With message: OBS is not ready to perform the request.
+Traceback (most recent call last):
+  File "C:\Users\Abel\AppData\Local\Programs\Python\Python311\Lib\site-packages\obsws_python\reqs.py", line 53, in send
+    raise OBSSDKRequestError(
+obsws_python.error.OBSSDKRequestError: Request GetRecordStatus returned code 207. With message: OBS is not ready to perform the request.
+2026-09-03 21:33:04 | INFO | obs_helpers.py:70 | 🎬 Grabación iniciada
+2026-09-03 21:33:04 | ERROR | exp_farm_conquest sin saber cuanta exp vamos copy.py:301 | Unhandled exception occurred
+Traceback (most recent call last):
+  File "c:\Users\Abel\Documents\SHARED FILES VM\MS\exp_farm_conquest sin saber cuanta exp vamos copy.py", line 113, in <module>
+    resize_window_by_tuple(['SNAP'], globals.REGION_MS_WINDOW, delay=10)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'builtin_function_or_method' object has no attribute 'REGION_MS_WINDOW'
+2026-09-03 21:33:04 | INFO | exp_farm_conquest sin saber cuanta exp vamos copy.py:71 | Presiona ENTER para cerrar...
+2026-09-03 21:33:17 | INFO | exp_farm_conquest sin saber cuanta exp vamos copy.py:94 | Shutdown signal received. Stopping OBS recording...
+2026-09-03 21:33:17 | INFO | baseclient.py:33 | Connecting with parameters: host='localhost' port=4455 password='' subs=0 timeout=None
+2026-09-03 21:33:17 | INFO | reqs.py:23 | Successfully identified ReqClient with the server using RPC version:1
+2026-09-03 21:33:17 | INFO | obs_helpers.py:76 | Record stopped.
+2026-09-03 21:33:29 | INFO | obs_helpers.py:102 | Archivo renombrado a: C:\Users\Abel\Videos\recording_2026-09-03_21-33-04.mkv
+2026-09-03 21:33:29 | INFO | exp_farm_conquest sin saber cuanta exp vamos copy.py:305 | Finalizing script. Stopping OBS recording...
+2026-09-03 21:33:29 | INFO | baseclient.py:33 | Connecting with parameters: host='localhost' port=4455 password='' subs=0 timeout=None
+2026-09-03 21:33:29 | INFO | reqs.py:23 | Successfully identified ReqClient with the server using RPC version:1
+2026-09-03 21:33:29 | ERROR | reqs.py:59 | OBSSDKRequestError: Request StopRecord returned code 501.
+Traceback (most recent call last):
+  File "c:\Users\Abel\Documents\SHARED FILES VM\MS\exp_farm_conquest sin saber cuanta exp vamos copy.py", line 113, in <module>
+    # resize_window_by_tuple(['SNAP'], globals.REGION_MS_WINDOW, delay=10)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'builtin_function_or_method' object has no attribute 'REGION_MS_WINDOW'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\Abel\Documents\SHARED FILES VM\MS\exp_farm_conquest sin saber cuanta exp vamos copy.py", line 302, in <module>
+    input("\nPresiona ENTER para cerrar...")
+  File "c:\Users\Abel\Documents\SHARED FILES VM\MS\exp_farm_conquest sin saber cuanta exp vamos copy.py", line 100, in shutdown_handler
+    sys.exit(0)
+SystemExit: 0
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Abel\AppData\Local\Programs\Python\Python311\Lib\site-packages\obsws_python\reqs.py", line 53, in send
+    raise OBSSDKRequestError(
+obsws_python.error.OBSSDKRequestError: Request StopRecord returned code 501.
+2026-09-03 21:33:29 | ERROR | exp_farm_conquest sin saber cuanta exp vamos copy.py:309 | Error stopping OBS in finally: Request StopRecord returned code 501.

@@ -1,0 +1,18 @@
+2026-05-14 15:59:54 | INFO | sanctum.py:39 | LOG FILE PATH: \\vmware-host\Shared Folders\SHARED FILES VM\MS\logs\sanctum_2026-05-14_15-59-54.log
+2026-05-14 15:59:54 | INFO | sanctum.py:40 | Logger initialized
+2026-05-14 15:59:54 | INFO | sanctum.py:67 | Script initialized
+2026-05-14 15:59:56 | INFO | sanctum.py:121 | Execution started
+2026-05-14 15:59:56 | INFO | sanctum.py:124 | Mouse moved to initial position
+2026-05-14 15:59:56 | INFO | sanctum.py:131 | snap.exe terminated if it was running
+2026-05-14 15:59:57 | INFO | my_functions.py:57 | ⏳ Esperando WebSocket de OBS...
+2026-05-14 16:00:02 | INFO | baseclient.py:33 | Connecting with parameters: host='localhost' port=4455 password='' subs=0 timeout=None
+2026-05-14 16:00:02 | INFO | reqs.py:23 | Successfully identified ReqClient with the server using RPC version:1
+2026-05-14 16:00:02 | INFO | my_functions.py:63 | ✅ Conectado al OBS WebSocket
+2026-05-14 16:00:02 | ERROR | reqs.py:59 | OBSSDKRequestError: Request GetRecordStatus returned code 207. With message: OBS is not ready to perform the request.
+Traceback (most recent call last):
+  File "C:\Users\Farm\AppData\Local\Programs\Python\Python311\Lib\site-packages\obsws_python\reqs.py", line 53, in send
+    raise OBSSDKRequestError(
+obsws_python.error.OBSSDKRequestError: Request GetRecordStatus returned code 207. With message: OBS is not ready to perform the request.
+2026-05-14 16:00:03 | INFO | my_functions.py:88 | 🎬 Grabación iniciada
+2026-05-14 16:00:03 | INFO | my_functions.py:1480 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-05-14 16:00:03 | INFO | my_functions.py:1487 | 🔍 Esperando ventana que contenga alguna de: ['py', 'eight_hours'] (máx 20s)

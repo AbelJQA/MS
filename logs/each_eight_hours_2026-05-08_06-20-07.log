@@ -1,0 +1,21 @@
+2026-05-08 06:20:07 | INFO | each_eight_hours.py:39 | LOG FILE PATH: C:\Users\Farm\OneDrive\my_py_projects\MS\logs\each_eight_hours_2026-05-08_06-20-07.log
+2026-05-08 06:20:07 | INFO | each_eight_hours.py:40 | Logger initialized
+2026-05-08 06:20:07 | INFO | each_eight_hours.py:67 | Script initialized
+2026-05-08 06:20:09 | INFO | each_eight_hours.py:116 | Execution started
+2026-05-08 06:20:09 | INFO | each_eight_hours.py:119 | Mouse moved to initial position
+2026-05-08 06:20:09 | INFO | each_eight_hours.py:126 | snap.exe terminated if it was running
+2026-05-08 06:20:10 | INFO | my_functions.py:60 | ⏳ Esperando WebSocket de OBS...
+2026-05-08 06:20:15 | INFO | baseclient.py:33 | Connecting with parameters: host='localhost' port=4455 password='' subs=0 timeout=None
+2026-05-08 06:20:15 | INFO | reqs.py:23 | Successfully identified ReqClient with the server using RPC version:1
+2026-05-08 06:20:15 | INFO | my_functions.py:66 | ✅ Conectado al OBS WebSocket
+2026-05-08 06:20:15 | ERROR | reqs.py:59 | OBSSDKRequestError: Request GetRecordStatus returned code 207. With message: OBS is not ready to perform the request.
+Traceback (most recent call last):
+  File "C:\Users\Farm\AppData\Local\Programs\Python\Python311\Lib\site-packages\obsws_python\reqs.py", line 53, in send
+    raise OBSSDKRequestError(
+obsws_python.error.OBSSDKRequestError: Request GetRecordStatus returned code 207. With message: OBS is not ready to perform the request.
+2026-05-08 06:20:16 | INFO | my_functions.py:91 | 🎬 Grabación iniciada
+2026-05-08 06:20:16 | INFO | each_eight_hours.py:129 | OBS started and recording
+2026-05-08 06:20:16 | INFO | my_functions.py:1618 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-05-08 06:20:16 | INFO | my_functions.py:1625 | 🔍 Esperando ventana que contenga alguna de: ['py', 'eight_hours'] (máx 20s)
+2026-05-08 06:20:16 | INFO | my_functions.py:1637 | ✅ Ventana encontrada: 'each_eight_hours - Acceso directo'
+2026-05-08 06:20:16 | INFO | my_functions.py:1652 | ✅ Ventana seleccionada: 'each_eight_hours - Acceso directo'
