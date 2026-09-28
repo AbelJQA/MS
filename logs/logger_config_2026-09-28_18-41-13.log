@@ -1,0 +1,15 @@
+2026-09-28 18:41:13 | INFO | obs_helpers.py:36 | Python ejecutándose desde: C:\Proyectos\MS
+2026-09-28 18:41:13 | INFO | obs_helpers.py:37 | Usuario: Abel
+2026-09-28 18:41:13 | INFO | obs_helpers.py:39 | Z existe: False
+2026-09-28 18:41:20 | INFO | obs_helpers.py:41 | Ruta UNC: False
+2026-09-28 18:41:20 | INFO | obs_helpers.py:50 | OBS no está abierto. Iniciándolo...
+2026-09-28 18:41:20 | INFO | obs_helpers.py:65 | ⏳ Esperando WebSocket de OBS...
+2026-09-28 18:41:23 | INFO | baseclient.py:33 | Connecting with parameters: host='localhost' port=4455 password='' subs=0 timeout=None
+2026-09-28 18:41:23 | INFO | reqs.py:23 | Successfully identified ReqClient with the server using RPC version:1
+2026-09-28 18:41:23 | INFO | obs_helpers.py:78 | ✅ Conectado al OBS WebSocket
+2026-09-28 18:41:23 | ERROR | reqs.py:59 | OBSSDKRequestError: Request GetRecordStatus returned code 207. With message: OBS is not ready to perform the request.
+Traceback (most recent call last):
+  File "C:\Users\Abel\AppData\Local\Programs\Python\Python311\Lib\site-packages\obsws_python\reqs.py", line 53, in send
+    raise OBSSDKRequestError(
+obsws_python.error.OBSSDKRequestError: Request GetRecordStatus returned code 207. With message: OBS is not ready to perform the request.
+2026-09-28 18:41:24 | INFO | obs_helpers.py:109 | 🎬 Nueva grabación iniciada
