@@ -37,7 +37,8 @@ def start_obs_then_record():
     logger.info(f"Usuario: {os.getlogin()}")
     z_path = "Z:\\" # test git
     logger.info(f"Z existe: {os.path.exists(z_path)}")
-    logger.info(f"Ruta UNC: {os.path.exists(r'\\vmware-host\Shared Folders')}")
+    unc_path = r'\\vmware-host\Shared Folders'
+    logger.info(f"Ruta UNC: {os.path.exists(unc_path)}")
 
     obs_activo = any(
         proc.info["name"] == "obs64.exe"
