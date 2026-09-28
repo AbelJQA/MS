@@ -35,7 +35,8 @@ def start_obs_then_record():
 
     logger.info(f"Python ejecutándose desde: {os.getcwd()}")
     logger.info(f"Usuario: {os.getlogin()}")
-    logger.info(f"Z existe: {os.path.exists('Z:\\')}")
+    z_path = "Z:\\"
+    logger.info(f"Z existe: {os.path.exists(z_path)}")
     logger.info(f"Ruta UNC: {os.path.exists(r'\\vmware-host\Shared Folders')}")
 
     obs_activo = any(
