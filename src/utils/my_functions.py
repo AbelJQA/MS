@@ -1,4 +1,6 @@
 import logging
+
+from debug_screenshots import debug_screenshot
 logger = logging.getLogger(__name__)
 
 import socket
@@ -1075,9 +1077,17 @@ def login(acc):
         beep_forever()
         raise FileNotFoundError(f"Account image not found: {account_img}")
     
+    debug_screenshot(f"{acc}_antes_login")
+
     os.startfile("steam://rungameid/1997040")
-    logger.info("[DEBUG] Resizing SNAP window...")
-    resize_window_by_tuple(["SNAP"], region=globals.REGION_MS_WINDOW, timeout=5)
+
+    resize_window_by_tuple(
+        ["SNAP"],
+        region=globals.REGION_MS_WINDOW,
+        timeout=5
+    )
+
+    debug_screenshot(f"{acc}_despues_resize")
     
     if click_any_MS_img([r'images/small_submit.PNG',r'images/small_submit_hover.png', r'images/submit_hover_2.png', r'images/small_submit_hover_2.png'], region=None, delay_click=.2, timeout=90):
         pass
