@@ -6,5 +6,8 @@
         "**/*.pyc": true,
         "**/.vscode": true,
         "**/nppBackup": true
-    }
+    },
+    "python.analysis.extraPaths": [
+        "./src/utils"
+    ]
 }

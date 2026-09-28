@@ -1,0 +1,5 @@
+2026-09-18 21:03:11 | ERROR | logger_config.py:50 | Uncaught exception
+Traceback (most recent call last):
+  File "C:\Proyectos\MS\each_eight_hours copy 2.py", line 13, in <module>
+    import globals
+ModuleNotFoundError: No module named 'globals'

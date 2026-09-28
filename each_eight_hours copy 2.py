@@ -1,59 +1,15 @@
-
-
 import time
 import os
-import logging
 from datetime import datetime
 from pathlib import Path
-import sys
-import json
 import pandas as pd  # Requerido para exportar a Excel
 
-# region Logging
-LOG_DIR = Path(__file__).resolve().parent / "logs"
-LOG_DIR.mkdir(parents=True, exist_ok=True)
-
-script_name = os.path.splitext(os.path.basename(__file__))[0]
-LOG_FILE = LOG_DIR / f"{script_name}_{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.log"
-
-logging.basicConfig(
-    force=True,
-    level=logging.INFO,
-    format="%(asctime)s | %(levelname)s | %(filename)s:%(lineno)d | %(message)s",
-    datefmt="%Y-%m-%d %H:%M:%S",
-    handlers=[
-        logging.FileHandler(LOG_FILE, mode="w", encoding="utf-8"),
-        logging.StreamHandler(sys.__stdout__),
-    ],
-)
-
-logger = logging.getLogger(__name__)
-
-class StreamToLogger:
-    def __init__(self, logger, level, original_stream):
-        self.logger = logger
-        self.level = level
-        self.original_stream = original_stream
-    def write(self, message):
-        if message.strip():
-            self.logger.log(self.level, message.strip())
-            self.original_stream.write(message)
-            self.original_stream.flush()
-    def flush(self):
-        self.original_stream.flush()
-
-sys.stdout = StreamToLogger(logger, logging.INFO, sys.__stdout__)
-sys.stderr = StreamToLogger(logger, logging.ERROR, sys.__stderr__)
-
-def global_exception_handler(exc_type, exc_value, exc_traceback):
-    logger.exception("Uncaught exception", exc_info=(exc_type, exc_value, exc_traceback))
-
-sys.excepthook = global_exception_handler
-# endregion
+from logger_config import logger
 
 import pyautogui as pg
-import globals
+from src.utils.globals import *
 from src.utils.my_functions import *
+from src.utils.obs_helpers import end_record_obs, start_obs_then_record
 
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -66,7 +22,7 @@ excel_report_data = []
 try:
     start_obs_then_record()
     pg.moveTo(1500, 100)
-    os.system("taskkill /im snap.exe /f")
+    subprocess.run(["taskkill", "/im", "snap.exe", "/f"], check=False)
     logger.info("snap.exe terminated if it was running")
     resize_window_by_tuple(title_contains=["py", "eight_hours"], region=globals.REGION_TOTAL_MINUS_MS_WINDOW)
     
@@ -233,7 +189,7 @@ try:
 
     end_record_obs()
     logger.info("OBS recording stopped")
-    os.system("shutdown /s /t 0")    
+    subprocess.run(["shutdown", "/s", "/t", "0"], check=False)   
     
 except Exception:
     logger.exception("Unhandled exception occurred")
