@@ -1,6 +1,6 @@
 import logging
 
-from debug_screenshots import debug_screenshot
+from src.utils.debug_screenshots import debug_screenshot
 logger = logging.getLogger(__name__)
 
 import socket

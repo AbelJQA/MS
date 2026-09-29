@@ -1,0 +1,7 @@
+2026-09-28 19:21:29 | ERROR | logger_config.py:50 | Uncaught exception
+Traceback (most recent call last):
+  File "C:\Proyectos\MS\each_eight_hours copy 2.py", line 12, in <module>
+    from src.utils.my_functions import *
+  File "C:\Proyectos\MS\src\utils\my_functions.py", line 3, in <module>
+    from debug_screenshots import debug_screenshot
+ModuleNotFoundError: No module named 'debug_screenshots'

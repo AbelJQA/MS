@@ -1,0 +1,33 @@
+2026-09-28 19:23:24 | INFO | obs_helpers.py:36 | Python ejecutándose desde: C:\Proyectos\MS
+2026-09-28 19:23:24 | INFO | obs_helpers.py:37 | Usuario: Abel
+2026-09-28 19:23:24 | INFO | obs_helpers.py:39 | Z existe: False
+2026-09-28 19:23:32 | INFO | obs_helpers.py:41 | Ruta UNC: False
+2026-09-28 19:23:32 | INFO | obs_helpers.py:50 | OBS no está abierto. Iniciándolo...
+2026-09-28 19:23:32 | INFO | obs_helpers.py:65 | ⏳ Esperando WebSocket de OBS...
+2026-09-28 19:23:35 | INFO | baseclient.py:33 | Connecting with parameters: host='localhost' port=4455 password='' subs=0 timeout=None
+2026-09-28 19:23:35 | INFO | reqs.py:23 | Successfully identified ReqClient with the server using RPC version:1
+2026-09-28 19:23:35 | INFO | obs_helpers.py:78 | ✅ Conectado al OBS WebSocket
+2026-09-28 19:23:35 | ERROR | reqs.py:59 | OBSSDKRequestError: Request GetRecordStatus returned code 207. With message: OBS is not ready to perform the request.
+Traceback (most recent call last):
+  File "C:\Users\Abel\AppData\Local\Programs\Python\Python311\Lib\site-packages\obsws_python\reqs.py", line 53, in send
+    raise OBSSDKRequestError(
+obsws_python.error.OBSSDKRequestError: Request GetRecordStatus returned code 207. With message: OBS is not ready to perform the request.
+2026-09-28 19:23:36 | INFO | obs_helpers.py:109 | 🎬 Nueva grabación iniciada
+2026-09-28 19:23:37 | INFO | each_eight_hours copy 2.py:27 | snap.exe terminated if it was running
+2026-09-28 19:23:37 | INFO | my_functions.py:1465 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-09-28 19:23:37 | INFO | my_functions.py:1472 | 🔍 Esperando ventana que contenga alguna de: ['py', 'eight_hours'] (máx 20s)
+2026-09-28 19:23:37 | INFO | my_functions.py:1484 | ✅ Ventana encontrada: 'my_functions.py - MS - Visual Studio Code'
+2026-09-28 19:23:37 | INFO | my_functions.py:1499 | ✅ Ventana seleccionada: 'my_functions.py - MS - Visual Studio Code'
+2026-09-28 19:23:39 | INFO | my_functions.py:1514 | ↗ Ventana minimizada o maximizada. Restaurando...
+2026-09-28 19:23:39 | INFO | my_functions.py:1522 | 🔁 Reajuste #1...
+2026-09-28 19:23:39 | INFO | my_functions.py:1529 | ✔ Verificación completa. Se hicieron 1 reajustes.
+2026-09-28 19:23:39 | INFO | each_eight_hours copy 2.py:32 | Processing account: robert
+2026-09-28 19:23:39 | INFO | my_functions.py:1465 | ⏱ Esperando 0.1 segundos antes de empezar...
+2026-09-28 19:23:39 | INFO | my_functions.py:1472 | 🔍 Esperando ventana que contenga alguna de: ['SNAP'] (máx 20s)
+2026-09-28 19:23:41 | ERROR | logger_config.py:50 | Uncaught exception
+Traceback (most recent call last):
+  File "C:\Proyectos\MS\each_eight_hours copy 2.py", line 40, in <module>
+    resize_window_by_tuple(["SNAP"], region=globals.REGION_MS_WINDOW)
+  File "C:\Proyectos\MS\src\utils\my_functions.py", line 1487, in resize_window_by_tuple
+    time.sleep(check_interval)
+KeyboardInterrupt
